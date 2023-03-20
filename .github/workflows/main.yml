@@ -23,7 +23,7 @@ jobs:
       - name: Test with unittest
         run: |
           cd pbix_doc
-          python -m xmlrunner discover .\tests\ -o .\test_results\ -vvv
+          python -m xmlrunner discover ./tests/ -o ./test_results/ -vvv
       #- name: JUnit Report Action
       #    # You may pin to the exact commit or the version.
       #    # uses: mikepenz/action-junit-report@4fa23552acda20a6a1d44f16224a90efbeb6c5f1
