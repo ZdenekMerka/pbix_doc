@@ -33,6 +33,7 @@ class test_conf(unittest.TestCase):
         #pp(sorted(list(ret.keys())))
         self.assertEqual(sorted(list(ret.keys())), sorted([
             'db_connection_file',
+            'log_file',
             'output_folder',
             'project_description',
             'project_name',
