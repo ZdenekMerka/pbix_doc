@@ -1,0 +1,6 @@
+aw_dwh2020:
+        type: "PBIX File"
+        file: "./input/Adventure Works DW 2020.pbix"
+aw_sales:
+        type: "PBIX File"
+        file: "./input/Adventure Sales.pbix"
