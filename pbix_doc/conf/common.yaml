@@ -2,6 +2,7 @@ project_name: "PBIX Documentation"
 project_description: "PBIX Documentation project description."
 db_connection_file: 'conf\connections.yaml'
 template_folder: 'conf\templates' 
+log_file: 'tmp\output.log' 
 select_top: 100
 output_folder:
   path: '.\output'

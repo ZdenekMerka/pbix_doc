@@ -9,12 +9,13 @@ from datetime import datetime, timedelta
 
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..'))
 import lib.conf as cnf
+import lib.tools as tools
 
 # import functional classes
 #import lib.pbix_reader as pbixr
 #import lib.pbix_writer as pbixw
 
-import logging
+
 
 ####################
 # save script starting time
@@ -36,6 +37,10 @@ args = parser.parse_args()
 ####################
 # load conf 
 common_conf = cnf.get_conf(args.conf_file)
+#pp(common_conf)
+####################
+# init logger
+logger = tools.setup_logger(common_conf['log_file'])
 
 ##############################
 # measure script run time before last page writing
@@ -49,4 +54,4 @@ lasting = ("%sh %sm %ss" % (tuple(str(lasting).split('.')[0].split(':'))) )
 
 ##############################
 # measure script run time
-print("Done. It took {}".format(lasting) )
+logger.info("Done. It took {}".format(lasting) )
