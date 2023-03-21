@@ -7,12 +7,11 @@ jobs:
   
 
     runs-on: ubuntu-latest
-    permissions:
-      checks: write
     strategy:
       matrix:
         python-version: ["3.10"]
-
+    permissions:
+      checks: write
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
