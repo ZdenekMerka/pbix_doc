@@ -30,9 +30,10 @@ class test_conf(unittest.TestCase):
     
     def test_03_conf_default(self):
         ret = self.conf
-        #pp(sorted(list(ret.keys())))
+        pp(sorted(list(ret.keys())))
         self.assertEqual(sorted(list(ret.keys())), sorted([
-            'db_connection_file',
+            'connection_file',
+            'local_ssas_folder',
             'log_file',
             'output_folder',
             'project_description',

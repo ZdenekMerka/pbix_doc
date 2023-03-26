@@ -1,7 +1,7 @@
 import abc
 # formal readers interface  
-class reader(metaclass=abc.ABCMeta):
+class writer(metaclass=abc.ABCMeta):
     
     @abc.abstractmethod
-    def get_metadata(self):
+    def write_metadata(self):
         pass
