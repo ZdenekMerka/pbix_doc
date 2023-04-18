@@ -134,8 +134,8 @@ def open_file_with_default_program(file_path):
     """
     logger.info(f"Try to open file {file_path}")
     subprocess.run(['start', '', file_path], shell=True)
-    logger.info(f"Going to wait for 1 minutes.")
-    time.sleep(60)
+    logger.info(f"Going to wait for 5 seconds.")
+    time.sleep(5)
 
 
 
@@ -163,3 +163,235 @@ def get_all_pbix_files(folder_path):
 
     logger.info(f"{len(pbix_files)} pbix file(s) was found")
     return pbix_files  # Return the list of .pbix files found
+
+
+
+
+############################################################
+# function
+def camel(convertString: str) -> str:
+    """
+    Converts the given string to the CamelCase format.
+    
+    Arguments:
+    convertString -- string to be converted to CamelCase format
+    
+    Returns:
+    The resulting string in CamelCase format
+    
+    """
+
+    # Replaces several different characters with spaces using a regular expression
+    convertString = re.sub(r"(_|-|/|\+|~|!|@|#|\$|%|\^|&|\*|\(|\)|=|{|}|\[|\]|:|\"|;|\||,|\.|\<|\>|\?|\\)+"," ",convertString)
+    
+    # Converts each word in the string to the format with the first letter capitalized and the rest lowercase
+    convertString = convertString.title().replace(" ","")
+    
+    # Removes spaces and converts the first letter of the string to uppercase
+    convertedString = str(''.join([convertString[0].upper(),convertString[1:]]))
+    
+    # Returns the resulting string in CamelCase format
+    return convertedString
+
+############################################################
+# function
+def lower(convertString: str) -> str:
+    """
+    Converts the given string to lowercase.
+    
+    Arguments:
+    convertString -- string to be converted to lowercase
+    
+    Returns:
+    The resulting string in lowercase
+    
+    """
+
+    # Converts the given string to lowercase
+    convertedString = str(convertString).lower()
+    
+    # Returns the resulting string in lowercase
+    return convertedString
+
+############################################################
+# function
+import unicodedata
+
+def convertCzech(convertString: str) -> str:
+    """
+    Converts the given Czech string to its ASCII equivalent.
+    
+    Arguments:
+    convertString -- Czech string to be converted to ASCII
+    
+    Returns:
+    The resulting string in ASCII format
+    
+    """
+    
+    # Normalizes the Czech string using NFD (Normalization Form D) to split accented characters into base and diacritic characters
+    convertString = unicodedata.normalize('NFD', convertString)
+    
+    # Joins the base characters and removes the diacritic characters to convert the string to its ASCII equivalent
+    convertedString = str(u"".join([c for c in convertString if not unicodedata.combining(c)]))
+    
+    # Returns the resulting string in ASCII format
+    return convertedString
+
+############################################################
+# function
+import zlib
+
+def _cache_key_gen(sql: str, params: list = None) -> int:
+        """
+        Generates a cache key for the given SQL query and parameters.
+        
+        Arguments:
+        sql -- SQL query to be cached
+        params -- List of parameters to be passed to the SQL query (default None)
+        
+        Returns:
+        A unique integer value (cache key) for the given SQL query and parameters
+        
+        """
+        
+        # Start with the SQL query
+        cache_string = sql
+        
+        # If parameters are provided, add them to the cache string
+        if params:
+            cache_string = cache_string + '-'.join(map(str, params))
+        
+        # Convert the cache string to bytes using utf-8 encoding
+        cache_string = bytes(cache_string, 'utf-8')
+        
+        # Calculate the 32-bit CRC (Cyclic Redundancy Check) value of the cache string
+        cache_key = zlib.crc32(cache_string)
+        
+        # Return the cache key
+        return cache_key
+
+
+############################################################
+# function
+import os
+import yaml
+
+def save_df_to_yaml(df, file_name, dir_name):
+    """
+    Save pandas DataFrame to a YAML file with a given file name and directory name.
+
+    Parameters:
+        df (pandas.DataFrame): The DataFrame to be saved.
+        file_name (str): The desired file name (including the .yaml extension).
+        dir_name (str): The directory in which to save the YAML file.
+
+    Returns:
+        None
+    """
+    # Convert DataFrame to dictionary
+    data_dict = df.to_dict()
+
+    # Create directory if it doesn't exist
+    if not os.path.exists(dir_name):
+        os.makedirs(dir_name)
+
+    # Open file for writing
+    file_path = os.path.join(dir_name, file_name)
+    with open(file_path, 'w') as file:
+        # Write dictionary to YAML file
+        yaml.dump(data_dict, file)
+
+    logger.info(f"Data saved to {file_path} successfully.")
+
+
+############################################################
+# function
+import json
+
+def save_df_to_json(df, file_name, dir_name):
+    """
+    Save pandas DataFrame to a JSON file with a given file name and directory name.
+
+    Parameters:
+        df (pandas.DataFrame): The DataFrame to be saved.
+        file_name (str): The desired file name (including the .json extension).
+        dir_name (str): The directory in which to save the JSON file.
+
+    Returns:
+        None
+    """
+    # Convert DataFrame to JSON string
+    json_str = df.to_json(orient='records')
+
+    # Convert JSON string to list of dictionaries
+    data_dict = json.loads(json_str)
+
+    # Create directory if it doesn't exist
+    if not os.path.exists(dir_name):
+        os.makedirs(dir_name)
+
+    # Open file for writing
+    file_path = os.path.join(dir_name, file_name)
+    with open(file_path, 'w') as file:
+        # Write dictionary to JSON file
+        json.dump(data_dict, file)
+
+    logger.info(f"Data saved to {file_path} successfully.")
+
+
+############################################################
+# df2listofdictsref
+# ##############################
+def df2listofdictsref(df):
+    ''' convert pandas.DataFrame to list of dicts records
+    
+    Args:
+        df - pandas.DataFrame
+    
+    Returns:
+        ret - pointer to array of dict
+        example 
+        [
+            {'TABLE_NAME': 'testcase', 'TABLE_SCHEMA': 'datamart', 'TABLE_CATALOG': 'sqa_datamart', 'TABLE_TYPE': 'BASE TABLE'},
+            {'TABLE_NAME': 'testsuite', 'TABLE_SCHEMA': 'datamart', 'TABLE_CATALOG': 'sqa_datamart', 'TABLE_TYPE': 'BASE TABLE'}
+        ]
+    '''
+    ret = df.to_dict('records')
+    logger.info("Convert pandas.DataFrame to ref array of dict")
+    #print(type(ret))
+    return ret
+
+############################################################
+# df2dictofdictsref
+# ##############################
+def df2dictofdictsref(df, idx):
+    ''' convert pandas.DataFrame dicts of dicts 
+    
+    Args:
+        df - pandas.DataFrame
+        idx - unique key for each record
+    
+    Returns:
+        ret - pointer to dict of dict
+        example 
+        {
+            'testcase': {'TABLE_NAME': 'testcase', 'TABLE_SCHEMA': 'datamart', 'TABLE_CATALOG': 'sqa_datamart', 'TABLE_TYPE': 'BASE TABLE'},
+            'testsuite': {'TABLE_NAME': 'testsuite', 'TABLE_SCHEMA': 'datamart', 'TABLE_CATALOG': 'sqa_datamart', 'TABLE_TYPE': 'BASE TABLE'}
+        }
+    '''
+    logger.info("Convert pandas.DataFrame to ref dict of dict")
+    
+    # verify uniquity  of index, convert index column to series and test uniquity 
+    # https://datatofish.com/pandas-dataframe-to-series/
+    
+    # squeeze sotime retuns string object and this situation must be managed 
+    #if not type(df[idx].squeeze()) == str and not df[idx].squeeze().is_unique : 
+    #    self.logger.info("name of IDX"+ idx)
+    #    raise Exception("IDX is not unique. Be aware it is case sensitive")
+
+    # convert  
+    ret = df.set_index(idx, drop=False, verify_integrity=True).to_dict('index') #verify_integrity check duplicities 
+    #print(type(ret))
+    #print(ret)
+    return ret

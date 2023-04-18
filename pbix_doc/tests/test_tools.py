@@ -12,8 +12,7 @@ sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..'))
 
 import lib.tools as tools
 
-##############################
-# 
+############################################################
 class test_01_tools(unittest.TestCase):
     @classmethod
     def setUpClass(self):
@@ -45,6 +44,7 @@ class test_01_tools(unittest.TestCase):
         self.assertEqual(len(logger.handlers), 2)
 
 
+############################################################
 from lib.tools import get_port_and_db
 
 class Test02GetPortAndDb(unittest.TestCase):
@@ -98,9 +98,10 @@ class Test02GetPortAndDb(unittest.TestCase):
         self.assertEqual(actual_result, expected_result)
 
 
+############################################################
 from lib.tools import get_first_level_subfolders
 
-class TestGetFirstLevelSubfolders(unittest.TestCase):
+class Test03GetFirstLevelSubfolders(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         # Create a temporary directory with some subfolders for testing
@@ -131,22 +132,23 @@ class TestGetFirstLevelSubfolders(unittest.TestCase):
         #pp(subfolders)
         self.assertCountEqual(subfolders, ['subfolder22'])
 
+##############################
 import subprocess
 from unittest.mock import patch
 
 from lib.tools import open_file_with_default_program
 
-class TestOpenFileWithDefaultProgram(unittest.TestCase):
+class Test04OpenFileWithDefaultProgram(unittest.TestCase):
     @patch('subprocess.run')
     def test_file_opened_with_default_program(self, mock_subprocess):
         file_path = os.path.join(os.getcwd(), 'test_file.txt')
         open_file_with_default_program(file_path)
         mock_subprocess.assert_called_once_with(['start', '', file_path], shell=True)
 
+##############################
 from tempfile import TemporaryDirectory
 from lib.tools import get_all_pbix_files
-
-class TestGetAllPbixFiles(unittest.TestCase):
+class Test05GetAllPbixFiles(unittest.TestCase):
 
     def setUp(self):
         self.temp_dir = TemporaryDirectory()
@@ -175,4 +177,123 @@ class TestGetAllPbixFiles(unittest.TestCase):
                           os.path.join(self.temp_subdir, 'file4.pbix')]
         self.assertEqual(pbix_files, expected_files)
 
+##############################
+from lib.tools import camel
+class TestCamel(unittest.TestCase):
+    
+    def test_camel(self):
+        self.assertEqual(camel('Příliš žluťoučký kůň úpěl ďábelské ódy.'),'PřílišŽluťoučkýKůňÚpělĎábelskéÓdy',"Test function camel")
+        self.assertEqual(camel("my_variable_name"), "MyVariableName")
+        self.assertEqual(camel("this-is-a-test"), "ThisIsATest")
+        self.assertEqual(camel("a_long/path/to+a_file.txt"), "ALongPathToAFileTxt")
+        self.assertEqual(camel("12345"), "12345")
+
+
+############################################################
+from lib.tools import lower
+
+class TestLower(unittest.TestCase):
+    
+    def test_lower(self):
+        self.assertEqual(lower("MY STRING"), "my string")
+        self.assertEqual(lower("HeLLo WoRLd"), "hello world")
+        self.assertEqual(lower(""), "")
+        self.assertEqual(lower("12345"), "12345")
+
+
+
+############################################################
+from lib.tools import convertCzech
+class TestConvertCzech(unittest.TestCase):
+    
+    def test_convertCzech(self):
+        self.assertEqual(convertCzech("žluťoučký kůň"), "zlutoucky kun")
+        self.assertEqual(convertCzech("Příliš žluťoučký kůň úpěl ďábelské ódy."), "Prilis zlutoucky kun upel dabelske ody.")
+        self.assertEqual(convertCzech("Když jsem byl malý, říkali mi Pepíček."), "Kdyz jsem byl maly, rikali mi Pepicek.")
+        self.assertEqual(convertCzech("časopis Život"), "casopis Zivot")
+
+
+############################################################
+from lib.tools import _cache_key_gen
+class TestCacheKeyGen(unittest.TestCase):
+    
+    def test_cache_key_gen(self):
+        sql = "SELECT * FROM users WHERE username = ? AND age > ?"
+        params = ["john", 25]
+        expected_output = 3436099716
+        self.assertEqual(_cache_key_gen(sql, params), expected_output)
+        
+        sql = "SELECT * FROM posts WHERE category = ? AND published = ?"
+        params = ["news", True]
+        expected_output = 566373666
+        self.assertEqual(_cache_key_gen(sql, params), expected_output)
+        
+        sql = "SELECT COUNT(*) FROM comments WHERE post_id = ?"
+        params = [10]
+        expected_output = 29295974
+        self.assertEqual(_cache_key_gen(sql, params), expected_output)
+
+############################################################
+import os
+import yaml
+import pandas as pd
+from lib.tools import save_df_to_yaml
+
+class TestSaveDfToYaml(unittest.TestCase):
+    def setUp(self):
+        self.data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+        self.df = pd.DataFrame(self.data)
+
+    def test_save_df_to_yaml(self):
+        dir_name = 'test_data'
+        file_name = 'test.yaml'
+        save_df_to_yaml(self.df, file_name, dir_name)
+
+        file_path = os.path.join(dir_name, file_name)
+        with open(file_path, 'r') as file:
+            loaded_dict = yaml.safe_load(file)
+
+        self.assertEqual(loaded_dict, {'Age': {0: 25, 1: 30, 2: 35}, 'Name': {0: 'Alice', 1: 'Bob', 2: 'Charlie'}} , 'Test 01')
+        self.assertTrue(os.path.exists(file_path), 'Test 02')
+
+    def tearDown(self):
+        dir_name = 'test_data'
+        file_name = 'test.yaml'
+        file_path = os.path.join(dir_name, file_name)
+        if os.path.exists(file_path):
+            os.remove(file_path)
+        if os.path.exists(dir_name):
+            os.rmdir(dir_name)
+
+############################################################
+import json
+from lib.tools import save_df_to_json
+
+class TestSaveDfToJson(unittest.TestCase):
+    def setUp(self):
+        # Create a sample DataFrame
+        self.df = pd.DataFrame({'col1': [1, 2, 3], 'col2': ['a', 'b', 'c']})
+        self.dir_name = 'test_dir'
+        self.file_name = 'test.json'
+        
+    def test_save_df_to_json(self):
+        # Save the DataFrame to a JSON file
+        save_df_to_json(self.df, self.file_name, self.dir_name)
+        
+        # Check that the file was created
+        file_path = os.path.join(self.dir_name, self.file_name)
+        self.assertTrue(os.path.exists(file_path))
+        
+        # Read the JSON file and check that its contents are correct
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+        self.assertEqual(data, [{'col1': 1, 'col2': 'a'}, {'col1': 2, 'col2': 'b'}, {'col1': 3, 'col2': 'c'}])
+        
+    def tearDown(self):
+        # Remove the test directory and its contents
+        test_dir = os.path.join(os.getcwd(), self.dir_name)
+        if os.path.exists(test_dir):
+            for file in os.listdir(test_dir):
+                os.remove(os.path.join(test_dir, file))
+            os.rmdir(test_dir)
 
