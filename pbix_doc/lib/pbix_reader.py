@@ -128,6 +128,7 @@ class pbix_reader(reader.reader):
             # write file 
             tools.save_df_to_yaml(df_result,f'{tab.lower()}.yaml',catalog)
             tools.save_df_to_json(df_result,f'{tab.lower()}.json',catalog)
+            tools.save_df_to_excel(df_result,f'{tab.lower()}.xlsx',catalog)
             
         return ret
 

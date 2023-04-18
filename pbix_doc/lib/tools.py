@@ -339,6 +339,37 @@ def save_df_to_json(df, file_name, dir_name):
 
     logger.info(f"Data saved to {file_path} successfully.")
 
+############################################################
+# function
+import pandas as pd
+
+def save_df_to_excel(df, file_name, dir_name):
+    """
+    Save pandas DataFrame to an Excel file with a given file name and directory name.
+
+    Parameters:
+        df (pandas.DataFrame): The DataFrame to be saved.
+        file_name (str): The desired file name (including the .xlsx extension).
+        dir_name (str): The directory in which to save the Excel file.
+
+    Returns:
+        None
+    """
+    # Create directory if it doesn't exist
+    if not os.path.exists(dir_name):
+        os.makedirs(dir_name)
+
+    # Construct file path
+    file_path = os.path.join(dir_name, file_name)
+
+    # Save DataFrame to Excel file
+    with pd.ExcelWriter(file_path) as writer:
+        df.to_excel(writer, index=False)
+
+    logger.info(f"Data saved to {file_path} successfully.")
+
+
+
 
 ############################################################
 # df2listofdictsref

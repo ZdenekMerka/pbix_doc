@@ -297,3 +297,28 @@ class TestSaveDfToJson(unittest.TestCase):
                 os.remove(os.path.join(test_dir, file))
             os.rmdir(test_dir)
 
+############################################################
+import json
+from lib.tools import save_df_to_excel
+
+class TestSaveDfToExcel(unittest.TestCase):
+    
+    def setUp(self):
+        self.df = pd.DataFrame({'col1': [1, 2, 3], 'col2': [4, 5, 6]})
+        self.file_name = 'test.xlsx'
+        self.dir_name = 'test_dir'
+        
+    def tearDown(self):
+        file_path = os.path.join(self.dir_name, self.file_name)
+        if os.path.exists(file_path):
+            os.remove(file_path)
+        if os.path.exists(self.dir_name):
+            os.rmdir(self.dir_name)
+    
+    def test_save_df_to_excel(self):
+        save_df_to_excel(self.df, self.file_name, self.dir_name)
+        file_path = os.path.join(self.dir_name, self.file_name)
+        self.assertTrue(os.path.exists(file_path))
+        loaded_df = pd.read_excel(file_path)
+        pd.testing.assert_frame_equal(self.df, loaded_df)
+        
