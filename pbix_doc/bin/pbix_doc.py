@@ -18,7 +18,7 @@ import lib.tools as tools
 
 # import functional classes
 import lib.pbix_reader as r
-#import lib.pbix_writer as w
+import lib.pbix_writer as w
 
 
 
@@ -76,6 +76,12 @@ for instance_folder in ssas_instancie_folders:
     md = reader.read_metadata(pbix_tables,pbix_table_prefix, catalog) 
 
     #pp(md)
+    ###################
+    # init writer 
+    writer =  w.pbix_writer(md,None, common_conf['output'])
+    writer.init_templates()
+    #writer.write_metadata()
+
 
 
 

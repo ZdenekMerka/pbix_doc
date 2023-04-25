@@ -10,8 +10,13 @@ select_top: 100
 output_folder:
   path: '.\output'
 pbix_table_prefix: '$SYSTEM'
+output:
+  template_folder: 'conf/templates' 
+  md_github:
+    properties: 'md_github/properties.md'
+    test: 'md_github/test.md'
 all_pbix_tables: [ 
-#  "DBSCHEMA_CATALOGS",
+  {table: "DBSCHEMA_CATALOGS", idx: "CATALOG_NAME"},
 #  "DBSCHEMA_COLUMNS",
 #  "DBSCHEMA_PROVIDER_TYPES",
 #  "DBSCHEMA_TABLES",
@@ -45,7 +50,7 @@ all_pbix_tables: [
 #  #"DISCOVER_PERFORMANCE_COUNTERS",
 #  #"DISCOVER_POWERBI_DATASOURCES",
 #  #"DISCOVER_POWERBI_ROLES",
-  {table: "DISCOVER_PROPERTIES", idx: PropertyName},
+  {table: "DISCOVER_PROPERTIES", idx: "PropertyName"},
 #  "DISCOVER_RESOURCE_POOLS",
 #  #"DISCOVER_RING_BUFFERS",
 #  #"DISCOVER_SCHEMA_ROWSETS",

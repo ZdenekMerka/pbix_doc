@@ -426,3 +426,45 @@ def df2dictofdictsref(df, idx):
     #print(type(ret))
     #print(ret)
     return ret
+
+
+def get_short_git_hash():
+    """
+    Retrieves the short hash of the current Git commit.
+
+    Returns:
+        str or None: The short Git hash as a string, or None if the Git command fails.
+    """
+    try:
+        # Execute the Git command to retrieve the short hash of the current commit.
+        git_hash = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD']).strip().decode('utf-8')
+    except subprocess.CalledProcessError:
+        # If the Git command fails, return None.
+        git_hash = None
+    # Return the short Git hash as a string.
+    return git_hash
+
+
+
+from jinja2 import Environment, FileSystemLoader
+
+def init_templ_env(template_dir):
+    """
+    Initializes a Jinja2 environment with templates from the specified directory.
+
+    Args:
+        template_dir (str): The directory containing the Jinja2 templates.
+
+    Returns:
+        jinja2.Environment: A Jinja2 environment object configured to load templates from the specified directory.
+    """
+    logger.info(f"Init folder {template_dir} as Jinja2 env folder.")
+    
+    # Create a Jinja2 environment object that loads templates from the specified directory.
+    env = Environment(
+        loader=FileSystemLoader(template_dir),
+        extensions=['jinja2_time.TimeExtension']
+        )
+    
+    # Return the environment object.
+    return env
