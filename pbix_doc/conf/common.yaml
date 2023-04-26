@@ -14,7 +14,13 @@ output:
   template_folder: 'conf/templates' 
   md_github:
     properties: 'md_github/properties.md'
-    test: 'md_github/test.md'
+    tables: 'md_github/tables.md'
+    columns: 'md_github/columns.md'
+    relationships: 'md_github/relationships.md'
+    measures: 'md_github/measures.md'
+    hierarchies: 'md_github/hierarchies.md'
+    footer: 'md_github/footer.md'
+    breadcrumb: 'md_github/breadcrumb.md'
 all_pbix_tables: [ 
   {table: "DBSCHEMA_CATALOGS", idx: "CATALOG_NAME"},
 #  "DBSCHEMA_COLUMNS",
@@ -105,7 +111,7 @@ all_pbix_tables: [
 #  "TMSCHEMA_COLUMN_PARTITION_STORAGES",
 #  "TMSCHEMA_COLUMN_PERMISSIONS",
 #  "TMSCHEMA_COLUMN_STORAGES",
-#  {table: "TMSCHEMA_COLUMNS", idx: Column},
+  {table: "TMSCHEMA_COLUMNS", idx: ID},
 #  "TMSCHEMA_CULTURES",
 #  #"TMSCHEMA_DATA_COVERAGE_DEFINITIONS",
 #  {table: "TMSCHEMA_DATA_SOURCES", idx: Datasource},
@@ -118,12 +124,12 @@ all_pbix_tables: [
 #  "TMSCHEMA_FORMAT_STRING_DEFINITIONS",
 #  "TMSCHEMA_GENERAL_SEGMENT_MAP_SEGMENT_METADATA_STORAGES",
 #  "TMSCHEMA_GROUP_BY_COLUMNS",
-#  {table: "TMSCHEMA_HIERARCHIES", idx: Hierarchy},
+{table: "TMSCHEMA_HIERARCHIES", idx: ID},
 #  "TMSCHEMA_HIERARCHY_STORAGES",
 #  {table: "TMSCHEMA_KPIS", idx: KPI},
 #  "TMSCHEMA_LEVELS",
 #  "TMSCHEMA_LINGUISTIC_METADATA",
-  {table: "TMSCHEMA_MEASURES", idx: Name},
+  {table: "TMSCHEMA_MEASURES", idx: ID},
 #  "TMSCHEMA_MODEL",
 #  "TMSCHEMA_OBJECT_TRANSLATIONS",
 #  "TMSCHEMA_PARQUET_FILE_STORAGES",
@@ -140,9 +146,9 @@ all_pbix_tables: [
 #  "TMSCHEMA_RELATED_COLUMN_DETAILS",
 #  "TMSCHEMA_RELATIONSHIP_INDEX_STORAGES",
 #  "TMSCHEMA_RELATIONSHIP_STORAGES",
-  {table: "TMSCHEMA_RELATIONSHIPS", idx: Name},
+  {table: "TMSCHEMA_RELATIONSHIPS", idx: ID},
 #  "TMSCHEMA_ROLE_MEMBERSHIPS",
-  {table: "TMSCHEMA_ROLES", idx: Name},
+  {table: "TMSCHEMA_ROLES", idx: ID},
 #  "TMSCHEMA_SEGMENT_MAP_STORAGES",
 #  "TMSCHEMA_SEGMENT_STORAGES",
 #  "TMSCHEMA_SETS",
@@ -150,7 +156,7 @@ all_pbix_tables: [
 #  "TMSCHEMA_STORAGE_FOLDERS",
 #  "TMSCHEMA_TABLE_PERMISSIONS",
 #  "TMSCHEMA_TABLE_STORAGES",
-  {table: "TMSCHEMA_TABLES" , idx: Name},
+  {table: "TMSCHEMA_TABLES" , idx: ID},
 #  "TMSCHEMA_VARIATIONS"
   ]
 #all_pbix_tables_exceptions: [ DISCOVER_SCHEMA_ROWSETS ] 
