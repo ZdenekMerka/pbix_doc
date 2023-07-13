@@ -61,7 +61,7 @@ pbix_files = tools.get_all_pbix_files(pbix_folder)
 ###################
 # Open pbix files 
 for file in pbix_files:
-    tools.open_file_with_default_program(file)
+    tools.open_file_with_default_program1(file)
 
 ###################
 # get ssas folders

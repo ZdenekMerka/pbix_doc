@@ -123,6 +123,7 @@ class pbix_reader(reader.reader):
             sql = f'SELECT * FROM {pbix_table_prefix}.{tab}'
             #self.logger.info(sql)
             df_result = self.query(sql)
+            df_result = df_result.fillna('-NaN-')
             ret[tab] = tools.df2dictofdictsref(df_result,idx) 
             
             # write file 
@@ -205,3 +206,155 @@ class pbix_reader(reader.reader):
         return ret
 
 
+
+    def read_pbix(self, file):
+        with zipfile.ZipFile(file, "r") as zip_file:
+            ret = {}
+
+            # read file as bytestring
+            #ret['data_mashup'] = zip_file.read("DataMashup")
+            #ret['report'] = zip_file.read("Report")
+            #ret['diagram_state'] = zip_file.read("DiagramState")
+            #ret['data_model'] = (zip_file.read("DataModel")).decode('utf-8')
+            ret['metadata'] = json.loads((zip_file.read("Metadata")).decode('utf-16 le'))
+            #ret['security_bindings'] = (bytes(zip_file.read("SecurityBindings")))
+            
+            ret['version'] =  json.loads((zip_file.read("Version")).decode('utf-16 le'))
+            ret['layout'] = json.loads((zip_file.read("Report/Layout")).decode('utf-16 le'))
+            ret['setting'] = json.loads((zip_file.read("Settings")).decode('utf-16 le'))
+            ret['diagram_layout'] = json.loads((zip_file.read("DiagramLayout")).decode('utf-16 le'))
+
+            #pp(ret['data_model'].keys())
+            #pp(ret,width=5, depth=2, indent=4) 
+            pp(ret) 
+
+            # convert the JSON object to a string
+            #json_string = json.dumps(ret['layout'])
+
+            # print the JSON string
+            #print(json_string)
+
+            #for k in ret['layout'].keys():
+               #print(k) 
+
+
+            #settings = zip_file.read("Settings")
+            # decode to utf-8
+            #setting_text = setting.decode("utf-8")
+            # Vytisknout setting_text
+            #print(setting_text)
+            return ret 
+
+    def parse_visualizations(self, layout):
+        """
+        Parses JSON data and extracts information about each visualization section, including
+        the section name, the types of visualizations used, the entities used in each visualization,
+        and the names of selected items for each visualization.
+
+        Args:
+            json_data (str): JSON string to parse.
+
+        Returns:
+            dict: Dictionary where each key is the name of a visualization section, and the value is a
+            list of dictionaries representing the visualizations in that section. Each visualization dictionary
+            contains the following keys:
+            - "type": The type of visualization used.
+            - "entities": A list of entities used in the visualization.
+            - "selected_items": A list of selected items for the visualization (if applicable).
+        """
+        # Parse JSON data into a Python dictionary.
+
+        # Initialize a dictionary to hold the parsed visualizations.
+        visualizations = {}
+
+        # Iterate over each section in the data.
+        for section in layout["sections"]:
+            # Get the name of the section.
+            section_name = section["name"]
+
+            # Initialize a list to hold the visualizations in this section.
+            section_visualizations = []
+
+            # Iterate over each visual container in the section.
+            for container in section["visualContainers"]:
+                pp('XXXXXXXXXXXXXXXXXXXX')
+                pp(container['config'])
+                pp(type(container['config']))
+                visual = json.loads(container['config'])
+                try:
+                    # Get the visualization type.
+                    visual_type = visual["singleVisual"]["visualType"]
+
+                    # Get the entities used in the visualization.
+                    entities = []
+                    for entity in visual["singleVisual"]["prototypeQuery"]["From"]:
+                        entities.append(entity["Entity"])
+
+                    # Get the selected items (if applicable).
+                    selected_items = []
+                    for item in visual["singleVisual"]["prototypeQuery"]["Select"]:
+                        selected_items.append(item.get("Name", ""))
+
+                    # Add the parsed visualization to the list for this section.
+                    section_visualizations.append({
+                        "type": visual_type,
+                        "entities": entities,
+                        "selected_items": selected_items
+                    })
+                except KeyError:
+                    # Skip this container if there is no prototypeQuery (which contains the required data).
+                    continue
+
+            # Add the list of parsed visualizations to the dictionary for this section.
+            visualizations[section_name] = section_visualizations
+
+        return visualizations
+
+
+
+
+
+'''
+DataModel: Soubor, který obsahuje data a metadat modelu Power BI. Může být ve formátu MSMD (Multidimensional Expressions) nebo ABF (Analysis Services Backup File).
+Layout: Soubor XML, který definuje uspořádání a vizualizace reportu Power BI.
+Report: Soubor JSON, který obsahuje nastavení reportu Power BI.
+Settings: Soubor XML, který obsahuje informace o verzi a konfiguraci souboru PBIX.
+Connections: Složka, která obsahuje soubory XML pro každé datové připojení použité v reportu Power BI.
+# extract data to temporary directory
+    with tempfile.TemporaryDirectory() as tempdir:
+        with ZipFile(pbit_path, "r") as pbit:
+            for info in pbit.infolist():
+                if info.filename == "DataModelSchema":
+                    filepath = Path(tempdir, info.filename)
+                    pbit.extract(info, tempdir)
+                    # read data as utf-8
+                    with open(filepath, "r") as _fh:
+                        data = json.loads(bytes(_fh.read(), "utf-8"))
+                        if data:
+                            return data
+
+
+# https://www.biinsight.com/four-different-ways-to-find-your-power-bi-desktop-local-port-number/#more-5347
+# https://www.biinsight.com/connect-to-power-bi-desktop-model-from-excel-and-ssms/
+
+zm1@zm1:/mnt/c/Users/zm1/Microsoft/Power BI Desktop Store App/AnalysisServicesWorkspaces$ find | grep  msmdsrv.port.txt
+./AnalysisServicesWorkspace_835ed2bc-a8d8-4409-bdf4-6170420b1763/Data/msmdsrv.port.txt
+./AnalysisServicesWorkspace_cf5f3f66-7a36-47eb-91ab-4ee0dc9c1793/Data/msmdsrv.port.txt
+
+folder with pbix
+test folder with ssas
+run PBI Desktop
+connect to Localhost
+get metadata
+* table 
+* reports
+get data
+write md 
+https://www.youtube.com/watch?v=nV7CkMez018
+
+select * from $SYSTEM.DBSCHEMA_CATALOGS
+select * // Generated DAX Query
+EVALUATE 
+TOPN( 500, Customer )
+from $SYSTEM.TMSCHEMA_TABLES
+'''

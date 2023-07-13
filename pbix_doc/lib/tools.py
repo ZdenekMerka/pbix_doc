@@ -132,11 +132,32 @@ def open_file_with_default_program(file_path):
     Returns:
     None
     """
+    time_in_seconds = 60
     logger.info(f"Try to open file {file_path}")
     subprocess.run(['start', '', file_path], shell=True)
-    logger.info(f"Going to wait for 5 seconds.")
-    time.sleep(5)
+    logger.info(f"Going to wait for {time_in_seconds} seconds.")
+    time.sleep(time_in_seconds)
 
+def open_file_with_default_program1(file_path):
+    """
+    Open the file located at the specified path using the default program associated with its file type.
+
+    Args:
+    file_path (str): The path of the file to be opened.
+
+    Returns:
+    int: PID of the process started to open the file.
+    """
+    time_in_seconds = 60
+    absolute_path = os.path.abspath(file_path)
+    print(f"Trying to open file {absolute_path}")
+    
+    process = subprocess.Popen(['start', 'PBIDesktopStore.exe', absolute_path], shell=True)
+    pid = process.pid
+    print(f"Process with PID {pid} started to open the file.")
+    print(f"Waiting for {time_in_seconds} seconds...")
+    time.sleep(time_in_seconds)
+    return pid
 
 
 
@@ -341,6 +362,29 @@ def save_df_to_json(df, file_name, dir_name):
 
 ############################################################
 # function
+def save_to_json(data, file_name, dir_name ):
+    """
+    TBD geb by chat gpt
+
+    Parameters:
+
+    Returns:
+        None
+    """
+    # Create directory if it doesn't exist
+    if not os.path.exists(dir_name):
+        os.makedirs(dir_name)
+
+    # Open file for writing
+    file_path = os.path.join(dir_name, file_name)
+    with open(file_path, 'w') as file:
+        # Write dictionary to JSON file
+        json.dump(data, file, indent=4)
+
+    logger.info(f"Data saved to {file_path} successfully.")
+
+############################################################
+# function
 import pandas as pd
 
 def save_df_to_excel(df, file_name, dir_name):
@@ -368,7 +412,30 @@ def save_df_to_excel(df, file_name, dir_name):
 
     logger.info(f"Data saved to {file_path} successfully.")
 
+############################################################
+# dconvert_timestamps_to_string
+# ##############################
+from pandas import Timestamp
+def convert_timestamps_to_string(data):
+    """
+    Recursively traverses a data structure and converts any Timestamp objects to string representations.
 
+    Args:
+        data: The data structure (dictionary, list, or nested combination) to be processed.
+
+    Returns:
+        The processed data structure with Timestamp objects converted to string representations.
+
+    """
+    if isinstance(data, dict):
+        for key, value in data.items():
+            data[key] = convert_timestamps_to_string(value)
+    elif isinstance(data, list):
+        for i in range(len(data)):
+            data[i] = convert_timestamps_to_string(data[i])
+    elif isinstance(data, Timestamp):
+        data = data.isoformat()
+    return data
 
 
 ############################################################
@@ -468,3 +535,38 @@ def init_templ_env(template_dir):
     
     # Return the environment object.
     return env
+
+
+def get_pbix_filename_from_trc(file):
+    """
+    Extracts the name of the PBIX file from the FlightRecorderCurrent.trc file.
+    
+    Args:
+        file (str): The path to the FlightRecorderCurrent.trc file.
+    
+    Returns:
+        str: The name of the PBIX file, including its full path.
+    """
+    pbix_filename = ''
+    
+    logger.info(f"Try to find pbix file name in file {file}.")
+    # Open the TRC file in read mode with utf-16le encoding, ignoring decoding errors
+    with open(file, encoding='utf-16le', errors='ignore') as f:
+        # Read the contents of the file and store them in a list of lines
+        content = f.readlines()
+        
+        # Iterate over the lines in the file
+        for line in content:
+            # Check if the line contains the 'ddl700_700:PackagePath' string
+            if 'ddl700_700:PackagePath' in line:
+                # Use regular expressions to extract the value between the <ddl700_700:PackagePath> tags
+                match = re.search(r'<ddl700_700:PackagePath>(.*?)</ddl700_700:PackagePath>', line)
+                
+                # If a match is found, set the pbix_filename variable to the extracted value
+                if match:
+                    pbix_filename = match.group(1)
+    
+    logger.info(f"Pbix path is {pbix_filename}.")
+    
+    # Return the name of the PBIX file
+    return pbix_filename

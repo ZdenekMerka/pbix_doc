@@ -1,7 +1,10 @@
 project_name: "PBIX Documentation"
 project_description: "PBIX Documentation project description."
+powerbi_desktop_command: "PBIDesktopStore.exe"
 connection_file: 'conf\connections.yaml'
 template_folder: 'conf\templates' 
+trc_file_rel_path: 'Data\FlightRecorderCurrent.trc'
+trc_back_file_rel_path: 'Data\FlightRecorderBack.trc'
 local_ssas_folder: "%USERPROFILE%\\Microsoft\\Power BI Desktop Store App\\AnalysisServicesWorkspaces"
 #adomd_path: 'C:\\Program Files (x86)\\Microsoft SQL Server Management Studio 18\\Common7\\IDE'
 adomd_path: 'C:\\prog\\python\\Quill\\quill\\lib'
