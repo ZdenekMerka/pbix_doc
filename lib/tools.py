@@ -356,7 +356,7 @@ def save_df_to_json(df, file_name, dir_name):
     file_path = os.path.join(dir_name, file_name)
     with open(file_path, 'w') as file:
         # Write dictionary to JSON file
-        json.dump(data_dict, file)
+        json.dump(data_dict, file, indent=4)
 
     logger.info(f"Data saved to {file_path} successfully.")
 
