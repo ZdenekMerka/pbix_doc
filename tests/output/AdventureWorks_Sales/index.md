@@ -1,18 +1,12 @@
 ----
 
- [Home](../../../../.md) > [](../../../.md) >  viewsFILETYPE  >
+ [Home](../home.md) > [index.md](index.md) >  viewsFILETYPE  >
 
 ----
-
- views
-
-
 [[_TOC_]]
 
 
 
-
-Ano
 
 
 
