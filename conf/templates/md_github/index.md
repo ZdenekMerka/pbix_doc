@@ -60,11 +60,11 @@ graph TD;
     C-->D;
 ```
 
-# Business object
+# Business objects
 {% if tables %}
 | ID| MODEL_ID | NAME | DATA_CATEGORY  | DESCRIPTION | IS_HIDDEN | TABLE_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | SYSTEM_FLAGS |
 |--------------|-------------|-------------|---------------------:|-----------------:|--------------:|----------------:|---------------:|---------------:|---------------:| 
-{% for i  in tables -%}
+{% for i  in tables if not i.IsHidden -%}
 | {{ i.ID }} | {{ i.ModelID}} | {{ i.Name}} | {{ i.DataCategory }} | {{i.Description}} | {{i.IsHidden}} | {{i.TableStorageID}} | {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |  {{i.SystemFlags}} | 
 {% endfor -%}
 
@@ -86,14 +86,20 @@ SystemManaged
 
 
 <details>
-<summary>Calculated</summary>
+<summary>All business object</summary>
+| ID| MODEL_ID | NAME | DATA_CATEGORY  | DESCRIPTION | IS_HIDDEN | TABLE_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | SYSTEM_FLAGS | SHOWASVARIATIONSONLY | ISPRIVATE | DEFAULTDETAILROWSDEFINITIONID | ALTERNATESOURCEPRECEDENCE | REFRESHPOLICYID | CALCULATIONGROUPID | EXCLUDEFROMMODELREFRESH | LINEAGETAG | SOURCELINEAGETAG | SYSTEMMANAGED |
+|--------------|-------------|-------------|---------------------:|-----------------:|--------------:|----------------:|---------------:|---------------:|---------------:| -------------------- | --------- | ----------------------------- | ------------------------- | --------------- | ------------------ | ----------------------- | ---------- | ---------------- | ------------- |
+{% for i  in tables -%}
+| {{ i.ID }} | {{ i.ModelID}} | {{ i.Name}} | {{ i.DataCategory }} | {{i.Description}} | {{i.IsHidden}} | {{i.TableStorageID}} | {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |  {{i.SystemFlags}} | {{i.ShowAsVariationsOnly}} | {{i.IsPrivate}} | {{i.DefaultDetailRowsDefinitionID}} | {{i.AlternateSourcePrecedence}} | {{i.RefreshPolicyID}} | {{i.CalculationGroupID}} | {{i.ExcludeFromModelRefresh}} | {{i.LineageTag}} | {{i.SourceLineageTag}} | {{i.SystemManaged}} |
+{% endfor -%}
 
 
 </details>
 {% else %}
-There are no model information or we have insufficient permissions.
+There are no business objects information or we have insufficient permissions.
 {% endif %}
-# Model commpm common
+
+# Model commpm 
 
 
 
