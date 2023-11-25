@@ -73,11 +73,9 @@ graph TD;
 
 
 
-
-
-
 <details>
 <summary>All business object</summary>
+
 | ID| MODEL_ID | NAME | DATA_CATEGORY  | DESCRIPTION | IS_HIDDEN | TABLE_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | SYSTEM_FLAGS | SHOWASVARIATIONSONLY | ISPRIVATE | DEFAULTDETAILROWSDEFINITIONID | ALTERNATESOURCEPRECEDENCE | REFRESHPOLICYID | CALCULATIONGROUPID | EXCLUDEFROMMODELREFRESH | LINEAGETAG | SOURCELINEAGETAG | SYSTEMMANAGED |
 |--------------|-------------|-------------|---------------------:|-----------------:|--------------:|----------------:|---------------:|---------------:|---------------:| -------------------- | --------- | ----------------------------- | ------------------------- | --------------- | ------------------ | ----------------------- | ---------- | ---------------- | ------------- |
 | 12 | 1 | Customer | -NaN- | -NaN- | False | 57 | 2022-09-22T22:59:56 |  2020-12-16T22:06:01 |  0 | False | False | -NaN- | 0 | -NaN- | -NaN- | False | 6ad82955-bd52-4e34-aa55-b462771c2fb9 | -NaN- | False |
@@ -120,5 +118,5 @@ There are no views in database or we have insufficient permissions.
 
 ----
 <p align="center">
-Generated at 26.11.2023 00:35:51 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: ded508a
+Generated at 26.11.2023 00:38:51 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 57b9a73
 </p>

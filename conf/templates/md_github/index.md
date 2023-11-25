@@ -82,11 +82,9 @@ SystemManaged
 #}
 
 
-
-
-
 <details>
 <summary>All business object</summary>
+
 | ID| MODEL_ID | NAME | DATA_CATEGORY  | DESCRIPTION | IS_HIDDEN | TABLE_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | SYSTEM_FLAGS | SHOWASVARIATIONSONLY | ISPRIVATE | DEFAULTDETAILROWSDEFINITIONID | ALTERNATESOURCEPRECEDENCE | REFRESHPOLICYID | CALCULATIONGROUPID | EXCLUDEFROMMODELREFRESH | LINEAGETAG | SOURCELINEAGETAG | SYSTEMMANAGED |
 |--------------|-------------|-------------|---------------------:|-----------------:|--------------:|----------------:|---------------:|---------------:|---------------:| -------------------- | --------- | ----------------------------- | ------------------------- | --------------- | ------------------ | ----------------------- | ---------- | ---------------- | ------------- |
 {% for i  in tables -%}
