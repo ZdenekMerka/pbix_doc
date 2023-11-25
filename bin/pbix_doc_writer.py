@@ -60,6 +60,7 @@ for json_key in jsons.keys():
         pp(writer.templates)
         pp(writer.init_templates())
         content = writer.render_index()
+        print(content)
         tools.write_file(
             filename = '{dir}/{filename}.{ext}'.format(
                 dir = args.out_dir,

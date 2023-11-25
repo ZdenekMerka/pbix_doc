@@ -56,22 +56,12 @@ class pbix_writer2(writer.writer):
 
     def render_index(self):
         
-        # get data from catalog 
-        #pp(self.metadata['TMSCHEMA_MEASURES'])
-        
         ret =self.tmpl['index'].render(
             properties =  self.pbix_data["ssas_md"]["DBSCHEMA_CATALOGS"][self.pbix_data['info']['catalog']],
             git_version = self.git_version,
             port = self.pbix_data['info']['port'],
             full_filename = self.pbix_data['info']['pbix_full_path'],
-            index = 'INDEX',
-            header = 'HEADER',
-            TOC = 'TOC',
-            file_type = 'FILETYPE',
-            content = 'CONTENT',
-            views = 'VIEW',
-            footer = 'FOOTER',
-            #measures = self.metadata['TMSCHEMA_COLUMNS'].values(),
+            tables = self.pbix_data["ssas_md"]['TMSCHEMA_TABLES'].values(),
             )
         return ret
 

@@ -60,11 +60,32 @@ graph TD;
 
 # Business object
 
+| ID| MODEL_ID | NAME | DATA_CATEGORY  | DESCRIPTION | IS_HIDDEN | TABLE_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | SYSTEM_FLAGS |
+|--------------|-------------|-------------|---------------------:|-----------------:|--------------:|----------------:|---------------:|---------------:|---------------:| 
+| 12 | 1 | Customer | -NaN- | -NaN- | False | 57 | 2022-09-22T22:59:56 |  2020-12-16T22:06:01 |  0 | 
+| 15 | 1 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 | -NaN- | -NaN- | True | 59 | 2022-09-22T22:59:56 |  2020-12-16T21:46:12 |  2 | 
+| 183 | 1 | Date | -NaN- | -NaN- | False | 383 | 2022-09-22T22:59:56 |  2020-12-16T22:07:07 |  0 | 
+| 186 | 1 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 | -NaN- | -NaN- | True | 385 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2 | 
+| 189 | 1 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 | -NaN- | -NaN- | True | 387 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2 | 
+| 192 | 1 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 | -NaN- | -NaN- | True | 389 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2 | 
+| 572 | 1 | Product | -NaN- | -NaN- | False | 635 | 2022-09-22T22:59:56 |  2020-12-16T23:04:32 |  0 | 
+| 690 | 1 | Reseller | -NaN- | -NaN- | False | 755 | 2022-09-22T22:59:56 |  2020-12-16T22:09:20 |  0 | 
+| 805 | 1 | Sales | -NaN- | -NaN- | False | 895 | 2022-09-22T22:59:56 |  2020-12-16T22:02:59 |  0 | 
+| 980 | 1 | Sales Order | -NaN- | -NaN- | False | 1048 | 2022-09-22T22:59:56 |  2020-12-16T22:09:47 |  0 | 
+| 1078 | 1 | Sales Territory | -NaN- | -NaN- | False | 1112 | 2022-09-22T22:59:56 |  2020-12-16T22:10:09 |  0 | 
+| 3642 | 1 | Table | -NaN- | -NaN- | False | 3654 | 2022-09-22T22:59:56 |  2020-12-16T23:04:03 |  0 | 
+
+
+
+
+
+
 <details>
 <summary>Calculated</summary>
 
 
 </details>
+
 # Model commpm common
 
 
@@ -83,12 +104,12 @@ graph TD;
 
 
 
-Ano
+There are no views in database or we have insufficient permissions.
 
 
 ----
 
 ----
 <p align="center">
-Generated at 25.11.2023 23:50:08 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 8d7c50d
+Generated at 26.11.2023 00:02:31 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 8c8f3ed
 </p>
