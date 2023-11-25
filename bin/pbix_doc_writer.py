@@ -42,6 +42,8 @@ start_time = datetime.now()
 parser = argparse.ArgumentParser(description='Render metadata and data info obtained from pbix_doc_extractor write them into requested format.')
 parser.add_argument('--files', type=str, nargs='+', required=True,  help='List of files to process')
 parser.add_argument('--format', type=str, required=False, default='md', help="Requested output format")
+parser.add_argument('--out_dir', type=str, required=False, default='./output', help="Output dir (default ./output).")
+
 
 args = parser.parse_args()
 
@@ -57,8 +59,16 @@ for json_key in jsons.keys():
         writer = w.pbix_writer2(jsons[json_key][file_name_key],  args.format)
         pp(writer.templates)
         pp(writer.init_templates())
-        writer.render_index()
-        
+        content = writer.render_index()
+        tools.write_file(
+            filename = '{dir}/{filename}.{ext}'.format(
+                dir = args.out_dir,
+                filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']),
+                ext = 'md'),         
+            content = content  
+        )
+
+
 
 #    #writer.render_property()
 #    #writer.render_tables()
@@ -67,3 +77,5 @@ for json_key in jsons.keys():
 #    #writer.render_hierarchies()
 #    writer.render_relationships()
 #    #writer.write_metadata()
+# file name with extension
+file_name = os.path.basename('/root/file.ext')

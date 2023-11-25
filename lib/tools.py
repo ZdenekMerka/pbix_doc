@@ -25,6 +25,18 @@ def read_jsons(filenames):
         with open(filename, "r") as file:
             ret[filename] = json.load(file)
     return ret
+
+####################
+# Write file  
+def write_file(filename, content, **kwargs) : 
+    file = open(filename, mode="w", encoding="utf-8")
+    ret = file.write(content)
+    print(f"... wrote {filename}")
+    file.close()
+    return ret
+
+
+
 ############################################################
 # function
 def setup_root_logger(log_file):

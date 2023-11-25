@@ -15,10 +15,10 @@ import lib.tools as tools
 
 class pbix_writer2(writer.writer):
 
-    def __init__(self, pbix_info, output_type ):
+    def __init__(self, pbix_data, output_type ):
         # Configuration to variables
         self.output_type = output_type
-        self.pbix_info = pbix_info
+        self.pbix_data = pbix_data
         self.template_dir = './conf/templates/' + self.output_type
         self.tmpl = dict()
         self.templates = {
@@ -59,7 +59,11 @@ class pbix_writer2(writer.writer):
         # get data from catalog 
         #pp(self.metadata['TMSCHEMA_MEASURES'])
         
-        print(self.tmpl['index'].render(
+        ret =self.tmpl['index'].render(
+            properties =  self.pbix_data["ssas_md"]["DBSCHEMA_CATALOGS"][self.pbix_data['info']['catalog']],
+            git_version = self.git_version,
+            port = self.pbix_data['info']['port'],
+            full_filename = self.pbix_data['info']['pbix_full_path'],
             index = 'INDEX',
             header = 'HEADER',
             TOC = 'TOC',
@@ -68,7 +72,8 @@ class pbix_writer2(writer.writer):
             views = 'VIEW',
             footer = 'FOOTER',
             #measures = self.metadata['TMSCHEMA_COLUMNS'].values(),
-            ))
+            )
+        return ret
 
 
 

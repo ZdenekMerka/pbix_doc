@@ -1,0 +1,92 @@
+----
+
+ [Home](../home.md) > [AdventureWorks_Sales](index.md)
+
+----
+[[_TOC_]]
+
+# Information
+
+Documentation for file **AdventureWorks_Sales.pbix**.
+
+# Model information
+
+
+| Param  | Value  |
+|---|---|
+| **Catalog name** | `418255b2-96be-4dcd-9ddd-0a2ecea747a0` | 
+| **Port** | `61006`|
+| **Description** | `-NaN-` | 
+| **Date modified** | `2023-11-22T21:37:51` | 
+| **Compatibility level** | `1567` | 
+
+
+<details>
+<summary>Detail information</summary>
+
+| Param  | Value  |
+|---|---|
+| **Catalog name** | `418255b2-96be-4dcd-9ddd-0a2ecea747a0` | 
+| **Port** | `61006` |
+| **Full filename** | `C:\prog\python\pbix_doc\tests\input\AdventureWorks_Sales.pbix` |
+| **Description** | `-NaN-` | 
+| **Roles** | `*,ActAsUsers` | 
+| **Date modified** | `2023-11-22T21:37:51` | 
+| **Compatibility level** | `1567` | 
+| **Type** | `3` | 
+| **Version** | `4` | 
+| **Database id** | `418255b2-96be-4dcd-9ddd-0a2ecea747a0` | 
+| **Database guid** | `-NaN-` | 
+| **Date queried** | `2023-11-22T21:38:05` | 
+| **Currently used** | `True` | 
+| **Popularity** | `176.0` | 
+| **Weightedpopularity** | `84.16666666666667` | 
+| **Clientcacherefreshpolicy** | `4294967295` | 
+| **Encryption level** | `Analysis Services 2019` | 
+
+</details>
+
+
+
+# Model relationships
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+# Business object
+
+<details>
+<summary>Calculated</summary>
+
+
+</details>
+# Model commpm common
+
+
+
+
+
+
+- analytics object [Customer](./SSAS__ssas_azure/analytics_object_Customer.md)
+- analytics object [Date](./SSAS__ssas_azure/analytics_object_Date.md)
+- analytics object [Geography](./SSAS__ssas_azure/analytics_object_Geography.md)
+- analytics object [Product](./SSAS__ssas_azure/analytics_object_Product.md)
+- analytics object [ProductCategory](./SSAS__ssas_azure/analytics_object_ProductCategory.md)
+- analytics object [ProductSubcategory](./SSAS__ssas_azure/analytics_object_ProductSubcategory.md)
+- analytics object [InternetSales](./SSAS__ssas_azure/analytics_object_InternetSales.md)
+
+
+
+
+Ano
+
+
+----
+
+----
+<p style="text-align:center"> Generated at 25.11.2023 23:42:49 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: a10f392</p>
