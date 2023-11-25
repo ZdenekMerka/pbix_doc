@@ -60,21 +60,21 @@ graph TD;
 
 # Business objects
 
-| ID| MODEL_ID | NAME | DATA_CATEGORY  | DESCRIPTION | IS_HIDDEN | TABLE_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | SYSTEM_FLAGS |
-|--------------|-------------|-------------|---------------------:|-----------------:|--------------:|----------------:|---------------:|---------------:|---------------:| 
-| 12 | 1 | Customer | -NaN- | -NaN- | False | 57 | 2022-09-22T22:59:56 |  2020-12-16T22:06:01 |  0 | 
-| 183 | 1 | Date | -NaN- | -NaN- | False | 383 | 2022-09-22T22:59:56 |  2020-12-16T22:07:07 |  0 | 
-| 572 | 1 | Product | -NaN- | -NaN- | False | 635 | 2022-09-22T22:59:56 |  2020-12-16T23:04:32 |  0 | 
-| 690 | 1 | Reseller | -NaN- | -NaN- | False | 755 | 2022-09-22T22:59:56 |  2020-12-16T22:09:20 |  0 | 
-| 805 | 1 | Sales | -NaN- | -NaN- | False | 895 | 2022-09-22T22:59:56 |  2020-12-16T22:02:59 |  0 | 
-| 980 | 1 | Sales Order | -NaN- | -NaN- | False | 1048 | 2022-09-22T22:59:56 |  2020-12-16T22:09:47 |  0 | 
-| 1078 | 1 | Sales Territory | -NaN- | -NaN- | False | 1112 | 2022-09-22T22:59:56 |  2020-12-16T22:10:09 |  0 | 
-| 3642 | 1 | Table | -NaN- | -NaN- | False | 3654 | 2022-09-22T22:59:56 |  2020-12-16T23:04:03 |  0 | 
+| ID| NAME | DESCRIPTION | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME |
+|---|-------------|-----------------:|---------------: |---------------:|
+| 12 | Customer | -NaN- | 2022-09-22T22:59:56 |  2020-12-16T22:06:01 |
+| 183 | Date | -NaN- | 2022-09-22T22:59:56 |  2020-12-16T22:07:07 |
+| 572 | Product | -NaN- | 2022-09-22T22:59:56 |  2020-12-16T23:04:32 |
+| 690 | Reseller | -NaN- | 2022-09-22T22:59:56 |  2020-12-16T22:09:20 |
+| 805 | Sales | -NaN- | 2022-09-22T22:59:56 |  2020-12-16T22:02:59 |
+| 980 | Sales Order | -NaN- | 2022-09-22T22:59:56 |  2020-12-16T22:09:47 |
+| 1078 | Sales Territory | -NaN- | 2022-09-22T22:59:56 |  2020-12-16T22:10:09 |
+| 3642 | Table | -NaN- | 2022-09-22T22:59:56 |  2020-12-16T23:04:03 |
 
 
 
 <details>
-<summary>All business object</summary>
+<summary>All business objects information</summary>
 
 | ID| MODEL_ID | NAME | DATA_CATEGORY  | DESCRIPTION | IS_HIDDEN | TABLE_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | SYSTEM_FLAGS | SHOWASVARIATIONSONLY | ISPRIVATE | DEFAULTDETAILROWSDEFINITIONID | ALTERNATESOURCEPRECEDENCE | REFRESHPOLICYID | CALCULATIONGROUPID | EXCLUDEFROMMODELREFRESH | LINEAGETAG | SOURCELINEAGETAG | SYSTEMMANAGED |
 |--------------|-------------|-------------|---------------------:|-----------------:|--------------:|----------------:|---------------:|---------------:|---------------:| -------------------- | --------- | ----------------------------- | ------------------------- | --------------- | ------------------ | ----------------------- | ---------- | ---------------- | ------------- |
@@ -118,5 +118,5 @@ There are no views in database or we have insufficient permissions.
 
 ----
 <p align="center">
-Generated at 26.11.2023 00:38:51 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 57b9a73
+Generated at 26.11.2023 00:45:57 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: efa18d9
 </p>

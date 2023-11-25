@@ -62,10 +62,10 @@ graph TD;
 
 # Business objects
 {% if tables %}
-| ID| MODEL_ID | NAME | DATA_CATEGORY  | DESCRIPTION | IS_HIDDEN | TABLE_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | SYSTEM_FLAGS |
-|--------------|-------------|-------------|---------------------:|-----------------:|--------------:|----------------:|---------------:|---------------:|---------------:| 
+| ID| NAME | DESCRIPTION | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME |
+|---|-------------|-----------------:|---------------: |---------------:|
 {% for i  in tables if not i.IsHidden -%}
-| {{ i.ID }} | {{ i.ModelID}} | {{ i.Name}} | {{ i.DataCategory }} | {{i.Description}} | {{i.IsHidden}} | {{i.TableStorageID}} | {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |  {{i.SystemFlags}} | 
+| {{ i.ID }} | {{ i.Name}} | {{i.Description}} | {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |
 {% endfor -%}
 
 {# another possible params
@@ -83,7 +83,7 @@ SystemManaged
 
 
 <details>
-<summary>All business object</summary>
+<summary>All business objects information</summary>
 
 | ID| MODEL_ID | NAME | DATA_CATEGORY  | DESCRIPTION | IS_HIDDEN | TABLE_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | SYSTEM_FLAGS | SHOWASVARIATIONSONLY | ISPRIVATE | DEFAULTDETAILROWSDEFINITIONID | ALTERNATESOURCEPRECEDENCE | REFRESHPOLICYID | CALCULATIONGROUPID | EXCLUDEFROMMODELREFRESH | LINEAGETAG | SOURCELINEAGETAG | SYSTEMMANAGED |
 |--------------|-------------|-------------|---------------------:|-----------------:|--------------:|----------------:|---------------:|---------------:|---------------:| -------------------- | --------- | ----------------------------- | ------------------------- | --------------- | ------------------ | ----------------------- | ---------- | ---------------- | ------------- |
