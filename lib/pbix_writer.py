@@ -11,6 +11,68 @@ from jinja2 import Environment, FileSystemLoader
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..'))
 import lib.writer as writer
 import lib.tools as tools
+
+
+class pbix_writer2(writer.writer):
+
+    def __init__(self, pbix_info, output_type ):
+        # Configuration to variables
+        self.output_type = output_type
+        self.pbix_info = pbix_info
+        self.template_dir = './conf/templates/' + self.output_type
+        self.tmpl = dict()
+        self.templates = {
+            'properties': 'properties.md',
+            'tables': 'tables.md',
+            'columns':       'columns.md',
+            'relationships': 'relationships.md',
+            'measures':      'measures.md',
+            'hierarchies':   'hierarchies.md',
+            'footer':        'footer.md',
+            'index':        'index.md',
+            #'breadcrumb':    'breadcrumb.md'
+        }
+
+        #self.metadata = metadata
+        #self.data = data 
+        self.tmpl = dict()
+        self.git_version = tools.get_short_git_hash()
+        self.logger = logging.getLogger(__name__)
+    
+    def write_metadata(self):
+        pp(self.metadata)
+
+    def init_templates(self):
+        # init env 
+        self.env = tools.init_templ_env(self.template_dir)
+        
+        # load all templates from conf 
+        for tmpl in self.templates.keys():
+            pp(tmpl)
+            self.tmpl[tmpl] = self.env.get_template(self.templates[tmpl])
+        
+        return  self.tmpl
+
+
+    def render_index(self):
+        
+        # get data from catalog 
+        #pp(self.metadata['TMSCHEMA_MEASURES'])
+        
+        print(self.tmpl['index'].render(
+            index = 'INDEX',
+            header = 'HEADER',
+            TOC = 'TOC',
+            file_type = 'FILETYPE',
+            content = 'CONTENT',
+            views = 'VIEW',
+            footer = 'FOOTER',
+            #measures = self.metadata['TMSCHEMA_COLUMNS'].values(),
+            ))
+
+
+
+
 class pbix_writer(writer.writer):
 
     def __init__(self, metadata, data, output_conf ):

@@ -6,6 +6,27 @@ import re
 
 ############################################################
 # function
+def read_jsons(filenames):
+    """
+    Reads all JSON files from the list `filenames` and returns them in
+    a key/value structure, where the key is the file name and the value is its
+    content.
+
+    Args:
+        filenames: List of JSON file names.
+
+    Returns:
+        Key/value structure, where the key is the file name and the value is its
+        content.
+    """
+
+    ret = {}
+    for filename in filenames:
+        with open(filename, "r") as file:
+            ret[filename] = json.load(file)
+    return ret
+############################################################
+# function
 def setup_root_logger(log_file):
     """
     Set up a root logger that logs messages to both a file and the console.
