@@ -45,7 +45,13 @@ Documentation for file **AdventureWorks_Sales.pbix**.
 
 </details>
 
-
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
 
 
 
