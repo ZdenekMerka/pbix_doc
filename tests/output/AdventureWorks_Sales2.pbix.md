@@ -89,4 +89,6 @@ Ano
 ----
 
 ----
-<p style="text-align:center"> Generated at 25.11.2023 23:42:49 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: a10f392</p>
+<p align="center">
+Generated at 25.11.2023 23:50:09 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 8d7c50d
+</p>
