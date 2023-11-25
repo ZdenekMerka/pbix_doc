@@ -22,7 +22,8 @@ Documentation for file **AdventureWorks_Sales.pbix**.
 
 <details>
 <summary>Detail information</summary>
-| Param  | Value  |
+
+ | Param  | Value  |
 |---|---|
 | Catalog_name | 418255b2-96be-4dcd-9ddd-0a2ecea747a0 |
 | Port | 61006 |
