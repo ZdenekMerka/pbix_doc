@@ -13,11 +13,11 @@ Documentation for file **AdventureWorks_Sales.pbix**.
 
 | Param  | Value  |
 |---|---|
-| **CATALOG_NAME** | 418255b2-96be-4dcd-9ddd-0a2ecea747a0|
-| **PORT** | 61006|
-| **DESCRIPTION** | -NaN-|
-| **DATE_MODIFIED** | 2023-11-22T21:37:51|
-| **COMPATIBILITY_LEVEL** | 1567|
+| **CATALOG_NAME** | `418255b2-96be-4dcd-9ddd-0a2ecea747a0` |
+| **PORT** | `61006`|
+| **DESCRIPTION** | `-NaN-`|
+| **DATE_MODIFIED** | `2023-11-22T21:37:51`|
+| **COMPATIBILITY_LEVEL** | `1567`|
 
 
 <details>
