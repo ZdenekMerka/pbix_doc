@@ -45,6 +45,11 @@ Documentation for file **AdventureWorks_Sales.pbix**.
 
 </details>
 
+
+
+# Other
+Here is a simple flow chart:
+
 ```mermaid
 graph TD;
     A-->B;
@@ -52,11 +57,6 @@ graph TD;
     B-->D;
     C-->D;
 ```
-
-
-
-# Other
-
 - analytics object [Customer](./SSAS__ssas_azure/analytics_object_Customer.md)
 - analytics object [Date](./SSAS__ssas_azure/analytics_object_Date.md)
 - analytics object [Geography](./SSAS__ssas_azure/analytics_object_Geography.md)
