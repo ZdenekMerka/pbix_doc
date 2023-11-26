@@ -53,7 +53,7 @@ There are no relationships information or we have insufficient permissions.
 # Business objects
 {% if tables %}
 | ID | NAME | DESCRIPTION | 
-|----|------|-------------|-
+|----|------|-------------|
 {% for i  in tables if not i.IsHidden -%}
 | {{ i.ID }} | {{ i.Name}} | {{i.Description}} |
 {% endfor -%}
@@ -110,16 +110,14 @@ There are no hierarchies information or we have insufficient permissions.
 # Columns 
 
 {% if columns %}
-| ID | TABLE | EXPLICIT_NAME | SOURCE_COLUMN | COLUMN_ORIGIN_ID | DATA_CATEGORY | DESCRIPTION | IS_HIDDEN | STATE | IS_UNIQUE | TYPE | EXPRESSION |
-|----|----------|---------------|---------------|------------------|---------------|-------------|-----------|-------|-----------|------|------------|
-{% for i  in columns -%}
-| {{i.ID}} | {{str_slicer(tables_idx[str(i.TableID)]['Name'])}} | {{str_slicer(i.ExplicitName)}} | {{i.SourceColumn}} | {{i.ColumnOriginID}} | {{i.DataCategory}} | {{i.Description}} | {{i.IsHidden}} | {{i.State}} | {{i.IsUnique}} | {{i.Type}} | {{i.Expression}} |
+| ID | TABLE | EXPLICIT_NAME | DESCRIPTION | IS_HIDDEN | EXPRESSION |
+|----|-------|---------------|-------------|-----------|------------|
+{% for i  in columns if not i.IsHidden -%}
+| {{i.ID}} | {{str_slicer(tables_idx[str(i.TableID)]['Name'])}} | {{str_slicer(i.ExplicitName)}} | {{i.Description}} | {{i.IsHidden}} | {{i.Expression}} |
 {% endfor -%}
 
 {% else %}
 There are no columns information or we have insufficient permissions.
 {% endif %}
 
-
-----
 {% include "footer.md" %}
