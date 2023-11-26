@@ -65,6 +65,7 @@ class pbix_writer2(writer.writer):
             columns  = self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS'].values(),
             measures =      self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS'].values(),
             relationships = self.pbix_data['ssas_md']['TMSCHEMA_RELATIONSHIPS'].values(),
+            hierarchies =   self.pbix_data['ssas_md']['TMSCHEMA_HIERARCHIES'].values(),
 
             )
         return ret

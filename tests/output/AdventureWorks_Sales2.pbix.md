@@ -324,10 +324,33 @@ graph TD;
 
 
 
+# Hierarchies 
+
+
+
+| ID| TABLE_ID | NAME | DESCRIPTION  | IS_HIDDEN | STATE | HIERARCHY_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | REFRESHED_TIME | DISPLAY_FOLDER |
+|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| 3356 | [12](./table_12) | Geography | -NaN- | False | 1 | 3398 | 2022-09-22T22:59:56 |  2020-12-16T22:06:47 |  2020-12-16T22:07:32 | 
+| 27 | [15](./table_15) | Date Hierarchy | -NaN- | False | 1 | 112 | 2022-09-22T22:59:56 |  2020-12-16T21:46:12 |  2020-12-16T21:46:16 | 
+| 3399 | [183](./table_183) | Fiscal | -NaN- | False | 1 | 3405 | 2022-09-22T22:59:56 |  2020-12-16T22:07:26 |  2020-12-16T22:07:32 | 
+| 230 | [186](./table_186) | Date Hierarchy | -NaN- | False | 1 | 569 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2020-12-16T21:46:22 | 
+| 231 | [189](./table_189) | Date Hierarchy | -NaN- | False | 1 | 570 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2020-12-16T21:46:22 | 
+| 232 | [192](./table_192) | Date Hierarchy | -NaN- | False | 1 | 571 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2020-12-16T21:46:22 | 
+| 3476 | [572](./table_572) | Products | -NaN- | False | 1 | 3482 | 2022-09-22T22:59:56 |  2020-12-16T22:08:50 |  2020-12-16T23:04:54 | 
+| 3518 | [690](./table_690) | Geography | -NaN- | False | 1 | 3525 | 2022-09-22T22:59:56 |  2020-12-16T22:09:31 |  2020-12-16T22:09:37 | 
+| 3561 | [980](./table_980) | Sales Orders | -NaN- | False | 1 | 3565 | 2022-09-22T22:59:56 |  2020-12-16T22:09:51 |  2020-12-16T22:10:03 | 
+| 3601 | [1078](./table_1078) | Sales Territories | -NaN- | False | 1 | 3606 | 2022-09-22T22:59:56 |  2020-12-16T22:10:16 |  2020-12-16T22:10:23 | 
+
+
+
+
+
+
+
 
 ----
 
 ----
 <p align="center">
-Generated at 26.11.2023 01:07:55 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 4232a28
+Generated at 26.11.2023 01:17:39 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 10ded23
 </p>
