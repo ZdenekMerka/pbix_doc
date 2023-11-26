@@ -27,10 +27,10 @@ Documentation for file **AdventureWorks_Sales.pbix**.
 
 ```mermaid
 graph TD;
-    A-->B;
+    A--B;
     A-->C;
-    B-->D;
-    C-->D;
+    B<-->D;
+    C<--D;
 ```
 
 [Up](#)
@@ -303,5 +303,5 @@ graph TD;
 
 ----
 <p align="center">
-Generated at 26.11.2023 18:52:46 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 6e70e09
+Generated at 26.11.2023 18:57:45 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 21c1f3a
 </p>
