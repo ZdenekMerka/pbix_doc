@@ -603,3 +603,12 @@ def get_pbix_filename_from_trc(file):
     
     # Return the name of the PBIX file
     return pbix_filename
+
+##############################
+# cat long string and add this lenght at end
+def str_slicer(text, num=20):
+    if len(text) > num:
+        ret = "%s..(%s)" % (text[:num],len(text))  
+    else:
+        ret = text
+    return ret

@@ -50,6 +50,7 @@ class pbix_writer2(writer.writer):
 
             )
         self.env.globals['str'] = str
+        self.env.globals['str_slicer'] = tools.str_slicer
 
         # load all templates from conf 
         for tmpl in self.templates.keys():
