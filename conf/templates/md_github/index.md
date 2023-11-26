@@ -1,6 +1,6 @@
 ----
 
-[Home](../home.md) > [filename](index.md)
+[Home](../home.md) > [{{filename}}](index.md)
 
 [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
@@ -26,14 +26,28 @@ There are no model information or we have insufficient permissions.
 {% endif %}
 [Up](#)
 # Model relationships
-
+{% if relationships %}
 ```mermaid
-graph TD;
-    A--B;
-    A-->C;
-    B<-->D;
-    C<--D;
+graph LR;
+
+{% for i  in relationships -%}
+{%- if i.IsActive -%} id{{i.ToTableID}}(["{{tables_idx[str(i.ToTableID)]['Name']}}[{{columns_idx[str(i.ToColumnID)]['ExplicitName']}}]"]) --> id{{i.FromTableID}}(["{{tables_idx[str(i.FromTableID)]['Name']}}[{{columns_idx[str(i.FromColumnID)]['ExplicitName']}}]"])
+{% endif -%}
+{#
+# {{ i.IsActive }} 
+# {{tables_idx[str(i.FromTableID)]['Name']}}[{{columns_idx[str(i.FromColumnID)]['ExplicitName']}}] 
+# {{columns_idx[str(i.FromColumnID)]['ExplicitName']}} 
+# {{i.FromCardinality}} 
+# {{tables_idx[str(i.ToTableID)]['Name']}}[{{columns_idx[str(i.ToColumnID)]['ExplicitName']}}] 
+# {{columns_idx[str(i.ToColumnID)]['ExplicitName']}} 
+# {{i.ToCardinality}} 
+#}
+{%- endfor -%}
 ```
+
+{% else %}
+There are no relationships information or we have insufficient permissions.
+{% endif %}
 
 [Up](#)
 # Business objects
@@ -53,10 +67,10 @@ There are no business objects information or we have insufficient permissions.
 # Measures
 
 {% if measures %}
-| ID| TABLE_ID | NAME | DESCRIPTION | DATA_TYPE | EXPRESSION | FORMAT_STRING | IS_HIDDEN | STATE | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | KPIID | IS_SIMPLE_MEASURE | ERROR_MESSAGE | DISPLAY_FOLDER |
-|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
-{% for i  in measures -%}
-| {{ i.ID }} | {{tables_idx[str(i.TableID)]['Name']}}({{i.TableID}}) | {{ i.Name}} | {{ i.Description }} | {{i.DataType}} | {{i.Expression}} | {{i.FormatString}} | {{i.IsHidden}} |  {{i.State}} |  {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |   {{i.KPIID}} |   {{i.IsSimpleMeasure}} |   {{i.ErrorMessage}} |   {{i.DisplayFolder}} |  
+| ID| TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
+|---|-------|------|-------------|------------|-----------|-------|
+{% for i  in measures if i.Expression != '-NaN-' -%}
+| {{ i.ID }} | {{tables_idx[str(i.TableID)]['Name']}} | {{ i.Name}} | {{ i.Description }} | {{i.Expression}} | {{i.IsHidden}} |  {{i.State}} |  
 {% endfor -%}
 
 {% else %}

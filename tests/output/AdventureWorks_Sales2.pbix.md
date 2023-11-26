@@ -27,40 +27,17 @@ Documentation for file **AdventureWorks_Sales2.pbix**.
 
 ```mermaid
 graph LR;
+
 id186(["LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959[-NaN-]"]) --> id183(["Date[Date]"])
-
-
 id189(["LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854[-NaN-]"]) --> id183(["Date[Month]"])
-
-
 id192(["LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696[-NaN-]"]) --> id183(["Date[Full Date]"])
-
-
 id12(["Customer[CustomerKey]"]) --> id805(["Sales[CustomerKey]"])
-
-
 id572(["Product[ProductKey]"]) --> id805(["Sales[ProductKey]"])
-
-
 id690(["Reseller[ResellerKey]"]) --> id805(["Sales[ResellerKey]"])
-
-
 id805(["Sales[SalesOrderLineKey]"]) --> id980(["Sales Order[SalesOrderLineKey]"])
-
-
 id1078(["Sales Territory[SalesTerritoryKey]"]) --> id805(["Sales[SalesTerritoryKey]"])
-
-
 id183(["Date[DateKey]"]) --> id805(["Sales[OrderDateKey]"])
-
-
-
-
-
-
 id3642(["Table[Category]"]) --> id572(["Product[Category]"])
-
-
 ```
 
 
@@ -87,103 +64,31 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 | ID| TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
 |---|-------|------|-------------|------------|-----------|-------|
-| 13 | Customer |  | -NaN- | -NaN- | True |  1 |  
-| 113 | Customer |  | -NaN- | -NaN- | True |  1 |  
-| 114 | Customer |  | -NaN- | -NaN- | False |  1 |  
-| 115 | Customer |  | -NaN- | -NaN- | False |  1 |  
-| 116 | Customer |  | -NaN- | -NaN- | False |  1 |  
-| 117 | Customer |  | -NaN- | -NaN- | False |  1 |  
-| 118 | Customer |  | -NaN- | -NaN- | False |  1 |  
-| 119 | Customer |  | -NaN- | -NaN- | False |  1 |  
-| 16 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | -NaN- | True |  1 |  
-| 18 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | -NaN- | True |  1 |  
 | 19 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | YEAR([Date]) | True |  1 |  
 | 20 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | MONTH([Date]) | True |  1 |  
 | 21 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
 | 22 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
 | 23 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
 | 24 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | DAY([Date]) | True |  1 |  
-| 184 | Date |  | -NaN- | -NaN- | True |  1 |  
-| 198 | Date |  | -NaN- | -NaN- | True |  1 |  
-| 199 | Date |  | -NaN- | -NaN- | False |  1 |  
-| 207 | Date |  | -NaN- | -NaN- | False |  1 |  
-| 208 | Date |  | -NaN- | -NaN- | False |  1 |  
-| 209 | Date |  | -NaN- | -NaN- | False |  1 |  
-| 217 | Date |  | -NaN- | -NaN- | False |  1 |  
-| 225 | Date |  | -NaN- | -NaN- | True |  1 |  
-| 187 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | -NaN- | True |  1 |  
-| 200 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | -NaN- | True |  1 |  
 | 201 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | YEAR([Date]) | True |  1 |  
 | 202 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | MONTH([Date]) | True |  1 |  
 | 203 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
 | 204 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
 | 205 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
 | 206 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | DAY([Date]) | True |  1 |  
-| 190 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | -NaN- | True |  1 |  
-| 210 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | -NaN- | True |  1 |  
 | 211 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | YEAR([Date]) | True |  1 |  
 | 212 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | MONTH([Date]) | True |  1 |  
 | 213 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
 | 214 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
 | 215 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
 | 216 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | DAY([Date]) | True |  1 |  
-| 193 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | -NaN- | True |  1 |  
-| 218 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | -NaN- | True |  1 |  
 | 219 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | YEAR([Date]) | True |  1 |  
 | 220 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | MONTH([Date]) | True |  1 |  
 | 221 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
 | 222 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
 | 223 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
 | 224 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | DAY([Date]) | True |  1 |  
-| 573 | Product |  | -NaN- | -NaN- | True |  1 |  
-| 575 | Product |  | -NaN- | -NaN- | True |  1 |  
-| 576 | Product |  | -NaN- | -NaN- | False |  1 |  
-| 577 | Product |  | -NaN- | -NaN- | False |  1 |  
-| 578 | Product |  | -NaN- | -NaN- | False |  1 |  
-| 579 | Product |  | -NaN- | -NaN- | False |  1 |  
-| 580 | Product |  | -NaN- | -NaN- | False |  1 |  
-| 581 | Product |  | -NaN- | -NaN- | False |  1 |  
-| 582 | Product |  | -NaN- | -NaN- | False |  1 |  
-| 583 | Product |  | -NaN- | -NaN- | False |  1 |  
 | 3742 | Product |  | -NaN- | RELATED('Table'[Sorting]) | False |  1 |  
-| 691 | Reseller |  | -NaN- | -NaN- | True |  1 |  
-| 693 | Reseller |  | -NaN- | -NaN- | True |  1 |  
-| 694 | Reseller |  | -NaN- | -NaN- | False |  1 |  
-| 695 | Reseller |  | -NaN- | -NaN- | False |  1 |  
-| 696 | Reseller |  | -NaN- | -NaN- | False |  1 |  
-| 697 | Reseller |  | -NaN- | -NaN- | False |  1 |  
-| 698 | Reseller |  | -NaN- | -NaN- | False |  1 |  
-| 699 | Reseller |  | -NaN- | -NaN- | False |  1 |  
-| 700 | Reseller |  | -NaN- | -NaN- | False |  1 |  
-| 806 | Sales |  | -NaN- | -NaN- | True |  1 |  
-| 808 | Sales |  | -NaN- | -NaN- | True |  1 |  
-| 809 | Sales |  | -NaN- | -NaN- | True |  1 |  
-| 810 | Sales |  | -NaN- | -NaN- | True |  1 |  
-| 811 | Sales |  | -NaN- | -NaN- | True |  1 |  
-| 812 | Sales |  | -NaN- | -NaN- | True |  1 |  
-| 813 | Sales |  | -NaN- | -NaN- | True |  1 |  
-| 814 | Sales |  | -NaN- | -NaN- | True |  1 |  
-| 815 | Sales |  | -NaN- | -NaN- | True |  1 |  
-| 816 | Sales |  | -NaN- | -NaN- | False |  1 |  
-| 817 | Sales |  | -NaN- | -NaN- | False |  1 |  
-| 818 | Sales |  | -NaN- | -NaN- | False |  1 |  
-| 819 | Sales |  | -NaN- | -NaN- | False |  1 |  
-| 820 | Sales |  | -NaN- | -NaN- | False |  1 |  
-| 821 | Sales |  | -NaN- | -NaN- | False |  1 |  
-| 822 | Sales |  | -NaN- | -NaN- | False |  1 |  
-| 981 | Sales Order |  | -NaN- | -NaN- | True |  1 |  
-| 983 | Sales Order |  | -NaN- | -NaN- | False |  1 |  
-| 984 | Sales Order |  | -NaN- | -NaN- | True |  1 |  
-| 985 | Sales Order |  | -NaN- | -NaN- | False |  1 |  
-| 986 | Sales Order |  | -NaN- | -NaN- | False |  1 |  
-| 1079 | Sales Territory |  | -NaN- | -NaN- | True |  1 |  
-| 1081 | Sales Territory |  | -NaN- | -NaN- | True |  1 |  
-| 1082 | Sales Territory |  | -NaN- | -NaN- | False |  1 |  
-| 1083 | Sales Territory |  | -NaN- | -NaN- | False |  1 |  
-| 1084 | Sales Territory |  | -NaN- | -NaN- | False |  1 |  
-| 3643 | Table |  | -NaN- | -NaN- | True |  1 |  
-| 3645 | Table |  | -NaN- | -NaN- | False |  1 |  
-| 3646 | Table |  | -NaN- | -NaN- | False |  1 |  
 
 
 [Up](#)
@@ -335,5 +240,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 26.11.2023 21:03:32 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 14c3289
+Generated at 26.11.2023 21:28:20 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 8e417e5
 </p>
