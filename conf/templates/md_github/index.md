@@ -68,20 +68,6 @@ graph TD;
 | {{ i.ID }} | {{ i.Name}} | {{i.Description}} | {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |
 {% endfor -%}
 
-{# another possible params
-ShowAsVariationsOnly
-IsPrivate
-DefaultDetailRowsDefinitionID
-AlternateSourcePrecedence
-RefreshPolicyID
-CalculationGroupID
-ExcludeFromModelRefresh
-LineageTag
-SourceLineageTag
-SystemManaged
-#}
-
-
 <details>
 <summary>All business objects information</summary>
 
@@ -103,8 +89,17 @@ There are no business objects information or we have insufficient permissions.
 | ID| TABLE_ID | EXPLICIT_NAME | INFERRED_NAME  | EXPLICIT_DATA_TYPE | INFERRED_DATA_TYPE | DATA_CATEGORY | DESCRIPTION | IS_HIDDEN | STATE | IS_UNIQUE | IS_KEY | IS_NULLABLE | ALIGNMENT | TABLE_DETAIL_POSITION | IS_DEFAULT_LABEL | IS_DEFAULT_IMAGE | SUMMARIZE_BY | COLUMN_STORAGE_ID | TYPE | SOURCE_COLUMN | COLUMN_ORIGIN_ID | EXPRESSION | FORMAT_STRING | IS_AVAILABLE_IN_MDX | SORT_BY_COLUMN_ID | ATTRIBUTE_HIERARCHY_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | REFRESHED_TIME | SYSTEM_FLAGS | KEEP_UNIQUE_ROWS | DISPLAY_ORDINAL | ERROR_MESSAGE | SOURCE_PROVIDER_TYPE | DISPLAY_FOLDER |
 |--------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
 {% for i  in columns -%}
-| <span id = {{i.ID}}>{{i.ID}}</span> | [{{ i.TableID}}](./table_{{i.TableID}}) | {{ i.ExplicitName}} | {{ i.InferredName }} | {{i.ExplicitDataType}} | {{i.InferredDataType}} | {{i.DataCategory}} | {{i.Description}} |  {{i.IsHidden}} |  {{i.State}} |  {{i.IsUnique}} |  {{i.IsKey}} |  {{i.IsNullable}} |  {{i.Alignment}} |  {{i.TableDetailPosition}} |  {{i.IsDefaultLabel}} |  {{i.IsDefaultImage}} |  {{i.SummarizeBy}} |  {{i.ColumnStorageID}} |  {{i.Type}} |  {{i.SourceColumn}} |  {{i.ColumnOriginID}} |  {{i.Expression}} |  {{i.FormatString}} |  {{i.IsAvailableInMDX}} |  {{i.SortByColumnID}} |  {{i.AttributeHierarchyID}} |  {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |  {{i.RefreshedTime}} |  {{i.SystemFlags}} |  {{i.KeepUniqueRows}} |  {{i.DisplayOrdinal}} |   {{i.ErrorMessage}} |   {{i.SourceProviderType}} |   {{i.DisplayFolder}} |  
+| <span id = {{i.ID}}>{{i.ID}}</span> | {{tables_idx[str(i.TableID)]['Name']}}({{i.TableID}}) | {{ i.ExplicitName}} | {{ i.InferredName }} | {{i.ExplicitDataType}} | {{i.InferredDataType}} | {{i.DataCategory}} | {{i.Description}} |  {{i.IsHidden}} |  {{i.State}} |  {{i.IsUnique}} |  {{i.IsKey}} |  {{i.IsNullable}} |  {{i.Alignment}} |  {{i.TableDetailPosition}} |  {{i.IsDefaultLabel}} |  {{i.IsDefaultImage}} |  {{i.SummarizeBy}} |  {{i.ColumnStorageID}} |  {{i.Type}} |  {{i.SourceColumn}} |  {{i.ColumnOriginID}} |  {{i.Expression}} |  {{i.FormatString}} |  {{i.IsAvailableInMDX}} |  {{i.SortByColumnID}} |  {{i.AttributeHierarchyID}} |  {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |  {{i.RefreshedTime}} |  {{i.SystemFlags}} |  {{i.KeepUniqueRows}} |  {{i.DisplayOrdinal}} |   {{i.ErrorMessage}} |   {{i.SourceProviderType}} |   {{i.DisplayFolder}} |  
 {% endfor -%}
+<details>
+<summary>Detail information</summary>
+
+| ID| TABLE_ID | EXPLICIT_NAME | INFERRED_NAME  | EXPLICIT_DATA_TYPE | INFERRED_DATA_TYPE | DATA_CATEGORY | DESCRIPTION | IS_HIDDEN | STATE | IS_UNIQUE | IS_KEY | IS_NULLABLE | ALIGNMENT | TABLE_DETAIL_POSITION | IS_DEFAULT_LABEL | IS_DEFAULT_IMAGE | SUMMARIZE_BY | COLUMN_STORAGE_ID | TYPE | SOURCE_COLUMN | COLUMN_ORIGIN_ID | EXPRESSION | FORMAT_STRING | IS_AVAILABLE_IN_MDX | SORT_BY_COLUMN_ID | ATTRIBUTE_HIERARCHY_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | REFRESHED_TIME | SYSTEM_FLAGS | KEEP_UNIQUE_ROWS | DISPLAY_ORDINAL | ERROR_MESSAGE | SOURCE_PROVIDER_TYPE | DISPLAY_FOLDER | ENCODINGHINT  | RELATEDCOLUMNDETAILSID | ALTERNATEOFID | LINEAGETAG | SOURCELINEAGETAG |
+|--------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
+{% for i  in columns -%}
+| <span id = {{i.ID}}>{{i.ID}}</span> | {{tables_idx[str(i.TableID)]['Name']}}({{i.TableID}}) | {{ i.ExplicitName}} | {{ i.InferredName }} | {{i.ExplicitDataType}} | {{i.InferredDataType}} | {{i.DataCategory}} | {{i.Description}} |  {{i.IsHidden}} |  {{i.State}} |  {{i.IsUnique}} |  {{i.IsKey}} |  {{i.IsNullable}} |  {{i.Alignment}} |  {{i.TableDetailPosition}} |  {{i.IsDefaultLabel}} |  {{i.IsDefaultImage}} |  {{i.SummarizeBy}} |  {{i.ColumnStorageID}} |  {{i.Type}} |  {{i.SourceColumn}} |  {{i.ColumnOriginID}} |  {{i.Expression}} |  {{i.FormatString}} |  {{i.IsAvailableInMDX}} |  {{i.SortByColumnID}} |  {{i.AttributeHierarchyID}} |  {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |  {{i.RefreshedTime}} |  {{i.SystemFlags}} |  {{i.KeepUniqueRows}} |  {{i.DisplayOrdinal}} |   {{i.ErrorMessage}} |   {{i.SourceProviderType}} |   {{i.DisplayFolder}} |  {{i.EncodingHint}} | {{i.RelatedColumnDetailsID}} | {{i.AlternateOfID}} | {{i.LineageTag}} | {{i.SourceLineageTag}} |
+{% endfor -%}
+</details>
 
 {# all possible columns of columns 
 ID
@@ -141,13 +136,13 @@ SystemFlags
 KeepUniqueRows
 DisplayOrdinal
 ErrorMessage
-    SourceProviderType
-    DisplayFolder
-    EncodingHint
-    RelatedColumnDetailsID
-    AlternateOfID
-    LineageTag
-    SourceLineageTag
+SourceProviderType
+DisplayFolder
+EncodingHint
+RelatedColumnDetailsID
+AlternateOfID
+LineageTag
+SourceLineageTag
 #}
 
 {% else %}
@@ -160,7 +155,7 @@ There are no columns information or we have insufficient permissions.
 | ID| TABLE_ID | NAME | DESCRIPTION | DATA_TYPE | EXPRESSION | FORMAT_STRING | IS_HIDDEN | STATE | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | KPIID | IS_SIMPLE_MEASURE | ERROR_MESSAGE | DISPLAY_FOLDER |
 |-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
 {% for i  in measures -%}
-| {{ i.ID }} | [{{ i.TableID}}](./table_{{i.TableID}}) | {{ i.Name}} | {{ i.Description }} | {{i.DataType}} | {{i.Expression}} | {{i.FormatString}} | {{i.IsHidden}} |  {{i.State}} |  {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |   {{i.KPIID}} |   {{i.IsSimpleMeasure}} |   {{i.ErrorMessage}} |   {{i.DisplayFolder}} |  
+| {{ i.ID }} | {{tables_idx[str(i.TableID)]['Name']}}({{i.TableID}}) | {{ i.Name}} | {{ i.Description }} | {{i.DataType}} | {{i.Expression}} | {{i.FormatString}} | {{i.IsHidden}} |  {{i.State}} |  {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |   {{i.KPIID}} |   {{i.IsSimpleMeasure}} |   {{i.ErrorMessage}} |   {{i.DisplayFolder}} |  
 {% endfor -%}
 
 
@@ -180,7 +175,7 @@ There are no measures or we have insufficient permissions.
 | ID| MODEL_ID | NAME | IS_ACTIVE  | TYPE | CROSS_FILTERING_BEHAVIOR | JOIN_ON_DATE_BEHAVIOR | RELY_ON_REFERENTIAL_INTEGRITY | FROM_TABLE_ID | FROM_COLUMN_ID |FROM_CARDINALITY |TO_TABLE_ID |TO_COLUMN_ID |TO_CARDINALITY |STATE |RELATIONSHIP_STORAGE_ID |RELATIONSHIP_STORAGE_2_ID |MODIFIED_TIME |REFRESHED_TIME |SECURITY_FILTERING_BEHAVIOR |
 |--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------| 
 {% for i  in relationships -%}
-| {{ i.ID }} | {{ i.ModelID}} | {{ i.Name}} | {{ i.IsActive }} | {{i.Type}} | {{i.CrossFilteringBehavior}} | {{i.JoinOnDateBehavior}} | {{i.RelyOnReferentialIntegrity}} |  [{{ i.FromTableID}}](./table_{{i.FromTableID}}) |  [{{ i.FromColumnID}}](#{{i.FromColumnID}}) |  {{i.FromCardinality}} |   {{i.ToTableID}} |   {{i.ToColumnID}} |   {{i.ToCardinality}} |   {{i.State}} |   {{i.RelationshipStorageID}} |   {{i.RelationshipStorage2ID}} |   {{i.ModifiedTime}} |   {{i.RefreshedTime}} |   {{i.SecurityFilteringBehavior}} |  
+{#| {{ i.ID }} | {{ i.ModelID}} | {{ i.Name}} | {{ i.IsActive }} | {{i.Type}} | {{i.CrossFilteringBehavior}} | {{i.JoinOnDateBehavior}} | {{i.RelyOnReferentialIntegrity}} |  [{{ i.FromTableID}}](./table_{{i.FromTableID}}) {{tables_idx[str(i.TableID)]['Name']}}({{i.TableID}}) |  [{{ i.FromColumnID}}](#{{i.FromColumnID}}) |  {{i.FromCardinality}} |   {{i.ToTableID}} {{tables_idx[str(i.TableID)]['Name']}}({{i.TableID}}) |   {{i.ToColumnID}} |   {{i.ToCardinality}} |   {{i.State}} |   {{i.RelationshipStorageID}} |   {{i.RelationshipStorage2ID}} |   {{i.ModifiedTime}} |   {{i.RefreshedTime}} |   {{i.SecurityFilteringBehavior}} | #} 
 {% endfor -%}
 
 {# all possible columns of columns 
@@ -213,11 +208,12 @@ There are no relationships information or we have insufficient permissions.
 
 {% if hierarchies %}
 
-| ID| TABLE_ID | NAME | DESCRIPTION  | IS_HIDDEN | STATE | HIERARCHY_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | REFRESHED_TIME | DISPLAY_FOLDER |
-|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| ID| TABLE_ID | NAME | DESCRIPTION  | IS_HIDDEN | STATE | HIERARCHY_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | REFRESHED_TIME | DISPLAY_FOLDER | HIDEMEMBERS | LINEAGETAG | SOURCELINEAGETAG |
+|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------| ----------- | ---------- | ---------------- |
 {% for i  in hierarchies -%}
-| {{ i.ID }} | [{{ i.TableID}}](./table_{{i.TableID}}) | {{ i.Name}} | {{ i.Description }} | {{i.IsHidden}} | {{i.State}} | {{i.HierarchyStorageID}} | {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |  {{i.RefreshedTime}} | 
-{% endfor -%}
+| {{ i.ID }} |{{tables_idx[str(i.TableID)]['Name']}}({{i.TableID}}) | {{ i.Name}} | {{ i.Description }} | {{i.IsHidden}} | {{i.State}} | {{i.HierarchyStorageID}} | {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |  {{i.RefreshedTime}} | 
+{{i.HideMembers}} | {{i.LineageTag}} | {{i.SourceLineageTag}} | {% endfor -%}
+
 
 
 {# all possible columns of Hierarchies
@@ -232,9 +228,9 @@ ModifiedTime
 StructureModifiedTime
 RefreshedTime
 DisplayFolder
-    HideMembers
-    LineageTag
-    SourceLineageTag
+HideMembers
+LineageTag
+SourceLineageTag
 #}
 
 {% else %}
