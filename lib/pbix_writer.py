@@ -42,11 +42,6 @@ class pbix_writer2(writer.writer):
     def write_metadata(self):
         pp(self.metadata)
 
-
-    def __id_2_tablename(self,id,table_idx):
-        return table_idx[str(id)]['Name']
-
-
     def init_templates(self):
         # init env 
         self.env = tools.init_templ_env(
@@ -64,20 +59,16 @@ class pbix_writer2(writer.writer):
         return  self.tmpl
 
     
-
-
-
     def render_index(self):
 
-        tables_idx = self.pbix_data["ssas_md"]['TMSCHEMA_TABLES']
-
-        print(self.__id_2_tablename(12,tables_idx))
-
+        #tables_idx = self.pbix_data["ssas_md"]['TMSCHEMA_TABLES']
+        #columns_idx  = self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS'],
         
         ret =self.tmpl['index'].render(
             properties =  self.pbix_data["ssas_md"]["DBSCHEMA_CATALOGS"][self.pbix_data['info']['catalog']],
             git_version = self.git_version,
             port = self.pbix_data['info']['port'],
+            filename = os.path.basename(self.pbix_data['info']['pbix_full_path']),
             full_filename = self.pbix_data['info']['pbix_full_path'],
             tables = self.pbix_data["ssas_md"]['TMSCHEMA_TABLES'].values(),
             tables_idx  = self.pbix_data["ssas_md"]['TMSCHEMA_TABLES'],

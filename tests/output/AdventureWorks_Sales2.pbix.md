@@ -1,18 +1,9 @@
 ----
 
- [Home](../home.md) > [filename](index.md)
+[Home](../home.md) > [filename](index.md)
+[Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
 ----
-
-# Table of Content 
-* [Information](#information)
-* [Model information](#model-information)
-* [Model relationships](#model-relationships)
-* [Business objects](#business-objects)
-* [Measures](#measures)
-* [Relationships](#relationships)
-* [Hierarchies](#hierarchies)
-* [Columns](#columns)
 
 # Information
 
@@ -306,5 +297,5 @@ graph TD;
 
 ----
 <p align="center">
-Generated at 26.11.2023 18:36:52 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 00f9660
+Generated at 26.11.2023 18:38:42 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 3dbfa40
 </p>
