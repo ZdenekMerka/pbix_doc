@@ -410,18 +410,18 @@ graph TD;
 
 | ID| MODEL_ID | NAME | IS_ACTIVE  | TYPE | CROSS_FILTERING_BEHAVIOR | JOIN_ON_DATE_BEHAVIOR | RELY_ON_REFERENTIAL_INTEGRITY | FROM_TABLE_ID | FROM_COLUMN_ID |FROM_CARDINALITY |TO_TABLE_ID |TO_COLUMN_ID |TO_CARDINALITY |STATE |RELATIONSHIP_STORAGE_ID |RELATIONSHIP_STORAGE_2_ID |MODIFIED_TIME |REFRESHED_TIME |SECURITY_FILTERING_BEHAVIOR |
 |--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------| 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+| 195 | 1 | 88371ba8-2389-41b4-a22f-bcb756732d3b | True | 1 | 1 | 2 | False |  [183](./table_183) Date(183) |  [199](#199) |  2 |   186 LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) |   200 |   1 |   1 |   531 |   -NaN- |   2020-12-16T21:46:22 |   2020-12-16T21:46:22 |   1 | 
+| 196 | 1 | 586c9eeb-fe2f-431d-a8c4-9723ce217f20 | True | 1 | 1 | 2 | False |  [183](./table_183) Date(183) |  [209](#209) |  2 |   189 LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) |   210 |   1 |   1 |   533 |   -NaN- |   2020-12-16T21:46:22 |   2020-12-16T21:46:22 |   1 | 
+| 197 | 1 | 401217e9-9553-4835-a527-fd574f68046d | True | 1 | 1 | 2 | False |  [183](./table_183) Date(183) |  [217](#217) |  2 |   192 LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) |   218 |   1 |   1 |   535 |   -NaN- |   2020-12-16T21:46:22 |   2020-12-16T21:46:22 |   1 | 
+| 3224 | 1 | e3030baf-8c61-408d-a80e-04714277dcd3 | True | 1 | 1 | 1 | False |  [805](./table_805) Sales(805) |  [810](#810) |  2 |   12 Customer(12) |   113 |   1 |   1 |   3225 |   -NaN- |   2020-12-16T21:46:36 |   2020-12-16T21:46:36 |   1 | 
+| 3227 | 1 | a0a78efb-3ce3-472a-993a-b92e31c0e3cd | True | 1 | 1 | 1 | False |  [805](./table_805) Sales(805) |  [811](#811) |  2 |   572 Product(572) |   575 |   1 |   1 |   3228 |   -NaN- |   2020-12-16T21:46:36 |   2020-12-16T21:46:36 |   1 | 
+| 3230 | 1 | 0ef2b150-bb90-4b8f-8537-fc236873591c | True | 1 | 1 | 1 | False |  [805](./table_805) Sales(805) |  [809](#809) |  2 |   690 Reseller(690) |   693 |   1 |   1 |   3231 |   -NaN- |   2020-12-16T21:46:36 |   2020-12-16T21:46:36 |   1 | 
+| 3233 | 1 | 29b21f6a-77ef-4b3b-a0c0-e4111f87627b | True | 1 | 2 | 1 | False |  [980](./table_980) Sales Order(980) |  [984](#984) |  1 |   805 Sales(805) |   808 |   1 |   1 |   3234 |   3236.0 |   2020-12-16T21:46:36 |   2020-12-16T21:46:36 |   1 | 
+| 3238 | 1 | cecf591c-1f02-44a6-bff1-1c753a0b4835 | True | 1 | 1 | 1 | False |  [805](./table_805) Sales(805) |  [815](#815) |  2 |   1078 Sales Territory(1078) |   1081 |   1 |   1 |   3239 |   -NaN- |   2020-12-16T21:46:36 |   2020-12-16T21:46:36 |   1 | 
+| 3305 | 1 | 8e31fd7b-1e63-43a9-8a47-33876ae8aed6 | True | 1 | 1 | 1 | False |  [805](./table_805) Sales(805) |  [812](#812) |  2 |   183 Date(183) |   198 |   1 |   1 |   3306 |   -NaN- |   2020-12-16T22:04:37 |   2020-12-16T22:04:37 |   1 | 
+| 3322 | 1 | dfb7bf63-667c-4abb-b494-7424c4e34b60 | False | 1 | 1 | 1 | False |  [805](./table_805) Sales(805) |  [813](#813) |  2 |   183 Date(183) |   198 |   1 |   1 |   3323 |   -NaN- |   2020-12-16T22:04:43 |   2020-12-16T22:04:43 |   1 | 
+| 3339 | 1 | 6a63bfea-7b52-4e05-85f4-63a0f9b8991f | False | 1 | 1 | 1 | False |  [805](./table_805) Sales(805) |  [814](#814) |  2 |   183 Date(183) |   198 |   1 |   1 |   3340 |   -NaN- |   2020-12-16T22:04:47 |   2020-12-16T22:04:47 |   1 | 
+| 3725 | 1 | 93a2e7c9-4a15-47be-93c0-06eceb139103 | True | 1 | 1 | 1 | False |  [572](./table_572) Product(572) |  [583](#583) |  2 |   3642 Table(3642) |   3645 |   1 |   1 |   3726 |   -NaN- |   2020-12-16T23:04:04 |   2020-12-16T23:04:04 |   1 | 
 
 
 
@@ -453,5 +453,5 @@ graph TD;
 
 ----
 <p align="center">
-Generated at 26.11.2023 18:00:46 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 4ad08a4
+Generated at 26.11.2023 18:03:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 9075b11
 </p>
