@@ -1,6 +1,6 @@
 ----
 
-[Home](../home.md) > [AdventureWorks_Sales.pbix](index.md)
+[Home](../home.md) > [AdventureWorks_Sales.pbix](AdventureWorks_Sales.pbix.md)
 
 [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
@@ -47,14 +47,14 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 | ID | NAME | DESCRIPTION | 
 |----|------|-------------|
-| 12 | Customer | -NaN- |
-| 183 | Date | -NaN- |
-| 572 | Product | -NaN- |
-| 690 | Reseller | -NaN- |
-| 805 | Sales | -NaN- |
-| 980 | Sales Order | -NaN- |
-| 1078 | Sales Territory | -NaN- |
-| 3642 | Table | -NaN- |
+| 12 | Customer | n/a |
+| 183 | Date | n/a |
+| 572 | Product | n/a |
+| 690 | Reseller | n/a |
+| 805 | Sales | n/a |
+| 980 | Sales Order | n/a |
+| 1078 | Sales Territory | n/a |
+| 3642 | Table | n/a |
 
 
 
@@ -64,31 +64,31 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 | ID | TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
 |----|-------|------|-------------|------------|-----------|-------|
-| 19 | DateTableTemplate_78..(54) |  | -NaN- | YEAR([Date]) | True |  1 |  
-| 20 | DateTableTemplate_78..(54) |  | -NaN- | MONTH([Date]) | True |  1 |  
-| 21 | DateTableTemplate_78..(54) |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
-| 22 | DateTableTemplate_78..(54) |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
-| 23 | DateTableTemplate_78..(54) |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
-| 24 | DateTableTemplate_78..(54) |  | -NaN- | DAY([Date]) | True |  1 |  
-| 201 | LocalDateTable_1635a..(51) |  | -NaN- | YEAR([Date]) | True |  1 |  
-| 202 | LocalDateTable_1635a..(51) |  | -NaN- | MONTH([Date]) | True |  1 |  
-| 203 | LocalDateTable_1635a..(51) |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
-| 204 | LocalDateTable_1635a..(51) |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
-| 205 | LocalDateTable_1635a..(51) |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
-| 206 | LocalDateTable_1635a..(51) |  | -NaN- | DAY([Date]) | True |  1 |  
-| 211 | LocalDateTable_d1146..(51) |  | -NaN- | YEAR([Date]) | True |  1 |  
-| 212 | LocalDateTable_d1146..(51) |  | -NaN- | MONTH([Date]) | True |  1 |  
-| 213 | LocalDateTable_d1146..(51) |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
-| 214 | LocalDateTable_d1146..(51) |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
-| 215 | LocalDateTable_d1146..(51) |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
-| 216 | LocalDateTable_d1146..(51) |  | -NaN- | DAY([Date]) | True |  1 |  
-| 219 | LocalDateTable_dc06d..(51) |  | -NaN- | YEAR([Date]) | True |  1 |  
-| 220 | LocalDateTable_dc06d..(51) |  | -NaN- | MONTH([Date]) | True |  1 |  
-| 221 | LocalDateTable_dc06d..(51) |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
-| 222 | LocalDateTable_dc06d..(51) |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
-| 223 | LocalDateTable_dc06d..(51) |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
-| 224 | LocalDateTable_dc06d..(51) |  | -NaN- | DAY([Date]) | True |  1 |  
-| 3742 | Product |  | -NaN- | RELATED('Table'[Sorting]) | False |  1 |  
+| 19 | DateTableTemplate_78..(54) |  | n/a | YEAR([Date]) | True |  1 |  
+| 20 | DateTableTemplate_78..(54) |  | n/a | MONTH([Date]) | True |  1 |  
+| 21 | DateTableTemplate_78..(54) |  | n/a | FORMAT([Date], "MMMM") | True |  1 |  
+| 22 | DateTableTemplate_78..(54) |  | n/a | INT(([MonthNo] + 2) / 3) | True |  1 |  
+| 23 | DateTableTemplate_78..(54) |  | n/a | "Qtr " & [QuarterNo] | True |  1 |  
+| 24 | DateTableTemplate_78..(54) |  | n/a | DAY([Date]) | True |  1 |  
+| 201 | LocalDateTable_1635a..(51) |  | n/a | YEAR([Date]) | True |  1 |  
+| 202 | LocalDateTable_1635a..(51) |  | n/a | MONTH([Date]) | True |  1 |  
+| 203 | LocalDateTable_1635a..(51) |  | n/a | FORMAT([Date], "MMMM") | True |  1 |  
+| 204 | LocalDateTable_1635a..(51) |  | n/a | INT(([MonthNo] + 2) / 3) | True |  1 |  
+| 205 | LocalDateTable_1635a..(51) |  | n/a | "Qtr " & [QuarterNo] | True |  1 |  
+| 206 | LocalDateTable_1635a..(51) |  | n/a | DAY([Date]) | True |  1 |  
+| 211 | LocalDateTable_d1146..(51) |  | n/a | YEAR([Date]) | True |  1 |  
+| 212 | LocalDateTable_d1146..(51) |  | n/a | MONTH([Date]) | True |  1 |  
+| 213 | LocalDateTable_d1146..(51) |  | n/a | FORMAT([Date], "MMMM") | True |  1 |  
+| 214 | LocalDateTable_d1146..(51) |  | n/a | INT(([MonthNo] + 2) / 3) | True |  1 |  
+| 215 | LocalDateTable_d1146..(51) |  | n/a | "Qtr " & [QuarterNo] | True |  1 |  
+| 216 | LocalDateTable_d1146..(51) |  | n/a | DAY([Date]) | True |  1 |  
+| 219 | LocalDateTable_dc06d..(51) |  | n/a | YEAR([Date]) | True |  1 |  
+| 220 | LocalDateTable_dc06d..(51) |  | n/a | MONTH([Date]) | True |  1 |  
+| 221 | LocalDateTable_dc06d..(51) |  | n/a | FORMAT([Date], "MMMM") | True |  1 |  
+| 222 | LocalDateTable_dc06d..(51) |  | n/a | INT(([MonthNo] + 2) / 3) | True |  1 |  
+| 223 | LocalDateTable_dc06d..(51) |  | n/a | "Qtr " & [QuarterNo] | True |  1 |  
+| 224 | LocalDateTable_dc06d..(51) |  | n/a | DAY([Date]) | True |  1 |  
+| 3742 | Product |  | n/a | RELATED('Table'[Sorting]) | False |  1 |  
 
 
 [Up](#)
@@ -96,7 +96,7 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 
 | ID | FROM_TABLE | TO_TABLE | FROM:TO CARDINALITY | NAME | IS_ACTIVE  |
-|----|------------|----------|-----:---------------|------|------------|
+|----|------------|----------|---------------------|------|------------|
 | 195 | Date[Date] | LocalDateTable_1635a..(51)[-NaN-] | 2:1 | 88371ba8-2389-41b4-a22f-bcb756732d3b | True |
 | 196 | Date[Month] | LocalDateTable_d1146..(51)[-NaN-] | 2:1 | 586c9eeb-fe2f-431d-a8c4-9723ce217f20 | True |
 | 197 | Date[Full Date] | LocalDateTable_dc06d..(51)[-NaN-] | 2:1 | 401217e9-9553-4835-a527-fd574f68046d | True |
@@ -118,16 +118,16 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 | ID | TABLE | NAME | DESCRIPTION  | IS_HIDDEN | 
 |----|----------|------|--------------|-----------|
-| 3356 |Customer | Geography | -NaN- | False | 
-| 27 |DateTableTemplate_78..(54) | Date Hierarchy | -NaN- | False | 
-| 3399 |Date | Fiscal | -NaN- | False | 
-| 230 |LocalDateTable_1635a..(51) | Date Hierarchy | -NaN- | False | 
-| 231 |LocalDateTable_d1146..(51) | Date Hierarchy | -NaN- | False | 
-| 232 |LocalDateTable_dc06d..(51) | Date Hierarchy | -NaN- | False | 
-| 3476 |Product | Products | -NaN- | False | 
-| 3518 |Reseller | Geography | -NaN- | False | 
-| 3561 |Sales Order | Sales Orders | -NaN- | False | 
-| 3601 |Sales Territory | Sales Territories | -NaN- | False | 
+| 3356 |Customer | Geography | n/a | False | 
+| 27 |DateTableTemplate_78..(54) | Date Hierarchy | n/a | False | 
+| 3399 |Date | Fiscal | n/a | False | 
+| 230 |LocalDateTable_1635a..(51) | Date Hierarchy | n/a | False | 
+| 231 |LocalDateTable_d1146..(51) | Date Hierarchy | n/a | False | 
+| 232 |LocalDateTable_dc06d..(51) | Date Hierarchy | n/a | False | 
+| 3476 |Product | Products | n/a | False | 
+| 3518 |Reseller | Geography | n/a | False | 
+| 3561 |Sales Order | Sales Orders | n/a | False | 
+| 3601 |Sales Territory | Sales Territories | n/a | False | 
 
 
 [Up](#)
@@ -136,52 +136,52 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 | ID | TABLE | EXPLICIT_NAME | DESCRIPTION | IS_HIDDEN | EXPRESSION |
 |----|-------|---------------|-------------|-----------|------------|
-| 114 | Customer | Customer ID | -NaN- | False | -NaN- |
-| 115 | Customer | Customer | -NaN- | False | -NaN- |
-| 116 | Customer | City | -NaN- | False | -NaN- |
-| 117 | Customer | State-Province | -NaN- | False | -NaN- |
-| 118 | Customer | Country-Region | -NaN- | False | -NaN- |
-| 119 | Customer | Postal Code | -NaN- | False | -NaN- |
-| 199 | Date | Date | -NaN- | False | -NaN- |
-| 207 | Date | Fiscal Year | -NaN- | False | -NaN- |
-| 208 | Date | Fiscal Quarter | -NaN- | False | -NaN- |
-| 209 | Date | Month | -NaN- | False | -NaN- |
-| 217 | Date | Full Date | -NaN- | False | -NaN- |
-| 576 | Product | SKU | -NaN- | False | -NaN- |
-| 577 | Product | Product | -NaN- | False | -NaN- |
-| 578 | Product | Standard Cost | -NaN- | False | -NaN- |
-| 579 | Product | Color | -NaN- | False | -NaN- |
-| 580 | Product | List Price | -NaN- | False | -NaN- |
-| 581 | Product | Model | -NaN- | False | -NaN- |
-| 582 | Product | Subcategory | -NaN- | False | -NaN- |
-| 583 | Product | Category | -NaN- | False | -NaN- |
-| 3742 | Product | Sorting | -NaN- | False | RELATED('Table'[Sorting]) |
-| 694 | Reseller | Reseller ID | -NaN- | False | -NaN- |
-| 695 | Reseller | Business Type | -NaN- | False | -NaN- |
-| 696 | Reseller | Reseller | -NaN- | False | -NaN- |
-| 697 | Reseller | City | -NaN- | False | -NaN- |
-| 698 | Reseller | State-Province | -NaN- | False | -NaN- |
-| 699 | Reseller | Country-Region | -NaN- | False | -NaN- |
-| 700 | Reseller | Postal Code | -NaN- | False | -NaN- |
-| 816 | Sales | Order Quantity | -NaN- | False | -NaN- |
-| 817 | Sales | Unit Price | -NaN- | False | -NaN- |
-| 818 | Sales | Extended Amount | -NaN- | False | -NaN- |
-| 819 | Sales | Unit Price Discount ..(23) | -NaN- | False | -NaN- |
-| 820 | Sales | Product Standard Cos..(21) | -NaN- | False | -NaN- |
-| 821 | Sales | Total Product Cost | -NaN- | False | -NaN- |
-| 822 | Sales | Sales Amount | -NaN- | False | -NaN- |
-| 983 | Sales Order | Channel | -NaN- | False | -NaN- |
-| 985 | Sales Order | Sales Order | -NaN- | False | -NaN- |
-| 986 | Sales Order | Sales Order Line | -NaN- | False | -NaN- |
-| 1082 | Sales Territory | Region | -NaN- | False | -NaN- |
-| 1083 | Sales Territory | Country | -NaN- | False | -NaN- |
-| 1084 | Sales Territory | Group | -NaN- | False | -NaN- |
-| 3645 | Table | Category | -NaN- | False | -NaN- |
-| 3646 | Table | Sorting | -NaN- | False | -NaN- |
+| 114 | Customer | Customer ID | n/a | False | n/a |
+| 115 | Customer | Customer | n/a | False | n/a |
+| 116 | Customer | City | n/a | False | n/a |
+| 117 | Customer | State-Province | n/a | False | n/a |
+| 118 | Customer | Country-Region | n/a | False | n/a |
+| 119 | Customer | Postal Code | n/a | False | n/a |
+| 199 | Date | Date | n/a | False | n/a |
+| 207 | Date | Fiscal Year | n/a | False | n/a |
+| 208 | Date | Fiscal Quarter | n/a | False | n/a |
+| 209 | Date | Month | n/a | False | n/a |
+| 217 | Date | Full Date | n/a | False | n/a |
+| 576 | Product | SKU | n/a | False | n/a |
+| 577 | Product | Product | n/a | False | n/a |
+| 578 | Product | Standard Cost | n/a | False | n/a |
+| 579 | Product | Color | n/a | False | n/a |
+| 580 | Product | List Price | n/a | False | n/a |
+| 581 | Product | Model | n/a | False | n/a |
+| 582 | Product | Subcategory | n/a | False | n/a |
+| 583 | Product | Category | n/a | False | n/a |
+| 3742 | Product | Sorting | n/a | False | RELATED('Table'[Sorting]) |
+| 694 | Reseller | Reseller ID | n/a | False | n/a |
+| 695 | Reseller | Business Type | n/a | False | n/a |
+| 696 | Reseller | Reseller | n/a | False | n/a |
+| 697 | Reseller | City | n/a | False | n/a |
+| 698 | Reseller | State-Province | n/a | False | n/a |
+| 699 | Reseller | Country-Region | n/a | False | n/a |
+| 700 | Reseller | Postal Code | n/a | False | n/a |
+| 816 | Sales | Order Quantity | n/a | False | n/a |
+| 817 | Sales | Unit Price | n/a | False | n/a |
+| 818 | Sales | Extended Amount | n/a | False | n/a |
+| 819 | Sales | Unit Price Discount ..(23) | n/a | False | n/a |
+| 820 | Sales | Product Standard Cos..(21) | n/a | False | n/a |
+| 821 | Sales | Total Product Cost | n/a | False | n/a |
+| 822 | Sales | Sales Amount | n/a | False | n/a |
+| 983 | Sales Order | Channel | n/a | False | n/a |
+| 985 | Sales Order | Sales Order | n/a | False | n/a |
+| 986 | Sales Order | Sales Order Line | n/a | False | n/a |
+| 1082 | Sales Territory | Region | n/a | False | n/a |
+| 1083 | Sales Territory | Country | n/a | False | n/a |
+| 1084 | Sales Territory | Group | n/a | False | n/a |
+| 3645 | Table | Category | n/a | False | n/a |
+| 3646 | Table | Sorting | n/a | False | n/a |
 
 
 
 ----
 <p align="center">
-Generated at 26.11.2023 22:45:14 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: b2be5b2
+Generated at 26.11.2023 22:57:16 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 30630ca
 </p>

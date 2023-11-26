@@ -612,3 +612,12 @@ def str_slicer(text, num=20):
     else:
         ret = text
     return ret
+
+##############################
+# remove -nan- string 
+def remove_nan(text,replace = 'n/a'):
+    if text == '-NaN-':
+        ret = replace  
+    else:
+        ret = text
+    return ret
