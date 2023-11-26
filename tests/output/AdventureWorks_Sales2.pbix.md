@@ -27,11 +27,118 @@ Documentation for file **AdventureWorks_Sales2.pbix**.
 
 ```mermaid
 graph TD;
-    A--B;
+    A-->B;
     A-->C;
-    B<-->D;
-    C<--D;
+    B-->D;
+    C-->D;
 ```
+
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+'LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959[-NaN-]' --> 'Date[Date]' 
+# True 
+# Date[Date] 
+# Date 
+# 2 
+# LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959[-NaN-] 
+# -NaN- 
+# 1 
+'LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854[-NaN-]' --> 'Date[Month]' 
+# True 
+# Date[Month] 
+# Month 
+# 2 
+# LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854[-NaN-] 
+# -NaN- 
+# 1 
+'LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696[-NaN-]' --> 'Date[Full Date]' 
+# True 
+# Date[Full Date] 
+# Full Date 
+# 2 
+# LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696[-NaN-] 
+# -NaN- 
+# 1 
+'Customer[CustomerKey]' --> 'Sales[CustomerKey]' 
+# True 
+# Sales[CustomerKey] 
+# CustomerKey 
+# 2 
+# Customer[CustomerKey] 
+# CustomerKey 
+# 1 
+'Product[ProductKey]' --> 'Sales[ProductKey]' 
+# True 
+# Sales[ProductKey] 
+# ProductKey 
+# 2 
+# Product[ProductKey] 
+# ProductKey 
+# 1 
+'Reseller[ResellerKey]' --> 'Sales[ResellerKey]' 
+# True 
+# Sales[ResellerKey] 
+# ResellerKey 
+# 2 
+# Reseller[ResellerKey] 
+# ResellerKey 
+# 1 
+'Sales[SalesOrderLineKey]' --> 'Sales Order[SalesOrderLineKey]' 
+# True 
+# Sales Order[SalesOrderLineKey] 
+# SalesOrderLineKey 
+# 1 
+# Sales[SalesOrderLineKey] 
+# SalesOrderLineKey 
+# 1 
+'Sales Territory[SalesTerritoryKey]' --> 'Sales[SalesTerritoryKey]' 
+# True 
+# Sales[SalesTerritoryKey] 
+# SalesTerritoryKey 
+# 2 
+# Sales Territory[SalesTerritoryKey] 
+# SalesTerritoryKey 
+# 1 
+'Date[DateKey]' --> 'Sales[OrderDateKey]' 
+# True 
+# Sales[OrderDateKey] 
+# OrderDateKey 
+# 2 
+# Date[DateKey] 
+# DateKey 
+# 1 
+'Date[DateKey]' --> 'Sales[DueDateKey]' 
+# False 
+# Sales[DueDateKey] 
+# DueDateKey 
+# 2 
+# Date[DateKey] 
+# DateKey 
+# 1 
+'Date[DateKey]' --> 'Sales[ShipDateKey]' 
+# False 
+# Sales[ShipDateKey] 
+# ShipDateKey 
+# 2 
+# Date[DateKey] 
+# DateKey 
+# 1 
+'Table[Category]' --> 'Product[Category]' 
+# True 
+# Product[Category] 
+# Category 
+# 2 
+# Table[Category] 
+# Category 
+# 1 
+```
+
+
 
 [Up](#)
 # Business objects
@@ -303,5 +410,5 @@ graph TD;
 
 ----
 <p align="center">
-Generated at 26.11.2023 18:57:46 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 21c1f3a
+Generated at 26.11.2023 20:06:24 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: c81ef97
 </p>
