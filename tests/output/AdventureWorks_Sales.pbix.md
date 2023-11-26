@@ -1,6 +1,7 @@
 ----
 
 [Home](../home.md) > [filename](index.md)
+
 [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
 ----
@@ -21,7 +22,7 @@ Documentation for file **AdventureWorks_Sales.pbix**.
 | **Compatibility level** | `1567` | 
 
 
-
+[Up](#)
 # Model relationships
 
 ```mermaid
@@ -32,6 +33,7 @@ graph TD;
     C-->D;
 ```
 
+[Up](#)
 # Business objects
 
 | ID| NAME | DESCRIPTION | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME |
@@ -47,6 +49,7 @@ graph TD;
 
 
 
+[Up](#)
 # Measures
 
 
@@ -151,6 +154,7 @@ graph TD;
 | 3646 | Table(3642) |  | -NaN- |  | -NaN- | 0 | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T23:04:03 |    |    |   -NaN- |   -NaN- |  
 
 
+[Up](#)
 # Relationships 
 
 
@@ -170,6 +174,7 @@ graph TD;
 | 3725 | 1 | 93a2e7c9-4a15-47be-93c0-06eceb139103 | True | 1 | 1 | 1 | False |  [572](./table_572) Product[Category] | Category |  2 |   Table[Category] |  Category |   1 | 1 |   3726 |   -NaN- |   2020-12-16T23:04:04 |   2020-12-16T23:04:04 |   1 | 
 
 
+[Up](#)
 # Hierarchies 
 
 
@@ -188,6 +193,7 @@ graph TD;
 | 3601 |Sales Territory(1078) | Sales Territories | -NaN- | False | 1 | 3606 | 2022-09-22T22:59:56 |  2020-12-16T22:10:16 |  2020-12-16T22:10:23 | 0 | db78d396-cf8e-4440-a5dc-8e5795a54e56 | -NaN- | 
 
 
+[Up](#)
 # Columns 
 
 
@@ -297,5 +303,5 @@ graph TD;
 
 ----
 <p align="center">
-Generated at 26.11.2023 18:38:41 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 3dbfa40
+Generated at 26.11.2023 18:52:46 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 6e70e09
 </p>
