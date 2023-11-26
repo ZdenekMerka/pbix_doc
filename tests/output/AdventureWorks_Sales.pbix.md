@@ -27,19 +27,6 @@ Documentation for file **AdventureWorks_Sales.pbix**.
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
 id186(["LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959[-NaN-]"]) --> id183(["Date[Date]"])
 
 
@@ -348,5 +335,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 26.11.2023 20:52:07 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 5ef773f
+Generated at 26.11.2023 20:53:45 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 7abb6dc
 </p>
