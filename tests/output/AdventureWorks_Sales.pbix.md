@@ -36,142 +36,18 @@ graph TD;
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-id(["This Markdown []"])
-
-
-
-
 id186(["LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959[-NaN-]"]) --> id183(["Date[Date]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id189(["LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854[-NaN-]"]) --> id183(["Date[Month]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id192(["LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696[-NaN-]"]) --> id183(["Date[Full Date]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id12(["Customer[CustomerKey]"]) --> id805(["Sales[CustomerKey]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id572(["Product[ProductKey]"]) --> id805(["Sales[ProductKey]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id690(["Reseller[ResellerKey]"]) --> id805(["Sales[ResellerKey]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id805(["Sales[SalesOrderLineKey]"]) --> id980(["Sales Order[SalesOrderLineKey]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id1078(["Sales Territory[SalesTerritoryKey]"]) --> id805(["Sales[SalesTerritoryKey]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id183(["Date[DateKey]"]) --> id805(["Sales[OrderDateKey]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id183(["Date[DateKey]"]) --> id805(["Sales[DueDateKey]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id183(["Date[DateKey]"]) --> id805(["Sales[ShipDateKey]"])
-
-
-
-
-
-id(["This Markdown []"])
-
-
-
-
 id3642(["Table[Category]"]) --> id572(["Product[Category]"])
-
-
-
-
-
 ```
 
 
