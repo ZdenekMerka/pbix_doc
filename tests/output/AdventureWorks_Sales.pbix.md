@@ -36,7 +36,6 @@ graph TD;
 
 ```mermaid
 graph TD;
-<<<<<<< HEAD
     A-->B;
     A-->C;
     B-->D;
@@ -75,20 +74,6 @@ id183(["Date[DateKey]"]) --> id805(["Sales[OrderDateKey]"])
 id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 
-=======
-id186(["LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959[-NaN-]"]) --> id183(["Date[Date]"])
-id189(["LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854[-NaN-]"]) --> id183(["Date[Month]"])
-id192(["LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696[-NaN-]"]) --> id183(["Date[Full Date]"])
-id12(["Customer[CustomerKey]"]) --> id805(["Sales[CustomerKey]"])
-id572(["Product[ProductKey]"]) --> id805(["Sales[ProductKey]"])
-id690(["Reseller[ResellerKey]"]) --> id805(["Sales[ResellerKey]"])
-id805(["Sales[SalesOrderLineKey]"]) --> id980(["Sales Order[SalesOrderLineKey]"])
-id1078(["Sales Territory[SalesTerritoryKey]"]) --> id805(["Sales[SalesTerritoryKey]"])
-id183(["Date[DateKey]"]) --> id805(["Sales[OrderDateKey]"])
-id183(["Date[DateKey]"]) --> id805(["Sales[DueDateKey]"])
-id183(["Date[DateKey]"]) --> id805(["Sales[ShipDateKey]"])
-id3642(["Table[Category]"]) --> id572(["Product[Category]"])
->>>>>>> cc89751b4b9019c2d5dceac590a8529de0eaf3cd
 ```
 
 
@@ -363,10 +348,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-<<<<<<< HEAD
-Generated at 26.11.2023 20:50:37 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: d98915c
+Generated at 26.11.2023 20:52:07 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 5ef773f
 </p>
-=======
-Generated at 26.11.2023 20:30:55 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 27958ce
-</p>
->>>>>>> cc89751b4b9019c2d5dceac590a8529de0eaf3cd

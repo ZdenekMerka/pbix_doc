@@ -348,5 +348,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 26.11.2023 20:50:38 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: d98915c
+Generated at 26.11.2023 20:52:08 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 5ef773f
 </p>
