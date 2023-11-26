@@ -62,8 +62,8 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 # Measures
 
 
-| ID| TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
-|---|-------|------|-------------|------------|-----------|-------|
+| ID | TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
+|----|-------|------|-------------|------------|-----------|-------|
 | 19 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | YEAR([Date]) | True |  1 |  
 | 20 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | MONTH([Date]) | True |  1 |  
 | 21 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
@@ -95,20 +95,20 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 # Relationships 
 
 
-| ID| MODEL_ID | NAME | IS_ACTIVE  | TYPE | CROSS_FILTERING_BEHAVIOR | JOIN_ON_DATE_BEHAVIOR | RELY_ON_REFERENTIAL_INTEGRITY | FROM_TABLE_ID | FROM_COLUMN_ID |FROM_CARDINALITY |TO_TABLE_ID |TO_COLUMN_ID |TO_CARDINALITY |STATE |RELATIONSHIP_STORAGE_ID |RELATIONSHIP_STORAGE_2_ID |MODIFIED_TIME |REFRESHED_TIME |SECURITY_FILTERING_BEHAVIOR |
-|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------| 
-| 195 | 1 | 88371ba8-2389-41b4-a22f-bcb756732d3b | True | 1 | 1 | 2 | False |  [183](./table_183) Date[Date] | Date |  2 |   LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959[-NaN-] |  -NaN- |   1 | 1 |   531 |   -NaN- |   2020-12-16T21:46:22 |   2020-12-16T21:46:22 |   1 | 
-| 196 | 1 | 586c9eeb-fe2f-431d-a8c4-9723ce217f20 | True | 1 | 1 | 2 | False |  [183](./table_183) Date[Month] | Month |  2 |   LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854[-NaN-] |  -NaN- |   1 | 1 |   533 |   -NaN- |   2020-12-16T21:46:22 |   2020-12-16T21:46:22 |   1 | 
-| 197 | 1 | 401217e9-9553-4835-a527-fd574f68046d | True | 1 | 1 | 2 | False |  [183](./table_183) Date[Full Date] | Full Date |  2 |   LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696[-NaN-] |  -NaN- |   1 | 1 |   535 |   -NaN- |   2020-12-16T21:46:22 |   2020-12-16T21:46:22 |   1 | 
-| 3224 | 1 | e3030baf-8c61-408d-a80e-04714277dcd3 | True | 1 | 1 | 1 | False |  [805](./table_805) Sales[CustomerKey] | CustomerKey |  2 |   Customer[CustomerKey] |  CustomerKey |   1 | 1 |   3225 |   -NaN- |   2020-12-16T21:46:36 |   2020-12-16T21:46:36 |   1 | 
-| 3227 | 1 | a0a78efb-3ce3-472a-993a-b92e31c0e3cd | True | 1 | 1 | 1 | False |  [805](./table_805) Sales[ProductKey] | ProductKey |  2 |   Product[ProductKey] |  ProductKey |   1 | 1 |   3228 |   -NaN- |   2020-12-16T21:46:36 |   2020-12-16T21:46:36 |   1 | 
-| 3230 | 1 | 0ef2b150-bb90-4b8f-8537-fc236873591c | True | 1 | 1 | 1 | False |  [805](./table_805) Sales[ResellerKey] | ResellerKey |  2 |   Reseller[ResellerKey] |  ResellerKey |   1 | 1 |   3231 |   -NaN- |   2020-12-16T21:46:36 |   2020-12-16T21:46:36 |   1 | 
-| 3233 | 1 | 29b21f6a-77ef-4b3b-a0c0-e4111f87627b | True | 1 | 2 | 1 | False |  [980](./table_980) Sales Order[SalesOrderLineKey] | SalesOrderLineKey |  1 |   Sales[SalesOrderLineKey] |  SalesOrderLineKey |   1 | 1 |   3234 |   3236.0 |   2020-12-16T21:46:36 |   2020-12-16T21:46:36 |   1 | 
-| 3238 | 1 | cecf591c-1f02-44a6-bff1-1c753a0b4835 | True | 1 | 1 | 1 | False |  [805](./table_805) Sales[SalesTerritoryKey] | SalesTerritoryKey |  2 |   Sales Territory[SalesTerritoryKey] |  SalesTerritoryKey |   1 | 1 |   3239 |   -NaN- |   2020-12-16T21:46:36 |   2020-12-16T21:46:36 |   1 | 
-| 3305 | 1 | 8e31fd7b-1e63-43a9-8a47-33876ae8aed6 | True | 1 | 1 | 1 | False |  [805](./table_805) Sales[OrderDateKey] | OrderDateKey |  2 |   Date[DateKey] |  DateKey |   1 | 1 |   3306 |   -NaN- |   2020-12-16T22:04:37 |   2020-12-16T22:04:37 |   1 | 
-| 3322 | 1 | dfb7bf63-667c-4abb-b494-7424c4e34b60 | False | 1 | 1 | 1 | False |  [805](./table_805) Sales[DueDateKey] | DueDateKey |  2 |   Date[DateKey] |  DateKey |   1 | 1 |   3323 |   -NaN- |   2020-12-16T22:04:43 |   2020-12-16T22:04:43 |   1 | 
-| 3339 | 1 | 6a63bfea-7b52-4e05-85f4-63a0f9b8991f | False | 1 | 1 | 1 | False |  [805](./table_805) Sales[ShipDateKey] | ShipDateKey |  2 |   Date[DateKey] |  DateKey |   1 | 1 |   3340 |   -NaN- |   2020-12-16T22:04:47 |   2020-12-16T22:04:47 |   1 | 
-| 3725 | 1 | 93a2e7c9-4a15-47be-93c0-06eceb139103 | True | 1 | 1 | 1 | False |  [572](./table_572) Product[Category] | Category |  2 |   Table[Category] |  Category |   1 | 1 |   3726 |   -NaN- |   2020-12-16T23:04:04 |   2020-12-16T23:04:04 |   1 | 
+| ID | FROM_TABLE_ID | FROM_CARDINALITY | TO_TABLE_ID | TO_CARDINALITY | NAME | IS_ACTIVE  |
+|----|---------------|------------------|-------------|----------------|------|------------|
+| 195 | Date[Date] | 2 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959[-NaN-] | 1 | 88371ba8-2389-41b4-a22f-bcb756732d3b | True |
+| 196 | Date[Month] | 2 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854[-NaN-] | 1 | 586c9eeb-fe2f-431d-a8c4-9723ce217f20 | True |
+| 197 | Date[Full Date] | 2 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696[-NaN-] | 1 | 401217e9-9553-4835-a527-fd574f68046d | True |
+| 3224 | Sales[CustomerKey] | 2 | Customer[CustomerKey] | 1 | e3030baf-8c61-408d-a80e-04714277dcd3 | True |
+| 3227 | Sales[ProductKey] | 2 | Product[ProductKey] | 1 | a0a78efb-3ce3-472a-993a-b92e31c0e3cd | True |
+| 3230 | Sales[ResellerKey] | 2 | Reseller[ResellerKey] | 1 | 0ef2b150-bb90-4b8f-8537-fc236873591c | True |
+| 3233 | Sales Order[SalesOrderLineKey] | 1 | Sales[SalesOrderLineKey] | 1 | 29b21f6a-77ef-4b3b-a0c0-e4111f87627b | True |
+| 3238 | Sales[SalesTerritoryKey] | 2 | Sales Territory[SalesTerritoryKey] | 1 | cecf591c-1f02-44a6-bff1-1c753a0b4835 | True |
+| 3305 | Sales[OrderDateKey] | 2 | Date[DateKey] | 1 | 8e31fd7b-1e63-43a9-8a47-33876ae8aed6 | True |
+| 3322 | Sales[DueDateKey] | 2 | Date[DateKey] | 1 | dfb7bf63-667c-4abb-b494-7424c4e34b60 | False |
+| 3339 | Sales[ShipDateKey] | 2 | Date[DateKey] | 1 | 6a63bfea-7b52-4e05-85f4-63a0f9b8991f | False |
+| 3725 | Product[Category] | 2 | Table[Category] | 1 | 93a2e7c9-4a15-47be-93c0-06eceb139103 | True |
 
 
 [Up](#)
@@ -240,5 +240,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 26.11.2023 21:28:20 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 8e417e5
+Generated at 26.11.2023 21:43:27 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 0ed5aad
 </p>

@@ -67,8 +67,8 @@ There are no business objects information or we have insufficient permissions.
 # Measures
 
 {% if measures %}
-| ID| TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
-|---|-------|------|-------------|------------|-----------|-------|
+| ID | TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
+|----|-------|------|-------------|------------|-----------|-------|
 {% for i  in measures if i.Expression != '-NaN-' -%}
 | {{ i.ID }} | {{tables_idx[str(i.TableID)]['Name']}} | {{ i.Name}} | {{ i.Description }} | {{i.Expression}} | {{i.IsHidden}} |  {{i.State}} |  
 {% endfor -%}
@@ -81,10 +81,10 @@ There are no measures or we have insufficient permissions.
 # Relationships 
 {% if relationships %}
 
-| ID| MODEL_ID | NAME | IS_ACTIVE  | TYPE | CROSS_FILTERING_BEHAVIOR | JOIN_ON_DATE_BEHAVIOR | RELY_ON_REFERENTIAL_INTEGRITY | FROM_TABLE_ID | FROM_COLUMN_ID |FROM_CARDINALITY |TO_TABLE_ID |TO_COLUMN_ID |TO_CARDINALITY |STATE |RELATIONSHIP_STORAGE_ID |RELATIONSHIP_STORAGE_2_ID |MODIFIED_TIME |REFRESHED_TIME |SECURITY_FILTERING_BEHAVIOR |
-|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------| 
+| ID | FROM_TABLE_ID | FROM_CARDINALITY | TO_TABLE_ID | TO_CARDINALITY | NAME | IS_ACTIVE  |
+|----|---------------|------------------|-------------|----------------|------|------------|
 {% for i  in relationships -%}
-| {{ i.ID }} | {{ i.ModelID}} | {{ i.Name}} | {{ i.IsActive }} | {{i.Type}} | {{i.CrossFilteringBehavior}} | {{i.JoinOnDateBehavior}} | {{i.RelyOnReferentialIntegrity}} |  [{{ i.FromTableID}}](./table_{{i.FromTableID}}) {{tables_idx[str(i.FromTableID)]['Name']}}[{{columns_idx[str(i.FromColumnID)]['ExplicitName']}}] | {{columns_idx[str(i.FromColumnID)]['ExplicitName']}} |  {{i.FromCardinality}} |   {{tables_idx[str(i.ToTableID)]['Name']}}[{{columns_idx[str(i.ToColumnID)]['ExplicitName']}}] |  {{columns_idx[str(i.ToColumnID)]['ExplicitName']}} |   {{i.ToCardinality}} | {{i.State}} |   {{i.RelationshipStorageID}} |   {{i.RelationshipStorage2ID}} |   {{i.ModifiedTime}} |   {{i.RefreshedTime}} |   {{i.SecurityFilteringBehavior}} | 
+| {{ i.ID }} | {{tables_idx[str(i.FromTableID)]['Name']}}[{{columns_idx[str(i.FromColumnID)]['ExplicitName']}}] | {{i.FromCardinality}} | {{tables_idx[str(i.ToTableID)]['Name']}}[{{columns_idx[str(i.ToColumnID)]['ExplicitName']}}] | {{i.ToCardinality}} | {{ i.Name}} | {{ i.IsActive }} |
 {% endfor -%}
 
 {% else %}
