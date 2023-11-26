@@ -26,7 +26,7 @@ Documentation for file **AdventureWorks_Sales2.pbix**.
 # Model relationships
 
 ```mermaid
-graph TD;
+graph LR;
 id186(["LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959[-NaN-]"]) --> id183(["Date[Date]"])
 
 
@@ -335,5 +335,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 26.11.2023 20:53:46 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 7abb6dc
+Generated at 26.11.2023 20:55:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: f0408a5
 </p>
