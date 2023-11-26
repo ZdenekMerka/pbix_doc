@@ -85,105 +85,105 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 # Measures
 
 
-| ID| TABLE_ID | NAME | DESCRIPTION | DATA_TYPE | EXPRESSION | FORMAT_STRING | IS_HIDDEN | STATE | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | KPIID | IS_SIMPLE_MEASURE | ERROR_MESSAGE | DISPLAY_FOLDER |
-|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
-| 13 | Customer(12) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:12 |  2020-12-16T21:46:12 |    |    |   -NaN- |   -NaN- |  
-| 113 | Customer(12) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 114 | Customer(12) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 115 | Customer(12) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 116 | Customer(12) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 117 | Customer(12) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 118 | Customer(12) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 119 | Customer(12) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 16 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393(15) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:12 |  2020-12-16T21:46:12 |    |    |   -NaN- |   -NaN- |  
-| 18 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393(15) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:12 |    |    |   -NaN- |   -NaN- |  
-| 19 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393(15) |  | -NaN- |  | YEAR([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:12 |    |    |   -NaN- |   -NaN- |  
-| 20 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393(15) |  | -NaN- |  | MONTH([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:12 |    |    |   -NaN- |   -NaN- |  
-| 21 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393(15) |  | -NaN- |  | FORMAT([Date], "MMMM") | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:12 |    |    |   -NaN- |   -NaN- |  
-| 22 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393(15) |  | -NaN- |  | INT(([MonthNo] + 2) / 3) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:12 |    |    |   -NaN- |   -NaN- |  
-| 23 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393(15) |  | -NaN- |  | "Qtr " & [QuarterNo] | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:12 |    |    |   -NaN- |   -NaN- |  
-| 24 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393(15) |  | -NaN- |  | DAY([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:12 |    |    |   -NaN- |   -NaN- |  
-| 184 | Date(183) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:15 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 198 | Date(183) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 199 | Date(183) |  | -NaN- |  | -NaN- | Long Date | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 207 | Date(183) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 208 | Date(183) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 209 | Date(183) |  | -NaN- |  | -NaN- | Long Date | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 217 | Date(183) |  | -NaN- |  | -NaN- | Long Date | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 225 | Date(183) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 187 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:15 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 200 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 201 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) |  | -NaN- |  | YEAR([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 202 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) |  | -NaN- |  | MONTH([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 203 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) |  | -NaN- |  | FORMAT([Date], "MMMM") | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 204 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) |  | -NaN- |  | INT(([MonthNo] + 2) / 3) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 205 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) |  | -NaN- |  | "Qtr " & [QuarterNo] | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 206 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) |  | -NaN- |  | DAY([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 190 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:15 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 210 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 211 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) |  | -NaN- |  | YEAR([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 212 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) |  | -NaN- |  | MONTH([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 213 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) |  | -NaN- |  | FORMAT([Date], "MMMM") | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 214 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) |  | -NaN- |  | INT(([MonthNo] + 2) / 3) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 215 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) |  | -NaN- |  | "Qtr " & [QuarterNo] | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 216 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) |  | -NaN- |  | DAY([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 193 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:15 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 218 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 219 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) |  | -NaN- |  | YEAR([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 220 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) |  | -NaN- |  | MONTH([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 221 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) |  | -NaN- |  | FORMAT([Date], "MMMM") | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 222 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) |  | -NaN- |  | INT(([MonthNo] + 2) / 3) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 223 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) |  | -NaN- |  | "Qtr " & [QuarterNo] | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 224 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) |  | -NaN- |  | DAY([Date]) | -NaN- | True |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 573 | Product(572) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:15 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 575 | Product(572) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 576 | Product(572) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 577 | Product(572) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 578 | Product(572) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 579 | Product(572) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 580 | Product(572) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 581 | Product(572) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 582 | Product(572) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 583 | Product(572) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 3742 | Product(572) |  | -NaN- |  | RELATED('Table'[Sorting]) | 0 | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T23:04:32 |    |    |   -NaN- |   -NaN- |  
-| 691 | Reseller(690) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:15 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 693 | Reseller(690) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 694 | Reseller(690) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 695 | Reseller(690) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 696 | Reseller(690) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 697 | Reseller(690) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 698 | Reseller(690) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 699 | Reseller(690) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 700 | Reseller(690) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 806 | Sales(805) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:15 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 808 | Sales(805) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 809 | Sales(805) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 810 | Sales(805) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 811 | Sales(805) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 812 | Sales(805) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 813 | Sales(805) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 814 | Sales(805) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 815 | Sales(805) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 816 | Sales(805) |  | -NaN- |  | -NaN- | 0 | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 817 | Sales(805) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 818 | Sales(805) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 819 | Sales(805) |  | -NaN- |  | -NaN- | 0 | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 820 | Sales(805) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 821 | Sales(805) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 822 | Sales(805) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 981 | Sales Order(980) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:15 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 983 | Sales Order(980) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 984 | Sales Order(980) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 985 | Sales Order(980) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 986 | Sales Order(980) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:15 |    |    |   -NaN- |   -NaN- |  
-| 1079 | Sales Territory(1078) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T21:46:16 |  2020-12-16T21:46:16 |    |    |   -NaN- |   -NaN- |  
-| 1081 | Sales Territory(1078) |  | -NaN- |  | -NaN- | 0 | True |  1 |  2022-09-22T22:59:56 |  2023-11-22T21:37:51 |    |    |   -NaN- |   -NaN- |  
-| 1082 | Sales Territory(1078) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:16 |    |    |   -NaN- |   -NaN- |  
-| 1083 | Sales Territory(1078) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:16 |    |    |   -NaN- |   -NaN- |  
-| 1084 | Sales Territory(1078) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T21:46:16 |    |    |   -NaN- |   -NaN- |  
-| 3643 | Table(3642) |  | -NaN- |  | -NaN- | -NaN- | True |  1 |  2020-12-16T23:04:03 |  2020-12-16T23:04:03 |    |    |   -NaN- |   -NaN- |  
-| 3645 | Table(3642) |  | -NaN- |  | -NaN- | -NaN- | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T23:04:03 |    |    |   -NaN- |   -NaN- |  
-| 3646 | Table(3642) |  | -NaN- |  | -NaN- | 0 | False |  1 |  2022-09-22T22:59:56 |  2020-12-16T23:04:03 |    |    |   -NaN- |   -NaN- |  
+| ID| TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
+|---|-------|------|-------------|------------|-----------|-------|
+| 13 | Customer |  | -NaN- | -NaN- | True |  1 |  
+| 113 | Customer |  | -NaN- | -NaN- | True |  1 |  
+| 114 | Customer |  | -NaN- | -NaN- | False |  1 |  
+| 115 | Customer |  | -NaN- | -NaN- | False |  1 |  
+| 116 | Customer |  | -NaN- | -NaN- | False |  1 |  
+| 117 | Customer |  | -NaN- | -NaN- | False |  1 |  
+| 118 | Customer |  | -NaN- | -NaN- | False |  1 |  
+| 119 | Customer |  | -NaN- | -NaN- | False |  1 |  
+| 16 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | -NaN- | True |  1 |  
+| 18 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | -NaN- | True |  1 |  
+| 19 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | YEAR([Date]) | True |  1 |  
+| 20 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | MONTH([Date]) | True |  1 |  
+| 21 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
+| 22 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
+| 23 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
+| 24 | DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393 |  | -NaN- | DAY([Date]) | True |  1 |  
+| 184 | Date |  | -NaN- | -NaN- | True |  1 |  
+| 198 | Date |  | -NaN- | -NaN- | True |  1 |  
+| 199 | Date |  | -NaN- | -NaN- | False |  1 |  
+| 207 | Date |  | -NaN- | -NaN- | False |  1 |  
+| 208 | Date |  | -NaN- | -NaN- | False |  1 |  
+| 209 | Date |  | -NaN- | -NaN- | False |  1 |  
+| 217 | Date |  | -NaN- | -NaN- | False |  1 |  
+| 225 | Date |  | -NaN- | -NaN- | True |  1 |  
+| 187 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | -NaN- | True |  1 |  
+| 200 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | -NaN- | True |  1 |  
+| 201 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | YEAR([Date]) | True |  1 |  
+| 202 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | MONTH([Date]) | True |  1 |  
+| 203 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
+| 204 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
+| 205 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
+| 206 | LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959 |  | -NaN- | DAY([Date]) | True |  1 |  
+| 190 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | -NaN- | True |  1 |  
+| 210 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | -NaN- | True |  1 |  
+| 211 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | YEAR([Date]) | True |  1 |  
+| 212 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | MONTH([Date]) | True |  1 |  
+| 213 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
+| 214 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
+| 215 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
+| 216 | LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854 |  | -NaN- | DAY([Date]) | True |  1 |  
+| 193 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | -NaN- | True |  1 |  
+| 218 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | -NaN- | True |  1 |  
+| 219 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | YEAR([Date]) | True |  1 |  
+| 220 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | MONTH([Date]) | True |  1 |  
+| 221 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | FORMAT([Date], "MMMM") | True |  1 |  
+| 222 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | INT(([MonthNo] + 2) / 3) | True |  1 |  
+| 223 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | "Qtr " & [QuarterNo] | True |  1 |  
+| 224 | LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696 |  | -NaN- | DAY([Date]) | True |  1 |  
+| 573 | Product |  | -NaN- | -NaN- | True |  1 |  
+| 575 | Product |  | -NaN- | -NaN- | True |  1 |  
+| 576 | Product |  | -NaN- | -NaN- | False |  1 |  
+| 577 | Product |  | -NaN- | -NaN- | False |  1 |  
+| 578 | Product |  | -NaN- | -NaN- | False |  1 |  
+| 579 | Product |  | -NaN- | -NaN- | False |  1 |  
+| 580 | Product |  | -NaN- | -NaN- | False |  1 |  
+| 581 | Product |  | -NaN- | -NaN- | False |  1 |  
+| 582 | Product |  | -NaN- | -NaN- | False |  1 |  
+| 583 | Product |  | -NaN- | -NaN- | False |  1 |  
+| 3742 | Product |  | -NaN- | RELATED('Table'[Sorting]) | False |  1 |  
+| 691 | Reseller |  | -NaN- | -NaN- | True |  1 |  
+| 693 | Reseller |  | -NaN- | -NaN- | True |  1 |  
+| 694 | Reseller |  | -NaN- | -NaN- | False |  1 |  
+| 695 | Reseller |  | -NaN- | -NaN- | False |  1 |  
+| 696 | Reseller |  | -NaN- | -NaN- | False |  1 |  
+| 697 | Reseller |  | -NaN- | -NaN- | False |  1 |  
+| 698 | Reseller |  | -NaN- | -NaN- | False |  1 |  
+| 699 | Reseller |  | -NaN- | -NaN- | False |  1 |  
+| 700 | Reseller |  | -NaN- | -NaN- | False |  1 |  
+| 806 | Sales |  | -NaN- | -NaN- | True |  1 |  
+| 808 | Sales |  | -NaN- | -NaN- | True |  1 |  
+| 809 | Sales |  | -NaN- | -NaN- | True |  1 |  
+| 810 | Sales |  | -NaN- | -NaN- | True |  1 |  
+| 811 | Sales |  | -NaN- | -NaN- | True |  1 |  
+| 812 | Sales |  | -NaN- | -NaN- | True |  1 |  
+| 813 | Sales |  | -NaN- | -NaN- | True |  1 |  
+| 814 | Sales |  | -NaN- | -NaN- | True |  1 |  
+| 815 | Sales |  | -NaN- | -NaN- | True |  1 |  
+| 816 | Sales |  | -NaN- | -NaN- | False |  1 |  
+| 817 | Sales |  | -NaN- | -NaN- | False |  1 |  
+| 818 | Sales |  | -NaN- | -NaN- | False |  1 |  
+| 819 | Sales |  | -NaN- | -NaN- | False |  1 |  
+| 820 | Sales |  | -NaN- | -NaN- | False |  1 |  
+| 821 | Sales |  | -NaN- | -NaN- | False |  1 |  
+| 822 | Sales |  | -NaN- | -NaN- | False |  1 |  
+| 981 | Sales Order |  | -NaN- | -NaN- | True |  1 |  
+| 983 | Sales Order |  | -NaN- | -NaN- | False |  1 |  
+| 984 | Sales Order |  | -NaN- | -NaN- | True |  1 |  
+| 985 | Sales Order |  | -NaN- | -NaN- | False |  1 |  
+| 986 | Sales Order |  | -NaN- | -NaN- | False |  1 |  
+| 1079 | Sales Territory |  | -NaN- | -NaN- | True |  1 |  
+| 1081 | Sales Territory |  | -NaN- | -NaN- | True |  1 |  
+| 1082 | Sales Territory |  | -NaN- | -NaN- | False |  1 |  
+| 1083 | Sales Territory |  | -NaN- | -NaN- | False |  1 |  
+| 1084 | Sales Territory |  | -NaN- | -NaN- | False |  1 |  
+| 3643 | Table |  | -NaN- | -NaN- | True |  1 |  
+| 3645 | Table |  | -NaN- | -NaN- | False |  1 |  
+| 3646 | Table |  | -NaN- | -NaN- | False |  1 |  
 
 
 [Up](#)
@@ -335,5 +335,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 26.11.2023 20:55:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: f0408a5
+Generated at 26.11.2023 21:03:31 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 14c3289
 </p>
