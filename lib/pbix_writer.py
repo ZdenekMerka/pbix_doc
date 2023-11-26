@@ -62,6 +62,10 @@ class pbix_writer2(writer.writer):
             port = self.pbix_data['info']['port'],
             full_filename = self.pbix_data['info']['pbix_full_path'],
             tables = self.pbix_data["ssas_md"]['TMSCHEMA_TABLES'].values(),
+            columns  = self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS'].values(),
+            measures =      self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS'].values(),
+            relationships = self.pbix_data['ssas_md']['TMSCHEMA_RELATIONSHIPS'].values(),
+
             )
         return ret
 

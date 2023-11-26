@@ -97,28 +97,118 @@ SystemManaged
 There are no business objects information or we have insufficient permissions.
 {% endif %}
 
-# Model commpm 
+# Columns 
 
+{% if columns %}
+| ID| TABLE_ID | EXPLICIT_NAME | INFERRED_NAME  | EXPLICIT_DATA_TYPE | INFERRED_DATA_TYPE | DATA_CATEGORY | DESCRIPTION | IS_HIDDEN | STATE | IS_UNIQUE | IS_KEY | IS_NULLABLE | ALIGNMENT | TABLE_DETAIL_POSITION | IS_DEFAULT_LABEL | IS_DEFAULT_IMAGE | SUMMARIZE_BY | COLUMN_STORAGE_ID | TYPE | SOURCE_COLUMN | COLUMN_ORIGIN_ID | EXPRESSION | FORMAT_STRING | IS_AVAILABLE_IN_MDX | SORT_BY_COLUMN_ID | ATTRIBUTE_HIERARCHY_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | REFRESHED_TIME | SYSTEM_FLAGS | KEEP_UNIQUE_ROWS | DISPLAY_ORDINAL | ERROR_MESSAGE | SOURCE_PROVIDER_TYPE | DISPLAY_FOLDER |
+|--------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
+{% for i  in columns -%}
+| <span id = {{i.ID}}>{{i.ID}}</span> | [{{ i.TableID}}](./table_{{i.TableID}}) | {{ i.ExplicitName}} | {{ i.InferredName }} | {{i.ExplicitDataType}} | {{i.InferredDataType}} | {{i.DataCategory}} | {{i.Description}} |  {{i.IsHidden}} |  {{i.State}} |  {{i.IsUnique}} |  {{i.IsKey}} |  {{i.IsNullable}} |  {{i.Alignment}} |  {{i.TableDetailPosition}} |  {{i.IsDefaultLabel}} |  {{i.IsDefaultImage}} |  {{i.SummarizeBy}} |  {{i.ColumnStorageID}} |  {{i.Type}} |  {{i.SourceColumn}} |  {{i.ColumnOriginID}} |  {{i.Expression}} |  {{i.FormatString}} |  {{i.IsAvailableInMDX}} |  {{i.SortByColumnID}} |  {{i.AttributeHierarchyID}} |  {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |  {{i.RefreshedTime}} |  {{i.SystemFlags}} |  {{i.KeepUniqueRows}} |  {{i.DisplayOrdinal}} |   {{i.ErrorMessage}} |   {{i.SourceProviderType}} |   {{i.DisplayFolder}} |  
+{% endfor -%}
 
+{# all possible columns of columns 
+ID
+TableID
+ExplicitName
+InferredName
+ExplicitDataType
+InferredDataType
+DataCategory
+Description
+IsHidden
+State
+IsUnique
+IsKey
+IsNullable
+Alignment
+TableDetailPosition
+IsDefaultLabel
+IsDefaultImage
+SummarizeBy
+ColumnStorageID
+Type
+SourceColumn
+ColumnOriginID
+Expression
+FormatString
+IsAvailableInMDX
+SortByColumnID
+AttributeHierarchyID
+ModifiedTime
+StructureModifiedTime
+RefreshedTime
+SystemFlags
+KeepUniqueRows
+DisplayOrdinal
+ErrorMessage
+    SourceProviderType
+    DisplayFolder
+    EncodingHint
+    RelatedColumnDetailsID
+    AlternateOfID
+    LineageTag
+    SourceLineageTag
+#}
 
-
-
-
-- analytics object [Customer](./SSAS__ssas_azure/analytics_object_Customer.md)
-- analytics object [Date](./SSAS__ssas_azure/analytics_object_Date.md)
-- analytics object [Geography](./SSAS__ssas_azure/analytics_object_Geography.md)
-- analytics object [Product](./SSAS__ssas_azure/analytics_object_Product.md)
-- analytics object [ProductCategory](./SSAS__ssas_azure/analytics_object_ProductCategory.md)
-- analytics object [ProductSubcategory](./SSAS__ssas_azure/analytics_object_ProductSubcategory.md)
-- analytics object [InternetSales](./SSAS__ssas_azure/analytics_object_InternetSales.md)
-
-
-
-{% if views %}
-Ano
 {% else %}
-There are no views in database or we have insufficient permissions.
+There are no columns information or we have insufficient permissions.
 {% endif %}
+
+# Measures
+
+{% if measures %}
+| ID| TABLE_ID | NAME | DESCRIPTION | DATA_TYPE | EXPRESSION | FORMAT_STRING | IS_HIDDEN | STATE | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | KPIID | IS_SIMPLE_MEASURE | ERROR_MESSAGE | DISPLAY_FOLDER |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+{% for i  in measures -%}
+| {{ i.ID }} | [{{ i.TableID}}](./table_{{i.TableID}}) | {{ i.Name}} | {{ i.Description }} | {{i.DataType}} | {{i.Expression}} | {{i.FormatString}} | {{i.IsHidden}} |  {{i.State}} |  {{i.ModifiedTime}} |  {{i.StructureModifiedTime}} |   {{i.KPIID}} |   {{i.IsSimpleMeasure}} |   {{i.ErrorMessage}} |   {{i.DisplayFolder}} |  
+{% endfor -%}
+
+
+{# all possible columns of measures 
+DetailRowsDefinitionID
+DataCategory
+LineageTag
+SourceLineageTag
+#}
+{% else %}
+There are no measures or we have insufficient permissions.
+{% endif %}
+
+# Relationships 
+{% if relationships %}
+
+| ID| MODEL_ID | NAME | IS_ACTIVE  | TYPE | CROSS_FILTERING_BEHAVIOR | JOIN_ON_DATE_BEHAVIOR | RELY_ON_REFERENTIAL_INTEGRITY | FROM_TABLE_ID | FROM_COLUMN_ID |FROM_CARDINALITY |TO_TABLE_ID |TO_COLUMN_ID |TO_CARDINALITY |STATE |RELATIONSHIP_STORAGE_ID |RELATIONSHIP_STORAGE_2_ID |MODIFIED_TIME |REFRESHED_TIME |SECURITY_FILTERING_BEHAVIOR |
+|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------| 
+{% for i  in relationships -%}
+| {{ i.ID }} | {{ i.ModelID}} | {{ i.Name}} | {{ i.IsActive }} | {{i.Type}} | {{i.CrossFilteringBehavior}} | {{i.JoinOnDateBehavior}} | {{i.RelyOnReferentialIntegrity}} |  [{{ i.FromTableID}}](./table_{{i.FromTableID}}) |  [{{ i.FromColumnID}}](#{{i.FromColumnID}}) |  {{i.FromCardinality}} |   {{i.ToTableID}} |   {{i.ToColumnID}} |   {{i.ToCardinality}} |   {{i.State}} |   {{i.RelationshipStorageID}} |   {{i.RelationshipStorage2ID}} |   {{i.ModifiedTime}} |   {{i.RefreshedTime}} |   {{i.SecurityFilteringBehavior}} |  
+{% endfor -%}
+
+{# all possible columns of columns 
+ID
+ModelID
+Name
+IsActive
+Type
+CrossFilteringBehavior
+JoinOnDateBehavior
+RelyOnReferentialIntegrity
+FromTableID
+FromColumnID
+FromCardinality
+ToTableID
+ToColumnID
+ToCardinality
+State
+RelationshipStorageID
+RelationshipStorage2ID
+ModifiedTime
+RefreshedTime
+SecurityFilteringBehavior
+#}
+{% else %}
+There are no relationships information or we have insufficient permissions.
+{% endif %}
+
 
 ----
 {% include "footer.md" %}
