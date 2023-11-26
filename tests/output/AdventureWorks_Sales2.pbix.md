@@ -431,17 +431,17 @@ graph TD;
 
 | ID| TABLE_ID | NAME | DESCRIPTION  | IS_HIDDEN | STATE | HIERARCHY_STORAGE_ID | MODIFIED_TIME | STRUCTURE_MODIFIED_TIME | REFRESHED_TIME | DISPLAY_FOLDER | HIDEMEMBERS | LINEAGETAG | SOURCELINEAGETAG |
 |--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------| ----------- | ---------- | ---------------- |
-| 3356 |Customer(12) | Geography | -NaN- | False | 1 | 3398 | 2022-09-22T22:59:56 |  2020-12-16T22:06:47 |  2020-12-16T22:07:32 | 
-0 | e2eae803-1a4b-4f7e-b72b-95f398746ca5 | -NaN- | | 27 |DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393(15) | Date Hierarchy | -NaN- | False | 1 | 112 | 2022-09-22T22:59:56 |  2020-12-16T21:46:12 |  2020-12-16T21:46:16 | 
-0 | 91a69be6-4b9c-41d7-952f-47c1d9c3997b | -NaN- | | 3399 |Date(183) | Fiscal | -NaN- | False | 1 | 3405 | 2022-09-22T22:59:56 |  2020-12-16T22:07:26 |  2020-12-16T22:07:32 | 
-0 | 2afdb215-375e-4ac4-9ba4-7541cab5d927 | -NaN- | | 230 |LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) | Date Hierarchy | -NaN- | False | 1 | 569 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2020-12-16T21:46:22 | 
-0 | 783cfd06-6261-4859-82a4-2e5cf47fe988 | -NaN- | | 231 |LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) | Date Hierarchy | -NaN- | False | 1 | 570 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2020-12-16T21:46:22 | 
-0 | 5a7c852b-1ff3-4257-b69f-91b15ae60acb | -NaN- | | 232 |LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) | Date Hierarchy | -NaN- | False | 1 | 571 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2020-12-16T21:46:22 | 
-0 | 2f2238c7-1e1c-4c94-aa0e-cee1b8f893d8 | -NaN- | | 3476 |Product(572) | Products | -NaN- | False | 1 | 3482 | 2022-09-22T22:59:56 |  2020-12-16T22:08:50 |  2020-12-16T23:04:54 | 
-0 | c6fdb5c0-f0bd-416e-aa26-167ee668f317 | -NaN- | | 3518 |Reseller(690) | Geography | -NaN- | False | 1 | 3525 | 2022-09-22T22:59:56 |  2020-12-16T22:09:31 |  2020-12-16T22:09:37 | 
-0 | 81e7318d-2363-4e56-92b6-cd0c41be2453 | -NaN- | | 3561 |Sales Order(980) | Sales Orders | -NaN- | False | 1 | 3565 | 2022-09-22T22:59:56 |  2020-12-16T22:09:51 |  2020-12-16T22:10:03 | 
-0 | 50630276-1986-4b90-859f-f355f7d16941 | -NaN- | | 3601 |Sales Territory(1078) | Sales Territories | -NaN- | False | 1 | 3606 | 2022-09-22T22:59:56 |  2020-12-16T22:10:16 |  2020-12-16T22:10:23 | 
-0 | db78d396-cf8e-4440-a5dc-8e5795a54e56 | -NaN- | 
+| 3356 |Customer(12) | Geography | -NaN- | False | 1 | 3398 | 2022-09-22T22:59:56 |  2020-12-16T22:06:47 |  2020-12-16T22:07:32 | 0 | e2eae803-1a4b-4f7e-b72b-95f398746ca5 | -NaN- | 
+| 27 |DateTableTemplate_788642c5-9a9d-4431-b350-9f47f7e53393(15) | Date Hierarchy | -NaN- | False | 1 | 112 | 2022-09-22T22:59:56 |  2020-12-16T21:46:12 |  2020-12-16T21:46:16 | 0 | 91a69be6-4b9c-41d7-952f-47c1d9c3997b | -NaN- | 
+| 3399 |Date(183) | Fiscal | -NaN- | False | 1 | 3405 | 2022-09-22T22:59:56 |  2020-12-16T22:07:26 |  2020-12-16T22:07:32 | 0 | 2afdb215-375e-4ac4-9ba4-7541cab5d927 | -NaN- | 
+| 230 |LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959(186) | Date Hierarchy | -NaN- | False | 1 | 569 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2020-12-16T21:46:22 | 0 | 783cfd06-6261-4859-82a4-2e5cf47fe988 | -NaN- | 
+| 231 |LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854(189) | Date Hierarchy | -NaN- | False | 1 | 570 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2020-12-16T21:46:22 | 0 | 5a7c852b-1ff3-4257-b69f-91b15ae60acb | -NaN- | 
+| 232 |LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696(192) | Date Hierarchy | -NaN- | False | 1 | 571 | 2022-09-22T22:59:56 |  2020-12-16T21:46:15 |  2020-12-16T21:46:22 | 0 | 2f2238c7-1e1c-4c94-aa0e-cee1b8f893d8 | -NaN- | 
+| 3476 |Product(572) | Products | -NaN- | False | 1 | 3482 | 2022-09-22T22:59:56 |  2020-12-16T22:08:50 |  2020-12-16T23:04:54 | 0 | c6fdb5c0-f0bd-416e-aa26-167ee668f317 | -NaN- | 
+| 3518 |Reseller(690) | Geography | -NaN- | False | 1 | 3525 | 2022-09-22T22:59:56 |  2020-12-16T22:09:31 |  2020-12-16T22:09:37 | 0 | 81e7318d-2363-4e56-92b6-cd0c41be2453 | -NaN- | 
+| 3561 |Sales Order(980) | Sales Orders | -NaN- | False | 1 | 3565 | 2022-09-22T22:59:56 |  2020-12-16T22:09:51 |  2020-12-16T22:10:03 | 0 | 50630276-1986-4b90-859f-f355f7d16941 | -NaN- | 
+| 3601 |Sales Territory(1078) | Sales Territories | -NaN- | False | 1 | 3606 | 2022-09-22T22:59:56 |  2020-12-16T22:10:16 |  2020-12-16T22:10:23 | 0 | db78d396-cf8e-4440-a5dc-8e5795a54e56 | -NaN- | 
+
 
 
 
@@ -453,5 +453,5 @@ graph TD;
 
 ----
 <p align="center">
-Generated at 26.11.2023 17:54:06 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: ee8c765
+Generated at 26.11.2023 18:00:46 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 4ad08a4
 </p>
