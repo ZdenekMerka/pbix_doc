@@ -271,16 +271,32 @@ class pbix_reader(reader.reader):
         for section in layout["sections"]:
             # Get the name of the section.
             section_name = section["name"]
+            displayName = section["displayName"]
 
             # Initialize a list to hold the visualizations in this section.
             section_visualizations = []
 
             # Iterate over each visual container in the section.
             for container in section["visualContainers"]:
-                pp('XXXXXXXXXXXXXXXXXXXX')
-                pp(container['config'])
-                pp(type(container['config']))
+                
                 visual = json.loads(container['config'])
+                
+                # decode config, query, dataTransforms, filters                
+                if container.get('config') is not None and container.get('config') != '':
+                    container['config'] = json.loads(container['config'])
+
+                if container.get('query') is not None and container.get('query') != '':
+                    container['query'] = json.loads(container['query'])
+
+                if container.get('dataTransforms') is not None and container.get('dataTransforms') != '':
+                    container['dataTransforms'] = json.loads(container['dataTransforms'])
+                
+                if container.get('filters') is not None and container.get('filters') != '':
+                    container['filters'] = json.loads(container['filters'])
+
+                
+                
+                # some old code 
                 try:
                     # Get the visualization type.
                     visual_type = visual["singleVisual"]["visualType"]
@@ -306,7 +322,8 @@ class pbix_reader(reader.reader):
                     continue
 
             # Add the list of parsed visualizations to the dictionary for this section.
-            visualizations[section_name] = section_visualizations
+            visualizations[displayName] = section_visualizations
+            
 
         return visualizations
 

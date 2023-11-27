@@ -42,7 +42,7 @@ start_time = datetime.now()
 ####################
 # arg parse 
 parser = argparse.ArgumentParser(description='Get metadata and data info from given pbix file and write them into json file.')
-parser.add_argument('--pbix_file', type=str, required=True, default='xxx', help="PBIX file")
+parser.add_argument('--pbix_file', type=str, required=False, default='xxx', help="PBIX file")
 parser.add_argument('--out_file', type=str, required=False, default='data.json', help="Output JSON File with extracted metadata (default = ./data.json)")
 parser.add_argument('--run_pbix', type=str, required=False, default=False, help="No run pbix file (default = False")
 
@@ -125,10 +125,11 @@ for instance_folder in ssas_instancie_folders:
     # load data from ZIP file
     pp(pbix_full_path)
     pbix_zip = reader.read_pbix(pbix_full_path)
-    pp(reader.parse_visualizations(pbix_zip['layout']))
+    parsed_section = reader.parse_visualizations(pbix_zip['layout'])
     pp(pbix_zip.keys())
     # add zip file information
     instance_md[md_root]['zip_file'] = pbix_zip
+    instance_md[md_root]['zip_file']['layout2'] = parsed_section 
     #pp(instance_md[md_root]['zip_file'].keys())
 
 

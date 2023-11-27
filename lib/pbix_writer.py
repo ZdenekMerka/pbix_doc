@@ -42,16 +42,17 @@ class pbix_writer2(writer.writer):
     def write_metadata(self):
         pp(self.metadata)
 
+
     def init_templates(self):
-        # init env 
-        self.env = tools.init_templ_env(
-            self.template_dir,
-
-
-            )
+        # init jinja2 env 
+        self.env = tools.init_templ_env( self.template_dir)
         self.env.globals['str'] = str
         self.env.globals['str_slicer'] = tools.str_slicer
         self.env.globals['re_nan'] = tools.remove_nan
+        self.env.globals['len'] = len
+        #self.env.globals['json_load'] = json.load
+        #self.env.globals['type'] = type
+
 
         # load all templates from conf 
         for tmpl in self.templates.keys():
@@ -64,7 +65,8 @@ class pbix_writer2(writer.writer):
     def render_index(self):
 
         #tables_idx = self.pbix_data["ssas_md"]['TMSCHEMA_TABLES']
-        #columns_idx  = self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS'],
+        #columns_idx  = self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS']
+        #pp( json.loads(self.pbix_data['zip_file']['layout']['sections'][0]['visualContainers'][0]['config']))
         
         ret =self.tmpl['index'].render(
             properties =  self.pbix_data["ssas_md"]["DBSCHEMA_CATALOGS"][self.pbix_data['info']['catalog']],
@@ -79,6 +81,8 @@ class pbix_writer2(writer.writer):
             measures =      self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS'].values(),
             relationships = self.pbix_data['ssas_md']['TMSCHEMA_RELATIONSHIPS'].values(),
             hierarchies =   self.pbix_data['ssas_md']['TMSCHEMA_HIERARCHIES'].values(),
+            report_sections = self.pbix_data['zip_file']['layout']['sections'],
+
 
             )
         return ret

@@ -15,6 +15,7 @@ Documentation for file **AdventureWorks_Sales2.pbix**.
 
 | Param  | Value  |
 |---|---|
+| **Analyzed pbix file name** | `AdventureWorks_Sales2.pbix` | 
 | **Catalog name** | `418255b2-96be-4dcd-9ddd-0a2ecea747a0` | 
 | **Port** | `61006`|
 | **Description** | `-NaN-` | 
@@ -43,6 +44,194 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 
 [Up](#)
+
+# Report sections
+
+## Page 1
+
+| Param  | Value  |
+|---|---|
+| **ID** | 0 |
+| **Name** | ReportSection |
+| **Display Name** | Page 1 |
+| **Filters** | [] |
+| **Ordinal** | 0 |
+| **Visual containers number** | 6 |
+
+### Container 
+
+| Param  | Value  |
+|---|---|
+| **x** | <class 'jinja2.runtime.Undefined'> |
+| **y** | <class 'jinja2.runtime.Undefined'> |
+| **z** | <class 'jinja2.runtime.Undefined'> |
+| **width** | <class 'int'> |
+| **height** | <class 'int'> |
+| **config** | <class 'type'> |
+| **filters** | <class 'str'> |
+| **query** | <class 'type'> |
+| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+
+
+
+### Container 
+
+| Param  | Value  |
+|---|---|
+| **x** | <class 'jinja2.runtime.Undefined'> |
+| **y** | <class 'jinja2.runtime.Undefined'> |
+| **z** | <class 'jinja2.runtime.Undefined'> |
+| **width** | <class 'int'> |
+| **height** | <class 'int'> |
+| **config** | <class 'type'> |
+| **filters** | <class 'str'> |
+| **query** | <class 'type'> |
+| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+
+
+
+### Container 
+
+| Param  | Value  |
+|---|---|
+| **x** | <class 'jinja2.runtime.Undefined'> |
+| **y** | <class 'jinja2.runtime.Undefined'> |
+| **z** | <class 'jinja2.runtime.Undefined'> |
+| **width** | <class 'int'> |
+| **height** | <class 'int'> |
+| **config** | <class 'type'> |
+| **filters** | <class 'str'> |
+| **query** | <class 'type'> |
+| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+
+
+
+### Container 
+
+| Param  | Value  |
+|---|---|
+| **x** | <class 'jinja2.runtime.Undefined'> |
+| **y** | <class 'jinja2.runtime.Undefined'> |
+| **z** | <class 'jinja2.runtime.Undefined'> |
+| **width** | <class 'int'> |
+| **height** | <class 'int'> |
+| **config** | <class 'type'> |
+| **filters** | <class 'str'> |
+| **query** | <class 'type'> |
+| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+
+
+
+### Container 
+
+| Param  | Value  |
+|---|---|
+| **x** | <class 'jinja2.runtime.Undefined'> |
+| **y** | <class 'jinja2.runtime.Undefined'> |
+| **z** | <class 'jinja2.runtime.Undefined'> |
+| **width** | <class 'int'> |
+| **height** | <class 'int'> |
+| **config** | <class 'type'> |
+| **filters** | <class 'str'> |
+| **query** | <class 'type'> |
+| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+
+
+
+### Container 
+
+| Param  | Value  |
+|---|---|
+| **x** | <class 'jinja2.runtime.Undefined'> |
+| **y** | <class 'jinja2.runtime.Undefined'> |
+| **z** | <class 'jinja2.runtime.Undefined'> |
+| **width** | <class 'int'> |
+| **height** | <class 'int'> |
+| **config** | <class 'type'> |
+| **filters** | <class 'str'> |
+| **query** | <class 'type'> |
+| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+
+
+
+## Page 2
+
+| Param  | Value  |
+|---|---|
+| **ID** |  |
+| **Name** | ReportSection350b6b55132e00f8ba89 |
+| **Display Name** | Page 2 |
+| **Filters** | [] |
+| **Ordinal** | 1 |
+| **Visual containers number** | 1 |
+
+### Container 
+
+| Param  | Value  |
+|---|---|
+| **x** | <class 'jinja2.runtime.Undefined'> |
+| **y** | <class 'jinja2.runtime.Undefined'> |
+| **z** | <class 'jinja2.runtime.Undefined'> |
+| **width** | <class 'int'> |
+| **height** | <class 'int'> |
+| **config** | <class 'type'> |
+| **filters** | <class 'str'> |
+| **query** | <class 'type'> |
+| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+
+
+
+## Page 3
+
+| Param  | Value  |
+|---|---|
+| **ID** |  |
+| **Name** | ReportSectiona113e22f3ad54b8397d8 |
+| **Display Name** | Page 3 |
+| **Filters** | [] |
+| **Ordinal** | 2 |
+| **Visual containers number** | 1 |
+
+### Container 
+
+| Param  | Value  |
+|---|---|
+| **x** | <class 'jinja2.runtime.Undefined'> |
+| **y** | <class 'jinja2.runtime.Undefined'> |
+| **z** | <class 'jinja2.runtime.Undefined'> |
+| **width** | <class 'int'> |
+| **height** | <class 'int'> |
+| **config** | <class 'type'> |
+| **filters** | <class 'str'> |
+| **query** | <class 'type'> |
+| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Business objects
 
 | ID | NAME | DESCRIPTION | 
@@ -183,5 +372,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 26.11.2023 22:57:17 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 30630ca
+Generated at 26.11.2023 23:51:20 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 74bb95a
 </p>

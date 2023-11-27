@@ -15,6 +15,7 @@ Documentation for file **{{filename}}**.
 
 | Param  | Value  |
 |---|---|
+| **Analyzed pbix file name** | `{{filename}}` | 
 | **Catalog name** | `{{properties['CATALOG_NAME']}}` | 
 | **Port** | `{{port}}`|
 | **Description** | `{{properties['DESCRIPTION']}}` | 
@@ -50,6 +51,71 @@ There are no relationships information or we have insufficient permissions.
 {% endif %}
 
 [Up](#)
+
+# Report sections
+{% if report_sections %}
+{% for i in report_sections -%}
+
+## {{i.displayName}}
+
+| Param  | Value  |
+|---|---|
+| **ID** | {{i.id}} |
+| **Name** | {{i.name}} |
+| **Display Name** | {{i.displayName}} |
+| **Filters** | {{i.filters}} |
+| **Ordinal** | {{i.ordinal}} |
+| **Visual containers number** | {{len(i.visualContainers)}} |
+
+{% for c in i.visualContainers  -%}
+### Container 
+
+| Param  | Value  |
+|---|---|
+| **x** | {{type(i.x)}} |
+| **y** | {{type(i.y)}} |
+| **z** | {{type(i.z)}} |
+| **width** | {{type(i.width)}} |
+| **height** | {{type(i.height)}} |
+| **config** | {{type(type(i.config))}} |
+| **filters** | {{type(i.filters)}} |
+| **query** | {{type(type(i.query))}} |
+| **dataTransforms** | {{type(i.dataTransforms)}} |
+
+
+
+{% endfor -%}
+
+{% endfor -%}
+
+{#
+
+#}
+{% else %}
+There are no report sections information or we have insufficient permissions.
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Business objects
 {% if tables %}
 | ID | NAME | DESCRIPTION | 
