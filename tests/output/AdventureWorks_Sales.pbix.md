@@ -67,7 +67,9 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `4815acfc1f588ed839c4` |
 | **Type:** | `areaChart` |
 | **Business objects:**  | `Date, Sales` | 
-| **Attributes:**  | `Aggregation: Sum(Sales.Sales Amount), Measure: Sales.Sales Amount by Due Date, HierarchyLevel: Date.Fiscal.Month` | 
+| **Attributes:**  | `Aggregation: Sum(Sales.Sales Amount)
+ Measure: Sales.Sales Amount by Due Date
+ HierarchyLevel: Date.Fiscal.Month` | 
 
 
 
@@ -79,7 +81,8 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `43718bfbc9b53930dbee` |
 | **Type:** | `map` |
 | **Business objects:**  | `Sales, Reseller` | 
-| **Attributes:**  | `Aggregation: Sum(Sales.Order Quantity), Column: Reseller.Country-Region` | 
+| **Attributes:**  | `Aggregation: Sum(Sales.Order Quantity)
+ Column: Reseller.Country-Region` | 
 
 
 
@@ -91,7 +94,9 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `3a1aeaede6fc79fe5066` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Product, Reseller, Sales` | 
-| **Attributes:**  | `Column: Product.Category, Column: Reseller.Business Type, Aggregation: Sum(Sales.Sales Amount)` | 
+| **Attributes:**  | `Column: Product.Category
+ Column: Reseller.Business Type
+ Aggregation: Sum(Sales.Sales Amount)` | 
 
 
 
@@ -103,7 +108,8 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `75c624f501f3c20eb760` |
 | **Type:** | `slicer` |
 | **Business objects:**  | `Date` | 
-| **Attributes:**  | `HierarchyLevel: Date.Fiscal.Year, HierarchyLevel: Date.Fiscal.Month` | 
+| **Attributes:**  | `HierarchyLevel: Date.Fiscal.Year
+ HierarchyLevel: Date.Fiscal.Month` | 
 
 
 
@@ -150,7 +156,9 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `81c88ed0eeabf5421b8f` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Product, Reseller, Sales` | 
-| **Attributes:**  | `Column: Product.Category, Column: Reseller.Business Type, Aggregation: Sum(Sales.Sales Amount)` | 
+| **Attributes:**  | `Column: Product.Category
+ Column: Reseller.Business Type
+ Aggregation: Sum(Sales.Sales Amount)` | 
 
 
 ## Page 3
@@ -173,7 +181,9 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `ec25b2f7759b3fd44c1d` |
 | **Type:** | `areaChart` |
 | **Business objects:**  | `Date, Sales` | 
-| **Attributes:**  | `HierarchyLevel: Date.Fiscal.Month, Aggregation: Sum(Sales.Sales Amount), Measure: Sales.Sales Amount by Due Date` | 
+| **Attributes:**  | `HierarchyLevel: Date.Fiscal.Month
+ Aggregation: Sum(Sales.Sales Amount)
+ Measure: Sales.Sales Amount by Due Date` | 
 
 
 
@@ -221,31 +231,31 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 | ID | TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
 |----|-------|------|-------------|------------|-----------|-------|
-| 19 | DateTableTemplate_78..(54) |  | n/a | YEAR([Date]) | True |  1 |  
-| 20 | DateTableTemplate_78..(54) |  | n/a | MONTH([Date]) | True |  1 |  
-| 21 | DateTableTemplate_78..(54) |  | n/a | FORMAT([Date], "MMMM") | True |  1 |  
-| 22 | DateTableTemplate_78..(54) |  | n/a | INT(([MonthNo] + 2) / 3) | True |  1 |  
-| 23 | DateTableTemplate_78..(54) |  | n/a | "Qtr " & [QuarterNo] | True |  1 |  
-| 24 | DateTableTemplate_78..(54) |  | n/a | DAY([Date]) | True |  1 |  
-| 201 | LocalDateTable_1635a..(51) |  | n/a | YEAR([Date]) | True |  1 |  
-| 202 | LocalDateTable_1635a..(51) |  | n/a | MONTH([Date]) | True |  1 |  
-| 203 | LocalDateTable_1635a..(51) |  | n/a | FORMAT([Date], "MMMM") | True |  1 |  
-| 204 | LocalDateTable_1635a..(51) |  | n/a | INT(([MonthNo] + 2) / 3) | True |  1 |  
-| 205 | LocalDateTable_1635a..(51) |  | n/a | "Qtr " & [QuarterNo] | True |  1 |  
-| 206 | LocalDateTable_1635a..(51) |  | n/a | DAY([Date]) | True |  1 |  
-| 211 | LocalDateTable_d1146..(51) |  | n/a | YEAR([Date]) | True |  1 |  
-| 212 | LocalDateTable_d1146..(51) |  | n/a | MONTH([Date]) | True |  1 |  
-| 213 | LocalDateTable_d1146..(51) |  | n/a | FORMAT([Date], "MMMM") | True |  1 |  
-| 214 | LocalDateTable_d1146..(51) |  | n/a | INT(([MonthNo] + 2) / 3) | True |  1 |  
-| 215 | LocalDateTable_d1146..(51) |  | n/a | "Qtr " & [QuarterNo] | True |  1 |  
-| 216 | LocalDateTable_d1146..(51) |  | n/a | DAY([Date]) | True |  1 |  
-| 219 | LocalDateTable_dc06d..(51) |  | n/a | YEAR([Date]) | True |  1 |  
-| 220 | LocalDateTable_dc06d..(51) |  | n/a | MONTH([Date]) | True |  1 |  
-| 221 | LocalDateTable_dc06d..(51) |  | n/a | FORMAT([Date], "MMMM") | True |  1 |  
-| 222 | LocalDateTable_dc06d..(51) |  | n/a | INT(([MonthNo] + 2) / 3) | True |  1 |  
-| 223 | LocalDateTable_dc06d..(51) |  | n/a | "Qtr " & [QuarterNo] | True |  1 |  
-| 224 | LocalDateTable_dc06d..(51) |  | n/a | DAY([Date]) | True |  1 |  
-| 3742 | Product |  | n/a | RELATED('Table'[Sorting]) | False |  1 |  
+| 19 | DateTableTemplate_78..(54) |  | n/a | `YEAR([Date])` | True |  1 |  
+| 20 | DateTableTemplate_78..(54) |  | n/a | `MONTH([Date])` | True |  1 |  
+| 21 | DateTableTemplate_78..(54) |  | n/a | `FORMAT([Date], "MMMM")` | True |  1 |  
+| 22 | DateTableTemplate_78..(54) |  | n/a | `INT(([MonthNo] + 2) / 3)` | True |  1 |  
+| 23 | DateTableTemplate_78..(54) |  | n/a | `"Qtr " & [QuarterNo]` | True |  1 |  
+| 24 | DateTableTemplate_78..(54) |  | n/a | `DAY([Date])` | True |  1 |  
+| 201 | LocalDateTable_1635a..(51) |  | n/a | `YEAR([Date])` | True |  1 |  
+| 202 | LocalDateTable_1635a..(51) |  | n/a | `MONTH([Date])` | True |  1 |  
+| 203 | LocalDateTable_1635a..(51) |  | n/a | `FORMAT([Date], "MMMM")` | True |  1 |  
+| 204 | LocalDateTable_1635a..(51) |  | n/a | `INT(([MonthNo] + 2) / 3)` | True |  1 |  
+| 205 | LocalDateTable_1635a..(51) |  | n/a | `"Qtr " & [QuarterNo]` | True |  1 |  
+| 206 | LocalDateTable_1635a..(51) |  | n/a | `DAY([Date])` | True |  1 |  
+| 211 | LocalDateTable_d1146..(51) |  | n/a | `YEAR([Date])` | True |  1 |  
+| 212 | LocalDateTable_d1146..(51) |  | n/a | `MONTH([Date])` | True |  1 |  
+| 213 | LocalDateTable_d1146..(51) |  | n/a | `FORMAT([Date], "MMMM")` | True |  1 |  
+| 214 | LocalDateTable_d1146..(51) |  | n/a | `INT(([MonthNo] + 2) / 3)` | True |  1 |  
+| 215 | LocalDateTable_d1146..(51) |  | n/a | `"Qtr " & [QuarterNo]` | True |  1 |  
+| 216 | LocalDateTable_d1146..(51) |  | n/a | `DAY([Date])` | True |  1 |  
+| 219 | LocalDateTable_dc06d..(51) |  | n/a | `YEAR([Date])` | True |  1 |  
+| 220 | LocalDateTable_dc06d..(51) |  | n/a | `MONTH([Date])` | True |  1 |  
+| 221 | LocalDateTable_dc06d..(51) |  | n/a | `FORMAT([Date], "MMMM")` | True |  1 |  
+| 222 | LocalDateTable_dc06d..(51) |  | n/a | `INT(([MonthNo] + 2) / 3)` | True |  1 |  
+| 223 | LocalDateTable_dc06d..(51) |  | n/a | `"Qtr " & [QuarterNo]` | True |  1 |  
+| 224 | LocalDateTable_dc06d..(51) |  | n/a | `DAY([Date])` | True |  1 |  
+| 3742 | Product |  | n/a | `RELATED('Table'[Sorting])` | False |  1 |  
 
 
 [Up](#)
@@ -340,5 +350,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 30.11.2023 00:40:23 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: cfcb72e
+Generated at 30.11.2023 00:43:52 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 87b04ba
 </p>

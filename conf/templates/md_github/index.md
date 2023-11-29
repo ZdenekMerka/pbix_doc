@@ -78,7 +78,7 @@ There are no relationships information or we have insufficient permissions.
 | **Name:** | `{{config['name']}}` |
 | **Type:** | `{{config['type']}}` |
 | **Business objects:**  | `{{join(config['entities'])}}` | 
-| **Attributes:**  | `{{join(config['selected_items'])}}` | 
+| **Attributes:**  | `{{joinnl(config['selected_items'])}}` | 
 {% else %}
 There are no visual information or we have insufficient permissions.
 {% endif %}
@@ -135,7 +135,7 @@ There are no business objects information or we have insufficient permissions.
 | ID | TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
 |----|-------|------|-------------|------------|-----------|-------|
 {% for i  in measures if i.Expression != '-NaN-' -%}
-| {{ i.ID }} | {{str_slicer(tables_idx[str(i.TableID)]['Name'])}} | {{ i.Name}} | {{ re_nan(i.Description) }} | {{i.Expression}} | {{i.IsHidden}} |  {{i.State}} |  
+| {{ i.ID }} | {{str_slicer(tables_idx[str(i.TableID)]['Name'])}} | {{ i.Name}} | {{ re_nan(i.Description) }} | `{{i.Expression}}` | {{i.IsHidden}} |  {{i.State}} |  
 {% endfor -%}
 
 {% else %}
