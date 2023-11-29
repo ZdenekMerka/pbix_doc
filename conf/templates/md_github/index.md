@@ -78,7 +78,7 @@ There are no relationships information or we have insufficient permissions.
 | **Name:** | `{{config['name']}}` |
 | **Type:** | `{{config['type']}}` |
 | **Business objects:**  | `{{join(config['entities'])}}` | 
-| **Attributes:**  | `{{joinnl(config['selected_items'])}}` | 
+| **Attributes:**  | {{joinnl(config['selected_items'])}} | 
 {% else %}
 There are no visual information or we have insufficient permissions.
 {% endif %}

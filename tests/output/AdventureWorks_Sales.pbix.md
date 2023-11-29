@@ -67,9 +67,9 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `4815acfc1f588ed839c4` |
 | **Type:** | `areaChart` |
 | **Business objects:**  | `Date, Sales` | 
-| **Attributes:**  | `Aggregation: Sum(Sales.Sales Amount)
+| **Attributes:**  | Aggregation: Sum(Sales.Sales Amount)
  Measure: Sales.Sales Amount by Due Date
- HierarchyLevel: Date.Fiscal.Month` | 
+ HierarchyLevel: Date.Fiscal.Month | 
 
 
 
@@ -81,8 +81,8 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `43718bfbc9b53930dbee` |
 | **Type:** | `map` |
 | **Business objects:**  | `Sales, Reseller` | 
-| **Attributes:**  | `Aggregation: Sum(Sales.Order Quantity)
- Column: Reseller.Country-Region` | 
+| **Attributes:**  | Aggregation: Sum(Sales.Order Quantity)
+ Column: Reseller.Country-Region | 
 
 
 
@@ -94,9 +94,9 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `3a1aeaede6fc79fe5066` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Product, Reseller, Sales` | 
-| **Attributes:**  | `Column: Product.Category
+| **Attributes:**  | Column: Product.Category
  Column: Reseller.Business Type
- Aggregation: Sum(Sales.Sales Amount)` | 
+ Aggregation: Sum(Sales.Sales Amount) | 
 
 
 
@@ -108,8 +108,8 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `75c624f501f3c20eb760` |
 | **Type:** | `slicer` |
 | **Business objects:**  | `Date` | 
-| **Attributes:**  | `HierarchyLevel: Date.Fiscal.Year
- HierarchyLevel: Date.Fiscal.Month` | 
+| **Attributes:**  | HierarchyLevel: Date.Fiscal.Year
+ HierarchyLevel: Date.Fiscal.Month | 
 
 
 
@@ -121,7 +121,7 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `e62f8d740cd4f569300d` |
 | **Type:** | `basicShape` |
 | **Business objects:**  | `n/a` | 
-| **Attributes:**  | `n/a` | 
+| **Attributes:**  | n/a | 
 
 
 
@@ -133,7 +133,7 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `ddc669d1ed997bf82754` |
 | **Type:** | `textbox` |
 | **Business objects:**  | `n/a` | 
-| **Attributes:**  | `n/a` | 
+| **Attributes:**  | n/a | 
 
 
 ## Page 2
@@ -156,9 +156,9 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `81c88ed0eeabf5421b8f` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Product, Reseller, Sales` | 
-| **Attributes:**  | `Column: Product.Category
+| **Attributes:**  | Column: Product.Category
  Column: Reseller.Business Type
- Aggregation: Sum(Sales.Sales Amount)` | 
+ Aggregation: Sum(Sales.Sales Amount) | 
 
 
 ## Page 3
@@ -181,9 +181,9 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Name:** | `ec25b2f7759b3fd44c1d` |
 | **Type:** | `areaChart` |
 | **Business objects:**  | `Date, Sales` | 
-| **Attributes:**  | `HierarchyLevel: Date.Fiscal.Month
+| **Attributes:**  | HierarchyLevel: Date.Fiscal.Month
  Aggregation: Sum(Sales.Sales Amount)
- Measure: Sales.Sales Amount by Due Date` | 
+ Measure: Sales.Sales Amount by Due Date | 
 
 
 
@@ -350,5 +350,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 30.11.2023 00:43:52 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 87b04ba
+Generated at 30.11.2023 00:55:00 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 8243ddb
 </p>

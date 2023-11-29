@@ -63,7 +63,7 @@ id5597(["Reseller[ResellerKey]"]) --> id4380(["Sales[ResellerKey]"])
 | **Name:** | `8e32815c186232f25e33` |
 | **Type:** | `image` |
 | **Business objects:**  | `n/a` | 
-| **Attributes:**  | `n/a` | 
+| **Attributes:**  | n/a | 
 
 
 
@@ -75,7 +75,7 @@ id5597(["Reseller[ResellerKey]"]) --> id4380(["Sales[ResellerKey]"])
 | **Name:** | `dbb7aa4447e4690db31e` |
 | **Type:** | `textbox` |
 | **Business objects:**  | `n/a` | 
-| **Attributes:**  | `n/a` | 
+| **Attributes:**  | n/a | 
 
 
 
@@ -205,5 +205,5 @@ id5597(["Reseller[ResellerKey]"]) --> id4380(["Sales[ResellerKey]"])
 
 ----
 <p align="center">
-Generated at 30.11.2023 00:43:53 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 87b04ba
+Generated at 30.11.2023 00:55:00 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 8243ddb
 </p>
