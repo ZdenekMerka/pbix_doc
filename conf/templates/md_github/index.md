@@ -2,7 +2,7 @@
 
 [Home](../home.md) > [{{filename}}]({{filename}}.md)
 
-[Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
+[Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Report sections](#report-sections) [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
 ----
 
@@ -66,6 +66,7 @@ There are no relationships information or we have insufficient permissions.
 | **Filters** | `{{i.filters}}` |
 | **Ordinal** | `{{i.ordinal}}` |
 | **Visual containers number** | `{{len(i.visualContainers)}}` |
+[Up](#)
 
 {% for c in i.visualContainers  -%}
 
@@ -79,6 +80,8 @@ There are no relationships information or we have insufficient permissions.
 | **Type:** | `{{config['type']}}` |
 | **Business objects:**  | `{{join(config['entities'])}}` | 
 | **Attributes:**  | {{joinnl(config['selected_items'])}} | 
+
+[Up](#)
 {% else %}
 There are no visual information or we have insufficient permissions.
 {% endif %}
@@ -93,26 +96,6 @@ There are no visual information or we have insufficient permissions.
 {% else %}
 There are no report sections information or we have insufficient permissions.
 {% endif %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Business objects
