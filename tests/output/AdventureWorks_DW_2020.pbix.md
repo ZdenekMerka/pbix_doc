@@ -47,29 +47,35 @@ id5597(["Reseller[ResellerKey]"]) --> id4380(["Sales[ResellerKey]"])
 
 | Param  | Value  |
 |---|---|
-| **ID** | 0 |
-| **Name** | ReportSection |
-| **Display Name** | Introduction |
-| **Filters** | [] |
-| **Ordinal** | 0 |
-| **Visual containers number** | 2 |
+| **ID** | `0` |
+| **Name** | `ReportSection` |
+| **Display Name** | `Introduction` |
+| **Filters** | `[]` |
+| **Ordinal** | `0` |
+| **Visual containers number** | `2` |
 
 
 
 ### Container 8e32815c186232f25e33 
-**Name:** 8e32815c186232f25e33
-**Type:** image
-**Business objects:**  n/a 
-**Attributes:**  n/a 
+
+| Param  | Value  |
+|---|---|
+| **Name:** | `8e32815c186232f25e33` |
+| **Type:** | `image` |
+| **Business objects:**  | `n/a` | 
+| **Attributes:**  | `n/a` | 
 
 
 
 
 ### Container dbb7aa4447e4690db31e 
-**Name:** dbb7aa4447e4690db31e
-**Type:** textbox
-**Business objects:**  n/a 
-**Attributes:**  n/a 
+
+| Param  | Value  |
+|---|---|
+| **Name:** | `dbb7aa4447e4690db31e` |
+| **Type:** | `textbox` |
+| **Business objects:**  | `n/a` | 
+| **Attributes:**  | `n/a` | 
 
 
 
@@ -199,5 +205,5 @@ id5597(["Reseller[ResellerKey]"]) --> id4380(["Sales[ResellerKey]"])
 
 ----
 <p align="center">
-Generated at 30.11.2023 00:27:28 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 16f366a
+Generated at 30.11.2023 00:40:24 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: cfcb72e
 </p>

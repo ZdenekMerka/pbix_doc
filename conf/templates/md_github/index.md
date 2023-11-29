@@ -60,22 +60,25 @@ There are no relationships information or we have insufficient permissions.
 
 | Param  | Value  |
 |---|---|
-| **ID** | {{i.id}} |
-| **Name** | {{i.name}} |
-| **Display Name** | {{i.displayName}} |
-| **Filters** | {{i.filters}} |
-| **Ordinal** | {{i.ordinal}} |
-| **Visual containers number** | {{len(i.visualContainers)}} |
+| **ID** | `{{i.id}}` |
+| **Name** | `{{i.name}}` |
+| **Display Name** | `{{i.displayName}}` |
+| **Filters** | `{{i.filters}}` |
+| **Ordinal** | `{{i.ordinal}}` |
+| **Visual containers number** | `{{len(i.visualContainers)}}` |
 
 {% for c in i.visualContainers  -%}
 
 {% set config = get_visual_config_info(c.config) %}
 {% if config %}
 ### Container {{config['name']}} 
-**Name:** {{config['name']}}
-**Type:** {{config['type']}}
-**Business objects:**  {{join(config['entities'])}} 
-**Attributes:**  {{join(config['selected_items'])}} 
+
+| Param  | Value  |
+|---|---|
+| **Name:** | `{{config['name']}}` |
+| **Type:** | `{{config['type']}}` |
+| **Business objects:**  | `{{join(config['entities'])}}` | 
+| **Attributes:**  | `{{join(config['selected_items'])}}` | 
 {% else %}
 There are no visual information or we have insufficient permissions.
 {% endif %}
