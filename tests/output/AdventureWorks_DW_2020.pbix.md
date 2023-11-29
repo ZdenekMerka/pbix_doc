@@ -205,5 +205,5 @@ id5597(["Reseller[ResellerKey]"]) --> id4380(["Sales[ResellerKey]"])
 
 ----
 <p align="center">
-Generated at 30.11.2023 00:55:00 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 8243ddb
+Generated at 30.11.2023 00:56:42 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 589930d
 </p>

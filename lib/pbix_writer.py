@@ -89,7 +89,7 @@ class pbix_writer2(writer.writer):
         self.env.globals['type'] = type
         self.env.globals['get_visual_config_info'] = get_visual_config_info
         self.env.globals['join'] = ', '.join
-        self.env.globals['joinnl'] = '\n '.join
+        self.env.globals['joinnl'] = '<br/> '.join
 
 
         # load all templates from conf 
