@@ -16,10 +16,10 @@ Documentation for file **AdventureWorks_Sales.pbix**.
 | Param  | Value  |
 |---|---|
 | **Analyzed pbix file name** | `AdventureWorks_Sales.pbix` | 
-| **Catalog name** | `418255b2-96be-4dcd-9ddd-0a2ecea747a0` | 
-| **Port** | `61006`|
+| **Catalog name** | `c59d115a-0406-4c52-85e5-1d2142c62de0` | 
+| **Port** | `53671`|
 | **Description** | `-NaN-` | 
-| **Date modified** | `2023-11-22T21:37:51` | 
+| **Date modified** | `2023-11-29T21:23:31` | 
 | **Compatibility level** | `1567` | 
 
 
@@ -58,100 +58,58 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Ordinal** | 0 |
 | **Visual containers number** | 6 |
 
-### Container 
 
-| Param  | Value  |
-|---|---|
-| **x** | <class 'jinja2.runtime.Undefined'> |
-| **y** | <class 'jinja2.runtime.Undefined'> |
-| **z** | <class 'jinja2.runtime.Undefined'> |
-| **width** | <class 'int'> |
-| **height** | <class 'int'> |
-| **config** | <class 'type'> |
-| **filters** | <class 'str'> |
-| **query** | <class 'type'> |
-| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+
+### Container 4815acfc1f588ed839c4 
+**Name:** 4815acfc1f588ed839c4
+**Type:** areaChart
+**Business objects:**  Date, Sales 
+**Attributes:**  Aggregation: Sum(Sales.Sales Amount), Measure: Sales.Sales Amount by Due Date, HierarchyLevel: Date.Fiscal.Month 
 
 
 
-### Container 
 
-| Param  | Value  |
-|---|---|
-| **x** | <class 'jinja2.runtime.Undefined'> |
-| **y** | <class 'jinja2.runtime.Undefined'> |
-| **z** | <class 'jinja2.runtime.Undefined'> |
-| **width** | <class 'int'> |
-| **height** | <class 'int'> |
-| **config** | <class 'type'> |
-| **filters** | <class 'str'> |
-| **query** | <class 'type'> |
-| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+### Container 43718bfbc9b53930dbee 
+**Name:** 43718bfbc9b53930dbee
+**Type:** map
+**Business objects:**  Sales, Reseller 
+**Attributes:**  Aggregation: Sum(Sales.Order Quantity), Column: Reseller.Country-Region 
 
 
 
-### Container 
 
-| Param  | Value  |
-|---|---|
-| **x** | <class 'jinja2.runtime.Undefined'> |
-| **y** | <class 'jinja2.runtime.Undefined'> |
-| **z** | <class 'jinja2.runtime.Undefined'> |
-| **width** | <class 'int'> |
-| **height** | <class 'int'> |
-| **config** | <class 'type'> |
-| **filters** | <class 'str'> |
-| **query** | <class 'type'> |
-| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+### Container 3a1aeaede6fc79fe5066 
+**Name:** 3a1aeaede6fc79fe5066
+**Type:** pivotTable
+**Business objects:**  Product, Reseller, Sales 
+**Attributes:**  Column: Product.Category, Column: Reseller.Business Type, Aggregation: Sum(Sales.Sales Amount) 
 
 
 
-### Container 
 
-| Param  | Value  |
-|---|---|
-| **x** | <class 'jinja2.runtime.Undefined'> |
-| **y** | <class 'jinja2.runtime.Undefined'> |
-| **z** | <class 'jinja2.runtime.Undefined'> |
-| **width** | <class 'int'> |
-| **height** | <class 'int'> |
-| **config** | <class 'type'> |
-| **filters** | <class 'str'> |
-| **query** | <class 'type'> |
-| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+### Container 75c624f501f3c20eb760 
+**Name:** 75c624f501f3c20eb760
+**Type:** slicer
+**Business objects:**  Date 
+**Attributes:**  HierarchyLevel: Date.Fiscal.Year, HierarchyLevel: Date.Fiscal.Month 
 
 
 
-### Container 
 
-| Param  | Value  |
-|---|---|
-| **x** | <class 'jinja2.runtime.Undefined'> |
-| **y** | <class 'jinja2.runtime.Undefined'> |
-| **z** | <class 'jinja2.runtime.Undefined'> |
-| **width** | <class 'int'> |
-| **height** | <class 'int'> |
-| **config** | <class 'type'> |
-| **filters** | <class 'str'> |
-| **query** | <class 'type'> |
-| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
+### Container e62f8d740cd4f569300d 
+**Name:** e62f8d740cd4f569300d
+**Type:** basicShape
+**Business objects:**  n/a 
+**Attributes:**  n/a 
 
 
 
-### Container 
 
-| Param  | Value  |
-|---|---|
-| **x** | <class 'jinja2.runtime.Undefined'> |
-| **y** | <class 'jinja2.runtime.Undefined'> |
-| **z** | <class 'jinja2.runtime.Undefined'> |
-| **width** | <class 'int'> |
-| **height** | <class 'int'> |
-| **config** | <class 'type'> |
-| **filters** | <class 'str'> |
-| **query** | <class 'type'> |
-| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
-
+### Container ddc669d1ed997bf82754 
+**Name:** ddc669d1ed997bf82754
+**Type:** textbox
+**Business objects:**  n/a 
+**Attributes:**  n/a 
 
 
 ## Page 2
@@ -165,20 +123,13 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Ordinal** | 1 |
 | **Visual containers number** | 1 |
 
-### Container 
 
-| Param  | Value  |
-|---|---|
-| **x** | <class 'jinja2.runtime.Undefined'> |
-| **y** | <class 'jinja2.runtime.Undefined'> |
-| **z** | <class 'jinja2.runtime.Undefined'> |
-| **width** | <class 'int'> |
-| **height** | <class 'int'> |
-| **config** | <class 'type'> |
-| **filters** | <class 'str'> |
-| **query** | <class 'type'> |
-| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
 
+### Container 81c88ed0eeabf5421b8f 
+**Name:** 81c88ed0eeabf5421b8f
+**Type:** pivotTable
+**Business objects:**  Product, Reseller, Sales 
+**Attributes:**  Column: Product.Category, Column: Reseller.Business Type, Aggregation: Sum(Sales.Sales Amount) 
 
 
 ## Page 3
@@ -192,20 +143,13 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Ordinal** | 2 |
 | **Visual containers number** | 1 |
 
-### Container 
 
-| Param  | Value  |
-|---|---|
-| **x** | <class 'jinja2.runtime.Undefined'> |
-| **y** | <class 'jinja2.runtime.Undefined'> |
-| **z** | <class 'jinja2.runtime.Undefined'> |
-| **width** | <class 'int'> |
-| **height** | <class 'int'> |
-| **config** | <class 'type'> |
-| **filters** | <class 'str'> |
-| **query** | <class 'type'> |
-| **dataTransforms** | <class 'jinja2.runtime.Undefined'> |
 
+### Container ec25b2f7759b3fd44c1d 
+**Name:** ec25b2f7759b3fd44c1d
+**Type:** areaChart
+**Business objects:**  Date, Sales 
+**Attributes:**  HierarchyLevel: Date.Fiscal.Month, Aggregation: Sum(Sales.Sales Amount), Measure: Sales.Sales Amount by Due Date 
 
 
 
@@ -372,5 +316,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 26.11.2023 23:51:19 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 74bb95a
+Generated at 30.11.2023 00:27:27 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 16f366a
 </p>

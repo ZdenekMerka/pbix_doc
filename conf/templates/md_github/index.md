@@ -68,21 +68,17 @@ There are no relationships information or we have insufficient permissions.
 | **Visual containers number** | {{len(i.visualContainers)}} |
 
 {% for c in i.visualContainers  -%}
-### Container 
 
-| Param  | Value  |
-|---|---|
-| **x** | {{type(i.x)}} |
-| **y** | {{type(i.y)}} |
-| **z** | {{type(i.z)}} |
-| **width** | {{type(i.width)}} |
-| **height** | {{type(i.height)}} |
-| **config** | {{type(type(i.config))}} |
-| **filters** | {{type(i.filters)}} |
-| **query** | {{type(type(i.query))}} |
-| **dataTransforms** | {{type(i.dataTransforms)}} |
-
-
+{% set config = get_visual_config_info(c.config) %}
+{% if config %}
+### Container {{config['name']}} 
+**Name:** {{config['name']}}
+**Type:** {{config['type']}}
+**Business objects:**  {{join(config['entities'])}} 
+**Attributes:**  {{join(config['selected_items'])}} 
+{% else %}
+There are no visual information or we have insufficient permissions.
+{% endif %}
 
 {% endfor -%}
 
