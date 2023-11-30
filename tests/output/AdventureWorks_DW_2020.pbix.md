@@ -2,7 +2,7 @@
 
 [Home](../home.md) > [AdventureWorks_DW_2020.pbix](AdventureWorks_DW_2020.pbix.md)
 
-[Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Report sections](#report-sections) [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
+[Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Report sections](#report-sections) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
 ----
 
@@ -190,5 +190,5 @@ id5597(["Reseller[ResellerKey]"]) --> id4380(["Sales[ResellerKey]"])
 
 ----
 <p align="center">
-Generated at 30.11.2023 00:59:07 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 67af54f
+Generated at 30.11.2023 01:00:57 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 713b8dc
 </p>

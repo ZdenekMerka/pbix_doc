@@ -2,7 +2,7 @@
 
 [Home](../home.md) > [AdventureWorks_Sales.pbix](AdventureWorks_Sales.pbix.md)
 
-[Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Report sections](#report-sections) [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
+[Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Report sections](#report-sections) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
 ----
 
@@ -339,5 +339,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 30.11.2023 00:59:07 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 67af54f
+Generated at 30.11.2023 01:00:56 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 713b8dc
 </p>
