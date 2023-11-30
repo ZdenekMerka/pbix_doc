@@ -53,6 +53,7 @@ id5597(["Reseller[ResellerKey]"]) --> id4380(["Sales[ResellerKey]"])
 | **Filters** | `[]` |
 | **Ordinal** | `0` |
 | **Visual containers number** | `2` |
+
 [Up](#)
 
 
@@ -190,5 +191,5 @@ id5597(["Reseller[ResellerKey]"]) --> id4380(["Sales[ResellerKey]"])
 
 ----
 <p align="center">
-Generated at 30.11.2023 01:00:57 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 713b8dc
+Generated at 30.11.2023 01:03:10 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 7244166
 </p>

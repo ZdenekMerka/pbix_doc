@@ -57,6 +57,7 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Filters** | `[]` |
 | **Ordinal** | `0` |
 | **Visual containers number** | `6` |
+
 [Up](#)
 
 
@@ -153,6 +154,7 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Filters** | `[]` |
 | **Ordinal** | `1` |
 | **Visual containers number** | `1` |
+
 [Up](#)
 
 
@@ -179,6 +181,7 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 | **Filters** | `[]` |
 | **Ordinal** | `2` |
 | **Visual containers number** | `1` |
+
 [Up](#)
 
 
@@ -339,5 +342,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 30.11.2023 01:00:56 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 713b8dc
+Generated at 30.11.2023 01:03:09 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 7244166
 </p>

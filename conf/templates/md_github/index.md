@@ -66,6 +66,7 @@ There are no relationships information or we have insufficient permissions.
 | **Filters** | `{{i.filters}}` |
 | **Ordinal** | `{{i.ordinal}}` |
 | **Visual containers number** | `{{len(i.visualContainers)}}` |
+
 [Up](#)
 
 {% for c in i.visualContainers  -%}
