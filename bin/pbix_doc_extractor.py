@@ -52,6 +52,7 @@ args = parser.parse_args()
 # load conf 
 common_conf = cnf.get_conf('./conf/pbix_doc.yaml')
 local_ssas_folder = common_conf['local_ssas_folder']
+extractor_version = '1.00'
 
 ####################
 # init logger
@@ -128,6 +129,7 @@ for instance_folder in ssas_instancie_folders:
     parsed_section = reader.parse_visualizations(pbix_zip['layout'])
     #pp(pbix_zip.keys())
     # add zip file information
+    instance_md[md_root]['extractor_version'] = extractor_version
     instance_md[md_root]['zip_file'] = pbix_zip
     instance_md[md_root]['zip_file']['layout2'] = parsed_section 
     #pp(instance_md[md_root]['zip_file'].keys())
