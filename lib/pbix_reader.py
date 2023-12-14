@@ -226,7 +226,7 @@ class pbix_reader(reader.reader):
 
             #pp(ret['data_model'].keys())
             #pp(ret,width=5, depth=2, indent=4) 
-            pp(ret) 
+            #pp(ret) 
 
             # convert the JSON object to a string
             #json_string = json.dumps(ret['layout'])

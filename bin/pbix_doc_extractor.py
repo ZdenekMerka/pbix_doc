@@ -115,7 +115,7 @@ for instance_folder in ssas_instancie_folders:
     
     # add ssas information
     instance_md[md_root]['ssas_md'] = tools.convert_timestamps_to_string(md)
-    pp(instance_md[md_root].keys())
+    #pp(instance_md[md_root].keys())
     
     ############################## 
     # TODO load data statistic
@@ -123,10 +123,10 @@ for instance_folder in ssas_instancie_folders:
 
     ############################## 
     # load data from ZIP file
-    pp(pbix_full_path)
+    #pp(pbix_full_path)
     pbix_zip = reader.read_pbix(pbix_full_path)
     parsed_section = reader.parse_visualizations(pbix_zip['layout'])
-    pp(pbix_zip.keys())
+    #pp(pbix_zip.keys())
     # add zip file information
     instance_md[md_root]['zip_file'] = pbix_zip
     instance_md[md_root]['zip_file']['layout2'] = parsed_section 
