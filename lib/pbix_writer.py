@@ -64,7 +64,8 @@ class pbix_writer2(writer.writer):
             'measures':      'measures.md',
             'hierarchies':   'hierarchies.md',
             'footer':        'footer.md',
-            'index':        'index.md',
+            'index':         'index.md',
+            'pbix_doc':      'pbix_doc.md',
             #'breadcrumb':    'breadcrumb.md'
         }
 
@@ -100,13 +101,13 @@ class pbix_writer2(writer.writer):
         return  self.tmpl
 
     
-    def render_index(self):
+    def render_pbix_doc(self):
 
         #tables_idx = self.pbix_data["ssas_md"]['TMSCHEMA_TABLES']
         #columns_idx  = self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS']
         #pp( json.loads(self.pbix_data['zip_file']['layout']['sections'][0]['visualContainers'][0]['config']))
         
-        ret =self.tmpl['index'].render(
+        ret =self.tmpl['pbix_doc'].render(
             properties =  self.pbix_data["ssas_md"]["DBSCHEMA_CATALOGS"][self.pbix_data['info']['catalog']],
             git_version = self.git_version,
             port = self.pbix_data['info']['port'],
@@ -125,6 +126,13 @@ class pbix_writer2(writer.writer):
             )
         return ret
 
+    def render_index(self, filenames_pbix):
+
+        ret =self.tmpl['index'].render(
+            filenames_pbix =  filenames_pbix,
+            git_version = self.git_version,
+            )
+        return ret
 
 
 

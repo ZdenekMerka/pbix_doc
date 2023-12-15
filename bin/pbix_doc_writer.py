@@ -50,6 +50,9 @@ args = parser.parse_args()
 jsons = tools.read_jsons(args.files) 
 
 for json_key in jsons.keys():
+    
+    filenames_pbix = []
+    
     for file_name_key in jsons[json_key].keys():
         print(json_key)
         print(file_name_key)
@@ -59,7 +62,7 @@ for json_key in jsons.keys():
         writer = w.pbix_writer2(jsons[json_key][file_name_key],  args.format)
         pp(writer.templates)
         pp(writer.init_templates())
-        content = writer.render_index()
+        content = writer.render_pbix_doc()
         print(content)
         tools.write_file(
             filename = '{dir}/{filename}.{ext}'.format(
@@ -69,14 +72,16 @@ for json_key in jsons.keys():
             content = content  
         )
 
+        filenames_pbix.append('{filename}.{ext}'.format( filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']), ext = 'md'))
+    
+    pp(filenames_pbix)
+    content = writer.render_index(filenames_pbix)
+    tools.write_file(
+        filename = '{dir}/{filename}.{ext}'.format(
+            dir = args.out_dir,
+            filename = 'index',
+            #filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']),
+            ext = 'md'),         
+        content = content  
+    )
 
-
-#    #writer.render_property()
-#    #writer.render_tables()
-#    #writer.render_columns()
-#    #writer.render_measures()
-#    #writer.render_hierarchies()
-#    writer.render_relationships()
-#    #writer.write_metadata()
-# file name with extension
-file_name = os.path.basename('/root/file.ext')
