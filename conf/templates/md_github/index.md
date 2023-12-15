@@ -116,15 +116,21 @@ There are no business objects information or we have insufficient permissions.
 # Measures
 
 {% if measures %}
-| ID | TABLE | NAME | DESCRIPTION | EXPRESSION | IS_HIDDEN | STATE |
-|----|-------|------|-------------|------------|-----------|-------|
+<table>
+    <tr>
+        <th> ID </th><th> TABLE </th><th> NAME </th><th> DESCRIPTION </th><th> EXPRESSION </th><th> IS_HIDDEN </th><th> STATE </th>
+    </tr>
 {% for i  in measures if i.Expression != '-NaN-' -%}
-| {{ i.ID }} | {{str_slicer(tables_idx[str(i.TableID)]['Name'])}} | {{ i.Name}} | {{ re_nan(i.Description) }} | `{{i.Expression}}` | {{i.IsHidden}} |  {{i.State}} |  
+    <tr>
+        <td> {{ i.ID }} </td><td> {{str_slicer(tables_idx[str(i.TableID)]['Name'])}} </td><td> {{ i.Name}} </td><td> {{ re_nan(i.Description) }} </td><td> <code> {{i.Expression}} </code></td><td> {{i.IsHidden}} </td><td>  {{i.State}} </td> 
+    </tr>
 {% endfor -%}
-
+</table>
 {% else %}
 There are no measures or we have insufficient permissions.
 {% endif %}
+
+
 
 [Up](#)
 # Relationships 
@@ -159,11 +165,17 @@ There are no hierarchies information or we have insufficient permissions.
 # Columns 
 
 {% if columns %}
-| ID | TABLE | EXPLICIT_NAME | DESCRIPTION | IS_HIDDEN | EXPRESSION |
-|----|-------|---------------|-------------|-----------|------------|
+<table>
+    <tr>
+        <th> ID </th><th> TABLE </th><th> EXPLICIT_NAME </th><th> DESCRIPTION </th><th> IS_HIDDEN </th><th> EXPRESSION </th>
+    </tr>
 {% for i  in columns if not i.IsHidden -%}
-| {{i.ID}} | {{str_slicer(tables_idx[str(i.TableID)]['Name'])}} | {{str_slicer(i.ExplicitName)}} | {{re_nan(i.Description)}} | {{i.IsHidden}} | {{re_nan(i.Expression)}} |
+    <tr>
+        <td> {{i.ID}} </td><td> {{str_slicer(tables_idx[str(i.TableID)]['Name'])}} </td><td> {{str_slicer(i.ExplicitName)}} </td><td> {{re_nan(i.Description)}} </td><td> {{i.IsHidden}} </td><td><code> {{re_nan(i.Expression)}} </code></td>
+    </tr>
+
 {% endfor -%}
+</table>
 
 {% else %}
 There are no columns information or we have insufficient permissions.
