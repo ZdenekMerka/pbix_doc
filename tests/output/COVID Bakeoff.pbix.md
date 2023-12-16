@@ -29,20 +29,20 @@ Documentation for file **COVID Bakeoff.pbix**.
 ```mermaid
 graph LR;
 
-id2896(["LocalDateTable_88205..(51)"]) --[-NaN-] : [Entry date]--> id2890(["Govt Measures"])
-id9434(["Countries"]) --[ISO] : [ISO]--> id2890(["Govt Measures"])
-id9434(["Countries"]) --[Country] : [Country]--> id12645(["Cases per country"])
-id12586(["States"]) --[State] : [State]--> id13949(["Cases per US State"])
-id14538(["Dates"]) --[-NaN-] : [Date]--> id13949(["Cases per US State"])
-id14538(["Dates"]) --[-NaN-] : [Date]--> id12645(["Cases per country"])
-id14538(["Dates"]) --[-NaN-] : [Date implemented]--> id2890(["Govt Measures"])
-id14538(["Dates"]) --[-NaN-] : [date]--> id27375(["OWID COVID data"])
-id9434(["Countries"]) --[ISO] : [iso_code]--> id27375(["OWID COVID data"])
-id9434(["Countries"]) --[Country] : [CountryName]--> id42202(["CGRT Mandates"])
-id9434(["Countries"]) --[ISO] : [-NaN-]--> id43968(["Days with restrictio..(22)"])
-id9434(["Countries"]) --[ISO] : [ISO]--> id48648(["GDP History"])
-id9434(["Countries"]) --[ISO] : [-NaN-]--> id46487(["Days with restrictio..(30)"])
-id12586(["States"]) --[State] : [State]--> id60108(["Lats"])
+id2896(["LocalDateTable_88205..(51)"]) --->|-NaN-:Entry date| id2890(["Govt Measures"])
+id9434(["Countries"]) --->|ISO:ISO| id2890(["Govt Measures"])
+id9434(["Countries"]) --->|Country:Country| id12645(["Cases per country"])
+id12586(["States"]) --->|State:State| id13949(["Cases per US State"])
+id14538(["Dates"]) --->|-NaN-:Date| id13949(["Cases per US State"])
+id14538(["Dates"]) --->|-NaN-:Date| id12645(["Cases per country"])
+id14538(["Dates"]) --->|-NaN-:Date implemented| id2890(["Govt Measures"])
+id14538(["Dates"]) --->|-NaN-:date| id27375(["OWID COVID data"])
+id9434(["Countries"]) --->|ISO:iso_code| id27375(["OWID COVID data"])
+id9434(["Countries"]) --->|Country:CountryName| id42202(["CGRT Mandates"])
+id9434(["Countries"]) --->|ISO:-NaN-| id43968(["Days with restrictio..(22)"])
+id9434(["Countries"]) --->|ISO:ISO| id48648(["GDP History"])
+id9434(["Countries"]) --->|ISO:-NaN-| id46487(["Days with restrictio..(30)"])
+id12586(["States"]) --->|State:State| id60108(["Lats"])
 ```
 
 
@@ -2025,5 +2025,5 @@ id12586(["States"]) --[State] : [State]--> id60108(["Lats"])
 
 ----
 <p align="center">
-Generated at 16.12.2023 22:12:25 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 5347a61
+Generated at 16.12.2023 22:30:32 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: ef36a14
 </p>

@@ -29,8 +29,8 @@ Documentation for file **COVID-19 US Tracking Sample.pbix**.
 ```mermaid
 graph LR;
 
-id28(["LocalDateTable_a0f5b..(51)"]) --[-NaN-] : [Date]--> id19(["COVID"])
-id22(["StateDim"]) --[State code] : [State]--> id19(["COVID"])
+id28(["LocalDateTable_a0f5b..(51)"]) --->|-NaN-:Date| id19(["COVID"])
+id22(["StateDim"]) --->|State code:State| id19(["COVID"])
 ```
 
 
@@ -1245,5 +1245,5 @@ RETURN  __TodaysDeaths - CALCULATE(
 
 ----
 <p align="center">
-Generated at 16.12.2023 22:12:20 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 5347a61
+Generated at 16.12.2023 22:30:26 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: ef36a14
 </p>

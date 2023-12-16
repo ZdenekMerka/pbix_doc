@@ -29,19 +29,19 @@ Documentation for file **Human Resources Sample PBIX.pbix**.
 ```mermaid
 graph LR;
 
-id22(["Date"]) --[Date] : [date]--> id25(["Employee"])
-id13(["FP"]) --[FP] : [FP]--> id25(["Employee"])
-id28(["Ethnicity"]) --[Ethnic Group] : [EthnicGroup]--> id25(["Employee"])
-id31(["Gender"]) --[ID] : [Gender]--> id25(["Employee"])
-id16(["PayType"]) --[PayTypeID] : [PayTypeID]--> id25(["Employee"])
-id10(["BU"]) --[BU] : [BU]--> id25(["Employee"])
-id34(["AgeGroup"]) --[AgeGroupID] : [AgeGroupID]--> id25(["Employee"])
-id19(["SeparationReason"]) --[SeparationTypeID] : [TermReason]--> id25(["Employee"])
-id2041(["LocalDateTable_6f19f..(51)"]) --[-NaN-] : [Date]--> id22(["Date"])
-id2044(["LocalDateTable_d2ea5..(51)"]) --[-NaN-] : [MonthStartDate]--> id22(["Date"])
-id2047(["LocalDateTable_c9dde..(51)"]) --[-NaN-] : [MonthEndDate]--> id22(["Date"])
-id2050(["LocalDateTable_cc28e..(51)"]) --[-NaN-] : [TermDate]--> id25(["Employee"])
-id2053(["LocalDateTable_c04ce..(51)"]) --[-NaN-] : [HireDate]--> id25(["Employee"])
+id22(["Date"]) --->|Date:date| id25(["Employee"])
+id13(["FP"]) --->|FP:FP| id25(["Employee"])
+id28(["Ethnicity"]) --->|Ethnic Group:EthnicGroup| id25(["Employee"])
+id31(["Gender"]) --->|ID:Gender| id25(["Employee"])
+id16(["PayType"]) --->|PayTypeID:PayTypeID| id25(["Employee"])
+id10(["BU"]) --->|BU:BU| id25(["Employee"])
+id34(["AgeGroup"]) --->|AgeGroupID:AgeGroupID| id25(["Employee"])
+id19(["SeparationReason"]) --->|SeparationTypeID:TermReason| id25(["Employee"])
+id2041(["LocalDateTable_6f19f..(51)"]) --->|-NaN-:Date| id22(["Date"])
+id2044(["LocalDateTable_d2ea5..(51)"]) --->|-NaN-:MonthStartDate| id22(["Date"])
+id2047(["LocalDateTable_c9dde..(51)"]) --->|-NaN-:MonthEndDate| id22(["Date"])
+id2050(["LocalDateTable_cc28e..(51)"]) --->|-NaN-:TermDate| id25(["Employee"])
+id2053(["LocalDateTable_c04ce..(51)"]) --->|-NaN-:HireDate| id25(["Employee"])
 ```
 
 
@@ -924,5 +924,5 @@ id2053(["LocalDateTable_c04ce..(51)"]) --[-NaN-] : [HireDate]--> id25(["Employee
 
 ----
 <p align="center">
-Generated at 16.12.2023 22:12:25 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 5347a61
+Generated at 16.12.2023 22:30:31 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: ef36a14
 </p>

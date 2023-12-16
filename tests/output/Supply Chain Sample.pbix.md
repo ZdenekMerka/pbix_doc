@@ -29,8 +29,8 @@ Documentation for file **Supply Chain Sample.pbix**.
 ```mermaid
 graph LR;
 
-id932(["Risk"]) --[Product ID] : [Product ID]--> id992(["Explanations"])
-id8304(["Month"]) --[Month] : [Month]--> id13029(["Backorder Percentage"])
+id932(["Risk"]) --->|Product ID:Product ID| id992(["Explanations"])
+id8304(["Month"]) --->|Month:Month| id13029(["Backorder Percentage"])
 ```
 
 
@@ -550,5 +550,5 @@ id8304(["Month"]) --[Month] : [Month]--> id13029(["Backorder Percentage"])
 
 ----
 <p align="center">
-Generated at 16.12.2023 22:12:21 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 5347a61
+Generated at 16.12.2023 22:30:27 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: ef36a14
 </p>

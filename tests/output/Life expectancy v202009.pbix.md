@@ -29,16 +29,16 @@ Documentation for file **Life expectancy v202009.pbix**.
 ```mermaid
 graph LR;
 
-id9809(["Year"]) --[Year] : [Year]--> id12(["Indicators"])
-id9833(["Country"]) --[Country Code] : [Country Code]--> id12(["Indicators"])
-id9874(["Sex"]) --[Sex] : [Sex]--> id12(["Indicators"])
-id38986(["LocalDateTable_021b8..(51)"]) --[-NaN-] : [Date]--> id9809(["Year"])
-id9833(["Country"]) --[Country Code] : [Country]--> id39452(["Variance Analysis"])
-id9833(["Country"]) --[Country Code] : [Country Code]--> id40740(["Flags"])
-id53251(["Years"]) --[Years] : [Year]--> id12(["Indicators"])
-id9833(["Country"]) --[Country Code] : [Code]--> id53529(["Population"])
-id53251(["Years"]) --[Years] : [Year]--> id53529(["Population"])
-id53830(["Buckets"]) --[Category] : [Life Exp Buckets]--> id12(["Indicators"])
+id9809(["Year"]) --->|Year:Year| id12(["Indicators"])
+id9833(["Country"]) --->|Country Code:Country Code| id12(["Indicators"])
+id9874(["Sex"]) --->|Sex:Sex| id12(["Indicators"])
+id38986(["LocalDateTable_021b8..(51)"]) --->|-NaN-:Date| id9809(["Year"])
+id9833(["Country"]) --->|Country Code:Country| id39452(["Variance Analysis"])
+id9833(["Country"]) --->|Country Code:Country Code| id40740(["Flags"])
+id53251(["Years"]) --->|Years:Year| id12(["Indicators"])
+id9833(["Country"]) --->|Country Code:Code| id53529(["Population"])
+id53251(["Years"]) --->|Years:Year| id53529(["Population"])
+id53830(["Buckets"]) --->|Category:Life Exp Buckets| id12(["Indicators"])
 ```
 
 
@@ -2647,5 +2647,5 @@ IF(Indicators[Life expectancy (yrs)]<80,70,
 
 ----
 <p align="center">
-Generated at 16.12.2023 22:12:22 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 5347a61
+Generated at 16.12.2023 22:30:28 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: ef36a14
 </p>
