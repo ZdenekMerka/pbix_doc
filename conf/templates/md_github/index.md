@@ -11,7 +11,7 @@ Information from PBIX files.
 ## Links to PBIX files documentation
 {% if filenames_pbix %}
 {% for i  in filenames_pbix -%}
-* [{{i.name}}](./{{i.name}}) generated at {{i.datetime_extracted}} 
+* [{{i.name}}](./{{urlquote(i.name)}}) generated at {{i.datetime_extracted}} 
 {% endfor -%}
 {% endif -%}
 

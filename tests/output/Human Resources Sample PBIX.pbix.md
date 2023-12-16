@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Human Resources Sample PBIX.pbix](Human Resources Sample PBIX.pbix.md)
+[Home](./index.md) > [Human Resources Sample PBIX.pbix](Human%20Resources%20Sample%20PBIX.pbix.md)
 
 [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Report sections](#report-sections) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
@@ -924,5 +924,5 @@ id2053(["LocalDateTable_c04ce..(51)[-NaN-]"]) --> id25(["Employee[HireDate]"])
 
 ----
 <p align="center">
-Generated at 16.12.2023 21:03:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 63f5c8f
+Generated at 16.12.2023 21:31:18 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 7b8a880
 </p>

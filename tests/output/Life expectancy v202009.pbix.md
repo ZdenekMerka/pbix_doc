@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Life expectancy v202009.pbix](Life expectancy v202009.pbix.md)
+[Home](./index.md) > [Life expectancy v202009.pbix](Life%20expectancy%20v202009.pbix.md)
 
 [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Report sections](#report-sections) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
@@ -2647,5 +2647,5 @@ IF(Indicators[Life expectancy (yrs)]<80,70,
 
 ----
 <p align="center">
-Generated at 16.12.2023 21:03:40 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 63f5c8f
+Generated at 16.12.2023 21:31:16 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 7b8a880
 </p>

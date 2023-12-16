@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Supply Chain Sample.pbix](Supply Chain Sample.pbix.md)
+[Home](./index.md) > [Supply Chain Sample.pbix](Supply%20Chain%20Sample.pbix.md)
 
 [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Report sections](#report-sections) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
@@ -550,5 +550,5 @@ id8304(["Month[Month]"]) --> id13029(["Backorder Percentage[Month]"])
 
 ----
 <p align="center">
-Generated at 16.12.2023 21:03:39 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 63f5c8f
+Generated at 16.12.2023 21:31:15 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 7b8a880
 </p>

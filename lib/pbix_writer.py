@@ -92,6 +92,10 @@ class pbix_writer2(writer.writer):
         self.env.globals['get_visual_config_info'] = get_visual_config_info
         self.env.globals['join'] = ', '.join
         self.env.globals['joinnl'] = '<br/> '.join
+        
+        import urllib.parse
+        self.env.globals['urlquote'] = urllib.parse.quote
+
 
 
         # load all templates from conf 

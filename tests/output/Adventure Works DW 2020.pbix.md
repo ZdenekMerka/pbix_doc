@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Adventure Works DW 2020.pbix](Adventure Works DW 2020.pbix.md)
+[Home](./index.md) > [Adventure Works DW 2020.pbix](Adventure%20Works%20DW%202020.pbix.md)
 
 [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Report sections](#report-sections) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
@@ -361,5 +361,5 @@ id12591(["Currency[CurrencyKey]"]) --> id4380(["Sales[CurrencyKey]"])
 
 ----
 <p align="center">
-Generated at 16.12.2023 21:03:41 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 63f5c8f
+Generated at 16.12.2023 21:31:17 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 7b8a880
 </p>

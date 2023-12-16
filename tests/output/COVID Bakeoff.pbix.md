@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [COVID Bakeoff.pbix](COVID Bakeoff.pbix.md)
+[Home](./index.md) > [COVID Bakeoff.pbix](COVID%20Bakeoff.pbix.md)
 
 [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Report sections](#report-sections) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) | 
 
@@ -2025,5 +2025,5 @@ id12586(["States[State]"]) --> id60108(["Lats[State]"])
 
 ----
 <p align="center">
-Generated at 16.12.2023 21:03:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 63f5c8f
+Generated at 16.12.2023 21:31:19 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 7b8a880
 </p>
