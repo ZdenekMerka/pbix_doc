@@ -10,7 +10,7 @@ Information from PBIX files.
 
 ## Links to PBIX files documentation
 
-* [COVID-19 US Tracking Sample.pbix.md](./COVID-19 US Tracking Sample.pbix.md) generated at 2023-12-16 20:49:17 
+* [COVID-19 US Tracking Sample.pbix.md](./COVID-19%20US%20Tracking%20Sample.pbix.md) generated at 2023-12-16 20:49:17 
 * [Supply Chain Sample.pbix.md](./Supply Chain Sample.pbix.md) generated at 2023-12-16 20:49:20 
 * [Life expectancy v202009.pbix.md](./Life expectancy v202009.pbix.md) generated at 2023-12-16 20:49:26 
 * [Adventure Works DW 2020.pbix.md](./Adventure Works DW 2020.pbix.md) generated at 2023-12-16 20:49:29 
