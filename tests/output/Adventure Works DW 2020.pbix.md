@@ -29,15 +29,15 @@ Documentation for file **Adventure Works DW 2020.pbix**.
 ```mermaid
 graph LR;
 
-id382(["Sales Territory[SalesTerritoryKey]"]) --> id4380(["Sales[SalesTerritoryKey]"])
-id458(["Product[ProductKey]"]) --> id4380(["Sales[ProductKey]"])
-id561(["Sales Order[SalesOrderLineKey]"]) --> id4380(["Sales[SalesOrderLineKey]"])
-id12(["Customer[CustomerKey]"]) --> id4380(["Sales[CustomerKey]"])
-id183(["Date[DateKey]"]) --> id4380(["Sales[OrderDateKey]"])
-id5597(["Reseller[ResellerKey]"]) --> id4380(["Sales[ResellerKey]"])
-id12591(["Currency[CurrencyKey]"]) --> id12588(["Currency Rate[CurrencyKey]"])
-id183(["Date[DateKey]"]) --> id12588(["Currency Rate[DateKey]"])
-id12591(["Currency[CurrencyKey]"]) --> id4380(["Sales[CurrencyKey]"])
+id382(["Sales Territory"]) --[SalesTerritoryKey] : [SalesTerritoryKey]--> id4380(["Sales"])
+id458(["Product"]) --[ProductKey] : [ProductKey]--> id4380(["Sales"])
+id561(["Sales Order"]) --[SalesOrderLineKey] : [SalesOrderLineKey]--> id4380(["Sales"])
+id12(["Customer"]) --[CustomerKey] : [CustomerKey]--> id4380(["Sales"])
+id183(["Date"]) --[DateKey] : [OrderDateKey]--> id4380(["Sales"])
+id5597(["Reseller"]) --[ResellerKey] : [ResellerKey]--> id4380(["Sales"])
+id12591(["Currency"]) --[CurrencyKey] : [CurrencyKey]--> id12588(["Currency Rate"])
+id183(["Date"]) --[DateKey] : [DateKey]--> id12588(["Currency Rate"])
+id12591(["Currency"]) --[CurrencyKey] : [CurrencyKey]--> id4380(["Sales"])
 ```
 
 
@@ -361,5 +361,5 @@ id12591(["Currency[CurrencyKey]"]) --> id4380(["Sales[CurrencyKey]"])
 
 ----
 <p align="center">
-Generated at 16.12.2023 21:38:25 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 02a288a
+Generated at 16.12.2023 22:12:22 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 5347a61
 </p>

@@ -29,16 +29,16 @@ Documentation for file **AdventureWorks Sales.pbix**.
 ```mermaid
 graph LR;
 
-id186(["LocalDateTable_1635a..(51)[-NaN-]"]) --> id183(["Date[Date]"])
-id189(["LocalDateTable_d1146..(51)[-NaN-]"]) --> id183(["Date[Month]"])
-id192(["LocalDateTable_dc06d..(51)[-NaN-]"]) --> id183(["Date[Full Date]"])
-id12(["Customer[CustomerKey]"]) --> id805(["Sales[CustomerKey]"])
-id572(["Product[ProductKey]"]) --> id805(["Sales[ProductKey]"])
-id690(["Reseller[ResellerKey]"]) --> id805(["Sales[ResellerKey]"])
-id805(["Sales[SalesOrderLineKey]"]) --> id980(["Sales Order[SalesOrderLineKey]"])
-id1078(["Sales Territory[SalesTerritoryKey]"]) --> id805(["Sales[SalesTerritoryKey]"])
-id183(["Date[DateKey]"]) --> id805(["Sales[OrderDateKey]"])
-id3642(["Table[Category]"]) --> id572(["Product[Category]"])
+id186(["LocalDateTable_1635a..(51)"]) --[-NaN-] : [Date]--> id183(["Date"])
+id189(["LocalDateTable_d1146..(51)"]) --[-NaN-] : [Month]--> id183(["Date"])
+id192(["LocalDateTable_dc06d..(51)"]) --[-NaN-] : [Full Date]--> id183(["Date"])
+id12(["Customer"]) --[CustomerKey] : [CustomerKey]--> id805(["Sales"])
+id572(["Product"]) --[ProductKey] : [ProductKey]--> id805(["Sales"])
+id690(["Reseller"]) --[ResellerKey] : [ResellerKey]--> id805(["Sales"])
+id805(["Sales"]) --[SalesOrderLineKey] : [SalesOrderLineKey]--> id980(["Sales Order"])
+id1078(["Sales Territory"]) --[SalesTerritoryKey] : [SalesTerritoryKey]--> id805(["Sales"])
+id183(["Date"]) --[DateKey] : [OrderDateKey]--> id805(["Sales"])
+id3642(["Table"]) --[Category] : [Category]--> id572(["Product"])
 ```
 
 
@@ -527,5 +527,5 @@ id3642(["Table[Category]"]) --> id572(["Product[Category]"])
 
 ----
 <p align="center">
-Generated at 16.12.2023 21:38:26 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 02a288a
+Generated at 16.12.2023 22:12:23 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 5347a61
 </p>

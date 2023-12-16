@@ -32,7 +32,7 @@ There are no model information or we have insufficient permissions.
 graph LR;
 
 {% for i  in relationships -%}
-{%- if i.IsActive -%} id{{i.ToTableID}}(["{{str_slicer(tables_idx[str(i.ToTableID)]['Name'])}}[{{columns_idx[str(i.ToColumnID)]['ExplicitName']}}]"]) --> id{{i.FromTableID}}(["{{str_slicer(tables_idx[str(i.FromTableID)]['Name'])}}[{{columns_idx[str(i.FromColumnID)]['ExplicitName']}}]"])
+{%- if i.IsActive -%} id{{i.ToTableID}}(["{{str_slicer(tables_idx[str(i.ToTableID)]['Name'])}}"]) --[{{columns_idx[str(i.ToColumnID)]['ExplicitName']}}] : [{{columns_idx[str(i.FromColumnID)]['ExplicitName']}}]--> id{{i.FromTableID}}(["{{str_slicer(tables_idx[str(i.FromTableID)]['Name'])}}"])
 {% endif -%}
 {#
 # {{ i.IsActive }} 
