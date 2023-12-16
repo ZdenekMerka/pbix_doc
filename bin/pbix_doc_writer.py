@@ -72,8 +72,16 @@ for json_key in jsons.keys():
             content = content  
         )
 
-        filenames_pbix.append('{filename}.{ext}'.format( filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']), ext = 'md'))
+        filenames_pbix.append(
+            {
+                'name' : '{filename}.{ext}'.format( filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']), ext = 'md'),
+                'datetime_extracted' : jsons[json_key][file_name_key]['datetime_extracted'],
+            }
+        )
+
     
+    ############################## 
+    # write index page  
     pp(filenames_pbix)
     content = writer.render_index(filenames_pbix)
     tools.write_file(

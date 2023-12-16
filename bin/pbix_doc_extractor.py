@@ -52,7 +52,7 @@ args = parser.parse_args()
 # load conf 
 common_conf = cnf.get_conf('./conf/pbix_doc.yaml')
 local_ssas_folder = common_conf['local_ssas_folder']
-extractor_version = '1.00'
+extractor_version = '1.01'
 
 ####################
 # init logger
@@ -130,6 +130,7 @@ for instance_folder in ssas_instancie_folders:
     #pp(pbix_zip.keys())
     # add zip file information
     instance_md[md_root]['extractor_version'] = extractor_version
+    instance_md[md_root]['datetime_extracted'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     instance_md[md_root]['zip_file'] = pbix_zip
     instance_md[md_root]['zip_file']['layout2'] = parsed_section 
     #pp(instance_md[md_root]['zip_file'].keys())
@@ -141,25 +142,6 @@ for instance_folder in ssas_instancie_folders:
 # TODO load file and replace it
 
 tools.save_to_json(instance_md,args.out_file,'./')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ##############################
