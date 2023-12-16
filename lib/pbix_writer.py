@@ -15,11 +15,11 @@ import lib.tools as tools
 def get_visual_config_info(config):
     ret = dict()
     ret["name"] = config['name']
-    ret["type"] = config["singleVisual"]["visualType"]
     
     # some old code 
     try:
         # Get the visualization type.
+        ret["type"] = config["singleVisual"]["visualType"]
 
         # Get the entities used in the visualization.
         entities = []
@@ -44,6 +44,7 @@ def get_visual_config_info(config):
         # Skip this container if there is no prototypeQuery (which contains the required data).
         ret["entities"] = ['n/a']
         ret["selected_items"] = ['n/a']
+        ret["type"] = ['n/a']
         #pass
 
     return ret 
