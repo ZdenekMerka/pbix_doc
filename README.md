@@ -60,43 +60,58 @@ Po instalaci programu jej můžete použít k vytvoření dokumentace pro své p
 4. Spusťte skript pro extrakci metadat (defaultně se data ukládají do souboru `./data.json`, zle změnit přepínačem ----out_file) 
 ```
 cd .\pbix_doc
-
-python .\bin\pbix_doc_extractor.py --out_file .\mydata.json
-
-dir .\mydata.json
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----        dd.MM.yyyy     hh:mm       16068680 mydata.json
+```
 
 ```
-4. Není vyberem požadované formát dokumentace pomocí přepínače -XXX
+python .\bin\pbix_doc_extractor.py --out_file .\mydata.json
+...
+...
+2024-01-02 22:42:47.821 INFO     lib.tools  Data saved to ././mydata.json successfully.
+2024-01-02 22:42:47.821 INFO     __main__   Done. It took 0h 00m 54s
+```
+```
+dir .\mydata.json
 
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        02.01.2024     22:42       16068680 mydata.json
 
-    Vyberte formát dokumentace, který chcete použít.
-    Klikněte na tlačítko "Vygenerovat dokumentaci".
+```
 
-Program vygeneruje dokumentaci v zadaném formátu. Dokumentaci můžete poté otevřít v textovém editoru nebo v prohlížeči.
+5. Vytvoříme si adresár pro výstupní dokumentaci 
 
+```
+mkdir .\output
+```
 
+6. Nyní vyberem požadované formát dokumentace pomocí přepínače `--format` a json soubory z kterých chce generovat dokumentaci (přepínač --files). Souborů může být více. A vyspecifikujeme výstupní adresář pomocí přepínače `--out_dir` a spustime generátor dokumentace. 
+```
+python .\bin\pbix_doc_writer.py --files ./mydata.json --format md_github --out_dir .\output\
+...
+...
+... wrote .\output\Life expectancy v202009.pbix.md
+... wrote .\output\index.md
+```
 
+7. Nyní můžete zkontrolovat vygeneroavané soubory
+```
+dir .\output\
 
+    Directory: C:\prog\pbix_doc\pbix_doc\output
 
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        02.01.2024     23:08            396 index.md
+-a----        02.01.2024     23:08          72030 Life expectancy v202009.pbix.md
+```
+8. Příklady vygenerovaných souborů si můžete prohlédnout [zde](./tests/output/index.md) 
 
+9. Následně můžete soubory commitnout do vašeho dokumentačního repository a sdílet s kolegy.
 
-
-Použití programu na vlastní riziko
-
+# Záruka
+**Použití programu na vlastní riziko.** 
 Program je stále ve vývoji a může obsahovat chyby. Používání programu je na vlastní riziko. Pokud narazíte na nějaký problém, dejte nám prosím vědět.
-
-
-
-
-
-
-
 
 # Run test 
 ```python -m unittest discover tests/ -vvv```
-
-# Install 
 
