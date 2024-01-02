@@ -23,28 +23,29 @@ Pomocí pbic_doc můžete:
 Extraktor pracuje jen na systému Windows 10/11 z důvodu použití Power BI Desktop
 
 ## Instalační kroky
-In Powershell, we open the target folder and execute the following command:
+1. In Powershell, we open the target folder and execute the following command:
 ```
 mkdir pbix_doc
 cd pbix_doc
 git clone https://github.com/dop12/pbix_doc.git
 ```
-Next, we create a virtual environment:
+2. Next, we create a virtual environment:
 ```
 python -m venv .\pbix_doc.venv
 ```
-Then, we activate the virtual environment:
+3. Then, we activate the virtual environment:
 ```
 .\pbix_doc.venv\Scripts\activate
 ```
-After that, we install the required modules:
+4. After that, we install the required modules:
 ```
 cd .\pbix_doc
 pip install -r requirements.txt
 ```
+
 ## Nastavení proměných prostředí
 ```
-XXXX
+TBD
 ```
 
 
