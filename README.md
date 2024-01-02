@@ -1,29 +1,124 @@
 # pbix_doc
-Reads a pbix file and generates its documentation. 
-# Run test 
-```python -m unittest discover tests/ -vvv```
 
-# Install 
+**pbix_doc** is a set of programs for generating documentation from Power BI files (`pbix`).
 
-In Powershell, we open the target folder and execute the following command:
+# Motivation
+
+Documentation is an essential part of any larger data warehouse project. However, manual documentation can be time-consuming and error-prone. Additionally, regular documentation maintenance can be difficult and time-consuming for developers.
+
+To address these issues, I decided to write a set of programs that support the extraction of data directly from Power BI files and then render this information into human-readable documentation.
+
+With **pbic_doc** you can:
+
+* Automatically extract data from Power BI files, so you don't have to spend time on manual work.
+* Render data into human-readable documentation that is accurate and up-to-date.
+* Supports different documentation formats, including GitHub Markdown, Azure DevOps Markdown*, and Atlasian Confluence*. *Will be implemented in the future
+
+# Installation
+
+## Prerequisites
+Installed 
+* Python 3: [https://www.python.org/downloads/](https://www.python.org/downloads/) (developed and tested on version 3.10.7)
+* `venv` python module (optional): [https://docs.python.org/3/library/venv.html#module-venv](https://docs.python.org/3/library/venv.html#module-venv) 
+* Power BI desktop: [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore)
+
+## Limitations
+
+The extractor only works on Windows 10/11 due to the use of Power BI Desktop.
+
+## Instalattion steps
+1. In Powershell, we open the target folder and execute the following commands:
 ```
+mkdir pbix_doc
+
+cd pbix_doc
+
 git clone https://github.com/dop12/pbix_doc.git
 ```
-Next, we create a virtual environment:
+2. Next, we create a virtual environment:
 ```
-python -m venv .\pbix_doc
+python -m venv .\pbix_doc.venv
 ```
-Then, we activate the virtual environment:
+3. Then, we activate the virtual environment:
 ```
-pbix_doc\Scripts\activate
+.\pbix_doc.venv\Scripts\activate
 ```
-After that, we install the required modules:
+4. After that, we install the required modules:
 ```
 cd .\pbix_doc
 pip install -r requirements.txt
 ```
-Finally, we can run the command on imput file:
+## Usage
+
+After installing the program, you can use it to generate documentation for your DWH projects. 
+
+Follow these steps:
+
+1. Open the PBIX files you want to document in Power BI Desktop.
+
+    You can use the test files in the `.\tests\input\` directory, for example.
+   
+    For this example, we will use `.\tests\input\Life expectancy v202009.pbix`.
+
+2. Open a PowerShell terminal and navigate to the directory where pbix_doc is installed.
+
 ```
 cd .\pbix_doc
-python .\bin\pbix_doc.py --db_id aw_sales
 ```
+
+3. Run the metadata extraction script. By default, the data is saved to the `./data.json` file, but you can change this with the `--out_file` switch.
+```
+python .\bin\pbix_doc_extractor.py --out_file .\mydata.json
+...
+...
+2024-01-02 22:42:47.821 INFO     lib.tools  Data saved to ././mydata.json successfully.
+2024-01-02 22:42:47.821 INFO     __main__   Done. It took 0h 00m 54s
+```
+4. Verify the generated json file.
+```
+dir .\mydata.json
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        02.01.2024     22:42       16068680 mydata.json
+
+```
+
+5. Create a directory for the output documentation.
+
+```
+mkdir .\output
+```
+6. Select the desired documentation format with the `--format` switch, the JSON files you want to generate documentation for with the `--files` switch (--files switch can accept a list of JSON files), and the output directory with the `--out_dir` switch. Then, run the documentation generator.
+```
+python .\bin\pbix_doc_writer.py --files ./mydata.json --format md_github --out_dir .\output\
+...
+...
+... wrote .\output\Life expectancy v202009.pbix.md
+... wrote .\output\index.md
+```
+
+7. Verify the generated files.
+```
+dir .\output\
+
+    Directory: C:\prog\pbix_doc\pbix_doc\output
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        02.01.2024     23:08            396 index.md
+-a----        02.01.2024     23:08          72030 Life expectancy v202009.pbix.md
+```
+8. You can see examples of the generated files [here](./tests/output/index.md) 
+
+8. Then you can commit the files to your documentation repository ( isn't part of this tutorial) and share them with your colleagues.
+
+# Warning
+
+**Use at your own risk.**
+
+The program is still under development and may contain bugs. Use of the program is at your own risk. If you encounter any problems, please let me know.
+
+# Run test 
+```python -m unittest discover tests/ -vvv```
+
