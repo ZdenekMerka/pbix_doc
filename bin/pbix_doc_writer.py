@@ -41,7 +41,7 @@ start_time = datetime.now()
 # arg parse 
 parser = argparse.ArgumentParser(description='Render metadata and data info obtained from pbix_doc_extractor write them into requested format.')
 parser.add_argument('--files', type=str, nargs='+', required=True,  help='List of files to process')
-parser.add_argument('--format', type=str, required=False, default='md', help="Requested output format")
+parser.add_argument('--format', type=str, required=False, default='md_github', choices=['md_github'], help="Requested output format")
 parser.add_argument('--out_dir', type=str, required=False, default='./output', help="Output dir (default ./output).")
 
 

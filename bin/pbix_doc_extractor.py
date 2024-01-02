@@ -41,10 +41,10 @@ start_time = datetime.now()
 
 ####################
 # arg parse 
-parser = argparse.ArgumentParser(description='Get metadata and data info from given pbix file and write them into json file.')
-parser.add_argument('--pbix_file', type=str, required=False, default='xxx', help="PBIX file")
+parser = argparse.ArgumentParser(description='Get metadata and data info from running pbix file instancies in Power BI Desktop and write them into json file.')
+#parser.add_argument('--pbix_file', type=str, required=False, default='xxx', help="PBIX file")
 parser.add_argument('--out_file', type=str, required=False, default='data.json', help="Output JSON File with extracted metadata (default = ./data.json)")
-parser.add_argument('--run_pbix', type=str, required=False, default=False, help="No run pbix file (default = False")
+#parser.add_argument('--run_pbix', type=str, required=False, default=False, help="No run pbix file (default = False")
 
 args = parser.parse_args()
 
@@ -66,8 +66,8 @@ logger = logging.getLogger(__name__)
 
 ###################
 # Open pbix files 
-if (args.run_pbix):
-    tools.open_file_with_default_program1(args.pbix_file)
+#if (args.run_pbix):
+#    tools.open_file_with_default_program1(args.pbix_file)
 
 ####################
 # collect data from folder
