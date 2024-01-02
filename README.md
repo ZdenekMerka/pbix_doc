@@ -25,15 +25,17 @@ Extraktor pracuje jen na systému Windows 10/11 z důvodu použití Power BI Des
 ## Instalační kroky
 In Powershell, we open the target folder and execute the following command:
 ```
+mkdir pbix_doc
+cd pbix_doc
 git clone https://github.com/dop12/pbix_doc.git
 ```
 Next, we create a virtual environment:
 ```
-python -m venv .\pbix_doc
+python -m venv .\pbix_doc.venv
 ```
 Then, we activate the virtual environment:
 ```
-pbix_doc\Scripts\activate
+.\pbix_doc.venv\Scripts\activate
 ```
 After that, we install the required modules:
 ```
@@ -50,11 +52,22 @@ XXXX
 
 Po instalaci programu jej můžete použít k vytvoření dokumentace pro své projekty DWH. Postupujte podle následujících kroků:
 1. Spustě v Power Bi dekstopu PBIX soubory, které chcete zdokumentovat
-2. V Powershell se přesunňte do příslušného adresáře, kde je nainstalován pbix_doc
-3. Spusťte skript pro extrakci metadat (defultně se data ukládají do souboru ./data.json, zle změnit přepínačem -XXX) 
+
+   Můžete použít například testovací soubory z aresáře `.\tests\input\`.
+   Pro tento příklad použije `.\tests\input\Life expectancy v202009.pbix`
+
+3. V Powershell se přesunňte do příslušného adresáře, kde je nainstalován pbix_doc
+4. Spusťte skript pro extrakci metadat (defaultně se data ukládají do souboru `./data.json`, zle změnit přepínačem ----out_file) 
 ```
 cd .\pbix_doc
-python .\bin\pbix_doc.py --db_id aw_sales
+
+python .\bin\pbix_doc_extractor.py --out_file .\mydata.json
+
+dir .\mydata.json
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        dd.MM.yyyy     hh:mm       16068680 mydata.json
+
 ```
 4. Není vyberem požadované formát dokumentace pomocí přepínače -XXX
 
