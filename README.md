@@ -20,7 +20,7 @@ Pomocí pbic_doc můžete:
 * [Power BI desktop](https://aka.ms/pbidesktopstore)
 
 ## Omezení
-    Extraktor pracuje jen na systému Windows 10/11 z důvodu použití Power BI Desktop
+Extraktor pracuje jen na systému Windows 10/11 z důvodu použití Power BI Desktop
 
 ## Instalační kroky
 In Powershell, we open the target folder and execute the following command:
