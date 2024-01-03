@@ -58,16 +58,9 @@ class pbix_writer2(writer.writer):
         self.template_dir = './conf/templates/' + self.output_type
         self.tmpl = dict()
         self.templates = {
-            'properties': 'properties.md',
-            'tables': 'tables.md',
-            'columns':       'columns.md',
-            'relationships': 'relationships.md',
-            'measures':      'measures.md',
-            'hierarchies':   'hierarchies.md',
             'footer':        'footer.md',
             'index':         'index.md',
             'pbix_doc':      'pbix_doc.md',
-            #'breadcrumb':    'breadcrumb.md'
         }
 
         #self.metadata = metadata
