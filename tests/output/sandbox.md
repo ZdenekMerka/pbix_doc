@@ -74,7 +74,10 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 > [!CAUTION]
 > Negative potential consequences of an action.
 
+# Images 
+![11.png](https://github.com/dop12/pbix_doc/blob/main/conf/icons/pbi_viz/11.png "11.png")
 
+![11.png](../../conf/icons/pbi_viz/11.png "11.png")
 
 ----
 <p style="text-align:center"> Generated at 25.11.2023 16:35:42 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: </p>
