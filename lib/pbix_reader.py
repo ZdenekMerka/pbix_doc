@@ -126,10 +126,10 @@ class pbix_reader(reader.reader):
             df_result = df_result.fillna('-NaN-')
             ret[tab] = tools.df2dictofdictsref(df_result,idx) 
             
-            # write file 
-            tools.save_df_to_yaml(df_result,f'{tab.lower()}.yaml',catalog)
-            tools.save_df_to_json(df_result,f'{tab.lower()}.json',catalog)
-            tools.save_df_to_excel(df_result,f'{tab.lower()}.xlsx',catalog)
+            # write file for debuging
+            # tools.save_df_to_yaml(df_result,f'{tab.lower()}.yaml',catalog)
+            # tools.save_df_to_json(df_result,f'{tab.lower()}.json',catalog)
+            # tools.save_df_to_excel(df_result,f'{tab.lower()}.xlsx',catalog)
             
         return ret
 

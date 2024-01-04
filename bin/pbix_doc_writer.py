@@ -54,27 +54,43 @@ for json_key in jsons.keys():
     filenames_pbix = []
     
     for file_name_key in jsons[json_key].keys():
-        print(json_key)
-        print(file_name_key)
+        #print(json_key)
+        #print(file_name_key)
 
         ###################
-    #    # init writer 
+        # init writer 
         writer = w.pbix_writer2(jsons[json_key][file_name_key],  args.format)
-        pp(writer.templates)
-        pp(writer.init_templates())
-        content = writer.render_pbix_doc()
-        print(content)
+        #pp(writer.templates)
+        writer.init_templates()
+        content_dmv = writer.render_pbix_doc()
+        content_report = writer.render_pbix_doc_report()
+        #print(content_dmv)
+        
+        ###################
+        # DMV
         tools.write_file(
-            filename = '{dir}/{filename}.{ext}'.format(
+            filename = '{dir}/{filename}_dmv.{ext}'.format(
                 dir = args.out_dir,
                 filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']),
                 ext = 'md'),         
-            content = content  
+            content = content_dmv
+        )
+        
+        ###################
+        # report
+        tools.write_file(
+            filename = '{dir}/{filename}_report.{ext}'.format(
+                dir = args.out_dir,
+                filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']),
+                ext = 'md'),         
+            content = content_report  
         )
 
         filenames_pbix.append(
             {
                 'name' : '{filename}.{ext}'.format( filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']), ext = 'md'),
+                'name_dmv' : '{filename}_dmv.{ext}'.format( filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']), ext = 'md'),
+                'name_report' : '{filename}_report.{ext}'.format( filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']), ext = 'md'),
                 'datetime_extracted' : jsons[json_key][file_name_key]['datetime_extracted'],
             }
         )
@@ -82,7 +98,7 @@ for json_key in jsons.keys():
     
     ############################## 
     # write index page  
-    pp(filenames_pbix)
+    #pp(filenames_pbix)
     content = writer.render_index(filenames_pbix)
     tools.write_file(
         filename = '{dir}/{filename}.{ext}'.format(

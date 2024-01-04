@@ -10,15 +10,18 @@ Information from PBIX files.
 
 ## Links to PBIX files documentation
 
-* [COVID-19 US Tracking Sample.pbix.md](./COVID-19%20US%20Tracking%20Sample.pbix.md) generated at 2023-12-16 20:49:17 
-* [Supply Chain Sample.pbix.md](./Supply%20Chain%20Sample.pbix.md) generated at 2023-12-16 20:49:20 
-* [Life expectancy v202009.pbix.md](./Life%20expectancy%20v202009.pbix.md) generated at 2023-12-16 20:49:26 
-* [Adventure Works DW 2020.pbix.md](./Adventure%20Works%20DW%202020.pbix.md) generated at 2023-12-16 20:49:29 
-* [AdventureWorks Sales.pbix.md](./AdventureWorks%20Sales.pbix.md) generated at 2023-12-16 20:49:32 
-* [Human Resources Sample PBIX.pbix.md](./Human%20Resources%20Sample%20PBIX.pbix.md) generated at 2023-12-16 20:49:37 
-* [COVID Bakeoff.pbix.md](./COVID%20Bakeoff.pbix.md) generated at 2023-12-16 20:49:44 
+| PBIX File name | DMV | Reports  | generated | 
+|---|---|---|---|
+| Life expectancy v202009.pbix.md | [DMV](./Life%20expectancy%20v202009.pbix.md) |  [Report](./Life%20expectancy%20v202009.pbix.md_report) | 2024-01-05 00:21:54 |
+| Supply Chain Sample.pbix.md | [DMV](./Supply%20Chain%20Sample.pbix.md) |  [Report](./Supply%20Chain%20Sample.pbix.md_report) | 2024-01-05 00:21:55 |
+| AdventureWorks Sales.pbix.md | [DMV](./AdventureWorks%20Sales.pbix.md) |  [Report](./AdventureWorks%20Sales.pbix.md_report) | 2024-01-05 00:21:55 |
+| Adventure Works DW 2020.pbix.md | [DMV](./Adventure%20Works%20DW%202020.pbix.md) |  [Report](./Adventure%20Works%20DW%202020.pbix.md_report) | 2024-01-05 00:21:56 |
+| Sales and Returns Sample v201912.pbix.md | [DMV](./Sales%20and%20Returns%20Sample%20v201912.pbix.md) |  [Report](./Sales%20and%20Returns%20Sample%20v201912.pbix.md_report) | 2024-01-05 00:21:57 |
+| COVID-19 US Tracking Sample.pbix.md | [DMV](./COVID-19%20US%20Tracking%20Sample.pbix.md) |  [Report](./COVID-19%20US%20Tracking%20Sample.pbix.md_report) | 2024-01-05 00:21:57 |
+| Human Resources Sample PBIX.pbix.md | [DMV](./Human%20Resources%20Sample%20PBIX.pbix.md) |  [Report](./Human%20Resources%20Sample%20PBIX.pbix.md_report) | 2024-01-05 00:21:58 |
+| COVID Bakeoff.pbix.md | [DMV](./COVID%20Bakeoff.pbix.md) |  [Report](./COVID%20Bakeoff.pbix.md_report) | 2024-01-05 00:21:59 |
 
 ----
 <p align="center">
-Generated at 16.12.2023 22:30:32 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: ef36a14
+Generated at 05.01.2024 00:32:03 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: daa215f
 </p>

@@ -16,10 +16,10 @@ Documentation for file **Life expectancy v202009.pbix**.
 | Param  | Value  |
 |---|---|
 | **Analyzed pbix file name** | `Life expectancy v202009.pbix` | 
-| **Catalog name** | `ce1088db-2941-4038-ab94-da4f5151aa83` | 
-| **Port** | `61184`|
+| **Catalog name** | `51306748-d2a4-4813-904f-3322b45f73ec` | 
+| **Port** | `56596`|
 | **Description** | `-NaN-` | 
-| **Date modified** | `2023-12-16T19:20:29` | 
+| **Date modified** | `2024-01-02T21:37:54` | 
 | **Compatibility level** | `1567` | 
 
 
@@ -2647,5 +2647,5 @@ IF(Indicators[Life expectancy (yrs)]<80,70,
 
 ----
 <p align="center">
-Generated at 16.12.2023 22:30:28 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: ef36a14
+Generated at 02.01.2024 23:01:34 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: b5cf51b
 </p>
