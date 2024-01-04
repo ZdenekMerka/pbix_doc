@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Supply Chain Sample.pbix](Supply%20Chain%20Sample.pbix.md)
+[Home](./index.md) > [Supply Chain Sample.pbix](Supply%20Chain%20Sample.pbix_dmv.md)
 
 | [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) |
 
@@ -23,7 +23,9 @@ Documentation for file **Supply Chain Sample.pbix**.
 | **Compatibility level** | `1567` | 
 
 
-[Up](#)
+
+[Up](#information)
+
 # Model relationships
 
 ```mermaid
@@ -35,7 +37,7 @@ id8304(["Month"]) --->|Month:Month| id13029(["Backorder Percentage"])
 
 
 
-[Up](#)
+[Up](#information)
 
 # Business objects
 
@@ -45,8 +47,8 @@ id8304(["Month"]) --->|Month:Month| id13029(["Backorder Percentage"])
 | 13029 | Backorder Percentage | n/a |
 
 
+[Up](#information)
 
-[Up](#)
 # Measures
 
 
@@ -81,9 +83,8 @@ id8304(["Month"]) --->|Month:Month| id13029(["Backorder Percentage"])
 </table>
 
 
+[Up](#information)
 
-
-[Up](#)
 # Relationships 
 
 
@@ -93,7 +94,8 @@ id8304(["Month"]) --->|Month:Month| id13029(["Backorder Percentage"])
 | 13652 | Backorder Percentage[Month] | Month[Month] | 2:1 | 9ed0ec75-78b2-4f82-bffb-1dce5fda3499 | True |
 
 
-[Up](#)
+[Up](#information)
+
 # Hierarchies 
 
 
@@ -103,7 +105,8 @@ id8304(["Month"]) --->|Month:Month| id13029(["Backorder Percentage"])
 | 24 |DateTableTemplate_6d..(54) | Date Hierarchy | n/a | False | 
 
 
-[Up](#)
+[Up](#information)
+
 # Columns 
 
 
@@ -167,8 +170,10 @@ id8304(["Month"]) --->|Month:Month| id13029(["Backorder Percentage"])
 
 
 
+[Up](#information)
+
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:01 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: daa215f
+Generated at 05.01.2024 00:57:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
 </p>

@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Adventure Works DW 2020.pbix_report](Adventure%20Works%20DW%202020.pbix_report.md)
+[Home](./index.md) > [Adventure Works DW 2020.pbix](Adventure%20Works%20DW%202020.pbix_report.md)
 
 |[Report sections](#report-sections) |
 
@@ -20,7 +20,7 @@
 | **Ordinal** | `0` |
 | **Visual containers number** | `2` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -33,7 +33,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -47,7 +47,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -57,5 +57,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:02 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 00:57:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Human Resources Sample PBIX.pbix](Human%20Resources%20Sample%20PBIX.pbix.md)
+[Home](./index.md) > [Human Resources Sample PBIX.pbix](Human%20Resources%20Sample%20PBIX.pbix_dmv.md)
 
 | [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) |
 
@@ -23,7 +23,9 @@ Documentation for file **Human Resources Sample PBIX.pbix**.
 | **Compatibility level** | `1550` | 
 
 
-[Up](#)
+
+[Up](#information)
+
 # Model relationships
 
 ```mermaid
@@ -46,7 +48,7 @@ id2053(["LocalDateTable_c04ce..(51)"]) --->|-NaN-:HireDate| id25(["Employee"])
 
 
 
-[Up](#)
+[Up](#information)
 
 # Business objects
 
@@ -62,8 +64,8 @@ id2053(["LocalDateTable_c04ce..(51)"]) --->|-NaN-:HireDate| id25(["Employee"])
 | 34 | AgeGroup | n/a |
 
 
+[Up](#information)
 
-[Up](#)
 # Measures
 
 
@@ -203,9 +205,8 @@ id2053(["LocalDateTable_c04ce..(51)"]) --->|-NaN-:HireDate| id25(["Employee"])
 </table>
 
 
+[Up](#information)
 
-
-[Up](#)
 # Relationships 
 
 
@@ -226,7 +227,8 @@ id2053(["LocalDateTable_c04ce..(51)"]) --->|-NaN-:HireDate| id25(["Employee"])
 | 2060 | Employee[HireDate] | LocalDateTable_c04ce..(51)[-NaN-] | 2:1 | 3e454a13-2d74-4769-b44d-91ce492acf1a | True |
 
 
-[Up](#)
+[Up](#information)
+
 # Hierarchies 
 
 
@@ -242,7 +244,8 @@ id2053(["LocalDateTable_c04ce..(51)"]) --->|-NaN-:HireDate| id25(["Employee"])
 | 2105 |LocalDateTable_c04ce..(51) | Date Hierarchy | n/a | False | 
 
 
-[Up](#)
+[Up](#information)
+
 # Columns 
 
 
@@ -346,8 +349,10 @@ id2053(["LocalDateTable_c04ce..(51)"]) --->|-NaN-:HireDate| id25(["Employee"])
 
 
 
+[Up](#information)
+
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:02 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: daa215f
+Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
 </p>

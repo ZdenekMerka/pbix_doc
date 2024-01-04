@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Life expectancy v202009.pbix_report](Life%20expectancy%20v202009.pbix_report.md)
+[Home](./index.md) > [Life expectancy v202009.pbix](Life%20expectancy%20v202009.pbix_report.md)
 
 |[Report sections](#report-sections) |
 
@@ -20,7 +20,7 @@
 | **Ordinal** | `0` |
 | **Visual containers number** | `14` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -33,7 +33,7 @@
 | **Business objects:**  | `life_expectancy_years, Country, Metrics` | 
 | **Attributes:**  | Column: Country.Country Code<br/> Aggregation: Min(Country.Country)<br/> Measure: Metrics.Life Expectancy | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -47,7 +47,7 @@
 | **Business objects:**  | `Years` | 
 | **Attributes:**  | Column: Years.Years | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -61,7 +61,7 @@
 | **Business objects:**  | `Metrics, Extra Year` | 
 | **Attributes:**  | Column: Extra Year.Extra year<br/> Measure: Metrics.Life Expectancy For Chart | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -75,7 +75,7 @@
 | **Business objects:**  | `Legend` | 
 | **Attributes:**  | Aggregation: Sum(Legend.Bubble01)<br/> Aggregation: Sum(Legend.Bubble02)<br/> Aggregation: Sum(Legend.Bubble03)<br/> Aggregation: Sum(Legend.Bubble04)<br/> Aggregation: Sum(Legend.Bubble05)<br/> Column: Legend.Metric | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -89,7 +89,7 @@
 | **Business objects:**  | `Population, Country, Buckets, Metrics` | 
 | **Attributes:**  | Aggregation: Sum(Population.Population)<br/> Column: Country.Country Code<br/> Measure: Metrics.Life Expectancy<br/> Column: Buckets.Bucket<br/> Aggregation: Min(Country.Country) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -103,7 +103,7 @@
 | **Business objects:**  | `Buckets, Indicators` | 
 | **Attributes:**  | Column: Buckets.Bucket<br/> Aggregation: CountNonNull(healthappended.Country) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -117,7 +117,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -131,7 +131,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -145,7 +145,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -159,7 +159,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -173,7 +173,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -187,7 +187,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -201,7 +201,7 @@
 | **Business objects:**  | `Metrics` | 
 | **Attributes:**  | Measure: Metrics.Life Expectancy | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -215,7 +215,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Child Mortality
@@ -229,7 +229,7 @@
 | **Ordinal** | `1` |
 | **Visual containers number** | `18` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -242,7 +242,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -256,7 +256,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -270,7 +270,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -284,7 +284,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -298,7 +298,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -312,7 +312,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -326,7 +326,7 @@
 | **Business objects:**  | `Country, Population, Metrics, Year` | 
 | **Attributes:**  | Column: Country.Country<br/> Aggregation: Sum(Population.Population)<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.Child Mortality Rate<br/> Column: Country.Country Code<br/> Column: Year.Year<br/> Aggregation: Min(Country.Country) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -340,7 +340,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -354,7 +354,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -368,7 +368,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -382,7 +382,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Cholera Fatality Rate (%) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -396,7 +396,7 @@
 | **Business objects:**  | `Country` | 
 | **Attributes:**  | Column: Country.Country | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -410,7 +410,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -424,7 +424,7 @@
 | **Business objects:**  | `Buckets, Metrics` | 
 | **Attributes:**  | Column: Buckets.Bucket<br/> Measure: Metrics.CLE | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -438,7 +438,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -452,7 +452,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -466,7 +466,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -480,7 +480,7 @@
 | **Business objects:**  | `Country` | 
 | **Attributes:**  | Column: Country.Country | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Key Drivers
@@ -494,7 +494,7 @@
 | **Ordinal** | `2` |
 | **Visual containers number** | `18` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -507,7 +507,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -521,7 +521,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -535,7 +535,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -549,7 +549,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -563,7 +563,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -577,7 +577,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -591,7 +591,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -605,7 +605,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -619,7 +619,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -633,7 +633,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -647,7 +647,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -661,7 +661,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -675,7 +675,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -689,7 +689,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -703,7 +703,7 @@
 | **Business objects:**  | `Country` | 
 | **Attributes:**  | Column: Country.Country | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -717,7 +717,7 @@
 | **Business objects:**  | `Year, Metrics` | 
 | **Attributes:**  | Column: Year.Year<br/> Measure: Metrics.Life Expectancy 2 | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -731,7 +731,7 @@
 | **Business objects:**  | `Sex, Metrics` | 
 | **Attributes:**  | Column: Sex.Sex<br/> Measure: Metrics.LE-100<br/> Measure: Metrics.Life Expectancy 2 | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -745,7 +745,7 @@
 | **Business objects:**  | `Indicators` | 
 | **Attributes:**  | Measure: Indicators.Life expectancy<br/> Column: Indicators.Female pupils below minimum reading proficiency at end of primary (%)<br/> Column: Indicators.GDP per capita (US $)<br/> Column: Indicators.Net national income per capita<br/> Column: Indicators.People using safely managed drinking water services (% of population)<br/> Column: Indicators.Percentage of female population with no education<br/> Column: Indicators.Safe drinking water services (% of population)<br/> Column: Indicators.Year | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Root Causes
@@ -759,7 +759,7 @@
 | **Ordinal** | `3` |
 | **Visual containers number** | `10` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -772,7 +772,7 @@
 | **Business objects:**  | `Metrics, Variance Analysis, Country` | 
 | **Attributes:**  | Measure: Metrics.Life Expectancy YoY% 2<br/> Column: Variance Analysis.GDP per capita<br/> Column: Variance Analysis.Maternal Mortality<br/> Column: Variance Analysis.Tuberculosis Incidents<br/> Column: Variance Analysis.Neonatal Mortality<br/> Column: Variance Analysis.Malaria Cases<br/> Column: Country.Continent | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -786,7 +786,7 @@
 | **Business objects:**  | `Flags, Country` | 
 | **Attributes:**  | Column: Flags.Country<br/> Column: Flags.ImageURL<br/> Aggregation: Min(Country.Region) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -800,7 +800,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -814,7 +814,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -828,7 +828,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -842,7 +842,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -856,7 +856,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -870,7 +870,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -884,7 +884,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -898,7 +898,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## GDP Analysis
@@ -912,7 +912,7 @@
 | **Ordinal** | `4` |
 | **Visual containers number** | `12` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -925,7 +925,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -939,7 +939,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -953,7 +953,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -967,7 +967,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -981,7 +981,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -995,7 +995,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1009,7 +1009,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1023,7 +1023,7 @@
 | **Business objects:**  | `Metrics, Country, Population` | 
 | **Attributes:**  | Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.Life Expectancy 2<br/> Column: Country.Country<br/> Column: Country.Region<br/> Aggregation: Sum(Population.Population) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1037,7 +1037,7 @@
 | **Business objects:**  | `Year, Metrics, Country` | 
 | **Attributes:**  | HierarchyLevel: Year.Date.Variation.Date Hierarchy.Year<br/> HierarchyLevel: Year.Date.Variation.Date Hierarchy.Quarter<br/> HierarchyLevel: Year.Date.Variation.Date Hierarchy.Month<br/> HierarchyLevel: Year.Date.Variation.Date Hierarchy.Day<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Column: Country.Continent | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1051,7 +1051,7 @@
 | **Business objects:**  | `Metrics, Country` | 
 | **Attributes:**  | Measure: Metrics.GDP Per Capita (USD)<br/> Column: Country.Country<br/> Column: Country.Continent | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1065,7 +1065,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1079,7 +1079,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Dashboard
@@ -1093,7 +1093,7 @@
 | **Ordinal** | `5` |
 | **Visual containers number** | `35` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1106,7 +1106,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.LE-Goal | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1120,7 +1120,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1134,7 +1134,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1148,7 +1148,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Child Mortality Rate | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1162,7 +1162,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1176,7 +1176,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.LE-Goal | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1190,7 +1190,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1204,7 +1204,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1218,7 +1218,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1232,7 +1232,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Child Mortality Rate | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1246,7 +1246,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.LE-Goal | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1260,7 +1260,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1274,7 +1274,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1288,7 +1288,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1302,7 +1302,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Child Mortality Rate | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1316,7 +1316,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.LE-Goal | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1330,7 +1330,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1344,7 +1344,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1358,7 +1358,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1372,7 +1372,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Child Mortality Rate | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1386,7 +1386,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.LE-Goal | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1400,7 +1400,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1414,7 +1414,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1428,7 +1428,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1442,7 +1442,7 @@
 | **Business objects:**  | `Metrics, Years` | 
 | **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Child Mortality Rate | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1456,7 +1456,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1470,7 +1470,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1484,7 +1484,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1498,7 +1498,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1512,7 +1512,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1526,7 +1526,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1540,7 +1540,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1554,7 +1554,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1568,7 +1568,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1582,7 +1582,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Tooltip
@@ -1596,7 +1596,7 @@
 | **Ordinal** | `6` |
 | **Visual containers number** | `11` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1609,7 +1609,7 @@
 | **Business objects:**  | `Metrics` | 
 | **Attributes:**  | Measure: Metrics.Life Expectancy | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1623,7 +1623,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1637,7 +1637,7 @@
 | **Business objects:**  | `Country` | 
 | **Attributes:**  | Column: Country.World<br/> Aggregation: Min(Country.Country) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1651,7 +1651,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1665,7 +1665,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1679,7 +1679,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1693,7 +1693,7 @@
 | **Business objects:**  | `Metrics` | 
 | **Attributes:**  | Measure: Metrics.Life Expectancy | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1707,7 +1707,7 @@
 | **Business objects:**  | `Metrics` | 
 | **Attributes:**  | Measure: Metrics.Life Expectancy | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1721,7 +1721,7 @@
 | **Business objects:**  | `Metrics` | 
 | **Attributes:**  | Measure: Metrics.Life Expectancy | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1735,7 +1735,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1749,7 +1749,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Resources
@@ -1763,7 +1763,7 @@
 | **Ordinal** | `7` |
 | **Visual containers number** | `10` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1776,7 +1776,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1790,7 +1790,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1804,7 +1804,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1818,7 +1818,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1832,7 +1832,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1846,7 +1846,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1860,7 +1860,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1874,7 +1874,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1888,7 +1888,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1902,7 +1902,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1912,5 +1912,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:01 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 00:57:42 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

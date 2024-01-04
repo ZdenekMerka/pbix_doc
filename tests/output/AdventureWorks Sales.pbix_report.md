@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [AdventureWorks Sales.pbix_report](AdventureWorks%20Sales.pbix_report.md)
+[Home](./index.md) > [AdventureWorks Sales.pbix](AdventureWorks%20Sales.pbix_report.md)
 
 |[Report sections](#report-sections) |
 
@@ -20,7 +20,7 @@
 | **Ordinal** | `0` |
 | **Visual containers number** | `6` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -33,7 +33,7 @@
 | **Business objects:**  | `Date, Sales` | 
 | **Attributes:**  | Aggregation: Sum(Sales.Sales Amount)<br/> Measure: Sales.Sales Amount by Due Date<br/> HierarchyLevel: Date.Fiscal.Month | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -47,7 +47,7 @@
 | **Business objects:**  | `Sales, Reseller` | 
 | **Attributes:**  | Aggregation: Sum(Sales.Order Quantity)<br/> Column: Reseller.Country-Region | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -61,7 +61,7 @@
 | **Business objects:**  | `Product, Reseller, Sales` | 
 | **Attributes:**  | Column: Product.Category<br/> Column: Reseller.Business Type<br/> Aggregation: Sum(Sales.Sales Amount) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -75,7 +75,7 @@
 | **Business objects:**  | `Date` | 
 | **Attributes:**  | HierarchyLevel: Date.Fiscal.Year<br/> HierarchyLevel: Date.Fiscal.Month | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -89,7 +89,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -103,7 +103,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Page 2
@@ -117,7 +117,7 @@
 | **Ordinal** | `1` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -130,7 +130,7 @@
 | **Business objects:**  | `Product, Reseller, Sales` | 
 | **Attributes:**  | Column: Product.Category<br/> Column: Reseller.Business Type<br/> Aggregation: Sum(Sales.Sales Amount) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Page 3
@@ -144,7 +144,7 @@
 | **Ordinal** | `2` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -157,7 +157,7 @@
 | **Business objects:**  | `Date, Sales` | 
 | **Attributes:**  | HierarchyLevel: Date.Fiscal.Month<br/> Aggregation: Sum(Sales.Sales Amount)<br/> Measure: Sales.Sales Amount by Due Date | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -167,5 +167,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:01 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 00:57:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

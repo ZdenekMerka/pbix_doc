@@ -23,5 +23,5 @@ Information from PBIX files.
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:49:07 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: e7844d8
+Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
 </p>

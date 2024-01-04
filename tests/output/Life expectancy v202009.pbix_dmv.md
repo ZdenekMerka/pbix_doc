@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Life expectancy v202009.pbix](Life%20expectancy%20v202009.pbix.md)
+[Home](./index.md) > [Life expectancy v202009.pbix](Life%20expectancy%20v202009.pbix_dmv.md)
 
 | [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) |
 
@@ -23,7 +23,9 @@ Documentation for file **Life expectancy v202009.pbix**.
 | **Compatibility level** | `1567` | 
 
 
-[Up](#)
+
+[Up](#information)
+
 # Model relationships
 
 ```mermaid
@@ -43,7 +45,7 @@ id53830(["Buckets"]) --->|Category:Life Exp Buckets| id12(["Indicators"])
 
 
 
-[Up](#)
+[Up](#information)
 
 # Business objects
 
@@ -62,8 +64,8 @@ id53830(["Buckets"]) --->|Category:Life Exp Buckets| id12(["Indicators"])
 | 54512 | Extra Year | n/a |
 
 
+[Up](#information)
 
-[Up](#)
 # Measures
 
 
@@ -228,9 +230,8 @@ IF(Indicators[Life expectancy (yrs)]<80,70,
 </table>
 
 
+[Up](#information)
 
-
-[Up](#)
 # Relationships 
 
 
@@ -248,7 +249,8 @@ IF(Indicators[Life expectancy (yrs)]<80,70,
 | 53982 | Indicators[Life Exp Buckets] | Buckets[Category] | 2:1 | 32f3749b-0b94-451d-8b0d-8f698bf43117 | True |
 
 
-[Up](#)
+[Up](#information)
+
 # Hierarchies 
 
 
@@ -259,7 +261,8 @@ IF(Indicators[Life expectancy (yrs)]<80,70,
 | 39000 |LocalDateTable_021b8..(51) | Date Hierarchy | n/a | False | 
 
 
-[Up](#)
+[Up](#information)
+
 # Columns 
 
 
@@ -742,8 +745,10 @@ IF(Indicators[Life expectancy (yrs)]<80,70,
 
 
 
+[Up](#information)
+
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:01 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: daa215f
+Generated at 05.01.2024 00:57:42 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
 </p>

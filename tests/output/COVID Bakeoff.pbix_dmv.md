@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [COVID Bakeoff.pbix](COVID%20Bakeoff.pbix.md)
+[Home](./index.md) > [COVID Bakeoff.pbix](COVID%20Bakeoff.pbix_dmv.md)
 
 | [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) |
 
@@ -23,7 +23,9 @@ Documentation for file **COVID Bakeoff.pbix**.
 | **Compatibility level** | `1567` | 
 
 
-[Up](#)
+
+[Up](#information)
+
 # Model relationships
 
 ```mermaid
@@ -47,7 +49,7 @@ id12586(["States"]) --->|State:State| id60108(["Lats"])
 
 
 
-[Up](#)
+[Up](#information)
 
 # Business objects
 
@@ -62,8 +64,8 @@ id12586(["States"]) --->|State:State| id60108(["Lats"])
 | 48648 | GDP History | n/a |
 
 
+[Up](#information)
 
-[Up](#)
 # Measures
 
 
@@ -307,9 +309,8 @@ id12586(["States"]) --->|State:State| id60108(["Lats"])
 </table>
 
 
+[Up](#information)
 
-
-[Up](#)
 # Relationships 
 
 
@@ -331,7 +332,8 @@ id12586(["States"]) --->|State:State| id60108(["Lats"])
 | 60441 | Lats[State] | States[State] | 1:1 | 865d7d72-6b99-4118-8e48-dc22864cd6c5 | True |
 
 
-[Up](#)
+[Up](#information)
+
 # Hierarchies 
 
 
@@ -342,7 +344,8 @@ id12586(["States"]) --->|State:State| id60108(["Lats"])
 | 2937 |LocalDateTable_88205..(51) | Date Hierarchy | n/a | False | 
 
 
-[Up](#)
+[Up](#information)
+
 # Columns 
 
 
@@ -821,8 +824,10 @@ id12586(["States"]) --->|State:State| id60108(["Lats"])
 
 
 
+[Up](#information)
+
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:03 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: daa215f
+Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
 </p>

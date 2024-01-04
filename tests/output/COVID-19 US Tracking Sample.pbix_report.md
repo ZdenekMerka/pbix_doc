@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [COVID-19 US Tracking Sample.pbix_report](COVID-19%20US%20Tracking%20Sample.pbix_report.md)
+[Home](./index.md) > [COVID-19 US Tracking Sample.pbix](COVID-19%20US%20Tracking%20Sample.pbix_report.md)
 
 |[Report sections](#report-sections) |
 
@@ -20,7 +20,7 @@
 | **Ordinal** | `0` |
 | **Visual containers number** | `33` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -33,7 +33,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -47,7 +47,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -61,7 +61,7 @@
 | **Business objects:**  | `COVID` | 
 | **Attributes:**  | Column: COVID.Date<br/> Aggregation: Sum(COVID.Daily deaths) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -75,7 +75,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -89,7 +89,7 @@
 | **Business objects:**  | `COVID` | 
 | **Attributes:**  | Column: COVID.Date<br/> Aggregation: Sum(COVID.Daily cases) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -103,7 +103,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -117,7 +117,7 @@
 | **Business objects:**  | `COVID measures, StateDim` | 
 | **Attributes:**  | Column: StateDim.State<br/> Measure: COVID measures.Total deaths<br/> Measure: COVID measures.Case fatality rate<br/> Column: StateDim.Country<br/> Measure: COVID measures.Total confirmed cases | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -131,7 +131,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -145,7 +145,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -159,7 +159,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -173,7 +173,7 @@
 | **Business objects:**  | `StateDim, COVID measures` | 
 | **Attributes:**  | Column: StateDim.State<br/> Measure: COVID measures.Case fatality rate<br/> Measure: COVID measures.Total deaths<br/> Measure: COVID measures.Total confirmed cases | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -187,7 +187,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -201,7 +201,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -215,7 +215,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -229,7 +229,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -243,7 +243,7 @@
 | **Business objects:**  | `StateDim, COVID measures` | 
 | **Attributes:**  | Column: StateDim.State<br/> Measure: Latest COVID measures.Total confirmed cases<br/> Measure: COVID measures.Total deaths<br/> Measure: COVID measures.Case fatality rate | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -257,7 +257,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -271,7 +271,7 @@
 | **Business objects:**  | `COVID` | 
 | **Attributes:**  | Column: COVID.Date | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -285,7 +285,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -299,7 +299,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -313,7 +313,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -327,7 +327,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -341,7 +341,7 @@
 | **Business objects:**  | `COVID, COVID measures` | 
 | **Attributes:**  | Column: COVID.Date<br/> Measure: COVID measures.Confirmed cases | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -355,7 +355,7 @@
 | **Business objects:**  | `COVID, COVID measures` | 
 | **Attributes:**  | Column: COVID.Date<br/> Measure: COVID measures.Deaths | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -369,7 +369,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -383,7 +383,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -397,7 +397,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -411,7 +411,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -425,7 +425,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -439,7 +439,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -453,7 +453,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -467,7 +467,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -481,7 +481,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## County view
@@ -495,7 +495,7 @@
 | **Ordinal** | `1` |
 | **Visual containers number** | `35` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -508,7 +508,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -522,7 +522,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -536,7 +536,7 @@
 | **Business objects:**  | `COVID` | 
 | **Attributes:**  | Column: COVID.Date<br/> Aggregation: Sum(COVID.Daily deaths) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -550,7 +550,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -564,7 +564,7 @@
 | **Business objects:**  | `COVID` | 
 | **Attributes:**  | Column: COVID.Date<br/> Aggregation: Sum(COVID.Daily cases) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -578,7 +578,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -592,7 +592,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -606,7 +606,7 @@
 | **Business objects:**  | `COVID measures, StateDim, COVID` | 
 | **Attributes:**  | Measure: COVID measures.Total confirmed cases<br/> Measure: COVID measures.Total deaths<br/> Measure: COVID measures.Case fatality rate<br/> Column: StateDim.State<br/> Column: COVID.County Name | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -620,7 +620,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -634,7 +634,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -648,7 +648,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -662,7 +662,7 @@
 | **Business objects:**  | `COVID measures, COVID` | 
 | **Attributes:**  | Measure: COVID measures.Total confirmed cases<br/> Measure: COVID measures.Case fatality rate<br/> Measure: COVID measures.Total deaths<br/> Column: COVID.County | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -676,7 +676,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -690,7 +690,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -704,7 +704,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -718,7 +718,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -732,7 +732,7 @@
 | **Business objects:**  | `COVID measures, COVID` | 
 | **Attributes:**  | Measure: COVID measures.Total confirmed cases<br/> Measure: COVID measures.Total deaths<br/> Measure: COVID measures.Case fatality rate<br/> Column: COVID.County | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -746,7 +746,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -760,7 +760,7 @@
 | **Business objects:**  | `COVID` | 
 | **Attributes:**  | Column: COVID.Date | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -774,7 +774,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -788,7 +788,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -802,7 +802,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -816,7 +816,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -830,7 +830,7 @@
 | **Business objects:**  | `COVID, COVID measures` | 
 | **Attributes:**  | Column: COVID.Date<br/> Measure: COVID measures.Confirmed cases | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -844,7 +844,7 @@
 | **Business objects:**  | `COVID, COVID measures` | 
 | **Attributes:**  | Column: COVID.Date<br/> Measure: COVID measures.Deaths | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -858,7 +858,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -872,7 +872,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -886,7 +886,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -900,7 +900,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -914,7 +914,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -928,7 +928,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -942,7 +942,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -956,7 +956,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -970,7 +970,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -984,7 +984,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -994,5 +994,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:02 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [{{filename}}_report]({{urlquote(filename)}}_report.md)
+[Home](./index.md) > [{{filename}}]({{urlquote(filename)}}_report.md)
 
 |[Report sections](#report-sections) |
 
@@ -22,7 +22,7 @@
 | **Ordinal** | `{{i.ordinal}}` |
 | **Visual containers number** | `{{len(i.visualContainers)}}` |
 
-[Up](#)
+[Up](#report-sections)
 
 {% for c in i.visualContainers  -%}
 
@@ -37,7 +37,7 @@
 | **Business objects:**  | `{{join(config['entities'])}}` | 
 | **Attributes:**  | {{joinnl(config['selected_items'])}} | 
 
-[Up](#)
+[Up](#report-sections)
 {% else %}
 There are no visual information or we have insufficient permissions.
 {% endif %}

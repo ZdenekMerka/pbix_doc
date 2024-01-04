@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Adventure Works DW 2020.pbix](Adventure%20Works%20DW%202020.pbix.md)
+[Home](./index.md) > [Adventure Works DW 2020.pbix](Adventure%20Works%20DW%202020.pbix_dmv.md)
 
 | [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) |
 
@@ -23,7 +23,9 @@ Documentation for file **Adventure Works DW 2020.pbix**.
 | **Compatibility level** | `1567` | 
 
 
-[Up](#)
+
+[Up](#information)
+
 # Model relationships
 
 ```mermaid
@@ -42,7 +44,7 @@ id12591(["Currency"]) --->|CurrencyKey:CurrencyKey| id4380(["Sales"])
 
 
 
-[Up](#)
+[Up](#information)
 
 # Business objects
 
@@ -59,8 +61,8 @@ id12591(["Currency"]) --->|CurrencyKey:CurrencyKey| id4380(["Sales"])
 | 12591 | Currency | n/a |
 
 
+[Up](#information)
 
-[Up](#)
 # Measures
 
 
@@ -71,9 +73,8 @@ id12591(["Currency"]) --->|CurrencyKey:CurrencyKey| id4380(["Sales"])
 </table>
 
 
+[Up](#information)
 
-
-[Up](#)
 # Relationships 
 
 
@@ -92,7 +93,8 @@ id12591(["Currency"]) --->|CurrencyKey:CurrencyKey| id4380(["Sales"])
 | 13378 | Sales[CurrencyKey] | Currency[CurrencyKey] | 2:1 | 290237c5-c261-400f-a435-e66531b43cb3 | True |
 
 
-[Up](#)
+[Up](#information)
+
 # Hierarchies 
 
 
@@ -107,7 +109,8 @@ id12591(["Currency"]) --->|CurrencyKey:CurrencyKey| id4380(["Sales"])
 | 6116 |Reseller | Geography | n/a | False | 
 
 
-[Up](#)
+[Up](#information)
+
 # Columns 
 
 
@@ -311,8 +314,10 @@ id12591(["Currency"]) --->|CurrencyKey:CurrencyKey| id4380(["Sales"])
 
 
 
+[Up](#information)
+
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:02 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: daa215f
+Generated at 05.01.2024 00:57:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
 </p>

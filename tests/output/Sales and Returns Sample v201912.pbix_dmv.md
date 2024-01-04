@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Sales and Returns Sample v201912.pbix](Sales%20and%20Returns%20Sample%20v201912.pbix.md)
+[Home](./index.md) > [Sales and Returns Sample v201912.pbix](Sales%20and%20Returns%20Sample%20v201912.pbix_dmv.md)
 
 | [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) |
 
@@ -23,7 +23,9 @@ Documentation for file **Sales and Returns Sample v201912.pbix**.
 | **Compatibility level** | `1550` | 
 
 
-[Up](#)
+
+[Up](#information)
+
 # Model relationships
 
 ```mermaid
@@ -41,7 +43,7 @@ id2055(["Associated Product"]) --->|Product:Product| id34809(["Customer"])
 
 
 
-[Up](#)
+[Up](#information)
 
 # Business objects
 
@@ -65,8 +67,8 @@ id2055(["Associated Product"]) --->|Product:Product| id34809(["Customer"])
 | 40909 | Details | n/a |
 
 
+[Up](#information)
 
-[Up](#)
 # Measures
 
 
@@ -122,9 +124,8 @@ id2055(["Associated Product"]) --->|Product:Product| id34809(["Customer"])
 </table>
 
 
+[Up](#information)
 
-
-[Up](#)
 # Relationships 
 
 
@@ -141,7 +142,8 @@ id2055(["Associated Product"]) --->|Product:Product| id34809(["Customer"])
 | 40023 | Customer[Product] | Associated Product[Product] | 2:1 | a8a5301f-8eb0-4f8a-8182-c2455b89988a | True |
 
 
-[Up](#)
+[Up](#information)
+
 # Hierarchies 
 
 
@@ -152,7 +154,8 @@ id2055(["Associated Product"]) --->|Product:Product| id34809(["Customer"])
 | 1524 |LocalDateTable_d9fbe..(51) | Date Hierarchy | n/a | False | 
 
 
-[Up](#)
+[Up](#information)
+
 # Columns 
 
 
@@ -452,8 +455,10 @@ id2055(["Associated Product"]) --->|Product:Product| id34809(["Customer"])
 
 
 
+[Up](#information)
+
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:02 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: daa215f
+Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
 </p>

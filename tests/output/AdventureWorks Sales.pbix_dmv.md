@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [AdventureWorks Sales.pbix](AdventureWorks%20Sales.pbix.md)
+[Home](./index.md) > [AdventureWorks Sales.pbix](AdventureWorks%20Sales.pbix_dmv.md)
 
 | [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) |
 
@@ -23,7 +23,9 @@ Documentation for file **AdventureWorks Sales.pbix**.
 | **Compatibility level** | `1567` | 
 
 
-[Up](#)
+
+[Up](#information)
+
 # Model relationships
 
 ```mermaid
@@ -43,7 +45,7 @@ id3642(["Table"]) --->|Category:Category| id572(["Product"])
 
 
 
-[Up](#)
+[Up](#information)
 
 # Business objects
 
@@ -59,8 +61,8 @@ id3642(["Table"]) --->|Category:Category| id572(["Product"])
 | 3642 | Table | n/a |
 
 
+[Up](#information)
 
-[Up](#)
 # Measures
 
 
@@ -146,9 +148,8 @@ id3642(["Table"]) --->|Category:Category| id572(["Product"])
 </table>
 
 
+[Up](#information)
 
-
-[Up](#)
 # Relationships 
 
 
@@ -168,7 +169,8 @@ id3642(["Table"]) --->|Category:Category| id572(["Product"])
 | 3725 | Product[Category] | Table[Category] | 2:1 | 93a2e7c9-4a15-47be-93c0-06eceb139103 | True |
 
 
-[Up](#)
+[Up](#information)
+
 # Hierarchies 
 
 
@@ -187,7 +189,8 @@ id3642(["Table"]) --->|Category:Category| id572(["Product"])
 | 3601 |Sales Territory | Sales Territories | n/a | False | 
 
 
-[Up](#)
+[Up](#information)
+
 # Columns 
 
 
@@ -367,8 +370,10 @@ id3642(["Table"]) --->|Category:Category| id572(["Product"])
 
 
 
+[Up](#information)
+
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:01 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: daa215f
+Generated at 05.01.2024 00:57:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
 </p>

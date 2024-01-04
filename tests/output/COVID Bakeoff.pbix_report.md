@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [COVID Bakeoff.pbix_report](COVID%20Bakeoff.pbix_report.md)
+[Home](./index.md) > [COVID Bakeoff.pbix](COVID%20Bakeoff.pbix_report.md)
 
 |[Report sections](#report-sections) |
 
@@ -20,7 +20,7 @@
 | **Ordinal** | `0` |
 | **Visual containers number** | `8` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -33,7 +33,7 @@
 | **Business objects:**  | `Dates, OWID COVID data` | 
 | **Attributes:**  | Column: Dates.Date<br/> Measure: OWID COVID data.Cases 7d Mvg Avg per million<br/> Measure: OWID COVID data.Share of Population vaccinated<br/> Measure: OWID COVID data.Daily Change (for formatting) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -47,7 +47,7 @@
 | **Business objects:**  | `Countries, OWID COVID data` | 
 | **Attributes:**  | Column: Countries.COUNTRY<br/> Measure: OWID COVID data.Share of Population vaccinated<br/> Column: Countries.Continent | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -61,7 +61,7 @@
 | **Business objects:**  | `Countries, OWID COVID data` | 
 | **Attributes:**  | Column: Countries.COUNTRY<br/> Aggregation: Sum(Countries.Population)<br/> Measure: owid-covid-data.Measure | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -75,7 +75,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -89,7 +89,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -103,7 +103,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -117,7 +117,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -131,7 +131,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Cases/Vaccines animation
@@ -145,7 +145,7 @@
 | **Ordinal** | `1` |
 | **Visual containers number** | `8` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -158,7 +158,7 @@
 | **Business objects:**  | `States, Cases per US State, Dates` | 
 | **Attributes:**  | Column: States.State<br/> Measure: Cases per US State.Full vaccinations per hundred<br/> Measure: Cases per US State.Change from 12/27<br/> Column: Dates.Start of week<br/> Measure: Cases per US State.% Fully Vacc'd | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -172,7 +172,7 @@
 | **Business objects:**  | `Cases per US State, States` | 
 | **Attributes:**  | Column: States.State<br/> Column: States.Flag<br/> Measure: Cases per US State.% Fully Vacc'd<br/> Measure: Cases per US State.% One+ Shots | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -186,7 +186,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -200,7 +200,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -214,7 +214,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -228,7 +228,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -242,7 +242,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -256,7 +256,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## US Vaccinations
@@ -270,7 +270,7 @@
 | **Ordinal** | `2` |
 | **Visual containers number** | `17` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -283,7 +283,7 @@
 | **Business objects:**  | `Cases per US State, States` | 
 | **Attributes:**  | Column: States.State<br/> Column: States.Flag<br/> Aggregation: Avg(States.Average Temperature )<br/> Measure: Cases per US State.% Fully Vacc'd | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -297,7 +297,7 @@
 | **Business objects:**  | `States, Dates, Cases per US State` | 
 | **Attributes:**  | Column: Dates.Date<br/> Measure: Cases per US State.Cases per million 7d avg<br/> Measure: Cases per US State.Full vaccinations per hundred<br/> Column: States.State (by cases)<br/> Measure: Cases per US State.Daily Change US (for formatting) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -311,7 +311,7 @@
 | **Business objects:**  | `States` | 
 | **Attributes:**  | Column: States.State<br/> Aggregation: CountNonNull(States.Average Temperature ) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -325,7 +325,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -339,7 +339,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -353,7 +353,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -367,7 +367,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -381,7 +381,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -395,7 +395,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -409,7 +409,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -423,7 +423,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -437,7 +437,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -451,7 +451,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -465,7 +465,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -479,7 +479,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -493,7 +493,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -507,7 +507,7 @@
 | **Business objects:**  | `Dates, Cases per US State, States` | 
 | **Attributes:**  | Column: Dates.Date<br/> Measure: Cases per US State.Cases per million 7d avg<br/> Measure: Cases per US State.Full vaccinations per hundred<br/> GroupRef: States.March Temperatures | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## <- Demo 1 | Demo 2 ->
@@ -521,7 +521,7 @@
 | **Ordinal** | `3` |
 | **Visual containers number** | `0` |
 
-[Up](#)
+[Up](#report-sections)
 
 ## Vaccinations analysis (start)
 
@@ -534,7 +534,7 @@
 | **Ordinal** | `4` |
 | **Visual containers number** | `13` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -547,7 +547,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -561,7 +561,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -575,7 +575,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -589,7 +589,7 @@
 | **Business objects:**  | `Cases per US State, Dates` | 
 | **Attributes:**  | Column: Dates.Date<br/> Aggregation: Sum(Cases per US State.distributed_per_hundred) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -603,7 +603,7 @@
 | **Business objects:**  | `States, Cases per US State` | 
 | **Attributes:**  | Column: States.State<br/> Measure: Cases per US State.Vaccines distributed | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -617,7 +617,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -631,7 +631,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -645,7 +645,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -659,7 +659,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -673,7 +673,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -687,7 +687,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -701,7 +701,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -715,7 +715,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Vaccinations analysis (Finished)
@@ -729,7 +729,7 @@
 | **Ordinal** | `5` |
 | **Visual containers number** | `15` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -742,7 +742,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -756,7 +756,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -770,7 +770,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -784,7 +784,7 @@
 | **Business objects:**  | `Dates, Cases per US State` | 
 | **Attributes:**  | Column: Dates.Date<br/> Aggregation: Sum(Cases per US State.Incremental cases) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -798,7 +798,7 @@
 | **Business objects:**  | `Cases per US State, Dates` | 
 | **Attributes:**  | Column: Dates.Date<br/> Aggregation: Sum(Cases per US State.distributed_per_hundred) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -812,7 +812,7 @@
 | **Business objects:**  | `States, Cases per US State` | 
 | **Attributes:**  | Column: States.State<br/> Aggregation: Sum(Cases per US State.Incremental cases) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -826,7 +826,7 @@
 | **Business objects:**  | `States, Cases per US State` | 
 | **Attributes:**  | Column: States.State<br/> Measure: Cases per US State.Vaccines distributed | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -840,7 +840,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -854,7 +854,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -868,7 +868,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -882,7 +882,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -896,7 +896,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -910,7 +910,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -924,7 +924,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -938,7 +938,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Case rate influencers
@@ -952,7 +952,7 @@
 | **Ordinal** | `6` |
 | **Visual containers number** | `7` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -965,7 +965,7 @@
 | **Business objects:**  | `Countries` | 
 | **Attributes:**  | Column: Countries.Flag | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -979,7 +979,7 @@
 | **Business objects:**  | `OWID COVID data, Countries` | 
 | **Attributes:**  | Column: Countries.Continent<br/> Measure: owid-covid-data.Total cases per mil | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -993,7 +993,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1007,7 +1007,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1021,7 +1021,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1035,7 +1035,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1049,7 +1049,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Variance analysis
@@ -1063,7 +1063,7 @@
 | **Ordinal** | `7` |
 | **Visual containers number** | `8` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1076,7 +1076,7 @@
 | **Business objects:**  | `Countries, Days with restrictions grouped` | 
 | **Attributes:**  | Column: Countries.Custom<br/> Column: Days with restrictions grouped.Cancelling public events<br/> Column: Days with restrictions grouped.Face coverings required<br/> Column: Days with restrictions grouped.International travel controls<br/> Column: Days with restrictions grouped.Public transport closures<br/> Column: Days with restrictions grouped.Stay at home requirements<br/> Column: Days with restrictions grouped.Workplace closures<br/> Measure: Countries.GDP % chg 2020<br/> Column: Days with restrictions grouped.Domestic travel restrictions<br/> Column: Days with restrictions grouped.Restrictions on gathering<br/> Column: Days with restrictions grouped.School closures | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1090,7 +1090,7 @@
 | **Business objects:**  | `Countries` | 
 | **Attributes:**  | Column: Countries.FlagURL<br/> Column: Countries.COUNTRY<br/> Measure: Countries.GDP % chg 2020<br/> Measure: Countries.GDP Chg | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1104,7 +1104,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1118,7 +1118,7 @@
 | **Business objects:**  | `Dates, OWID COVID data` | 
 | **Attributes:**  | Column: Dates.Date<br/> Measure: OWID COVID data.Cases 7d Avg per country | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1132,7 +1132,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1146,7 +1146,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1160,7 +1160,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1174,7 +1174,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Page 1
@@ -1188,7 +1188,7 @@
 | **Ordinal** | `8` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1201,7 +1201,7 @@
 | **Business objects:**  | `Countries` | 
 | **Attributes:**  | Aggregation: Sum(Countries.Population) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1211,5 +1211,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:03 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

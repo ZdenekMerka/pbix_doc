@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Human Resources Sample PBIX.pbix_report](Human%20Resources%20Sample%20PBIX.pbix_report.md)
+[Home](./index.md) > [Human Resources Sample PBIX.pbix](Human%20Resources%20Sample%20PBIX.pbix_report.md)
 
 |[Report sections](#report-sections) |
 
@@ -20,7 +20,7 @@
 | **Ordinal** | `0` |
 | **Visual containers number** | `2` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -33,7 +33,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -47,7 +47,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## New Hires
@@ -61,7 +61,7 @@
 | **Ordinal** | `1` |
 | **Visual containers number** | `9` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -74,7 +74,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -88,7 +88,7 @@
 | **Business objects:**  | `Date, FP, Employee` | 
 | **Attributes:**  | Column: Date.Month<br/> Column: FP.FPDesc<br/> Measure: Employee.New Hires | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -102,7 +102,7 @@
 | **Business objects:**  | `Date, Employee` | 
 | **Attributes:**  | Column: select<br/> Measure: Employee.New Hires<br/> Measure: Employee.New Hires SPLY<br/> Measure: Employee.Actives YoY % Change | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -116,7 +116,7 @@
 | **Business objects:**  | `Gender, Employee` | 
 | **Attributes:**  | Column: select<br/> Measure: select1 | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -130,7 +130,7 @@
 | **Business objects:**  | `AgeGroup, Employee` | 
 | **Attributes:**  | Column: AgeGroup.AgeGroup<br/> Measure: Employee.New Hires | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -144,7 +144,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -158,7 +158,7 @@
 | **Business objects:**  | `BU, Ethnicity, Employee` | 
 | **Attributes:**  | Column: select<br/> Column: select1<br/> Column: Ethnicity.Ethnicity<br/> Measure: Employee.New Hires<br/> Measure: Employee.Actives | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -172,7 +172,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -186,7 +186,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Actives and Separations
@@ -200,7 +200,7 @@
 | **Ordinal** | `2` |
 | **Visual containers number** | `11` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -213,7 +213,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -227,7 +227,7 @@
 | **Business objects:**  | `Date, BU, Employee` | 
 | **Attributes:**  | Column: select<br/> Column: select1<br/> Column: select2<br/> Measure: Employee.Actives<br/> Measure: Employee.Actives SPLY<br/> Measure: Employee.Seps YoY % Change | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -241,7 +241,7 @@
 | **Business objects:**  | `Gender, Employee` | 
 | **Attributes:**  | Column: select<br/> Measure: select1 | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -255,7 +255,7 @@
 | **Business objects:**  | `AgeGroup, Employee` | 
 | **Attributes:**  | Column: select<br/> Measure: select1 | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -269,7 +269,7 @@
 | **Business objects:**  | `BU, Employee` | 
 | **Attributes:**  | Column: select<br/> Column: select1<br/> Measure: Employee.Actives YoY Var | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -283,7 +283,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -297,7 +297,7 @@
 | **Business objects:**  | `Date, BU, Employee` | 
 | **Attributes:**  | Column: select<br/> Column: select1<br/> Column: select2<br/> Measure: Employee.Seps<br/> Measure: Employee.Seps SPLY<br/> Measure: Employee.Actives YoY % Change | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -311,7 +311,7 @@
 | **Business objects:**  | `SeparationReason, Employee` | 
 | **Attributes:**  | Column: select<br/> Measure: select1 | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -325,7 +325,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -339,7 +339,7 @@
 | **Business objects:**  | `Employee, Date` | 
 | **Attributes:**  | Measure: Employee.Seps<br/> Measure: Employee.Seps SPLY<br/> Column: Date.Month | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -353,7 +353,7 @@
 | **Business objects:**  | `Employee, Date` | 
 | **Attributes:**  | Measure: Employee.Seps<br/> Measure: Employee.Seps SPLY<br/> Column: Date.Month | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Bad Hires
@@ -367,7 +367,7 @@
 | **Ordinal** | `3` |
 | **Visual containers number** | `8` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -380,7 +380,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -394,7 +394,7 @@
 | **Business objects:**  | `Gender, Employee` | 
 | **Attributes:**  | Column: Gender.Gender<br/> Aggregation: Sum(Employee.BadHires) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -408,7 +408,7 @@
 | **Business objects:**  | `Date, AgeGroup, Employee` | 
 | **Attributes:**  | Column: select<br/> Column: AgeGroup.AgeGroup<br/> Measure: Employee.Bad Hires YoY % Change | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -422,7 +422,7 @@
 | **Business objects:**  | `BU, Ethnicity, Employee` | 
 | **Attributes:**  | Column: select<br/> Column: select1<br/> Column: select2<br/> Aggregation: select3 | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -436,7 +436,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -450,7 +450,7 @@
 | **Business objects:**  | `Employee, AgeGroup` | 
 | **Attributes:**  | Measure: Employee.BadHire%ofActives<br/> Column: AgeGroup.AgeGroup | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -464,7 +464,7 @@
 | **Business objects:**  | `BU` | 
 | **Attributes:**  | Column: BU.Region | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -478,7 +478,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## New Hires Scorecard
@@ -492,7 +492,7 @@
 | **Ordinal** | `4` |
 | **Visual containers number** | `6` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -505,7 +505,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -519,7 +519,7 @@
 | **Business objects:**  | `BU` | 
 | **Attributes:**  | Column: BU.VP | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -533,7 +533,7 @@
 | **Business objects:**  | `Date, Employee` | 
 | **Attributes:**  | Column: Date.Month<br/> Measure: Employee.New Hires | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -547,7 +547,7 @@
 | **Business objects:**  | `Gender, Employee` | 
 | **Attributes:**  | Column: select<br/> Measure: select1 | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -561,7 +561,7 @@
 | **Business objects:**  | `Employee, PayType` | 
 | **Attributes:**  | Measure: select1<br/> Column: PayType.PayType | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -575,7 +575,7 @@
 | **Business objects:**  | `Employee, FP, AgeGroup` | 
 | **Attributes:**  | Measure: Employee.New Hires<br/> Column: FP.FPDesc<br/> Column: AgeGroup.AgeGroup | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -585,5 +585,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:02 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

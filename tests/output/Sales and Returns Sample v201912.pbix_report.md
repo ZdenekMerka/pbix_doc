@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Sales and Returns Sample v201912.pbix_report](Sales%20and%20Returns%20Sample%20v201912.pbix_report.md)
+[Home](./index.md) > [Sales and Returns Sample v201912.pbix](Sales%20and%20Returns%20Sample%20v201912.pbix_report.md)
 
 |[Report sections](#report-sections) |
 
@@ -20,7 +20,7 @@
 | **Ordinal** | `0` |
 | **Visual containers number** | `2` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -33,7 +33,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -47,7 +47,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Intro
@@ -61,7 +61,7 @@
 | **Ordinal** | `1` |
 | **Visual containers number** | `16` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -74,7 +74,7 @@
 | **Business objects:**  | `Details` | 
 | **Attributes:**  | Column: Details.Design Factor<br/> Column: Details.Topic | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -88,7 +88,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -102,7 +102,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -116,7 +116,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -130,7 +130,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -144,7 +144,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -158,7 +158,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -172,7 +172,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -186,7 +186,7 @@
 | **Business objects:**  | `Details` | 
 | **Attributes:**  | Column: Details.Design Factor<br/> Column: Details.Topic | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -200,7 +200,7 @@
 | **Business objects:**  | `Details` | 
 | **Attributes:**  | Measure: Details.Info Tooltip | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -214,7 +214,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -228,7 +228,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -242,7 +242,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -256,7 +256,7 @@
 | **Business objects:**  | `Details` | 
 | **Attributes:**  | Measure: Details.Info Tooltip 2 | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -270,7 +270,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -284,7 +284,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Net Sales
@@ -298,7 +298,7 @@
 | **Ordinal** | `2` |
 | **Visual containers number** | `36` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -311,7 +311,7 @@
 | **Business objects:**  | `` | 
 | **Attributes:**  |  | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -325,7 +325,7 @@
 | **Business objects:**  | `Product, Sales` | 
 | **Attributes:**  | Column: Product.Product<br/> Column: Product.Category<br/> Column: Product.Segment<br/> Aggregation: Sum(Sales.Amount) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -339,7 +339,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.Sales | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -353,7 +353,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -367,7 +367,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -381,7 +381,7 @@
 | **Business objects:**  | `Store, Sales` | 
 | **Attributes:**  | Column: Store.Manufacturer<br/> Aggregation: Sum(Sales.Amount) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -395,7 +395,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -409,7 +409,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -423,7 +423,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -437,7 +437,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -451,7 +451,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.Units Sold | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -465,7 +465,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -479,7 +479,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -493,7 +493,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -507,7 +507,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -521,7 +521,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -535,7 +535,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -549,7 +549,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -563,7 +563,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -577,7 +577,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -591,7 +591,7 @@
 | **Business objects:**  | `Analysis DAX, Product` | 
 | **Attributes:**  | Column: Product.Product<br/> Measure: Analysis DAX.Net Sales<br/> Measure: Analysis DAX.Units Sold<br/> Column: Product.Segment | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -605,7 +605,7 @@
 | **Business objects:**  | `` | 
 | **Attributes:**  |  | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -619,7 +619,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -633,7 +633,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -647,7 +647,7 @@
 | **Business objects:**  | `Customer` | 
 | **Attributes:**  | Column: Customer.Age<br/> Column: Customer.Price Range<br/> Column: Customer.Promotion<br/> Column: Sum(Customer.Unit)<br/> Column: Customer.Store<br/> Column: Customer.Gender<br/> Column: Customer.Category<br/> Column: Customer.Segment | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -661,7 +661,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -675,7 +675,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -689,7 +689,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -703,7 +703,7 @@
 | **Business objects:**  | `Customer` | 
 | **Attributes:**  | Column: Customer.Category<br/> Aggregation: Sum(Customer.Amount)<br/> Column: Customer.Gender<br/> Column: Customer.Store<br/> Column: Customer.Type<br/> Column: Customer.Promotion<br/> Column: Customer.Segment<br/> Column: Customer.Product<br/> Column: Customer.Price Range<br/> Column: Customer.Age | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -717,7 +717,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -731,7 +731,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -745,7 +745,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -759,7 +759,7 @@
 | **Business objects:**  | `Store, Analysis DAX` | 
 | **Attributes:**  | Column: Store.Latitude<br/> Column: Store.Longitude<br/> Measure: Analysis DAX.Net Sales | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -773,7 +773,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.Sales | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -787,7 +787,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.Units Sold | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -801,7 +801,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Returns
@@ -815,7 +815,7 @@
 | **Ordinal** | `3` |
 | **Visual containers number** | `36` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -828,7 +828,7 @@
 | **Business objects:**  | `Sales` | 
 | **Attributes:**  | Column: Sales.Dates<br/> Column: Sales.Status<br/> Aggregation: Sum(Sales.Amount) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -842,7 +842,7 @@
 | **Business objects:**  | `Product, Analysis DAX` | 
 | **Attributes:**  | Column: Product.Product<br/> Column: Product.Category<br/> Column: Product.Segment<br/> Measure: Analysis DAX.Returns | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -856,7 +856,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.02 Returns | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -870,7 +870,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -884,7 +884,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -898,7 +898,7 @@
 | **Business objects:**  | `Store, Analysis DAX` | 
 | **Attributes:**  | Column: Store.Manufacturer<br/> Measure: Analysis DAX.Returns | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -912,7 +912,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -926,7 +926,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -940,7 +940,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -954,7 +954,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -968,7 +968,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.02 Units Returned | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -982,7 +982,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -996,7 +996,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1010,7 +1010,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1024,7 +1024,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1038,7 +1038,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1052,7 +1052,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1066,7 +1066,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1080,7 +1080,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1094,7 +1094,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1108,7 +1108,7 @@
 | **Business objects:**  | `Analysis DAX, Product` | 
 | **Attributes:**  | Column: Product.Product<br/> Measure: Analysis DAX.02 Returns<br/> Measure: Analysis DAX.02 Units Returned | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1122,7 +1122,7 @@
 | **Business objects:**  | `` | 
 | **Attributes:**  |  | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1136,7 +1136,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1150,7 +1150,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1164,7 +1164,7 @@
 | **Business objects:**  | `Customer` | 
 | **Attributes:**  | Column: Customer.Age<br/> Column: Customer.Price Range<br/> Column: Customer.Store<br/> Column: Customer.Category<br/> Column: Customer.Product<br/> Column: Customer.Gender<br/> Column: Customer.Issue | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1178,7 +1178,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1192,7 +1192,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1206,7 +1206,7 @@
 | **Business objects:**  | `Customer` | 
 | **Attributes:**  | Aggregation: Sum(Customer.Amount)<br/> Column: Customer.Category<br/> Column: Customer.Product<br/> Column: Customer.Gender<br/> Column: Customer.Age<br/> Column: Customer.Issue<br/> Column: Customer.Store<br/> Column: Customer.Segment<br/> Column: Customer.Type<br/> Column: Customer.Price Range | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1220,7 +1220,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1234,7 +1234,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1248,7 +1248,7 @@
 | **Business objects:**  | `Store, Analysis DAX` | 
 | **Attributes:**  | Column: Store.Latitude<br/> Column: Store.Longitude<br/> Aggregation: Min(Store.Manufacturer)<br/> Measure: Analysis DAX.02 Returns | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1262,7 +1262,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1276,7 +1276,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1290,7 +1290,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.Returns | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1304,7 +1304,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.Units Returned | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1318,7 +1318,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Return Rate
@@ -1332,7 +1332,7 @@
 | **Ordinal** | `4` |
 | **Visual containers number** | `27` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1345,7 +1345,7 @@
 | **Business objects:**  | `Analysis DAX, Store, Customer` | 
 | **Attributes:**  | Column: Store.Store<br/> Measure: Analysis DAX.Net Sales<br/> Measure: Analysis DAX.WIF Profit<br/> Column: Customer.Type<br/> Measure: Analysis DAX.WIF Forecast | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1359,7 +1359,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.Return Rate | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1373,7 +1373,7 @@
 | **Business objects:**  | `Analysis DAX, Calendar` | 
 | **Attributes:**  | Column: Calendar.Date<br/> Measure: Analysis DAX.WIF Total Forecast | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1387,7 +1387,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Column: Product.Product Image | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1401,7 +1401,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Column: Product.Category Image | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1415,7 +1415,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.WIF Forecast | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1429,7 +1429,7 @@
 | **Business objects:**  | `Analysis DAX, Calendar` | 
 | **Attributes:**  | Column: Calendar.Date<br/> Measure: Analysis DAX.Total Return Rate | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1443,7 +1443,7 @@
 | **Business objects:**  | `% Return Rate` | 
 | **Attributes:**  | Column: % Return Rate.% Return Rate | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1457,7 +1457,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1471,7 +1471,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1485,7 +1485,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1499,7 +1499,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1513,7 +1513,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1527,7 +1527,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1541,7 +1541,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1555,7 +1555,7 @@
 | **Business objects:**  | `Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.WIF Profit | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1569,7 +1569,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1583,7 +1583,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1597,7 +1597,7 @@
 | **Business objects:**  | `Store, Analysis DAX` | 
 | **Attributes:**  | Column: Store.Latitude<br/> Column: Store.Longitude<br/> Aggregation: Min(Store.Manufacturer)<br/> Measure: Analysis DAX.WIF Forecast | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1611,7 +1611,7 @@
 | **Business objects:**  | `Analysis DAX, Sales` | 
 | **Attributes:**  | Measure: Analysis DAX.WIF Sales<br/> Measure: Analysis DAX.WIF Total Profit<br/> Column: Sales.Date | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1625,7 +1625,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1639,7 +1639,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1653,7 +1653,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1667,7 +1667,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1681,7 +1681,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1695,7 +1695,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1709,7 +1709,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Aggregation: Min(Product.Category) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Market Basket Analysis
@@ -1723,7 +1723,7 @@
 | **Ordinal** | `5` |
 | **Visual containers number** | `19` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1736,7 +1736,7 @@
 | **Business objects:**  | `Association, Associated Product` | 
 | **Attributes:**  | Column: Association.RuleID<br/> Aggregation: Sum(Association.Probability)<br/> Column: Associated Product.Product Image<br/> Column: Associated Product.Product<br/> Column: Associated Product.Segment by | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1750,7 +1750,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Aggregation: Min(Product.Category) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1764,7 +1764,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Column: Product.Category Image | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1778,7 +1778,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Column: Product.Product Image | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1792,7 +1792,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1806,7 +1806,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1820,7 +1820,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1834,7 +1834,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1848,7 +1848,7 @@
 | **Business objects:**  | `Associated Product` | 
 | **Attributes:**  | Column: Associated Product.Product | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1862,7 +1862,7 @@
 | **Business objects:**  | `Association` | 
 | **Attributes:**  | Aggregation: Sum(Association.Probability) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1876,7 +1876,7 @@
 | **Business objects:**  | `Association` | 
 | **Attributes:**  | Aggregation: Sum(Association.Support) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1890,7 +1890,7 @@
 | **Business objects:**  | `Design DAX` | 
 | **Attributes:**  | Measure: Design DAX.Lift Label | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1904,7 +1904,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Aggregation: Min(Product.Category)<br/> Aggregation: Min(Product.Segment)<br/> Aggregation: Sum(Product.Price) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1918,7 +1918,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1932,7 +1932,7 @@
 | **Business objects:**  | `Tooltip Info` | 
 | **Attributes:**  | Column: Tooltip Info.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1946,7 +1946,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1960,7 +1960,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1974,7 +1974,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -1988,7 +1988,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Net Sales Tooltip
@@ -2002,7 +2002,7 @@
 | **Ordinal** | `6` |
 | **Visual containers number** | `10` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2015,7 +2015,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Column: Product.Product Image | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2029,7 +2029,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Aggregation: Min(Product.Category) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2043,7 +2043,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Aggregation: Min(Product.Product) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2057,7 +2057,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Aggregation: CountNonNull(Product.ProductID) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2071,7 +2071,7 @@
 | **Business objects:**  | `Product, Sales` | 
 | **Attributes:**  | Aggregation: Sum(Sales.Amount) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2085,7 +2085,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Aggregation: Sum(Product.Price) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2099,7 +2099,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2113,7 +2113,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2127,7 +2127,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2141,7 +2141,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Column: Product.Category Image | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Returns Tooltip
@@ -2155,7 +2155,7 @@
 | **Ordinal** | `7` |
 | **Visual containers number** | `10` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2168,7 +2168,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Column: Product.Product Image | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2182,7 +2182,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Aggregation: Min(Product.Category) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2196,7 +2196,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Aggregation: Min(Product.Product) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2210,7 +2210,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Aggregation: CountNonNull(Product.ProductID) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2224,7 +2224,7 @@
 | **Business objects:**  | `Product, Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.Returns | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2238,7 +2238,7 @@
 | **Business objects:**  | `Product, Analysis DAX` | 
 | **Attributes:**  | Measure: Analysis DAX.Return Rate | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2252,7 +2252,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2266,7 +2266,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2280,7 +2280,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2294,7 +2294,7 @@
 | **Business objects:**  | `Product` | 
 | **Attributes:**  | Column: Product.Category Image | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## CathegoryBreackdown
@@ -2308,7 +2308,7 @@
 | **Ordinal** | `8` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2321,7 +2321,7 @@
 | **Business objects:**  | `Tooltip Info` | 
 | **Attributes:**  | Column: GIF.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## KeyInfluencers
@@ -2335,7 +2335,7 @@
 | **Ordinal** | `9` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2348,7 +2348,7 @@
 | **Business objects:**  | `Tooltip Info` | 
 | **Attributes:**  | Column: GIF.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## StoreBreackdown
@@ -2362,7 +2362,7 @@
 | **Ordinal** | `10` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2375,7 +2375,7 @@
 | **Business objects:**  | `Tooltip Info` | 
 | **Attributes:**  | Column: GIF.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## NetSales
@@ -2389,7 +2389,7 @@
 | **Ordinal** | `11` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2402,7 +2402,7 @@
 | **Business objects:**  | `Tooltip Info` | 
 | **Attributes:**  | Column: GIF.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## WhatIf
@@ -2416,7 +2416,7 @@
 | **Ordinal** | `12` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2429,7 +2429,7 @@
 | **Business objects:**  | `Tooltip Info` | 
 | **Attributes:**  | Column: GIF.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## RetCategory
@@ -2443,7 +2443,7 @@
 | **Ordinal** | `13` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2456,7 +2456,7 @@
 | **Business objects:**  | `Tooltip Info` | 
 | **Attributes:**  | Column: GIF.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## RetKeyInf
@@ -2470,7 +2470,7 @@
 | **Ordinal** | `14` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2483,7 +2483,7 @@
 | **Business objects:**  | `Tooltip Info` | 
 | **Attributes:**  | Column: GIF.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## RetStoreBre
@@ -2497,7 +2497,7 @@
 | **Ordinal** | `15` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2510,7 +2510,7 @@
 | **Business objects:**  | `Tooltip Info` | 
 | **Attributes:**  | Column: GIF.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Q&A1
@@ -2524,7 +2524,7 @@
 | **Ordinal** | `16` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2537,7 +2537,7 @@
 | **Business objects:**  | `Tooltip Info2` | 
 | **Attributes:**  | Column: Tooltip Info2.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Q&A2
@@ -2551,7 +2551,7 @@
 | **Ordinal** | `17` |
 | **Visual containers number** | `1` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2564,7 +2564,7 @@
 | **Business objects:**  | `Tooltip Info2` | 
 | **Attributes:**  | Column: Tooltip Info2.URL | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -2574,5 +2574,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:02 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [COVID-19 US Tracking Sample.pbix](COVID-19%20US%20Tracking%20Sample.pbix.md)
+[Home](./index.md) > [COVID-19 US Tracking Sample.pbix](COVID-19%20US%20Tracking%20Sample.pbix_dmv.md)
 
 | [Information](#information) | [Model information](#model-information) | [Model relationships](#model-relationships) | [Business objects](#business-objects) | [Measures](#measures) | [Relationships](#relationships) | [Hierarchies](#hierarchies) | [Columns](#columns) |
 
@@ -23,7 +23,9 @@ Documentation for file **COVID-19 US Tracking Sample.pbix**.
 | **Compatibility level** | `1550` | 
 
 
-[Up](#)
+
+[Up](#information)
+
 # Model relationships
 
 ```mermaid
@@ -35,7 +37,7 @@ id22(["StateDim"]) --->|State code:State| id19(["COVID"])
 
 
 
-[Up](#)
+[Up](#information)
 
 # Business objects
 
@@ -47,8 +49,8 @@ id22(["StateDim"]) --->|State code:State| id19(["COVID"])
 | 31 | COVID measures | n/a |
 
 
+[Up](#information)
 
-[Up](#)
 # Measures
 
 
@@ -135,9 +137,8 @@ RETURN  __TodaysDeaths - CALCULATE(
 </table>
 
 
+[Up](#information)
 
-
-[Up](#)
 # Relationships 
 
 
@@ -147,7 +148,8 @@ RETURN  __TodaysDeaths - CALCULATE(
 | 35 | COVID[State] | StateDim[State code] | 2:1 | 7cd80576-d9a4-4516-aad6-c8e06584bf7c | True |
 
 
-[Up](#)
+[Up](#information)
+
 # Hierarchies 
 
 
@@ -158,7 +160,8 @@ RETURN  __TodaysDeaths - CALCULATE(
 | 120 |LocalDateTable_a0f5b..(51) | Date Hierarchy | n/a | False | 
 
 
-[Up](#)
+[Up](#information)
+
 # Columns 
 
 
@@ -258,8 +261,10 @@ RETURN  __TodaysDeaths - CALCULATE(
 
 
 
+[Up](#information)
+
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:02 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: daa215f
+Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
 </p>

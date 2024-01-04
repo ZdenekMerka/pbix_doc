@@ -1,6 +1,6 @@
 ----
 
-[Home](./index.md) > [Supply Chain Sample.pbix_report](Supply%20Chain%20Sample.pbix_report.md)
+[Home](./index.md) > [Supply Chain Sample.pbix](Supply%20Chain%20Sample.pbix_report.md)
 
 |[Report sections](#report-sections) |
 
@@ -20,7 +20,7 @@
 | **Ordinal** | `0` |
 | **Visual containers number** | `7` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -33,7 +33,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -47,7 +47,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -61,7 +61,7 @@
 | **Business objects:**  | `Backorder Percentage` | 
 | **Attributes:**  | Column: Backorder Percentage.Plant<br/> Column: Backorder Percentage.Product Type | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -75,7 +75,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -89,7 +89,7 @@
 | **Business objects:**  | `Explanations` | 
 | **Attributes:**  | Column: Explanations.Factor<br/> Aggregation: Sum(Explanations.Risk) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -103,7 +103,7 @@
 | **Business objects:**  | `Risk` | 
 | **Attributes:**  | Column: Risk.Location<br/> Column: Risk.Product ID<br/> Column: Risk.Risk Score<br/> Column: Risk.Backorder Risk<br/> Column: Risk.Distribution Center | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -117,7 +117,7 @@
 | **Business objects:**  | `Risk` | 
 | **Attributes:**  | Column: Risk.Location<br/> Aggregation: CountNonNull(Risk.Product ID) | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Exploratory Analysis
@@ -131,7 +131,7 @@
 | **Ordinal** | `1` |
 | **Visual containers number** | `8` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -144,7 +144,7 @@
 | **Business objects:**  | `Backorder Percentage, Month` | 
 | **Attributes:**  | Aggregation: Avg(Backorder Percentage.Backorder %)<br/> Column: Month.Month | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -158,7 +158,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -172,7 +172,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -186,7 +186,7 @@
 | **Business objects:**  | `Backorder Percentage` | 
 | **Attributes:**  | Column: Backorder Percentage.Plant<br/> Column: Backorder Percentage.Product Type | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -200,7 +200,7 @@
 | **Business objects:**  | `Backorder Percentage` | 
 | **Attributes:**  | Measure: Backorder Percentage.% on backorder<br/> Column: Backorder Percentage.Forecast Bias<br/> Column: Backorder Percentage.Plant<br/> Column: Backorder Percentage.Product Type<br/> Column: Backorder Percentage.Shipment Destination<br/> Column: Backorder Percentage.Shipment Type<br/> Column: Backorder Percentage.Region<br/> Column: Backorder Percentage.Distribution Center<br/> Column: Backorder Percentage.Demand Type<br/> Column: Backorder Percentage.Forecast Accuracy<br/> Column: Backorder Percentage.Brand<br/> Column: Backorder Percentage.Buyer Type<br/> Measure: Backorder Percentage.Backorder $ | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -214,7 +214,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -228,7 +228,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -242,7 +242,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Ask Questions
@@ -256,7 +256,7 @@
 | **Ordinal** | `2` |
 | **Visual containers number** | `4` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -269,7 +269,7 @@
 | **Business objects:**  | `Backorder Percentage` | 
 | **Attributes:**  | Measure: Backorder Percentage.% on backorder<br/> Column: Backorder Percentage.Demand Type | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -283,7 +283,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -297,7 +297,7 @@
 | **Business objects:**  | `Month, Backorder Percentage` | 
 | **Attributes:**  | Column: Month.Month<br/> Measure: Backorder Percentage.Backorder $ | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -311,7 +311,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 ## Supply Chain Analytics
@@ -325,7 +325,7 @@
 | **Ordinal** | `3` |
 | **Visual containers number** | `4` |
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -338,7 +338,7 @@
 | **Business objects:**  | `Backorder Percentage` | 
 | **Attributes:**  | Measure: Backorder Percentage.Backorder $<br/> Column: Backorder Percentage.Region | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -352,7 +352,7 @@
 | **Business objects:**  | `Supply Analytics` | 
 | **Attributes:**  | Aggregation: CountNonNull(bank-full2.Product )<br/> Column: Supply Analytics.Demand Type | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -366,7 +366,7 @@
 | **Business objects:**  | `n/a` | 
 | **Attributes:**  | n/a | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -380,7 +380,7 @@
 | **Business objects:**  | `Supply Analytics` | 
 | **Attributes:**  | Column: Supply Analytics.Product <br/> Column: Supply Analytics.Demand Type<br/> Column: Supply Analytics.Forecast Accuracy<br/> Column: Supply Analytics.Forecast Bias<br/> Column: Supply Analytics.Manufactured Goods | 
 
-[Up](#)
+[Up](#report-sections)
 
 
 
@@ -390,5 +390,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:32:01 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 00:57:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>
