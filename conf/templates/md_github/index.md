@@ -13,7 +13,7 @@ Information from PBIX files.
 | PBIX File name | DMV | Reports  | generated | 
 |---|---|---|---|
 {% for i  in filenames_pbix -%}
-| {{i.name}} | [DMV](./{{urlquote(i.name)}}) |  [Report](./{{urlquote(i.name)}}_report) | {{i.datetime_extracted}} |
+| {{i.name}} | [DMV](./{{urlquote(i.name_dmv)}}) |  [Report](./{{urlquote(i.name_report)}}) | {{i.datetime_extracted}} |
 {% endfor -%}
 {% endif -%}
 
