@@ -1,6 +1,6 @@
 # pbix_doc
 
-**pbix_doc** is a set of programs for generating documentation from Power BI files (`pbix`).
+**pbix_doc** is a set of programs for generating documentation from Power BI files (`pbix`). Click  [here](./tests/output/index.md) to see output example. 
 
 # Motivation
 
