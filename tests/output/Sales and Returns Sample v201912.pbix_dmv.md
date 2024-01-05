@@ -460,5 +460,5 @@ id2055(["Associated Product"]) --->|Product:Product| id34809(["Customer"])
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
+Generated at 05.01.2024 01:07:17 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: a7f95a4
 </p>

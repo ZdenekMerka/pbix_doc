@@ -750,5 +750,5 @@ IF(Indicators[Life expectancy (yrs)]<80,70,
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:57:42 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: bc0e52a
+Generated at 05.01.2024 01:07:16 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: a7f95a4
 </p>

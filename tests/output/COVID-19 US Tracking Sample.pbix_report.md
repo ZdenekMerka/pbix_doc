@@ -2,7 +2,7 @@
 
 [Home](./index.md) > [COVID-19 US Tracking Sample.pbix](COVID-19%20US%20Tracking%20Sample.pbix_report.md)
 
-|[Report sections](#report-sections) |
+| [Report sections](#report-sections) |
 
 ----
 
@@ -994,5 +994,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:57:44 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 01:07:18 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

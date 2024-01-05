@@ -2,7 +2,7 @@
 
 [Home](./index.md) > [Supply Chain Sample.pbix](Supply%20Chain%20Sample.pbix_report.md)
 
-|[Report sections](#report-sections) |
+| [Report sections](#report-sections) |
 
 ----
 
@@ -390,5 +390,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:57:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 01:07:16 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

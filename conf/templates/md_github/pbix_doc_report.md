@@ -2,7 +2,7 @@
 
 [Home](./index.md) > [{{filename}}]({{urlquote(filename)}}_report.md)
 
-|[Report sections](#report-sections) |
+| [Report sections](#report-sections) |
 
 ----
 

@@ -2,7 +2,7 @@
 
 [Home](./index.md) > [AdventureWorks Sales.pbix](AdventureWorks%20Sales.pbix_report.md)
 
-|[Report sections](#report-sections) |
+| [Report sections](#report-sections) |
 
 ----
 
@@ -167,5 +167,5 @@
 
 ----
 <p align="center">
-Generated at 05.01.2024 00:57:43 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 05.01.2024 01:07:17 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>
