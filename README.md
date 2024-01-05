@@ -115,12 +115,9 @@ Mode                 LastWriteTime         Length Name
 
 8. Then you can commit the files to your documentation repository ( isn't part of this tutorial) and share them with your colleagues.
 
-# Warning
+> [!WARNING]
+> **Use of the program is at your own risk.**
+>
+> The program is still under development and may contain bugs.  If you encounter any problems, please let me know.
 
-**Use at your own risk.**
-
-The program is still under development and may contain bugs. Use of the program is at your own risk. If you encounter any problems, please let me know.
-
-# Run test 
-```python -m unittest discover tests/ -vvv```
 
