@@ -30,5 +30,5 @@ Information from PBIX files.
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:04:12 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: eeaab5e
+Generated at 10.01.2024 23:38:08 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 0416f84
 </p>

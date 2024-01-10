@@ -31,7 +31,7 @@ def read_jsons(filenames):
 def write_file(filename, content, **kwargs) : 
     file = open(filename, mode="w", encoding="utf-8")
     ret = file.write(content)
-    print(f"... wrote {filename}")
+    logger.info(f"... file {filename} has been already written.")
     file.close()
     return ret
 

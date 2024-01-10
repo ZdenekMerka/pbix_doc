@@ -49,7 +49,7 @@ def get_visual_config_info(config):
 
     return ret 
 
-class pbix_writer2(writer.writer):
+class pbix_writer(writer.writer):
 
     def __init__(self, pbix_data, output_type ):
         # Configuration to variables
@@ -139,18 +139,7 @@ class pbix_writer2(writer.writer):
     def render_pbix_doc_report(self):
 
         ret =self.tmpl['pbix_doc_report'].render(
-            #properties =  self.pbix_data["ssas_md"]["DBSCHEMA_CATALOGS"][self.pbix_data['info']['catalog']],
-            #git_version = self.git_version,
-            #port = self.pbix_data['info']['port'],
             filename = os.path.basename(self.pbix_data['info']['pbix_full_path']),
-            #full_filename = self.pbix_data['info']['pbix_full_path'],
-            #tables = self.pbix_data["ssas_md"]['TMSCHEMA_TABLES'].values(),
-            #tables_idx  = self.pbix_data["ssas_md"]['TMSCHEMA_TABLES'],
-            #columns  = self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS'].values(),
-            #columns_idx  = self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS'],
-            #measures =      self.pbix_data['ssas_md']['TMSCHEMA_COLUMNS'].values(),
-            #relationships = self.pbix_data['ssas_md']['TMSCHEMA_RELATIONSHIPS'].values(),
-            #hierarchies =   self.pbix_data['ssas_md']['TMSCHEMA_HIERARCHIES'].values(),
             report_sections = self.pbix_data['zip_file']['layout']['sections'],
             )
         return ret
@@ -168,7 +157,7 @@ class pbix_writer_global():
         self.tmpl = dict()
         self.git_version = tools.get_short_git_hash()
         self.logger = logging.getLogger(__name__)
-        self.logger.info(f"Class {__name__} inicialized.")
+        self.logger.info(f"Class {__name__} was inicialized.")
 
     def init_templates(self):
         # init jinja2 env 
@@ -208,7 +197,6 @@ class pbix_writer_global():
         self.logger.info(f"Going sort bas page.")
         from operator import itemgetter
         tables_global_sorted = sorted(tables_global, key=itemgetter('Name', 'filename'))
-        print(tables_global_sorted)
 
         self.logger.info(f"Going render bas page.")
         ret =self.tmpl['bas'].render(
@@ -217,93 +205,3 @@ class pbix_writer_global():
             )
         return ret
 
-
-#class pbix_writer(writer.writer):
-#
-#    def __init__(self, metadata, data, output_conf ):
-#        # Configuration to variables
-#        self.metadata = metadata
-#        self.data = data 
-#        self.output_conf = output_conf
-#        self.tmpl = dict()
-#        self.git_version = tools.get_short_git_hash()
-#        self.logger = logging.getLogger(__name__)
-#
-#
-#    def write_metadata(self):
-#        pp(self.metadata)
-#
-#
-#    def init_templates(self,output_type = 'md_github'):
-#        # init env 
-#        self.env = tools.init_templ_env(self.output_conf['template_folder'])
-#        
-#        # load all templates from conf 
-#        for tmpl in self.output_conf[output_type].keys():
-#            #pp(tmpl)
-#            #pp(self.output_conf[output_type][tmpl])
-#            self.tmpl[tmpl] = self.env.get_template(self.output_conf[output_type][tmpl])
-#
-#    def render_property(self):
-#        params = dict()
-#        
-#        # get data from catalog 
-#        params.update(self.metadata['DBSCHEMA_CATALOGS'][list(self.metadata['DBSCHEMA_CATALOGS'].keys())[0]])
-#
-#        # get data from properties 
-#        for key in self.metadata['DISCOVER_PROPERTIES'].keys():
-#            #print(f"{key} vs {self.metadata['DISCOVER_PROPERTIES'][key]['Value']}")
-#            params[key] = self.metadata['DISCOVER_PROPERTIES'][key]['Value']
-#    
-#        pp(params)
-#        
-#        print(self.tmpl['properties'].render(
-#            properties = params
-#            ))
-#
-#    def render_tables(self):
-#        
-#        # get data from catalog 
-#        pp(self.metadata['TMSCHEMA_TABLES'])
-#        
-#        print(self.tmpl['tables'].render(
-#            tables = self.metadata['TMSCHEMA_TABLES'].values(),
-#            ))
-#
-#
-#    def render_columns(self):
-#        
-#        # get data from catalog 
-#        pp(self.metadata['TMSCHEMA_COLUMNS'])
-#        
-#        print(self.tmpl['columns'].render(
-#            columns = self.metadata['TMSCHEMA_COLUMNS'].values(),
-#            ))
-#    
-#    def render_measures(self):
-#        
-#        # get data from catalog 
-#        pp(self.metadata['TMSCHEMA_MEASURES'])
-#        
-#        print(self.tmpl['measures'].render(
-#            measures = self.metadata['TMSCHEMA_COLUMNS'].values(),
-#            ))
-#    
-#    def render_hierarchies(self):
-#        
-#        # get data from catalog 
-#        pp(self.metadata['TMSCHEMA_HIERARCHIES'])
-#        
-#        print(self.tmpl['hierarchies'].render(
-#            hierarchies = self.metadata['TMSCHEMA_HIERARCHIES'].values(),
-#            ))
-#    
-#    def render_relationships(self):
-#        
-#        # get data from catalog 
-#        pp(self.metadata['TMSCHEMA_RELATIONSHIPS'])
-#        
-#        print(self.tmpl['relationships'].render(
-#            relationships = self.metadata['TMSCHEMA_RELATIONSHIPS'].values(),
-#            ))
-#

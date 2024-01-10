@@ -47,6 +47,21 @@ parser.add_argument('--out_dir', type=str, required=False, default='./output', h
 
 args = parser.parse_args()
 
+####################
+# load conf 
+common_conf = cnf.get_conf('./conf/pbix_doc.yaml')
+local_ssas_folder = common_conf['local_ssas_folder']
+extractor_version = '1.01'
+
+####################
+# init logger
+import logging
+tools.setup_root_logger(common_conf['log_file'])
+logger = logging.getLogger(__name__)
+
+
+####################
+# read all given pbix files 
 jsons = tools.read_jsons(args.files) 
 
 bas = [] # prepare variable for all business objects 
@@ -61,7 +76,7 @@ for json_key in jsons.keys():
 
         ###################
         # init writer 
-        writer = w.pbix_writer2(jsons[json_key][file_name_key],  args.format)
+        writer = w.pbix_writer(jsons[json_key][file_name_key],  args.format)
         #pp(writer.templates)
         writer.init_templates()
         content_dmv = writer.render_pbix_doc()
