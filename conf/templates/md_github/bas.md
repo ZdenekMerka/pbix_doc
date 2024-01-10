@@ -7,9 +7,9 @@
 # All Business objects
 {% if tables_global %}
 | Name | PBIX File name | ID | Description | 
-|----|------|-------------|
+|------|----------------|----|-------------|
 {% for i  in tables_global if not i.IsHidden -%}
-| {{i.Name}} | [{{i.filename}}]({{urlquote(i.filename)}}_dmv.md) | {{ i.ID }} | {{re_nan(i.Description)}} |
+| {{i.Name}} | [{{i.filename}}]({{urlquote(i.filename)}}_dmv.md)#business-objects | {{ i.ID }} | {{re_nan(i.Description)}} |
 {% endfor -%}
 
 {% else %}
