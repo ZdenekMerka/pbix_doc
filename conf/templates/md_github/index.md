@@ -12,8 +12,8 @@ Information from PBIX files.
 | Page | Comments | 
 |---|---|
 | [Business objects](./bas.md) | List of all Business objects sorted by name |
-| [Measures](./measures.md) | List of all Measures sorted by name |
-| [Columns](./columns.md) | List of all Columns sorted by name |
+| Measures (TBD) | List of all Measures sorted by name |
+| Columns (TBD)| List of all Columns sorted by name |
 
 ## Links to PBIX files documentation
 {% if filenames_pbix %}
