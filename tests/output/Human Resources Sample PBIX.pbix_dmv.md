@@ -354,5 +354,5 @@ id2053(["LocalDateTable_c04ce..(51)"]) --->|-NaN-:HireDate| id25(["Employee"])
 
 ----
 <p align="center">
-Generated at 05.01.2024 01:07:18 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: a7f95a4
+Generated at 10.01.2024 22:54:35 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: f640601
 </p>

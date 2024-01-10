@@ -49,6 +49,8 @@ args = parser.parse_args()
 
 jsons = tools.read_jsons(args.files) 
 
+bas = [] # prepare variable for all business objects 
+
 for json_key in jsons.keys():
     
     filenames_pbix = []
@@ -64,6 +66,9 @@ for json_key in jsons.keys():
         writer.init_templates()
         content_dmv = writer.render_pbix_doc()
         content_report = writer.render_pbix_doc_report()
+        
+        # appened to array
+        bas += writer.get_tables_global()
         #print(content_dmv)
         
         ###################
@@ -99,11 +104,27 @@ for json_key in jsons.keys():
     ############################## 
     # write index page  
     #pp(filenames_pbix)
-    content = writer.render_index(filenames_pbix)
+    writer_global = w.pbix_writer_global(args.format)
+    writer_global.init_templates()
+    content = writer_global.render_index(filenames_pbix)
+        
     tools.write_file(
         filename = '{dir}/{filename}.{ext}'.format(
             dir = args.out_dir,
             filename = 'index',
+            #filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']),
+            ext = 'md'),         
+        content = content  
+    )
+    
+    ############################## 
+    # write bas page   
+    #pp(filenames_pbix)
+    content = writer_global.render_bas(bas)
+    tools.write_file(
+        filename = '{dir}/{filename}.{ext}'.format(
+            dir = args.out_dir,
+            filename = 'bas',
             #filename = os.path.basename(jsons[json_key][file_name_key]['info']['pbix_full_path']),
             ext = 'md'),         
         content = content  

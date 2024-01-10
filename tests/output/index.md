@@ -8,6 +8,13 @@
 
 Information from PBIX files.
 
+## Global pages 
+| Page | Comments | 
+|---|---|
+| [Business objects](./bas.md) | List of all Business objects sorted by name |
+| [Measures](./measures.md) | List of all Measures sorted by name |
+| [Columns](./columns.md) | List of all Columns sorted by name |
+
 ## Links to PBIX files documentation
 
 | PBIX File name | DMV | Reports  | generated | 
@@ -23,5 +30,5 @@ Information from PBIX files.
 
 ----
 <p align="center">
-Generated at 05.01.2024 01:07:18 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: a7f95a4
+Generated at 10.01.2024 22:54:35 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: f640601
 </p>
