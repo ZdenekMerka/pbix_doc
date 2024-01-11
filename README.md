@@ -19,7 +19,7 @@ With **pbic_doc** you can:
 # Installation
 
 ## Prerequisites
-Installed 
+You'll need to install 
 * Python 3: [https://www.python.org/downloads/](https://www.python.org/downloads/) (developed and tested on version 3.10.7)
 * `venv` python module (optional): [https://docs.python.org/3/library/venv.html#module-venv](https://docs.python.org/3/library/venv.html#module-venv) 
 * Power BI desktop: [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore)
