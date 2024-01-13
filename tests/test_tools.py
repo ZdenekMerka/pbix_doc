@@ -152,7 +152,7 @@ class Test03GetFirstLevelSubfolders(unittest.TestCase):
         second_level = os.path.join(self.temp_dir.name, 'subfolder2')
         subfolders = get_first_level_subfolders(second_level)
         #pp(subfolders)
-        self.assertCountEqual(subfolders, [self.temp_dir.name+'\\subfolder2\\subfolder22'])
+        self.assertCountEqual(subfolders, [os.path.join(self.temp_dir.name,'subfolder2','subfolder22')])
 
 ##############################
 import subprocess
