@@ -16,12 +16,12 @@ import lib.conf as cnf
 class test_conf(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.conf = cnf.get_conf('conf/common.yaml')
+        self.conf = cnf.get_conf('tests/input/common.yaml')
         #pp(self.conf)
     
     def test_01_conf_default(self):
         ret = self.conf
-        self.assertEqual(ret['db_connection_file'],'conf\\connections.yaml', " Test Get conf db_connection_file")
+        self.assertEqual(ret['project_description'],'PBIX Documentation project description.', "Test Get conf project_description")
     
     def test_02_conf_default(self):
         ret = self.conf
@@ -31,16 +31,14 @@ class test_conf(unittest.TestCase):
     def test_03_conf_default(self):
         ret = self.conf
         pp(sorted(list(ret.keys())))
-        self.assertEqual(sorted(list(ret.keys())), sorted([
-            'connection_file',
-            'local_ssas_folder',
-            'log_file',
+        self.assertEqual(sorted(list(ret.keys())), sorted( [
+            'all_pbix_tables',
+            'output',
             'output_folder',
+            'pbix_table_prefix',
             'project_description',
-            'project_name',
-            'select_top',
-            'template_folder'
-        ]), " Test Get conf 3 keys")
+            'project_name']
+        ), " Test Get conf 3 keys")
     
     def test_04_get_conf_empty(self):
         with self.assertRaises(TypeError) as context:

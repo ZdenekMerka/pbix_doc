@@ -115,7 +115,7 @@ def get_port_and_db(ssas_folder):
 
     # If no result was found, set it to None
     if 'result' not in locals():
-        result = None
+        result = (None,None)
     else:
         # If a database directory was not found, return the port number and None for the database path
         if db_id is None:

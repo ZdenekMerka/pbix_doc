@@ -22,7 +22,7 @@ class test_01_tools(unittest.TestCase):
     
     def test_01_logger_output(self):
         import logging 
-        logger = tools.setup_logger(self.log_file)
+        logger = tools.setup_root_logger(self.log_file)
 
         # Check that the log file was created
         self.assertTrue(os.path.exists(self.log_file))
@@ -52,50 +52,72 @@ class Test02GetPortAndDb(unittest.TestCase):
     def setUpClass(self):
         # Create a temporary directory for testing and write a port file
         self.temp_dir = 'temp_test_dir'
+        self.temp_dir_data = os.path.join('temp_test_dir','Data')
         self.port_file = 'msmdsrv.port.txt' 
-        self.db_id_file = 'test_214c4853-f9f3-4f9c-a4dd-69c257a86419.0.db'
-        os.mkdir(self.temp_dir)
-        with open(os.path.join(self.temp_dir, self.port_file), 'w') as f:
+        self.db_id_file = '2362d710-553c-4a22-afc7-f69c11f79075.9.db.xml' 
+        
+        os.mkdir(self.temp_dir) 
+        os.mkdir(self.temp_dir_data) 
+        
+        
+        with open(os.path.join(self.temp_dir_data,self.port_file), 'w',encoding='utf-16-le') as f:
             f.write('12345')
-        # Create a subdirectory with suffix '0.db'
-        os.mkdir(os.path.join(self.temp_dir, self.db_id_file))
+         
+         # Create a dummy database file
+        db_file_path = os.path.join(self.temp_dir_data, self.db_id_file)
+        with open(db_file_path, 'w', encoding='utf-16-le') as f:
+            f.write('<xml>dummy_content</xml>')
 
     @classmethod
     def tearDownClass(self):
         # Remove the temporary directory after testing
-        port_file_path = os.path.join(self.temp_dir, self.port_file)
-        db_id_file_path = os.path.join(self.temp_dir, self.db_id_file)
+        port_file_path = os.path.join(self.temp_dir_data, self.port_file)
+        db_id_file_path = os.path.join(self.temp_dir_data, self.db_id_file)
 
         # delete file if exits
         if os.path.exists(port_file_path):
             os.remove(port_file_path)
 
-        # delete foleder if exits
-        if os.path.exists(db_id_file_path) and os.path.isdir(db_id_file_path):
-            os.rmdir(db_id_file_path)
+        # delete file if exits
+        if os.path.exists(db_id_file_path):
+            os.remove(db_id_file_path)
         
-        os.rmdir(self.temp_dir)
+        if os.path.exists(self.temp_dir_data) and os.path.isdir(self.temp_dir_data):
+            os.rmdir(self.temp_dir_data)
+        
+        if os.path.exists(self.temp_dir) and os.path.isdir(self.temp_dir):
+            os.rmdir(self.temp_dir)
 
     def test_02_get_port_and_db(self):
         # Test if the function returns the correct port and directory paths
-        expected_result = ('12345', os.path.join(self.temp_dir, self.db_id_file))
+        expected_result = ('12345', '2362d710-553c-4a22-afc7-f69c11f79075')
         actual_result = get_port_and_db(self.temp_dir)
-
-        self.assertEqual(actual_result, expected_result)
+        #pp(type(expected_result))
+        #pp(type(actual_result))
+        self.assertEqual(actual_result, expected_result," Touples 1 are  equal")
 
     def test_03_get_port_and_db_no_db(self):
         # Test if the function returns None for the db path if no directory with suffix '0.db' is found
-        os.rmdir(os.path.join(self.temp_dir, self.db_id_file))
+        os.remove(os.path.join(self.temp_dir_data, self.db_id_file))
         expected_result = ('12345', None)
         actual_result = get_port_and_db(self.temp_dir)
-        self.assertEqual(actual_result, expected_result)
+        self.assertEqual(actual_result, expected_result," Touples 2 are  equal")
 
     def test_04_get_port_and_db_no_port(self):
         # Test if the function returns None if no port file is found
-        os.remove(os.path.join(self.temp_dir, self.port_file))
+        port_file_path = os.path.join(self.temp_dir_data, self.port_file)
+        db_id_file_path = os.path.join(self.temp_dir_data, self.db_id_file)
+        
+        # delete file if exits
+        if os.path.exists(port_file_path):
+            os.remove(port_file_path)
+
+        # delete file if exits
+        if os.path.exists(db_id_file_path):
+            os.remove(db_id_file_path)
         expected_result = (None,None)
         actual_result = get_port_and_db(self.temp_dir)
-        self.assertEqual(actual_result, expected_result)
+        self.assertEqual(actual_result, expected_result," Touples 3 are  equal")
 
 
 ############################################################
@@ -111,7 +133,7 @@ class Test03GetFirstLevelSubfolders(unittest.TestCase):
         os.mkdir(os.path.join(self.temp_dir.name, 'subfolder2', 'subfolder22'))
         #os.mkdir(os.path.join(self.temp_dir.name, 'file1.txt'))
         open(os.path.join(self.temp_dir.name, 'file1.txt'), mode='w').close()
-        #dir_list = os.listdir(self.temp_dir.name)
+        dir_list = os.listdir(self.temp_dir.name)
         #pp(dir_list)
 
     @classmethod
@@ -123,14 +145,14 @@ class Test03GetFirstLevelSubfolders(unittest.TestCase):
         # Test that the function returns the correct list of subfolders
         subfolders = get_first_level_subfolders(self.temp_dir.name)
         #pp(subfolders)
-        self.assertCountEqual(subfolders, ['subfolder1', 'subfolder2'])
+        self.assertCountEqual(subfolders, [self.temp_dir.name+'\\subfolder1', self.temp_dir.name+'\\subfolder2'])
     
     def test_get_first_level_subfolders2(self):
         # Test that the function returns the correct list of subfolders
         second_level = os.path.join(self.temp_dir.name, 'subfolder2')
         subfolders = get_first_level_subfolders(second_level)
         #pp(subfolders)
-        self.assertCountEqual(subfolders, ['subfolder22'])
+        self.assertCountEqual(subfolders, [self.temp_dir.name+'\\subfolder2\\subfolder22'])
 
 ##############################
 import subprocess
