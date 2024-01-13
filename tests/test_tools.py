@@ -145,7 +145,7 @@ class Test03GetFirstLevelSubfolders(unittest.TestCase):
         # Test that the function returns the correct list of subfolders
         subfolders = get_first_level_subfolders(self.temp_dir.name)
         #pp(subfolders)
-        self.assertCountEqual(subfolders, [self.temp_dir.name+'\\subfolder1', self.temp_dir.name+'\\subfolder2'])
+        self.assertCountEqual(subfolders, [os.path.join(self.temp_dir.name,'subfolder1'), os.path.join(self.temp_dir.name,'subfolder2')])
     
     def test_get_first_level_subfolders2(self):
         # Test that the function returns the correct list of subfolders
@@ -193,10 +193,10 @@ class Test05GetAllPbixFiles(unittest.TestCase):
         self.temp_dir.cleanup()
 
     def test_get_all_pbix_files(self):
-        pbix_files = get_all_pbix_files(self.temp_dir.name)
-        expected_files = [os.path.join(self.temp_dir.name, 'file1.pbix'),
+        pbix_files = sorted(get_all_pbix_files(self.temp_dir.name))
+        expected_files = sorted([os.path.join(self.temp_dir.name, 'file1.pbix'),
                           os.path.join(self.temp_dir.name, 'file3.pbix'),
-                          os.path.join(self.temp_subdir, 'file4.pbix')]
+                          os.path.join(self.temp_subdir, 'file4.pbix')])
         self.assertEqual(pbix_files, expected_files)
 
 ##############################
