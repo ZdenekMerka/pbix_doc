@@ -1,29 +1,15 @@
-#   project_name: "PBIX Documentation"
-#   project_description: "PBIX Documentation project description."
-#   powerbi_desktop_command: "PBIDesktopStore.exe"
-#   connection_file: 'conf\connections.yaml'
-#   template_folder: 'conf\templates' 
 trc_file_rel_path: 'Data\FlightRecorderCurrent.trc'
 trc_back_file_rel_path: 'Data\FlightRecorderBack.trc'
 local_ssas_folder: "%USERPROFILE%\\Microsoft\\Power BI Desktop Store App\\AnalysisServicesWorkspaces"
+# old path for local ssas folder 
+# local_ssas_folder: %USERPROFILE%\\AppData\\Local\\Microsoft\\Power BI Desktop SSRS\\AnalysisServicesWorkspaces
+
+# Fill path for ADOMD library. See 
+# https://learn.microsoft.com/en-us/analysis-services/client-libraries?view=asallproducts-allversions
+# or FAQ https://pypi.org/project/pyadomd/
 adomd_path: 'C:\\Program Files (x86)\\Microsoft SQL Server Management Studio 18\\Common7\\IDE'
-#   adomd_path: 'C:\\prog\\python\\Quill\\quill\\lib'
 log_file: 'tmp\output.log' 
-#   select_top: 100
-#   output_folder:
-#     path: '.\output'
 pbix_table_prefix: '$SYSTEM'
-#   output:
-#     template_folder: 'conf/templates' 
-#     md_github:
-#       properties: 'md_github/properties.md'
-#       tables: 'md_github/tables.md'
-#       columns: 'md_github/columns.md'
-#       relationships: 'md_github/relationships.md'
-#       measures: 'md_github/measures.md'
-#       hierarchies: 'md_github/hierarchies.md'
-#       footer: 'md_github/footer.md'
-#       breadcrumb: 'md_github/breadcrumb.md'
 all_pbix_tables: [ 
   {table: "DBSCHEMA_CATALOGS", idx: "CATALOG_NAME"},
 #  "DBSCHEMA_COLUMNS",
