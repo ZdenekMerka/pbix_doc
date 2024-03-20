@@ -21,6 +21,7 @@ With **pbic_doc** you can:
 ## Prerequisites
 You'll need to install 
 * Python 3: [https://www.python.org/downloads/](https://www.python.org/downloads/) (developed and tested on version 3.10.7)
+* Analysis Services client library ADOMD - [see documentaion here](https://learn.microsoft.com/en-us/analysis-services/client-libraries?view=asallproducts-allversions) it is necessary for [python pyadomd library](https://pypi.org/project/pyadomd/)
 * `venv` python module (optional): [https://docs.python.org/3/library/venv.html#module-venv](https://docs.python.org/3/library/venv.html#module-venv) 
 * Power BI desktop: [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore)
 
@@ -50,6 +51,24 @@ python -m venv .\pbix_doc.venv
 cd .\pbix_doc
 pip install -r requirements.txt
 ```
+5. Find out where `AnalysisServicesWorkspaces` folder is and put the path to conf file `.\conf\pbix_doc.yaml`
+AnalysisServicesWorkspaces is ussually at on of the these paths `%USERPROFILE%\Microsoft\Power BI Desktop Store App\AnalysisServicesWorkspaces` or `%USERPROFILE%\AppData\Local\Microsoft\Power BI Desktop SSRS\AnalysisServicesWorkspaces`. Power BI Desktop stores local SSAS instance of each open PBIX files.  
+```
+# edit file .\conf\pbix_doc.yaml and put path into this key local_ssas_folder
+local_ssas_folder: "%USERPROFILE%\\Microsoft\\Power BI Desktop Store App\\AnalysisServicesWorkspaces"
+```
+6. Check that the path to the ADOMD library in `pbix_doc.yaml` is correct. If not, you need to find out where the `Microsoft.AnalysisServices.AdomdClient.dll` library is stored. Sometimes it is stored in the installation subpaths of SSMS, Power BI or Excel. Then update the path in the configuration file.
+```
+# edit file .\conf\pbix_doc.yaml and put path into this key local_ssas_folder
+# Fill path for ADOMD library. See 
+# https://learn.microsoft.com/en-us/analysis-services/client-libraries?view=asallproducts-allversions
+# or FAQ https://pypi.org/project/pyadomd/
+adomd_path: 'C:\\Program Files (x86)\\Microsoft SQL Server Management Studio 18\\Common7\\IDE'
+```
+
+
+
+
 ## Usage
 
 After installing the program, you can use it to generate documentation for your DWH projects. 
