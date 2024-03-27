@@ -375,5 +375,5 @@ id3642(["Table"]) --->|Category:Category| id572(["Product"])
 
 ----
 <p align="center">
-Generated at 27.03.2024 12:50:21 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 644f883
+Generated at 27.03.2024 13:01:37 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: e040dee
 </p>

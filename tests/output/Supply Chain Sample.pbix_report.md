@@ -59,7 +59,7 @@
 | **Name:** | `77f9305cd13f3320304c` |
 | **Type:** | `PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A` |
 | **Business objects:**  | `Backorder Percentage` | 
-| **Attributes:**  | Column: Backorder Percentage.Plant<br/> Column: Backorder Percentage.Product Type | 
+| **Attributes:**  | Column: `Backorder Percentage.Plant`<br/> Column: `Backorder Percentage.Product Type` | 
 
 [Up](#report-sections)
 
@@ -87,7 +87,7 @@
 | **Name:** | `60f36c4ab1755d40a1d3` |
 | **Type:** | `waterfallChart` |
 | **Business objects:**  | `Explanations` | 
-| **Attributes:**  | Column: Explanations.Factor<br/> Aggregation: Sum(Explanations.Risk) | 
+| **Attributes:**  | Column: `Explanations.Factor`<br/> Aggregation: `Sum(Explanations.Risk)` | 
 
 [Up](#report-sections)
 
@@ -101,7 +101,7 @@
 | **Name:** | `7bf07d56957f69193161` |
 | **Type:** | `tableEx` |
 | **Business objects:**  | `Risk` | 
-| **Attributes:**  | Column: Risk.Location<br/> Column: Risk.Product ID<br/> Column: Risk.Risk Score<br/> Column: Risk.Backorder Risk<br/> Column: Risk.Distribution Center | 
+| **Attributes:**  | Column: `Risk.Location`<br/> Column: `Risk.Product ID`<br/> Column: `Risk.Risk Score`<br/> Column: `Risk.Backorder Risk`<br/> Column: `Risk.Distribution Center` | 
 
 [Up](#report-sections)
 
@@ -115,7 +115,7 @@
 | **Name:** | `4a9898755b7be14b5605` |
 | **Type:** | `esriVisual` |
 | **Business objects:**  | `Risk` | 
-| **Attributes:**  | Column: Risk.Location<br/> Aggregation: CountNonNull(Risk.Product ID) | 
+| **Attributes:**  | Column: `Risk.Location`<br/> Aggregation: `CountNonNull(Risk.Product ID)` | 
 
 [Up](#report-sections)
 
@@ -142,7 +142,7 @@
 | **Name:** | `0d8ec8d54ccfa45ab88f` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `Backorder Percentage, Month` | 
-| **Attributes:**  | Aggregation: Avg(Backorder Percentage.Backorder %)<br/> Column: Month.Month | 
+| **Attributes:**  | Aggregation: `Avg(Backorder Percentage.Backorder %)`<br/> Column: `Month.Month` | 
 
 [Up](#report-sections)
 
@@ -184,7 +184,7 @@
 | **Name:** | `77f9305cd13f3320304c` |
 | **Type:** | `PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A` |
 | **Business objects:**  | `Backorder Percentage` | 
-| **Attributes:**  | Column: Backorder Percentage.Plant<br/> Column: Backorder Percentage.Product Type | 
+| **Attributes:**  | Column: `Backorder Percentage.Plant`<br/> Column: `Backorder Percentage.Product Type` | 
 
 [Up](#report-sections)
 
@@ -198,7 +198,7 @@
 | **Name:** | `cc83889ee3c0277d6686` |
 | **Type:** | `decompositionTreeVisual` |
 | **Business objects:**  | `Backorder Percentage` | 
-| **Attributes:**  | Measure: Backorder Percentage.% on backorder<br/> Column: Backorder Percentage.Forecast Bias<br/> Column: Backorder Percentage.Plant<br/> Column: Backorder Percentage.Product Type<br/> Column: Backorder Percentage.Shipment Destination<br/> Column: Backorder Percentage.Shipment Type<br/> Column: Backorder Percentage.Region<br/> Column: Backorder Percentage.Distribution Center<br/> Column: Backorder Percentage.Demand Type<br/> Column: Backorder Percentage.Forecast Accuracy<br/> Column: Backorder Percentage.Brand<br/> Column: Backorder Percentage.Buyer Type<br/> Measure: Backorder Percentage.Backorder $ | 
+| **Attributes:**  | Measure: `Backorder Percentage.% on backorder`<br/> Column: `Backorder Percentage.Forecast Bias`<br/> Column: `Backorder Percentage.Plant`<br/> Column: `Backorder Percentage.Product Type`<br/> Column: `Backorder Percentage.Shipment Destination`<br/> Column: `Backorder Percentage.Shipment Type`<br/> Column: `Backorder Percentage.Region`<br/> Column: `Backorder Percentage.Distribution Center`<br/> Column: `Backorder Percentage.Demand Type`<br/> Column: `Backorder Percentage.Forecast Accuracy`<br/> Column: `Backorder Percentage.Brand`<br/> Column: `Backorder Percentage.Buyer Type`<br/> Measure: `Backorder Percentage.Backorder $` | 
 
 [Up](#report-sections)
 
@@ -267,7 +267,7 @@
 | **Name:** | `a3402b31dd4040b1942a` |
 | **Type:** | `treemap` |
 | **Business objects:**  | `Backorder Percentage` | 
-| **Attributes:**  | Measure: Backorder Percentage.% on backorder<br/> Column: Backorder Percentage.Demand Type | 
+| **Attributes:**  | Measure: `Backorder Percentage.% on backorder`<br/> Column: `Backorder Percentage.Demand Type` | 
 
 [Up](#report-sections)
 
@@ -295,7 +295,7 @@
 | **Name:** | `2a4dc2b00972cea35e43` |
 | **Type:** | `areaChart` |
 | **Business objects:**  | `Month, Backorder Percentage` | 
-| **Attributes:**  | Column: Month.Month<br/> Measure: Backorder Percentage.Backorder $ | 
+| **Attributes:**  | Column: `Month.Month`<br/> Measure: `Backorder Percentage.Backorder $` | 
 
 [Up](#report-sections)
 
@@ -336,7 +336,7 @@
 | **Name:** | `f06d7cb16e3ae52d23d3` |
 | **Type:** | `columnChart` |
 | **Business objects:**  | `Backorder Percentage` | 
-| **Attributes:**  | Measure: Backorder Percentage.Backorder $<br/> Column: Backorder Percentage.Region | 
+| **Attributes:**  | Measure: `Backorder Percentage.Backorder $`<br/> Column: `Backorder Percentage.Region` | 
 
 [Up](#report-sections)
 
@@ -350,7 +350,7 @@
 | **Name:** | `a3402b31dd4040b1942a` |
 | **Type:** | `treemap` |
 | **Business objects:**  | `Supply Analytics` | 
-| **Attributes:**  | Aggregation: CountNonNull(bank-full2.Product )<br/> Column: Supply Analytics.Demand Type | 
+| **Attributes:**  | Aggregation: `CountNonNull(bank-full2.Product )`<br/> Column: `Supply Analytics.Demand Type` | 
 
 [Up](#report-sections)
 
@@ -378,7 +378,7 @@
 | **Name:** | `ca1930b86620637c9caa` |
 | **Type:** | `keyDriversVisual` |
 | **Business objects:**  | `Supply Analytics` | 
-| **Attributes:**  | Column: Supply Analytics.Product <br/> Column: Supply Analytics.Demand Type<br/> Column: Supply Analytics.Forecast Accuracy<br/> Column: Supply Analytics.Forecast Bias<br/> Column: Supply Analytics.Manufactured Goods | 
+| **Attributes:**  | Column: `Supply Analytics.Product `<br/> Column: `Supply Analytics.Demand Type`<br/> Column: `Supply Analytics.Forecast Accuracy`<br/> Column: `Supply Analytics.Forecast Bias`<br/> Column: `Supply Analytics.Manufactured Goods` | 
 
 [Up](#report-sections)
 
@@ -390,5 +390,5 @@
 
 ----
 <p align="center">
-Generated at 27.03.2024 12:50:21 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 13:01:38 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

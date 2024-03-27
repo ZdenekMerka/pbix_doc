@@ -59,7 +59,7 @@
 | **Name:** | `925c57e40448405cae83` |
 | **Type:** | `clusteredColumnChart` |
 | **Business objects:**  | `COVID` | 
-| **Attributes:**  | Column: COVID.Date<br/> Aggregation: Sum(COVID.Daily deaths) | 
+| **Attributes:**  | Column: `COVID.Date`<br/> Aggregation: `Sum(COVID.Daily deaths)` | 
 
 [Up](#report-sections)
 
@@ -87,7 +87,7 @@
 | **Name:** | `d610e3df7e7aaa9aecf7` |
 | **Type:** | `clusteredColumnChart` |
 | **Business objects:**  | `COVID` | 
-| **Attributes:**  | Column: COVID.Date<br/> Aggregation: Sum(COVID.Daily cases) | 
+| **Attributes:**  | Column: `COVID.Date`<br/> Aggregation: `Sum(COVID.Daily cases)` | 
 
 [Up](#report-sections)
 
@@ -115,7 +115,7 @@
 | **Name:** | `2733d13e23bb26ccf586` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `COVID measures, StateDim` | 
-| **Attributes:**  | Column: StateDim.State<br/> Measure: COVID measures.Total deaths<br/> Measure: COVID measures.Case fatality rate<br/> Column: StateDim.Country<br/> Measure: COVID measures.Total confirmed cases | 
+| **Attributes:**  | Column: `StateDim.State`<br/> Measure: `COVID measures.Total deaths`<br/> Measure: `COVID measures.Case fatality rate`<br/> Column: `StateDim.Country`<br/> Measure: `COVID measures.Total confirmed cases` | 
 
 [Up](#report-sections)
 
@@ -171,7 +171,7 @@
 | **Name:** | `f8fe716025ccbfc5557e` |
 | **Type:** | `shapeMap` |
 | **Business objects:**  | `StateDim, COVID measures` | 
-| **Attributes:**  | Column: StateDim.State<br/> Measure: COVID measures.Case fatality rate<br/> Measure: COVID measures.Total deaths<br/> Measure: COVID measures.Total confirmed cases | 
+| **Attributes:**  | Column: `StateDim.State`<br/> Measure: `COVID measures.Case fatality rate`<br/> Measure: `COVID measures.Total deaths`<br/> Measure: `COVID measures.Total confirmed cases` | 
 
 [Up](#report-sections)
 
@@ -241,7 +241,7 @@
 | **Name:** | `1486da12974cb74bee22` |
 | **Type:** | `shapeMap` |
 | **Business objects:**  | `StateDim, COVID measures` | 
-| **Attributes:**  | Column: StateDim.State<br/> Measure: Latest COVID measures.Total confirmed cases<br/> Measure: COVID measures.Total deaths<br/> Measure: COVID measures.Case fatality rate | 
+| **Attributes:**  | Column: `StateDim.State`<br/> Measure: `Latest COVID measures.Total confirmed cases`<br/> Measure: `COVID measures.Total deaths`<br/> Measure: `COVID measures.Case fatality rate` | 
 
 [Up](#report-sections)
 
@@ -269,7 +269,7 @@
 | **Name:** | `99bb9ddabd39c12f86bb` |
 | **Type:** | `slicer` |
 | **Business objects:**  | `COVID` | 
-| **Attributes:**  | Column: COVID.Date | 
+| **Attributes:**  | Column: `COVID.Date` | 
 
 [Up](#report-sections)
 
@@ -339,7 +339,7 @@
 | **Name:** | `47a3a67684ca52aab4af` |
 | **Type:** | `clusteredColumnChart` |
 | **Business objects:**  | `COVID, COVID measures` | 
-| **Attributes:**  | Column: COVID.Date<br/> Measure: COVID measures.Confirmed cases | 
+| **Attributes:**  | Column: `COVID.Date`<br/> Measure: `COVID measures.Confirmed cases` | 
 
 [Up](#report-sections)
 
@@ -353,7 +353,7 @@
 | **Name:** | `6b27b7c87f18083f2387` |
 | **Type:** | `clusteredColumnChart` |
 | **Business objects:**  | `COVID, COVID measures` | 
-| **Attributes:**  | Column: COVID.Date<br/> Measure: COVID measures.Deaths | 
+| **Attributes:**  | Column: `COVID.Date`<br/> Measure: `COVID measures.Deaths` | 
 
 [Up](#report-sections)
 
@@ -534,7 +534,7 @@
 | **Name:** | `925c57e40448405cae83` |
 | **Type:** | `clusteredColumnChart` |
 | **Business objects:**  | `COVID` | 
-| **Attributes:**  | Column: COVID.Date<br/> Aggregation: Sum(COVID.Daily deaths) | 
+| **Attributes:**  | Column: `COVID.Date`<br/> Aggregation: `Sum(COVID.Daily deaths)` | 
 
 [Up](#report-sections)
 
@@ -562,7 +562,7 @@
 | **Name:** | `d610e3df7e7aaa9aecf7` |
 | **Type:** | `clusteredColumnChart` |
 | **Business objects:**  | `COVID` | 
-| **Attributes:**  | Column: COVID.Date<br/> Aggregation: Sum(COVID.Daily cases) | 
+| **Attributes:**  | Column: `COVID.Date`<br/> Aggregation: `Sum(COVID.Daily cases)` | 
 
 [Up](#report-sections)
 
@@ -604,7 +604,7 @@
 | **Name:** | `2733d13e23bb26ccf586` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `COVID measures, StateDim, COVID` | 
-| **Attributes:**  | Measure: COVID measures.Total confirmed cases<br/> Measure: COVID measures.Total deaths<br/> Measure: COVID measures.Case fatality rate<br/> Column: StateDim.State<br/> Column: COVID.County Name | 
+| **Attributes:**  | Measure: `COVID measures.Total confirmed cases`<br/> Measure: `COVID measures.Total deaths`<br/> Measure: `COVID measures.Case fatality rate`<br/> Column: `StateDim.State`<br/> Column: `COVID.County Name` | 
 
 [Up](#report-sections)
 
@@ -660,7 +660,7 @@
 | **Name:** | `f8fe716025ccbfc5557e` |
 | **Type:** | `filledMap` |
 | **Business objects:**  | `COVID measures, COVID` | 
-| **Attributes:**  | Measure: COVID measures.Total confirmed cases<br/> Measure: COVID measures.Case fatality rate<br/> Measure: COVID measures.Total deaths<br/> Column: COVID.County | 
+| **Attributes:**  | Measure: `COVID measures.Total confirmed cases`<br/> Measure: `COVID measures.Case fatality rate`<br/> Measure: `COVID measures.Total deaths`<br/> Column: `COVID.County` | 
 
 [Up](#report-sections)
 
@@ -730,7 +730,7 @@
 | **Name:** | `1486da12974cb74bee22` |
 | **Type:** | `filledMap` |
 | **Business objects:**  | `COVID measures, COVID` | 
-| **Attributes:**  | Measure: COVID measures.Total confirmed cases<br/> Measure: COVID measures.Total deaths<br/> Measure: COVID measures.Case fatality rate<br/> Column: COVID.County | 
+| **Attributes:**  | Measure: `COVID measures.Total confirmed cases`<br/> Measure: `COVID measures.Total deaths`<br/> Measure: `COVID measures.Case fatality rate`<br/> Column: `COVID.County` | 
 
 [Up](#report-sections)
 
@@ -758,7 +758,7 @@
 | **Name:** | `99bb9ddabd39c12f86bb` |
 | **Type:** | `slicer` |
 | **Business objects:**  | `COVID` | 
-| **Attributes:**  | Column: COVID.Date | 
+| **Attributes:**  | Column: `COVID.Date` | 
 
 [Up](#report-sections)
 
@@ -828,7 +828,7 @@
 | **Name:** | `47a3a67684ca52aab4af` |
 | **Type:** | `clusteredColumnChart` |
 | **Business objects:**  | `COVID, COVID measures` | 
-| **Attributes:**  | Column: COVID.Date<br/> Measure: COVID measures.Confirmed cases | 
+| **Attributes:**  | Column: `COVID.Date`<br/> Measure: `COVID measures.Confirmed cases` | 
 
 [Up](#report-sections)
 
@@ -842,7 +842,7 @@
 | **Name:** | `6b27b7c87f18083f2387` |
 | **Type:** | `clusteredColumnChart` |
 | **Business objects:**  | `COVID, COVID measures` | 
-| **Attributes:**  | Column: COVID.Date<br/> Measure: COVID measures.Deaths | 
+| **Attributes:**  | Column: `COVID.Date`<br/> Measure: `COVID measures.Deaths` | 
 
 [Up](#report-sections)
 
@@ -994,5 +994,5 @@
 
 ----
 <p align="center">
-Generated at 27.03.2024 12:50:22 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 13:01:39 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

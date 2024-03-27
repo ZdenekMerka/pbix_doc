@@ -31,7 +31,7 @@
 | **Name:** | `4815acfc1f588ed839c4` |
 | **Type:** | `areaChart` |
 | **Business objects:**  | `Date, Sales` | 
-| **Attributes:**  | Aggregation: Sum(Sales.Sales Amount)<br/> Measure: Sales.Sales Amount by Due Date<br/> HierarchyLevel: Date.Fiscal.Month | 
+| **Attributes:**  | Aggregation: `Sum(Sales.Sales Amount)`<br/> Measure: `Sales.Sales Amount by Due Date`<br/> HierarchyLevel: `Date.Fiscal.Month` | 
 
 [Up](#report-sections)
 
@@ -45,7 +45,7 @@
 | **Name:** | `43718bfbc9b53930dbee` |
 | **Type:** | `map` |
 | **Business objects:**  | `Sales, Reseller` | 
-| **Attributes:**  | Aggregation: Sum(Sales.Order Quantity)<br/> Column: Reseller.Country-Region | 
+| **Attributes:**  | Aggregation: `Sum(Sales.Order Quantity)`<br/> Column: `Reseller.Country-Region` | 
 
 [Up](#report-sections)
 
@@ -59,7 +59,7 @@
 | **Name:** | `3a1aeaede6fc79fe5066` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Product, Reseller, Sales` | 
-| **Attributes:**  | Column: Product.Category<br/> Column: Reseller.Business Type<br/> Aggregation: Sum(Sales.Sales Amount) | 
+| **Attributes:**  | Column: `Product.Category`<br/> Column: `Reseller.Business Type`<br/> Aggregation: `Sum(Sales.Sales Amount)` | 
 
 [Up](#report-sections)
 
@@ -73,7 +73,7 @@
 | **Name:** | `75c624f501f3c20eb760` |
 | **Type:** | `slicer` |
 | **Business objects:**  | `Date` | 
-| **Attributes:**  | HierarchyLevel: Date.Fiscal.Year<br/> HierarchyLevel: Date.Fiscal.Month | 
+| **Attributes:**  | HierarchyLevel: `Date.Fiscal.Year`<br/> HierarchyLevel: `Date.Fiscal.Month` | 
 
 [Up](#report-sections)
 
@@ -128,7 +128,7 @@
 | **Name:** | `81c88ed0eeabf5421b8f` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Product, Reseller, Sales` | 
-| **Attributes:**  | Column: Product.Category<br/> Column: Reseller.Business Type<br/> Aggregation: Sum(Sales.Sales Amount) | 
+| **Attributes:**  | Column: `Product.Category`<br/> Column: `Reseller.Business Type`<br/> Aggregation: `Sum(Sales.Sales Amount)` | 
 
 [Up](#report-sections)
 
@@ -155,7 +155,7 @@
 | **Name:** | `ec25b2f7759b3fd44c1d` |
 | **Type:** | `areaChart` |
 | **Business objects:**  | `Date, Sales` | 
-| **Attributes:**  | HierarchyLevel: Date.Fiscal.Month<br/> Aggregation: Sum(Sales.Sales Amount)<br/> Measure: Sales.Sales Amount by Due Date | 
+| **Attributes:**  | HierarchyLevel: `Date.Fiscal.Month`<br/> Aggregation: `Sum(Sales.Sales Amount)`<br/> Measure: `Sales.Sales Amount by Due Date` | 
 
 [Up](#report-sections)
 
@@ -167,5 +167,5 @@
 
 ----
 <p align="center">
-Generated at 27.03.2024 12:50:21 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 13:01:37 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

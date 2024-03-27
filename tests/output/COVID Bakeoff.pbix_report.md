@@ -31,7 +31,7 @@
 | **Name:** | `ddcbc8f094b45898734c` |
 | **Type:** | `lineStackedColumnComboChart` |
 | **Business objects:**  | `Dates, OWID COVID data` | 
-| **Attributes:**  | Column: Dates.Date<br/> Measure: OWID COVID data.Cases 7d Mvg Avg per million<br/> Measure: OWID COVID data.Share of Population vaccinated<br/> Measure: OWID COVID data.Daily Change (for formatting) | 
+| **Attributes:**  | Column: `Dates.Date`<br/> Measure: `OWID COVID data.Cases 7d Mvg Avg per million`<br/> Measure: `OWID COVID data.Share of Population vaccinated`<br/> Measure: `OWID COVID data.Daily Change (for formatting)` | 
 
 [Up](#report-sections)
 
@@ -45,7 +45,7 @@
 | **Name:** | `fcb8ffb4d02bed39ca81` |
 | **Type:** | `map` |
 | **Business objects:**  | `Countries, OWID COVID data` | 
-| **Attributes:**  | Column: Countries.COUNTRY<br/> Measure: OWID COVID data.Share of Population vaccinated<br/> Column: Countries.Continent | 
+| **Attributes:**  | Column: `Countries.COUNTRY`<br/> Measure: `OWID COVID data.Share of Population vaccinated`<br/> Column: `Countries.Continent` | 
 
 [Up](#report-sections)
 
@@ -59,7 +59,7 @@
 | **Name:** | `519ef34108ec0583040c` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `Countries, OWID COVID data` | 
-| **Attributes:**  | Column: Countries.COUNTRY<br/> Aggregation: Sum(Countries.Population)<br/> Measure: owid-covid-data.Measure | 
+| **Attributes:**  | Column: `Countries.COUNTRY`<br/> Aggregation: `Sum(Countries.Population)`<br/> Measure: `owid-covid-data.Measure` | 
 
 [Up](#report-sections)
 
@@ -156,7 +156,7 @@
 | **Name:** | `d97b3d9fcb3933228dd5` |
 | **Type:** | `scatterChart` |
 | **Business objects:**  | `States, Cases per US State, Dates` | 
-| **Attributes:**  | Column: States.State<br/> Measure: Cases per US State.Full vaccinations per hundred<br/> Measure: Cases per US State.Change from 12/27<br/> Column: Dates.Start of week<br/> Measure: Cases per US State.% Fully Vacc'd | 
+| **Attributes:**  | Column: `States.State`<br/> Measure: `Cases per US State.Full vaccinations per hundred`<br/> Measure: `Cases per US State.Change from 12/27`<br/> Column: `Dates.Start of week`<br/> Measure: `Cases per US State.% Fully Vacc'd` | 
 
 [Up](#report-sections)
 
@@ -170,7 +170,7 @@
 | **Name:** | `c9b375b77ee90a500d9d` |
 | **Type:** | `tableEx` |
 | **Business objects:**  | `Cases per US State, States` | 
-| **Attributes:**  | Column: States.State<br/> Column: States.Flag<br/> Measure: Cases per US State.% Fully Vacc'd<br/> Measure: Cases per US State.% One+ Shots | 
+| **Attributes:**  | Column: `States.State`<br/> Column: `States.Flag`<br/> Measure: `Cases per US State.% Fully Vacc'd`<br/> Measure: `Cases per US State.% One+ Shots` | 
 
 [Up](#report-sections)
 
@@ -281,7 +281,7 @@
 | **Name:** | `ff141d62080ee0093753` |
 | **Type:** | `tableEx` |
 | **Business objects:**  | `Cases per US State, States` | 
-| **Attributes:**  | Column: States.State<br/> Column: States.Flag<br/> Aggregation: Avg(States.Average Temperature )<br/> Measure: Cases per US State.% Fully Vacc'd | 
+| **Attributes:**  | Column: `States.State`<br/> Column: `States.Flag`<br/> Aggregation: `Avg(States.Average Temperature )`<br/> Measure: `Cases per US State.% Fully Vacc'd` | 
 
 [Up](#report-sections)
 
@@ -295,7 +295,7 @@
 | **Name:** | `fd55bac8bed0e0839138` |
 | **Type:** | `lineStackedColumnComboChart` |
 | **Business objects:**  | `States, Dates, Cases per US State` | 
-| **Attributes:**  | Column: Dates.Date<br/> Measure: Cases per US State.Cases per million 7d avg<br/> Measure: Cases per US State.Full vaccinations per hundred<br/> Column: States.State (by cases)<br/> Measure: Cases per US State.Daily Change US (for formatting) | 
+| **Attributes:**  | Column: `Dates.Date`<br/> Measure: `Cases per US State.Cases per million 7d avg`<br/> Measure: `Cases per US State.Full vaccinations per hundred`<br/> Column: `States.State (by cases)`<br/> Measure: `Cases per US State.Daily Change US (for formatting)` | 
 
 [Up](#report-sections)
 
@@ -309,7 +309,7 @@
 | **Name:** | `0162742b4a9ea636b1aa` |
 | **Type:** | `shapeMap` |
 | **Business objects:**  | `States` | 
-| **Attributes:**  | Column: States.State<br/> Aggregation: CountNonNull(States.Average Temperature ) | 
+| **Attributes:**  | Column: `States.State`<br/> Aggregation: `CountNonNull(States.Average Temperature )` | 
 
 [Up](#report-sections)
 
@@ -505,7 +505,7 @@
 | **Name:** | `68100741a5d1174e79be` |
 | **Type:** | `lineStackedColumnComboChart` |
 | **Business objects:**  | `Dates, Cases per US State, States` | 
-| **Attributes:**  | Column: Dates.Date<br/> Measure: Cases per US State.Cases per million 7d avg<br/> Measure: Cases per US State.Full vaccinations per hundred<br/> GroupRef: States.March Temperatures | 
+| **Attributes:**  | Column: `Dates.Date`<br/> Measure: `Cases per US State.Cases per million 7d avg`<br/> Measure: `Cases per US State.Full vaccinations per hundred`<br/> GroupRef: `States.March Temperatures` | 
 
 [Up](#report-sections)
 
@@ -587,7 +587,7 @@
 | **Name:** | `3fac96590354093397a3` |
 | **Type:** | `lineChart` |
 | **Business objects:**  | `Cases per US State, Dates` | 
-| **Attributes:**  | Column: Dates.Date<br/> Aggregation: Sum(Cases per US State.distributed_per_hundred) | 
+| **Attributes:**  | Column: `Dates.Date`<br/> Aggregation: `Sum(Cases per US State.distributed_per_hundred)` | 
 
 [Up](#report-sections)
 
@@ -601,7 +601,7 @@
 | **Name:** | `eea85a81620bbc38e636` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `States, Cases per US State` | 
-| **Attributes:**  | Column: States.State<br/> Measure: Cases per US State.Vaccines distributed | 
+| **Attributes:**  | Column: `States.State`<br/> Measure: `Cases per US State.Vaccines distributed` | 
 
 [Up](#report-sections)
 
@@ -782,7 +782,7 @@
 | **Name:** | `c730b80a021077ea39c0` |
 | **Type:** | `lineChart` |
 | **Business objects:**  | `Dates, Cases per US State` | 
-| **Attributes:**  | Column: Dates.Date<br/> Aggregation: Sum(Cases per US State.Incremental cases) | 
+| **Attributes:**  | Column: `Dates.Date`<br/> Aggregation: `Sum(Cases per US State.Incremental cases)` | 
 
 [Up](#report-sections)
 
@@ -796,7 +796,7 @@
 | **Name:** | `3fac96590354093397a3` |
 | **Type:** | `lineChart` |
 | **Business objects:**  | `Cases per US State, Dates` | 
-| **Attributes:**  | Column: Dates.Date<br/> Aggregation: Sum(Cases per US State.distributed_per_hundred) | 
+| **Attributes:**  | Column: `Dates.Date`<br/> Aggregation: `Sum(Cases per US State.distributed_per_hundred)` | 
 
 [Up](#report-sections)
 
@@ -810,7 +810,7 @@
 | **Name:** | `f85a91f1b042b0069d6d` |
 | **Type:** | `map` |
 | **Business objects:**  | `States, Cases per US State` | 
-| **Attributes:**  | Column: States.State<br/> Aggregation: Sum(Cases per US State.Incremental cases) | 
+| **Attributes:**  | Column: `States.State`<br/> Aggregation: `Sum(Cases per US State.Incremental cases)` | 
 
 [Up](#report-sections)
 
@@ -824,7 +824,7 @@
 | **Name:** | `eea85a81620bbc38e636` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `States, Cases per US State` | 
-| **Attributes:**  | Column: States.State<br/> Measure: Cases per US State.Vaccines distributed | 
+| **Attributes:**  | Column: `States.State`<br/> Measure: `Cases per US State.Vaccines distributed` | 
 
 [Up](#report-sections)
 
@@ -963,7 +963,7 @@
 | **Name:** | `a4882d869e5c72190851` |
 | **Type:** | `ImageGrid_FC5183B9_926C_45E0_B5F7_0CE9EAF1DA9B` |
 | **Business objects:**  | `Countries` | 
-| **Attributes:**  | Column: Countries.Flag | 
+| **Attributes:**  | Column: `Countries.Flag` | 
 
 [Up](#report-sections)
 
@@ -977,7 +977,7 @@
 | **Name:** | `1054214624737ba82845` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `OWID COVID data, Countries` | 
-| **Attributes:**  | Column: Countries.Continent<br/> Measure: owid-covid-data.Total cases per mil | 
+| **Attributes:**  | Column: `Countries.Continent`<br/> Measure: `owid-covid-data.Total cases per mil` | 
 
 [Up](#report-sections)
 
@@ -1074,7 +1074,7 @@
 | **Name:** | `6a7d746ecee71d10922e` |
 | **Type:** | `decompositionTreeVisual` |
 | **Business objects:**  | `Countries, Days with restrictions grouped` | 
-| **Attributes:**  | Column: Countries.Custom<br/> Column: Days with restrictions grouped.Cancelling public events<br/> Column: Days with restrictions grouped.Face coverings required<br/> Column: Days with restrictions grouped.International travel controls<br/> Column: Days with restrictions grouped.Public transport closures<br/> Column: Days with restrictions grouped.Stay at home requirements<br/> Column: Days with restrictions grouped.Workplace closures<br/> Measure: Countries.GDP % chg 2020<br/> Column: Days with restrictions grouped.Domestic travel restrictions<br/> Column: Days with restrictions grouped.Restrictions on gathering<br/> Column: Days with restrictions grouped.School closures | 
+| **Attributes:**  | Column: `Countries.Custom`<br/> Column: `Days with restrictions grouped.Cancelling public events`<br/> Column: `Days with restrictions grouped.Face coverings required`<br/> Column: `Days with restrictions grouped.International travel controls`<br/> Column: `Days with restrictions grouped.Public transport closures`<br/> Column: `Days with restrictions grouped.Stay at home requirements`<br/> Column: `Days with restrictions grouped.Workplace closures`<br/> Measure: `Countries.GDP % chg 2020`<br/> Column: `Days with restrictions grouped.Domestic travel restrictions`<br/> Column: `Days with restrictions grouped.Restrictions on gathering`<br/> Column: `Days with restrictions grouped.School closures` | 
 
 [Up](#report-sections)
 
@@ -1088,7 +1088,7 @@
 | **Name:** | `7507a59db08eb2d58b93` |
 | **Type:** | `tableEx` |
 | **Business objects:**  | `Countries` | 
-| **Attributes:**  | Column: Countries.FlagURL<br/> Column: Countries.COUNTRY<br/> Measure: Countries.GDP % chg 2020<br/> Measure: Countries.GDP Chg | 
+| **Attributes:**  | Column: `Countries.FlagURL`<br/> Column: `Countries.COUNTRY`<br/> Measure: `Countries.GDP % chg 2020`<br/> Measure: `Countries.GDP Chg` | 
 
 [Up](#report-sections)
 
@@ -1116,7 +1116,7 @@
 | **Name:** | `1ddf294d2d54909ec333` |
 | **Type:** | `columnChart` |
 | **Business objects:**  | `Dates, OWID COVID data` | 
-| **Attributes:**  | Column: Dates.Date<br/> Measure: OWID COVID data.Cases 7d Avg per country | 
+| **Attributes:**  | Column: `Dates.Date`<br/> Measure: `OWID COVID data.Cases 7d Avg per country` | 
 
 [Up](#report-sections)
 
@@ -1199,7 +1199,7 @@
 | **Name:** | `3968ccbce331cc920617` |
 | **Type:** | `clusteredColumnChart` |
 | **Business objects:**  | `Countries` | 
-| **Attributes:**  | Aggregation: Sum(Countries.Population) | 
+| **Attributes:**  | Aggregation: `Sum(Countries.Population)` | 
 
 [Up](#report-sections)
 
@@ -1211,5 +1211,5 @@
 
 ----
 <p align="center">
-Generated at 27.03.2024 12:50:20 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 13:01:37 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

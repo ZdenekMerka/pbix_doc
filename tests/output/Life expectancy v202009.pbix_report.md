@@ -31,7 +31,7 @@
 | **Name:** | `df8451c4c46f34b97dcf` |
 | **Type:** | `shapeMap` |
 | **Business objects:**  | `life_expectancy_years, Country, Metrics` | 
-| **Attributes:**  | Column: Country.Country Code<br/> Aggregation: Min(Country.Country)<br/> Measure: Metrics.Life Expectancy | 
+| **Attributes:**  | Column: `Country.Country Code`<br/> Aggregation: `Min(Country.Country)`<br/> Measure: `Metrics.Life Expectancy` | 
 
 [Up](#report-sections)
 
@@ -45,7 +45,7 @@
 | **Name:** | `60ad1a6cbc2a1aab0cd4` |
 | **Type:** | `slicer` |
 | **Business objects:**  | `Years` | 
-| **Attributes:**  | Column: Years.Years | 
+| **Attributes:**  | Column: `Years.Years` | 
 
 [Up](#report-sections)
 
@@ -59,7 +59,7 @@
 | **Name:** | `95dab029e45250390896` |
 | **Type:** | `columnChart` |
 | **Business objects:**  | `Metrics, Extra Year` | 
-| **Attributes:**  | Column: Extra Year.Extra year<br/> Measure: Metrics.Life Expectancy For Chart | 
+| **Attributes:**  | Column: `Extra Year.Extra year`<br/> Measure: `Metrics.Life Expectancy For Chart` | 
 
 [Up](#report-sections)
 
@@ -73,7 +73,7 @@
 | **Name:** | `64e8a0b80ae9323e10fe` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Legend` | 
-| **Attributes:**  | Aggregation: Sum(Legend.Bubble01)<br/> Aggregation: Sum(Legend.Bubble02)<br/> Aggregation: Sum(Legend.Bubble03)<br/> Aggregation: Sum(Legend.Bubble04)<br/> Aggregation: Sum(Legend.Bubble05)<br/> Column: Legend.Metric | 
+| **Attributes:**  | Aggregation: `Sum(Legend.Bubble01)`<br/> Aggregation: `Sum(Legend.Bubble02)`<br/> Aggregation: `Sum(Legend.Bubble03)`<br/> Aggregation: `Sum(Legend.Bubble04)`<br/> Aggregation: `Sum(Legend.Bubble05)`<br/> Column: `Legend.Metric` | 
 
 [Up](#report-sections)
 
@@ -87,7 +87,7 @@
 | **Name:** | `d4d069eaeabe387e1830` |
 | **Type:** | `treemap` |
 | **Business objects:**  | `Population, Country, Buckets, Metrics` | 
-| **Attributes:**  | Aggregation: Sum(Population.Population)<br/> Column: Country.Country Code<br/> Measure: Metrics.Life Expectancy<br/> Column: Buckets.Bucket<br/> Aggregation: Min(Country.Country) | 
+| **Attributes:**  | Aggregation: `Sum(Population.Population)`<br/> Column: `Country.Country Code`<br/> Measure: `Metrics.Life Expectancy`<br/> Column: `Buckets.Bucket`<br/> Aggregation: `Min(Country.Country)` | 
 
 [Up](#report-sections)
 
@@ -101,7 +101,7 @@
 | **Name:** | `6ca4a836ba33a9971a5d` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `Buckets, Indicators` | 
-| **Attributes:**  | Column: Buckets.Bucket<br/> Aggregation: CountNonNull(healthappended.Country) | 
+| **Attributes:**  | Column: `Buckets.Bucket`<br/> Aggregation: `CountNonNull(healthappended.Country)` | 
 
 [Up](#report-sections)
 
@@ -199,7 +199,7 @@
 | **Name:** | `df52ad9be48697dc54e0` |
 | **Type:** | `card` |
 | **Business objects:**  | `Metrics` | 
-| **Attributes:**  | Measure: Metrics.Life Expectancy | 
+| **Attributes:**  | Measure: `Metrics.Life Expectancy` | 
 
 [Up](#report-sections)
 
@@ -324,7 +324,7 @@
 | **Name:** | `06b0d57417f0ab72c8fc` |
 | **Type:** | `scatterChart` |
 | **Business objects:**  | `Country, Population, Metrics, Year` | 
-| **Attributes:**  | Column: Country.Country<br/> Aggregation: Sum(Population.Population)<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.Child Mortality Rate<br/> Column: Country.Country Code<br/> Column: Year.Year<br/> Aggregation: Min(Country.Country) | 
+| **Attributes:**  | Column: `Country.Country`<br/> Aggregation: `Sum(Population.Population)`<br/> Measure: `Metrics.Life Expectancy`<br/> Measure: `Metrics.Child Mortality Rate`<br/> Column: `Country.Country Code`<br/> Column: `Year.Year`<br/> Aggregation: `Min(Country.Country)` | 
 
 [Up](#report-sections)
 
@@ -338,7 +338,7 @@
 | **Name:** | `f300565a41c419ab7749` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GDP Per Capita (USD)`<br/> Measure: `Metrics.GDP Red` | 
 
 [Up](#report-sections)
 
@@ -352,7 +352,7 @@
 | **Name:** | `8c2291cf00f8e997ef23` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GEH Goal`<br/> Measure: `Metrics.Goverment Expenditure on Health (%)` | 
 
 [Up](#report-sections)
 
@@ -366,7 +366,7 @@
 | **Name:** | `39767e40110edf6d6b66` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Immunizations`<br/> Measure: `Metrics.IMM Red` | 
 
 [Up](#report-sections)
 
@@ -380,7 +380,7 @@
 | **Name:** | `8ce76a6c7491357aa440` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Cholera Fatality Rate (%) | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.CFR Red`<br/> Measure: `Metrics.Cholera Fatality Rate (%)` | 
 
 [Up](#report-sections)
 
@@ -394,7 +394,7 @@
 | **Name:** | `32200cdbe47612c0dcd2` |
 | **Type:** | `tableEx` |
 | **Business objects:**  | `Country` | 
-| **Attributes:**  | Column: Country.Country | 
+| **Attributes:**  | Column: `Country.Country` | 
 
 [Up](#report-sections)
 
@@ -422,7 +422,7 @@
 | **Name:** | `c602df1209ee0829f9ce` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `Buckets, Metrics` | 
-| **Attributes:**  | Column: Buckets.Bucket<br/> Measure: Metrics.CLE | 
+| **Attributes:**  | Column: `Buckets.Bucket`<br/> Measure: `Metrics.CLE` | 
 
 [Up](#report-sections)
 
@@ -478,7 +478,7 @@
 | **Name:** | `44d2a56c9f4b03e69d25` |
 | **Type:** | `textFilter25A4896A83E0487089E2B90C9AE57C8A` |
 | **Business objects:**  | `Country` | 
-| **Attributes:**  | Column: Country.Country | 
+| **Attributes:**  | Column: `Country.Country` | 
 
 [Up](#report-sections)
 
@@ -701,7 +701,7 @@
 | **Name:** | `855201fbc25b1da8d08e` |
 | **Type:** | `textFilter25A4896A83E0487089E2B90C9AE57C8A` |
 | **Business objects:**  | `Country` | 
-| **Attributes:**  | Column: Country.Country | 
+| **Attributes:**  | Column: `Country.Country` | 
 
 [Up](#report-sections)
 
@@ -715,7 +715,7 @@
 | **Name:** | `8f92a8b0035b98603e84` |
 | **Type:** | `lineChart` |
 | **Business objects:**  | `Year, Metrics` | 
-| **Attributes:**  | Column: Year.Year<br/> Measure: Metrics.Life Expectancy 2 | 
+| **Attributes:**  | Column: `Year.Year`<br/> Measure: `Metrics.Life Expectancy 2` | 
 
 [Up](#report-sections)
 
@@ -729,7 +729,7 @@
 | **Name:** | `483d3d92bb067605e03d` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `Sex, Metrics` | 
-| **Attributes:**  | Column: Sex.Sex<br/> Measure: Metrics.LE-100<br/> Measure: Metrics.Life Expectancy 2 | 
+| **Attributes:**  | Column: `Sex.Sex`<br/> Measure: `Metrics.LE-100`<br/> Measure: `Metrics.Life Expectancy 2` | 
 
 [Up](#report-sections)
 
@@ -743,7 +743,7 @@
 | **Name:** | `1c0a2af96d0960019b6a` |
 | **Type:** | `keyDriversVisual` |
 | **Business objects:**  | `Indicators` | 
-| **Attributes:**  | Measure: Indicators.Life expectancy<br/> Column: Indicators.Female pupils below minimum reading proficiency at end of primary (%)<br/> Column: Indicators.GDP per capita (US $)<br/> Column: Indicators.Net national income per capita<br/> Column: Indicators.People using safely managed drinking water services (% of population)<br/> Column: Indicators.Percentage of female population with no education<br/> Column: Indicators.Safe drinking water services (% of population)<br/> Column: Indicators.Year | 
+| **Attributes:**  | Measure: `Indicators.Life expectancy`<br/> Column: `Indicators.Female pupils below minimum reading proficiency at end of primary (%)`<br/> Column: `Indicators.GDP per capita (US $)`<br/> Column: `Indicators.Net national income per capita`<br/> Column: `Indicators.People using safely managed drinking water services (% of population)`<br/> Column: `Indicators.Percentage of female population with no education`<br/> Column: `Indicators.Safe drinking water services (% of population)`<br/> Column: `Indicators.Year` | 
 
 [Up](#report-sections)
 
@@ -770,7 +770,7 @@
 | **Name:** | `e1b47e6c5f5a6d3d9ed1` |
 | **Type:** | `decompositionTreeVisual` |
 | **Business objects:**  | `Metrics, Variance Analysis, Country` | 
-| **Attributes:**  | Measure: Metrics.Life Expectancy YoY% 2<br/> Column: Variance Analysis.GDP per capita<br/> Column: Variance Analysis.Maternal Mortality<br/> Column: Variance Analysis.Tuberculosis Incidents<br/> Column: Variance Analysis.Neonatal Mortality<br/> Column: Variance Analysis.Malaria Cases<br/> Column: Country.Continent | 
+| **Attributes:**  | Measure: `Metrics.Life Expectancy YoY% 2`<br/> Column: `Variance Analysis.GDP per capita`<br/> Column: `Variance Analysis.Maternal Mortality`<br/> Column: `Variance Analysis.Tuberculosis Incidents`<br/> Column: `Variance Analysis.Neonatal Mortality`<br/> Column: `Variance Analysis.Malaria Cases`<br/> Column: `Country.Continent` | 
 
 [Up](#report-sections)
 
@@ -784,7 +784,7 @@
 | **Name:** | `b4d8552348b0a83a9b80` |
 | **Type:** | `CardBrowser8D7CFFDA2E7E400C9474F41B9EDBBA58` |
 | **Business objects:**  | `Flags, Country` | 
-| **Attributes:**  | Column: Flags.Country<br/> Column: Flags.ImageURL<br/> Aggregation: Min(Country.Region) | 
+| **Attributes:**  | Column: `Flags.Country`<br/> Column: `Flags.ImageURL`<br/> Aggregation: `Min(Country.Region)` | 
 
 [Up](#report-sections)
 
@@ -1021,7 +1021,7 @@
 | **Name:** | `c103b08eacb73e7338a7` |
 | **Type:** | `scatterChart` |
 | **Business objects:**  | `Metrics, Country, Population` | 
-| **Attributes:**  | Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.Life Expectancy 2<br/> Column: Country.Country<br/> Column: Country.Region<br/> Aggregation: Sum(Population.Population) | 
+| **Attributes:**  | Measure: `Metrics.GDP Per Capita (USD)`<br/> Measure: `Metrics.Life Expectancy 2`<br/> Column: `Country.Country`<br/> Column: `Country.Region`<br/> Aggregation: `Sum(Population.Population)` | 
 
 [Up](#report-sections)
 
@@ -1035,7 +1035,7 @@
 | **Name:** | `d9226e2da6780008095a` |
 | **Type:** | `areaChart` |
 | **Business objects:**  | `Year, Metrics, Country` | 
-| **Attributes:**  | HierarchyLevel: Year.Date.Variation.Date Hierarchy.Year<br/> HierarchyLevel: Year.Date.Variation.Date Hierarchy.Quarter<br/> HierarchyLevel: Year.Date.Variation.Date Hierarchy.Month<br/> HierarchyLevel: Year.Date.Variation.Date Hierarchy.Day<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Column: Country.Continent | 
+| **Attributes:**  | HierarchyLevel: `Year.Date.Variation.Date Hierarchy.Year`<br/> HierarchyLevel: `Year.Date.Variation.Date Hierarchy.Quarter`<br/> HierarchyLevel: `Year.Date.Variation.Date Hierarchy.Month`<br/> HierarchyLevel: `Year.Date.Variation.Date Hierarchy.Day`<br/> Measure: `Metrics.GDP Per Capita (USD)`<br/> Column: `Country.Continent` | 
 
 [Up](#report-sections)
 
@@ -1049,7 +1049,7 @@
 | **Name:** | `6eedbc64bc4400d0309a` |
 | **Type:** | `clusteredBarChart` |
 | **Business objects:**  | `Metrics, Country` | 
-| **Attributes:**  | Measure: Metrics.GDP Per Capita (USD)<br/> Column: Country.Country<br/> Column: Country.Continent | 
+| **Attributes:**  | Measure: `Metrics.GDP Per Capita (USD)`<br/> Column: `Country.Country`<br/> Column: `Country.Continent` | 
 
 [Up](#report-sections)
 
@@ -1104,7 +1104,7 @@
 | **Name:** | `30c22cde244e8c5d29a9` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.LE-Goal | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Life Expectancy`<br/> Measure: `Metrics.LE-Goal` | 
 
 [Up](#report-sections)
 
@@ -1118,7 +1118,7 @@
 | **Name:** | `71694abd09640a8dc50f` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GEH Goal`<br/> Measure: `Metrics.Goverment Expenditure on Health (%)` | 
 
 [Up](#report-sections)
 
@@ -1132,7 +1132,7 @@
 | **Name:** | `2c56081e1b496591b6bd` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Immunizations`<br/> Measure: `Metrics.IMM Red` | 
 
 [Up](#report-sections)
 
@@ -1146,7 +1146,7 @@
 | **Name:** | `8742b121c06f42395718` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Child Mortality Rate | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.CFR Red`<br/> Measure: `Metrics.Child Mortality Rate` | 
 
 [Up](#report-sections)
 
@@ -1160,7 +1160,7 @@
 | **Name:** | `e0506c325848dc316dec` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GDP Per Capita (USD)`<br/> Measure: `Metrics.GDP Red` | 
 
 [Up](#report-sections)
 
@@ -1174,7 +1174,7 @@
 | **Name:** | `3822012e5329eecd6c16` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.LE-Goal | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Life Expectancy`<br/> Measure: `Metrics.LE-Goal` | 
 
 [Up](#report-sections)
 
@@ -1188,7 +1188,7 @@
 | **Name:** | `9bfcce77ead1838036e3` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GDP Per Capita (USD)`<br/> Measure: `Metrics.GDP Red` | 
 
 [Up](#report-sections)
 
@@ -1202,7 +1202,7 @@
 | **Name:** | `ac40c208d7c7402f30e2` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GEH Goal`<br/> Measure: `Metrics.Goverment Expenditure on Health (%)` | 
 
 [Up](#report-sections)
 
@@ -1216,7 +1216,7 @@
 | **Name:** | `094553561fed06ee3415` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Immunizations`<br/> Measure: `Metrics.IMM Red` | 
 
 [Up](#report-sections)
 
@@ -1230,7 +1230,7 @@
 | **Name:** | `5c78314bee97d0a0bdb7` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Child Mortality Rate | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.CFR Red`<br/> Measure: `Metrics.Child Mortality Rate` | 
 
 [Up](#report-sections)
 
@@ -1244,7 +1244,7 @@
 | **Name:** | `5befa2c3be43ac844468` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.LE-Goal | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Life Expectancy`<br/> Measure: `Metrics.LE-Goal` | 
 
 [Up](#report-sections)
 
@@ -1258,7 +1258,7 @@
 | **Name:** | `2a4d02ece2aa6626e6d9` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GDP Per Capita (USD)`<br/> Measure: `Metrics.GDP Red` | 
 
 [Up](#report-sections)
 
@@ -1272,7 +1272,7 @@
 | **Name:** | `c8295edcfb9fe353ed42` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GEH Goal`<br/> Measure: `Metrics.Goverment Expenditure on Health (%)` | 
 
 [Up](#report-sections)
 
@@ -1286,7 +1286,7 @@
 | **Name:** | `55aace4b670eda42ab6f` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Immunizations`<br/> Measure: `Metrics.IMM Red` | 
 
 [Up](#report-sections)
 
@@ -1300,7 +1300,7 @@
 | **Name:** | `c2f1b126f4511a330ba3` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Child Mortality Rate | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.CFR Red`<br/> Measure: `Metrics.Child Mortality Rate` | 
 
 [Up](#report-sections)
 
@@ -1314,7 +1314,7 @@
 | **Name:** | `649bb133dc2ca6d8d858` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.LE-Goal | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Life Expectancy`<br/> Measure: `Metrics.LE-Goal` | 
 
 [Up](#report-sections)
 
@@ -1328,7 +1328,7 @@
 | **Name:** | `062da38267256450df5e` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GDP Per Capita (USD)`<br/> Measure: `Metrics.GDP Red` | 
 
 [Up](#report-sections)
 
@@ -1342,7 +1342,7 @@
 | **Name:** | `62dd84a6a714f4eafe26` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GEH Goal`<br/> Measure: `Metrics.Goverment Expenditure on Health (%)` | 
 
 [Up](#report-sections)
 
@@ -1356,7 +1356,7 @@
 | **Name:** | `a27d889f8e7df0331d6b` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Immunizations`<br/> Measure: `Metrics.IMM Red` | 
 
 [Up](#report-sections)
 
@@ -1370,7 +1370,7 @@
 | **Name:** | `a313db85cde7579f35b0` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Child Mortality Rate | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.CFR Red`<br/> Measure: `Metrics.Child Mortality Rate` | 
 
 [Up](#report-sections)
 
@@ -1384,7 +1384,7 @@
 | **Name:** | `16d7182a26b66268fe91` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Life Expectancy<br/> Measure: Metrics.LE-Goal | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Life Expectancy`<br/> Measure: `Metrics.LE-Goal` | 
 
 [Up](#report-sections)
 
@@ -1398,7 +1398,7 @@
 | **Name:** | `5a467da711991f636fef` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GDP Per Capita (USD)<br/> Measure: Metrics.GDP Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GDP Per Capita (USD)`<br/> Measure: `Metrics.GDP Red` | 
 
 [Up](#report-sections)
 
@@ -1412,7 +1412,7 @@
 | **Name:** | `b92502163d522f9c342a` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.GEH Goal<br/> Measure: Metrics.Goverment Expenditure on Health (%) | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.GEH Goal`<br/> Measure: `Metrics.Goverment Expenditure on Health (%)` | 
 
 [Up](#report-sections)
 
@@ -1426,7 +1426,7 @@
 | **Name:** | `51073d4eec9e1d365d0f` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.Immunizations<br/> Measure: Metrics.IMM Red | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.Immunizations`<br/> Measure: `Metrics.IMM Red` | 
 
 [Up](#report-sections)
 
@@ -1440,7 +1440,7 @@
 | **Name:** | `6ae83d1eea71adb2761f` |
 | **Type:** | `kpi` |
 | **Business objects:**  | `Metrics, Years` | 
-| **Attributes:**  | Column: Years.Years<br/> Measure: Metrics.CFR Red<br/> Measure: Metrics.Child Mortality Rate | 
+| **Attributes:**  | Column: `Years.Years`<br/> Measure: `Metrics.CFR Red`<br/> Measure: `Metrics.Child Mortality Rate` | 
 
 [Up](#report-sections)
 
@@ -1607,7 +1607,7 @@
 | **Name:** | `9d9a56640e625aa0e399` |
 | **Type:** | `gauge` |
 | **Business objects:**  | `Metrics` | 
-| **Attributes:**  | Measure: Metrics.Life Expectancy | 
+| **Attributes:**  | Measure: `Metrics.Life Expectancy` | 
 
 [Up](#report-sections)
 
@@ -1635,7 +1635,7 @@
 | **Name:** | `4f0e2a2dad7a1d17787e` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Country` | 
-| **Attributes:**  | Column: Country.World<br/> Aggregation: Min(Country.Country) | 
+| **Attributes:**  | Column: `Country.World`<br/> Aggregation: `Min(Country.Country)` | 
 
 [Up](#report-sections)
 
@@ -1691,7 +1691,7 @@
 | **Name:** | `3b915f38dde73360b050` |
 | **Type:** | `gauge` |
 | **Business objects:**  | `Metrics` | 
-| **Attributes:**  | Measure: Metrics.Life Expectancy | 
+| **Attributes:**  | Measure: `Metrics.Life Expectancy` | 
 
 [Up](#report-sections)
 
@@ -1705,7 +1705,7 @@
 | **Name:** | `88a38374c70ee606b076` |
 | **Type:** | `card` |
 | **Business objects:**  | `Metrics` | 
-| **Attributes:**  | Measure: Metrics.Life Expectancy | 
+| **Attributes:**  | Measure: `Metrics.Life Expectancy` | 
 
 [Up](#report-sections)
 
@@ -1719,7 +1719,7 @@
 | **Name:** | `58bb16bd0002003eb00d` |
 | **Type:** | `card` |
 | **Business objects:**  | `Metrics` | 
-| **Attributes:**  | Measure: Metrics.Life Expectancy | 
+| **Attributes:**  | Measure: `Metrics.Life Expectancy` | 
 
 [Up](#report-sections)
 
@@ -1912,5 +1912,5 @@
 
 ----
 <p align="center">
-Generated at 27.03.2024 12:50:19 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 13:01:36 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

@@ -34,7 +34,7 @@ def get_visual_config_info(config):
             keys.remove("Name")
             first_key = keys[0]
             #selected_items.append({'name':name, 'type':first_key})
-            selected_items.append(f"{first_key}: {name}")
+            selected_items.append(f"{first_key}: `{name}`")
 
 
         # Add the parsed visualization to the list for this section.

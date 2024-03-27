@@ -86,7 +86,7 @@
 | **Name:** | `VisualContainer1` |
 | **Type:** | `lineChart` |
 | **Business objects:**  | `Date, FP, Employee` | 
-| **Attributes:**  | Column: Date.Month<br/> Column: FP.FPDesc<br/> Measure: Employee.New Hires | 
+| **Attributes:**  | Column: `Date.Month`<br/> Column: `FP.FPDesc`<br/> Measure: `Employee.New Hires` | 
 
 [Up](#report-sections)
 
@@ -100,7 +100,7 @@
 | **Name:** | `VisualContainer2` |
 | **Type:** | `lineClusteredColumnComboChart` |
 | **Business objects:**  | `Date, Employee` | 
-| **Attributes:**  | Column: select<br/> Measure: Employee.New Hires<br/> Measure: Employee.New Hires SPLY<br/> Measure: Employee.Actives YoY % Change | 
+| **Attributes:**  | Column: `select`<br/> Measure: `Employee.New Hires`<br/> Measure: `Employee.New Hires SPLY`<br/> Measure: `Employee.Actives YoY % Change` | 
 
 [Up](#report-sections)
 
@@ -114,7 +114,7 @@
 | **Name:** | `VisualContainer3` |
 | **Type:** | `pieChart` |
 | **Business objects:**  | `Gender, Employee` | 
-| **Attributes:**  | Column: select<br/> Measure: select1 | 
+| **Attributes:**  | Column: `select`<br/> Measure: `select1` | 
 
 [Up](#report-sections)
 
@@ -128,7 +128,7 @@
 | **Name:** | `VisualContainer4` |
 | **Type:** | `waterfallChart` |
 | **Business objects:**  | `AgeGroup, Employee` | 
-| **Attributes:**  | Column: AgeGroup.AgeGroup<br/> Measure: Employee.New Hires | 
+| **Attributes:**  | Column: `AgeGroup.AgeGroup`<br/> Measure: `Employee.New Hires` | 
 
 [Up](#report-sections)
 
@@ -156,7 +156,7 @@
 | **Name:** | `VisualContainer6` |
 | **Type:** | `lineStackedColumnComboChart` |
 | **Business objects:**  | `BU, Ethnicity, Employee` | 
-| **Attributes:**  | Column: select<br/> Column: select1<br/> Column: Ethnicity.Ethnicity<br/> Measure: Employee.New Hires<br/> Measure: Employee.Actives | 
+| **Attributes:**  | Column: `select`<br/> Column: `select1`<br/> Column: `Ethnicity.Ethnicity`<br/> Measure: `Employee.New Hires`<br/> Measure: `Employee.Actives` | 
 
 [Up](#report-sections)
 
@@ -225,7 +225,7 @@
 | **Name:** | `VisualContainer1` |
 | **Type:** | `lineClusteredColumnComboChart` |
 | **Business objects:**  | `Date, BU, Employee` | 
-| **Attributes:**  | Column: select<br/> Column: select1<br/> Column: select2<br/> Measure: Employee.Actives<br/> Measure: Employee.Actives SPLY<br/> Measure: Employee.Seps YoY % Change | 
+| **Attributes:**  | Column: `select`<br/> Column: `select1`<br/> Column: `select2`<br/> Measure: `Employee.Actives`<br/> Measure: `Employee.Actives SPLY`<br/> Measure: `Employee.Seps YoY % Change` | 
 
 [Up](#report-sections)
 
@@ -239,7 +239,7 @@
 | **Name:** | `VisualContainer2` |
 | **Type:** | `pieChart` |
 | **Business objects:**  | `Gender, Employee` | 
-| **Attributes:**  | Column: select<br/> Measure: select1 | 
+| **Attributes:**  | Column: `select`<br/> Measure: `select1` | 
 
 [Up](#report-sections)
 
@@ -253,7 +253,7 @@
 | **Name:** | `VisualContainer3` |
 | **Type:** | `pieChart` |
 | **Business objects:**  | `AgeGroup, Employee` | 
-| **Attributes:**  | Column: select<br/> Measure: select1 | 
+| **Attributes:**  | Column: `select`<br/> Measure: `select1` | 
 
 [Up](#report-sections)
 
@@ -267,7 +267,7 @@
 | **Name:** | `VisualContainer4` |
 | **Type:** | `waterfallChart` |
 | **Business objects:**  | `BU, Employee` | 
-| **Attributes:**  | Column: select<br/> Column: select1<br/> Measure: Employee.Actives YoY Var | 
+| **Attributes:**  | Column: `select`<br/> Column: `select1`<br/> Measure: `Employee.Actives YoY Var` | 
 
 [Up](#report-sections)
 
@@ -295,7 +295,7 @@
 | **Name:** | `VisualContainer6` |
 | **Type:** | `lineClusteredColumnComboChart` |
 | **Business objects:**  | `Date, BU, Employee` | 
-| **Attributes:**  | Column: select<br/> Column: select1<br/> Column: select2<br/> Measure: Employee.Seps<br/> Measure: Employee.Seps SPLY<br/> Measure: Employee.Actives YoY % Change | 
+| **Attributes:**  | Column: `select`<br/> Column: `select1`<br/> Column: `select2`<br/> Measure: `Employee.Seps`<br/> Measure: `Employee.Seps SPLY`<br/> Measure: `Employee.Actives YoY % Change` | 
 
 [Up](#report-sections)
 
@@ -309,7 +309,7 @@
 | **Name:** | `VisualContainer7` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `SeparationReason, Employee` | 
-| **Attributes:**  | Column: select<br/> Measure: select1 | 
+| **Attributes:**  | Column: `select`<br/> Measure: `select1` | 
 
 [Up](#report-sections)
 
@@ -337,7 +337,7 @@
 | **Name:** | `VisualContainer9` |
 | **Type:** | `lineChart` |
 | **Business objects:**  | `Employee, Date` | 
-| **Attributes:**  | Measure: Employee.Seps<br/> Measure: Employee.Seps SPLY<br/> Column: Date.Month | 
+| **Attributes:**  | Measure: `Employee.Seps`<br/> Measure: `Employee.Seps SPLY`<br/> Column: `Date.Month` | 
 
 [Up](#report-sections)
 
@@ -351,7 +351,7 @@
 | **Name:** | `VisualContainer10` |
 | **Type:** | `lineChart` |
 | **Business objects:**  | `Employee, Date` | 
-| **Attributes:**  | Measure: Employee.Seps<br/> Measure: Employee.Seps SPLY<br/> Column: Date.Month | 
+| **Attributes:**  | Measure: `Employee.Seps`<br/> Measure: `Employee.Seps SPLY`<br/> Column: `Date.Month` | 
 
 [Up](#report-sections)
 
@@ -392,7 +392,7 @@
 | **Name:** | `VisualContainer1` |
 | **Type:** | `donutChart` |
 | **Business objects:**  | `Gender, Employee` | 
-| **Attributes:**  | Column: Gender.Gender<br/> Aggregation: Sum(Employee.BadHires) | 
+| **Attributes:**  | Column: `Gender.Gender`<br/> Aggregation: `Sum(Employee.BadHires)` | 
 
 [Up](#report-sections)
 
@@ -406,7 +406,7 @@
 | **Name:** | `VisualContainer2` |
 | **Type:** | `lineChart` |
 | **Business objects:**  | `Date, AgeGroup, Employee` | 
-| **Attributes:**  | Column: select<br/> Column: AgeGroup.AgeGroup<br/> Measure: Employee.Bad Hires YoY % Change | 
+| **Attributes:**  | Column: `select`<br/> Column: `AgeGroup.AgeGroup`<br/> Measure: `Employee.Bad Hires YoY % Change` | 
 
 [Up](#report-sections)
 
@@ -420,7 +420,7 @@
 | **Name:** | `VisualContainer3` |
 | **Type:** | `columnChart` |
 | **Business objects:**  | `BU, Ethnicity, Employee` | 
-| **Attributes:**  | Column: select<br/> Column: select1<br/> Column: select2<br/> Aggregation: select3 | 
+| **Attributes:**  | Column: `select`<br/> Column: `select1`<br/> Column: `select2`<br/> Aggregation: `select3` | 
 
 [Up](#report-sections)
 
@@ -448,7 +448,7 @@
 | **Name:** | `VisualContainer5` |
 | **Type:** | `waterfallChart` |
 | **Business objects:**  | `Employee, AgeGroup` | 
-| **Attributes:**  | Measure: Employee.BadHire%ofActives<br/> Column: AgeGroup.AgeGroup | 
+| **Attributes:**  | Measure: `Employee.BadHire%ofActives`<br/> Column: `AgeGroup.AgeGroup` | 
 
 [Up](#report-sections)
 
@@ -462,7 +462,7 @@
 | **Name:** | `VisualContainer6` |
 | **Type:** | `slicer` |
 | **Business objects:**  | `BU` | 
-| **Attributes:**  | Column: BU.Region | 
+| **Attributes:**  | Column: `BU.Region` | 
 
 [Up](#report-sections)
 
@@ -517,7 +517,7 @@
 | **Name:** | `VisualContainer1` |
 | **Type:** | `slicer` |
 | **Business objects:**  | `BU` | 
-| **Attributes:**  | Column: BU.VP | 
+| **Attributes:**  | Column: `BU.VP` | 
 
 [Up](#report-sections)
 
@@ -531,7 +531,7 @@
 | **Name:** | `VisualContainer2` |
 | **Type:** | `lineChart` |
 | **Business objects:**  | `Date, Employee` | 
-| **Attributes:**  | Column: Date.Month<br/> Measure: Employee.New Hires | 
+| **Attributes:**  | Column: `Date.Month`<br/> Measure: `Employee.New Hires` | 
 
 [Up](#report-sections)
 
@@ -545,7 +545,7 @@
 | **Name:** | `VisualContainer3` |
 | **Type:** | `pieChart` |
 | **Business objects:**  | `Gender, Employee` | 
-| **Attributes:**  | Column: select<br/> Measure: select1 | 
+| **Attributes:**  | Column: `select`<br/> Measure: `select1` | 
 
 [Up](#report-sections)
 
@@ -559,7 +559,7 @@
 | **Name:** | `VisualContainer4` |
 | **Type:** | `pieChart` |
 | **Business objects:**  | `Employee, PayType` | 
-| **Attributes:**  | Measure: select1<br/> Column: PayType.PayType | 
+| **Attributes:**  | Measure: `select1`<br/> Column: `PayType.PayType` | 
 
 [Up](#report-sections)
 
@@ -573,7 +573,7 @@
 | **Name:** | `VisualContainer5` |
 | **Type:** | `clusteredColumnChart` |
 | **Business objects:**  | `Employee, FP, AgeGroup` | 
-| **Attributes:**  | Measure: Employee.New Hires<br/> Column: FP.FPDesc<br/> Column: AgeGroup.AgeGroup | 
+| **Attributes:**  | Measure: `Employee.New Hires`<br/> Column: `FP.FPDesc`<br/> Column: `AgeGroup.AgeGroup` | 
 
 [Up](#report-sections)
 
@@ -585,5 +585,5 @@
 
 ----
 <p align="center">
-Generated at 27.03.2024 12:50:21 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 13:01:38 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

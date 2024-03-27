@@ -72,7 +72,7 @@
 | **Name:** | `94e00a62024369b7a40e` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Details` | 
-| **Attributes:**  | Column: Details.Design Factor<br/> Column: Details.Topic | 
+| **Attributes:**  | Column: `Details.Design Factor`<br/> Column: `Details.Topic` | 
 
 [Up](#report-sections)
 
@@ -184,7 +184,7 @@
 | **Name:** | `5da3c3f81d93a9c81069` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Details` | 
-| **Attributes:**  | Column: Details.Design Factor<br/> Column: Details.Topic | 
+| **Attributes:**  | Column: `Details.Design Factor`<br/> Column: `Details.Topic` | 
 
 [Up](#report-sections)
 
@@ -198,7 +198,7 @@
 | **Name:** | `15c415aa8b6550fb4fb5` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Details` | 
-| **Attributes:**  | Measure: Details.Info Tooltip | 
+| **Attributes:**  | Measure: `Details.Info Tooltip` | 
 
 [Up](#report-sections)
 
@@ -254,7 +254,7 @@
 | **Name:** | `6f5c60443649d316b648` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Details` | 
-| **Attributes:**  | Measure: Details.Info Tooltip 2 | 
+| **Attributes:**  | Measure: `Details.Info Tooltip 2` | 
 
 [Up](#report-sections)
 
@@ -323,7 +323,7 @@
 | **Name:** | `3a28c5fee26bd29ff352` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `Product, Sales` | 
-| **Attributes:**  | Column: Product.Product<br/> Column: Product.Category<br/> Column: Product.Segment<br/> Aggregation: Sum(Sales.Amount) | 
+| **Attributes:**  | Column: `Product.Product`<br/> Column: `Product.Category`<br/> Column: `Product.Segment`<br/> Aggregation: `Sum(Sales.Amount)` | 
 
 [Up](#report-sections)
 
@@ -337,7 +337,7 @@
 | **Name:** | `c22adfcca77c7baf5f51` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.Sales | 
+| **Attributes:**  | Measure: `Analysis DAX.Sales` | 
 
 [Up](#report-sections)
 
@@ -379,7 +379,7 @@
 | **Name:** | `d55aa7aa40745de10d55` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `Store, Sales` | 
-| **Attributes:**  | Column: Store.Manufacturer<br/> Aggregation: Sum(Sales.Amount) | 
+| **Attributes:**  | Column: `Store.Manufacturer`<br/> Aggregation: `Sum(Sales.Amount)` | 
 
 [Up](#report-sections)
 
@@ -449,7 +449,7 @@
 | **Name:** | `449292750b491085de51` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.Units Sold | 
+| **Attributes:**  | Measure: `Analysis DAX.Units Sold` | 
 
 [Up](#report-sections)
 
@@ -589,7 +589,7 @@
 | **Name:** | `aae8953dc19c429add3e` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Analysis DAX, Product` | 
-| **Attributes:**  | Column: Product.Product<br/> Measure: Analysis DAX.Net Sales<br/> Measure: Analysis DAX.Units Sold<br/> Column: Product.Segment | 
+| **Attributes:**  | Column: `Product.Product`<br/> Measure: `Analysis DAX.Net Sales`<br/> Measure: `Analysis DAX.Units Sold`<br/> Column: `Product.Segment` | 
 
 [Up](#report-sections)
 
@@ -645,7 +645,7 @@
 | **Name:** | `7a294bf0290b2a762a23` |
 | **Type:** | `keyDriversVisual` |
 | **Business objects:**  | `Customer` | 
-| **Attributes:**  | Column: Customer.Age<br/> Column: Customer.Price Range<br/> Column: Customer.Promotion<br/> Column: Sum(Customer.Unit)<br/> Column: Customer.Store<br/> Column: Customer.Gender<br/> Column: Customer.Category<br/> Column: Customer.Segment | 
+| **Attributes:**  | Column: `Customer.Age`<br/> Column: `Customer.Price Range`<br/> Column: `Customer.Promotion`<br/> Column: `Sum(Customer.Unit)`<br/> Column: `Customer.Store`<br/> Column: `Customer.Gender`<br/> Column: `Customer.Category`<br/> Column: `Customer.Segment` | 
 
 [Up](#report-sections)
 
@@ -701,7 +701,7 @@
 | **Name:** | `ff684e8bd3052b108d01` |
 | **Type:** | `decompositionTreeVisual` |
 | **Business objects:**  | `Customer` | 
-| **Attributes:**  | Column: Customer.Category<br/> Aggregation: Sum(Customer.Amount)<br/> Column: Customer.Gender<br/> Column: Customer.Store<br/> Column: Customer.Type<br/> Column: Customer.Promotion<br/> Column: Customer.Segment<br/> Column: Customer.Product<br/> Column: Customer.Price Range<br/> Column: Customer.Age | 
+| **Attributes:**  | Column: `Customer.Category`<br/> Aggregation: `Sum(Customer.Amount)`<br/> Column: `Customer.Gender`<br/> Column: `Customer.Store`<br/> Column: `Customer.Type`<br/> Column: `Customer.Promotion`<br/> Column: `Customer.Segment`<br/> Column: `Customer.Product`<br/> Column: `Customer.Price Range`<br/> Column: `Customer.Age` | 
 
 [Up](#report-sections)
 
@@ -757,7 +757,7 @@
 | **Name:** | `2b50de60e6ee0542184b` |
 | **Type:** | `PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C` |
 | **Business objects:**  | `Store, Analysis DAX` | 
-| **Attributes:**  | Column: Store.Latitude<br/> Column: Store.Longitude<br/> Measure: Analysis DAX.Net Sales | 
+| **Attributes:**  | Column: `Store.Latitude`<br/> Column: `Store.Longitude`<br/> Measure: `Analysis DAX.Net Sales` | 
 
 [Up](#report-sections)
 
@@ -771,7 +771,7 @@
 | **Name:** | `327c785bec894bb22e8a` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.Sales | 
+| **Attributes:**  | Measure: `Analysis DAX.Sales` | 
 
 [Up](#report-sections)
 
@@ -785,7 +785,7 @@
 | **Name:** | `fd225c7a3a3a0ea6006c` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.Units Sold | 
+| **Attributes:**  | Measure: `Analysis DAX.Units Sold` | 
 
 [Up](#report-sections)
 
@@ -826,7 +826,7 @@
 | **Name:** | `959bd7e9814a46692ddf` |
 | **Type:** | `qnaVisual` |
 | **Business objects:**  | `Sales` | 
-| **Attributes:**  | Column: Sales.Dates<br/> Column: Sales.Status<br/> Aggregation: Sum(Sales.Amount) | 
+| **Attributes:**  | Column: `Sales.Dates`<br/> Column: `Sales.Status`<br/> Aggregation: `Sum(Sales.Amount)` | 
 
 [Up](#report-sections)
 
@@ -840,7 +840,7 @@
 | **Name:** | `3a28c5fee26bd29ff352` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `Product, Analysis DAX` | 
-| **Attributes:**  | Column: Product.Product<br/> Column: Product.Category<br/> Column: Product.Segment<br/> Measure: Analysis DAX.Returns | 
+| **Attributes:**  | Column: `Product.Product`<br/> Column: `Product.Category`<br/> Column: `Product.Segment`<br/> Measure: `Analysis DAX.Returns` | 
 
 [Up](#report-sections)
 
@@ -854,7 +854,7 @@
 | **Name:** | `c22adfcca77c7baf5f51` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.02 Returns | 
+| **Attributes:**  | Measure: `Analysis DAX.02 Returns` | 
 
 [Up](#report-sections)
 
@@ -896,7 +896,7 @@
 | **Name:** | `d55aa7aa40745de10d55` |
 | **Type:** | `barChart` |
 | **Business objects:**  | `Store, Analysis DAX` | 
-| **Attributes:**  | Column: Store.Manufacturer<br/> Measure: Analysis DAX.Returns | 
+| **Attributes:**  | Column: `Store.Manufacturer`<br/> Measure: `Analysis DAX.Returns` | 
 
 [Up](#report-sections)
 
@@ -966,7 +966,7 @@
 | **Name:** | `449292750b491085de51` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.02 Units Returned | 
+| **Attributes:**  | Measure: `Analysis DAX.02 Units Returned` | 
 
 [Up](#report-sections)
 
@@ -1106,7 +1106,7 @@
 | **Name:** | `aae8953dc19c429add3e` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Analysis DAX, Product` | 
-| **Attributes:**  | Column: Product.Product<br/> Measure: Analysis DAX.02 Returns<br/> Measure: Analysis DAX.02 Units Returned | 
+| **Attributes:**  | Column: `Product.Product`<br/> Measure: `Analysis DAX.02 Returns`<br/> Measure: `Analysis DAX.02 Units Returned` | 
 
 [Up](#report-sections)
 
@@ -1162,7 +1162,7 @@
 | **Name:** | `7a294bf0290b2a762a23` |
 | **Type:** | `keyDriversVisual` |
 | **Business objects:**  | `Customer` | 
-| **Attributes:**  | Column: Customer.Age<br/> Column: Customer.Price Range<br/> Column: Customer.Store<br/> Column: Customer.Category<br/> Column: Customer.Product<br/> Column: Customer.Gender<br/> Column: Customer.Issue | 
+| **Attributes:**  | Column: `Customer.Age`<br/> Column: `Customer.Price Range`<br/> Column: `Customer.Store`<br/> Column: `Customer.Category`<br/> Column: `Customer.Product`<br/> Column: `Customer.Gender`<br/> Column: `Customer.Issue` | 
 
 [Up](#report-sections)
 
@@ -1204,7 +1204,7 @@
 | **Name:** | `ff684e8bd3052b108d01` |
 | **Type:** | `decompositionTreeVisual` |
 | **Business objects:**  | `Customer` | 
-| **Attributes:**  | Aggregation: Sum(Customer.Amount)<br/> Column: Customer.Category<br/> Column: Customer.Product<br/> Column: Customer.Gender<br/> Column: Customer.Age<br/> Column: Customer.Issue<br/> Column: Customer.Store<br/> Column: Customer.Segment<br/> Column: Customer.Type<br/> Column: Customer.Price Range | 
+| **Attributes:**  | Aggregation: `Sum(Customer.Amount)`<br/> Column: `Customer.Category`<br/> Column: `Customer.Product`<br/> Column: `Customer.Gender`<br/> Column: `Customer.Age`<br/> Column: `Customer.Issue`<br/> Column: `Customer.Store`<br/> Column: `Customer.Segment`<br/> Column: `Customer.Type`<br/> Column: `Customer.Price Range` | 
 
 [Up](#report-sections)
 
@@ -1246,7 +1246,7 @@
 | **Name:** | `2b50de60e6ee0542184b` |
 | **Type:** | `PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C` |
 | **Business objects:**  | `Store, Analysis DAX` | 
-| **Attributes:**  | Column: Store.Latitude<br/> Column: Store.Longitude<br/> Aggregation: Min(Store.Manufacturer)<br/> Measure: Analysis DAX.02 Returns | 
+| **Attributes:**  | Column: `Store.Latitude`<br/> Column: `Store.Longitude`<br/> Aggregation: `Min(Store.Manufacturer)`<br/> Measure: `Analysis DAX.02 Returns` | 
 
 [Up](#report-sections)
 
@@ -1288,7 +1288,7 @@
 | **Name:** | `f7d6a1d47a420554ca7c` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.Returns | 
+| **Attributes:**  | Measure: `Analysis DAX.Returns` | 
 
 [Up](#report-sections)
 
@@ -1302,7 +1302,7 @@
 | **Name:** | `c61b21c44b14a094006b` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.Units Returned | 
+| **Attributes:**  | Measure: `Analysis DAX.Units Returned` | 
 
 [Up](#report-sections)
 
@@ -1343,7 +1343,7 @@
 | **Name:** | `b33397810d555ca70a8c` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Analysis DAX, Store, Customer` | 
-| **Attributes:**  | Column: Store.Store<br/> Measure: Analysis DAX.Net Sales<br/> Measure: Analysis DAX.WIF Profit<br/> Column: Customer.Type<br/> Measure: Analysis DAX.WIF Forecast | 
+| **Attributes:**  | Column: `Store.Store`<br/> Measure: `Analysis DAX.Net Sales`<br/> Measure: `Analysis DAX.WIF Profit`<br/> Column: `Customer.Type`<br/> Measure: `Analysis DAX.WIF Forecast` | 
 
 [Up](#report-sections)
 
@@ -1357,7 +1357,7 @@
 | **Name:** | `e5b7b6b90231b41809a1` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.Return Rate | 
+| **Attributes:**  | Measure: `Analysis DAX.Return Rate` | 
 
 [Up](#report-sections)
 
@@ -1371,7 +1371,7 @@
 | **Name:** | `805719ca6000cb000be2` |
 | **Type:** | `lineChart` |
 | **Business objects:**  | `Analysis DAX, Calendar` | 
-| **Attributes:**  | Column: Calendar.Date<br/> Measure: Analysis DAX.WIF Total Forecast | 
+| **Attributes:**  | Column: `Calendar.Date`<br/> Measure: `Analysis DAX.WIF Total Forecast` | 
 
 [Up](#report-sections)
 
@@ -1385,7 +1385,7 @@
 | **Name:** | `0985c85625605520715b` |
 | **Type:** | `simpleImageEBC4593F96F1425FB3D84C5BF02B5075` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Column: Product.Product Image | 
+| **Attributes:**  | Column: `Product.Product Image` | 
 
 [Up](#report-sections)
 
@@ -1399,7 +1399,7 @@
 | **Name:** | `f176d40ee3eb65055e6d` |
 | **Type:** | `multiRowCard` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Column: Product.Category Image | 
+| **Attributes:**  | Column: `Product.Category Image` | 
 
 [Up](#report-sections)
 
@@ -1413,7 +1413,7 @@
 | **Name:** | `70748de9ae05c6029e25` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.WIF Forecast | 
+| **Attributes:**  | Measure: `Analysis DAX.WIF Forecast` | 
 
 [Up](#report-sections)
 
@@ -1427,7 +1427,7 @@
 | **Name:** | `948988db07a4db09d58d` |
 | **Type:** | `columnChart` |
 | **Business objects:**  | `Analysis DAX, Calendar` | 
-| **Attributes:**  | Column: Calendar.Date<br/> Measure: Analysis DAX.Total Return Rate | 
+| **Attributes:**  | Column: `Calendar.Date`<br/> Measure: `Analysis DAX.Total Return Rate` | 
 
 [Up](#report-sections)
 
@@ -1441,7 +1441,7 @@
 | **Name:** | `40b3abf608041d37c3ee` |
 | **Type:** | `slicer` |
 | **Business objects:**  | `% Return Rate` | 
-| **Attributes:**  | Column: % Return Rate.% Return Rate | 
+| **Attributes:**  | Column: `% Return Rate.% Return Rate` | 
 
 [Up](#report-sections)
 
@@ -1553,7 +1553,7 @@
 | **Name:** | `d4d72ae2a051be63470a` |
 | **Type:** | `card` |
 | **Business objects:**  | `Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.WIF Profit | 
+| **Attributes:**  | Measure: `Analysis DAX.WIF Profit` | 
 
 [Up](#report-sections)
 
@@ -1595,7 +1595,7 @@
 | **Name:** | `88ea4b414343a7c04079` |
 | **Type:** | `PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C` |
 | **Business objects:**  | `Store, Analysis DAX` | 
-| **Attributes:**  | Column: Store.Latitude<br/> Column: Store.Longitude<br/> Aggregation: Min(Store.Manufacturer)<br/> Measure: Analysis DAX.WIF Forecast | 
+| **Attributes:**  | Column: `Store.Latitude`<br/> Column: `Store.Longitude`<br/> Aggregation: `Min(Store.Manufacturer)`<br/> Measure: `Analysis DAX.WIF Forecast` | 
 
 [Up](#report-sections)
 
@@ -1609,7 +1609,7 @@
 | **Name:** | `30039fa5b79071ccb4c5` |
 | **Type:** | `columnChart` |
 | **Business objects:**  | `Analysis DAX, Sales` | 
-| **Attributes:**  | Measure: Analysis DAX.WIF Sales<br/> Measure: Analysis DAX.WIF Total Profit<br/> Column: Sales.Date | 
+| **Attributes:**  | Measure: `Analysis DAX.WIF Sales`<br/> Measure: `Analysis DAX.WIF Total Profit`<br/> Column: `Sales.Date` | 
 
 [Up](#report-sections)
 
@@ -1707,7 +1707,7 @@
 | **Name:** | `9edae67a8a333e075c44` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Aggregation: Min(Product.Category) | 
+| **Attributes:**  | Aggregation: `Min(Product.Category)` | 
 
 [Up](#report-sections)
 
@@ -1734,7 +1734,7 @@
 | **Name:** | `5e71aaa61bae010c96e3` |
 | **Type:** | `ClusterMap1652434605854` |
 | **Business objects:**  | `Association, Associated Product` | 
-| **Attributes:**  | Column: Association.RuleID<br/> Aggregation: Sum(Association.Probability)<br/> Column: Associated Product.Product Image<br/> Column: Associated Product.Product<br/> Column: Associated Product.Segment by | 
+| **Attributes:**  | Column: `Association.RuleID`<br/> Aggregation: `Sum(Association.Probability)`<br/> Column: `Associated Product.Product Image`<br/> Column: `Associated Product.Product`<br/> Column: `Associated Product.Segment by` | 
 
 [Up](#report-sections)
 
@@ -1748,7 +1748,7 @@
 | **Name:** | `3ef75ec0c3e4b80d0429` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Aggregation: Min(Product.Category) | 
+| **Attributes:**  | Aggregation: `Min(Product.Category)` | 
 
 [Up](#report-sections)
 
@@ -1762,7 +1762,7 @@
 | **Name:** | `e265978dd0a03145a18d` |
 | **Type:** | `multiRowCard` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Column: Product.Category Image | 
+| **Attributes:**  | Column: `Product.Category Image` | 
 
 [Up](#report-sections)
 
@@ -1776,7 +1776,7 @@
 | **Name:** | `95011f6b74ed02bd0c24` |
 | **Type:** | `simpleImageEBC4593F96F1425FB3D84C5BF02B5075` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Column: Product.Product Image | 
+| **Attributes:**  | Column: `Product.Product Image` | 
 
 [Up](#report-sections)
 
@@ -1846,7 +1846,7 @@
 | **Name:** | `56dcc95a50012c9b0794` |
 | **Type:** | `multiRowCard` |
 | **Business objects:**  | `Associated Product` | 
-| **Attributes:**  | Column: Associated Product.Product | 
+| **Attributes:**  | Column: `Associated Product.Product` | 
 
 [Up](#report-sections)
 
@@ -1860,7 +1860,7 @@
 | **Name:** | `30d9722b0b368409bba8` |
 | **Type:** | `multiRowCard` |
 | **Business objects:**  | `Association` | 
-| **Attributes:**  | Aggregation: Sum(Association.Probability) | 
+| **Attributes:**  | Aggregation: `Sum(Association.Probability)` | 
 
 [Up](#report-sections)
 
@@ -1874,7 +1874,7 @@
 | **Name:** | `20e8dd37cc814d002000` |
 | **Type:** | `multiRowCard` |
 | **Business objects:**  | `Association` | 
-| **Attributes:**  | Aggregation: Sum(Association.Support) | 
+| **Attributes:**  | Aggregation: `Sum(Association.Support)` | 
 
 [Up](#report-sections)
 
@@ -1888,7 +1888,7 @@
 | **Name:** | `734282de33ae50d6d011` |
 | **Type:** | `multiRowCard` |
 | **Business objects:**  | `Design DAX` | 
-| **Attributes:**  | Measure: Design DAX.Lift Label | 
+| **Attributes:**  | Measure: `Design DAX.Lift Label` | 
 
 [Up](#report-sections)
 
@@ -1902,7 +1902,7 @@
 | **Name:** | `fa4c152d20a43240e065` |
 | **Type:** | `pivotTable` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Aggregation: Min(Product.Category)<br/> Aggregation: Min(Product.Segment)<br/> Aggregation: Sum(Product.Price) | 
+| **Attributes:**  | Aggregation: `Min(Product.Category)`<br/> Aggregation: `Min(Product.Segment)`<br/> Aggregation: `Sum(Product.Price)` | 
 
 [Up](#report-sections)
 
@@ -1930,7 +1930,7 @@
 | **Name:** | `fd71685024d3d7546326` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info` | 
-| **Attributes:**  | Column: Tooltip Info.URL | 
+| **Attributes:**  | Column: `Tooltip Info.URL` | 
 
 [Up](#report-sections)
 
@@ -2013,7 +2013,7 @@
 | **Name:** | `0985c85625605520715b` |
 | **Type:** | `simpleImageEBC4593F96F1425FB3D84C5BF02B5075` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Column: Product.Product Image | 
+| **Attributes:**  | Column: `Product.Product Image` | 
 
 [Up](#report-sections)
 
@@ -2027,7 +2027,7 @@
 | **Name:** | `458ec6da9448a6411b4a` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Aggregation: Min(Product.Category) | 
+| **Attributes:**  | Aggregation: `Min(Product.Category)` | 
 
 [Up](#report-sections)
 
@@ -2041,7 +2041,7 @@
 | **Name:** | `cf7ce08747d266111125` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Aggregation: Min(Product.Product) | 
+| **Attributes:**  | Aggregation: `Min(Product.Product)` | 
 
 [Up](#report-sections)
 
@@ -2055,7 +2055,7 @@
 | **Name:** | `bc985269a025178b58ac` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Aggregation: CountNonNull(Product.ProductID) | 
+| **Attributes:**  | Aggregation: `CountNonNull(Product.ProductID)` | 
 
 [Up](#report-sections)
 
@@ -2069,7 +2069,7 @@
 | **Name:** | `462a8b82de10bd702e1e` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product, Sales` | 
-| **Attributes:**  | Aggregation: Sum(Sales.Amount) | 
+| **Attributes:**  | Aggregation: `Sum(Sales.Amount)` | 
 
 [Up](#report-sections)
 
@@ -2083,7 +2083,7 @@
 | **Name:** | `26d7e2875a4a05a00a1d` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Aggregation: Sum(Product.Price) | 
+| **Attributes:**  | Aggregation: `Sum(Product.Price)` | 
 
 [Up](#report-sections)
 
@@ -2139,7 +2139,7 @@
 | **Name:** | `b4909a174e5b964b48ac` |
 | **Type:** | `simpleImageEBC4593F96F1425FB3D84C5BF02B5075` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Column: Product.Category Image | 
+| **Attributes:**  | Column: `Product.Category Image` | 
 
 [Up](#report-sections)
 
@@ -2166,7 +2166,7 @@
 | **Name:** | `0985c85625605520715b` |
 | **Type:** | `simpleImageEBC4593F96F1425FB3D84C5BF02B5075` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Column: Product.Product Image | 
+| **Attributes:**  | Column: `Product.Product Image` | 
 
 [Up](#report-sections)
 
@@ -2180,7 +2180,7 @@
 | **Name:** | `458ec6da9448a6411b4a` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Aggregation: Min(Product.Category) | 
+| **Attributes:**  | Aggregation: `Min(Product.Category)` | 
 
 [Up](#report-sections)
 
@@ -2194,7 +2194,7 @@
 | **Name:** | `cf7ce08747d266111125` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Aggregation: Min(Product.Product) | 
+| **Attributes:**  | Aggregation: `Min(Product.Product)` | 
 
 [Up](#report-sections)
 
@@ -2208,7 +2208,7 @@
 | **Name:** | `bc985269a025178b58ac` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Aggregation: CountNonNull(Product.ProductID) | 
+| **Attributes:**  | Aggregation: `CountNonNull(Product.ProductID)` | 
 
 [Up](#report-sections)
 
@@ -2222,7 +2222,7 @@
 | **Name:** | `462a8b82de10bd702e1e` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product, Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.Returns | 
+| **Attributes:**  | Measure: `Analysis DAX.Returns` | 
 
 [Up](#report-sections)
 
@@ -2236,7 +2236,7 @@
 | **Name:** | `26d7e2875a4a05a00a1d` |
 | **Type:** | `card` |
 | **Business objects:**  | `Product, Analysis DAX` | 
-| **Attributes:**  | Measure: Analysis DAX.Return Rate | 
+| **Attributes:**  | Measure: `Analysis DAX.Return Rate` | 
 
 [Up](#report-sections)
 
@@ -2292,7 +2292,7 @@
 | **Name:** | `1fb52aa861d813470d06` |
 | **Type:** | `simpleImageEBC4593F96F1425FB3D84C5BF02B5075` |
 | **Business objects:**  | `Product` | 
-| **Attributes:**  | Column: Product.Category Image | 
+| **Attributes:**  | Column: `Product.Category Image` | 
 
 [Up](#report-sections)
 
@@ -2319,7 +2319,7 @@
 | **Name:** | `7a2c874b200312dd4284` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info` | 
-| **Attributes:**  | Column: GIF.URL | 
+| **Attributes:**  | Column: `GIF.URL` | 
 
 [Up](#report-sections)
 
@@ -2346,7 +2346,7 @@
 | **Name:** | `7a2c874b200312dd4284` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info` | 
-| **Attributes:**  | Column: GIF.URL | 
+| **Attributes:**  | Column: `GIF.URL` | 
 
 [Up](#report-sections)
 
@@ -2373,7 +2373,7 @@
 | **Name:** | `7a2c874b200312dd4284` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info` | 
-| **Attributes:**  | Column: GIF.URL | 
+| **Attributes:**  | Column: `GIF.URL` | 
 
 [Up](#report-sections)
 
@@ -2400,7 +2400,7 @@
 | **Name:** | `7a2c874b200312dd4284` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info` | 
-| **Attributes:**  | Column: GIF.URL | 
+| **Attributes:**  | Column: `GIF.URL` | 
 
 [Up](#report-sections)
 
@@ -2427,7 +2427,7 @@
 | **Name:** | `7a2c874b200312dd4284` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info` | 
-| **Attributes:**  | Column: GIF.URL | 
+| **Attributes:**  | Column: `GIF.URL` | 
 
 [Up](#report-sections)
 
@@ -2454,7 +2454,7 @@
 | **Name:** | `7a2c874b200312dd4284` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info` | 
-| **Attributes:**  | Column: GIF.URL | 
+| **Attributes:**  | Column: `GIF.URL` | 
 
 [Up](#report-sections)
 
@@ -2481,7 +2481,7 @@
 | **Name:** | `7a2c874b200312dd4284` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info` | 
-| **Attributes:**  | Column: GIF.URL | 
+| **Attributes:**  | Column: `GIF.URL` | 
 
 [Up](#report-sections)
 
@@ -2508,7 +2508,7 @@
 | **Name:** | `7a2c874b200312dd4284` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info` | 
-| **Attributes:**  | Column: GIF.URL | 
+| **Attributes:**  | Column: `GIF.URL` | 
 
 [Up](#report-sections)
 
@@ -2535,7 +2535,7 @@
 | **Name:** | `7a2c874b200312dd4284` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info2` | 
-| **Attributes:**  | Column: Tooltip Info2.URL | 
+| **Attributes:**  | Column: `Tooltip Info2.URL` | 
 
 [Up](#report-sections)
 
@@ -2562,7 +2562,7 @@
 | **Name:** | `7a2c874b200312dd4284` |
 | **Type:** | `PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196` |
 | **Business objects:**  | `Tooltip Info2` | 
-| **Attributes:**  | Column: Tooltip Info2.URL | 
+| **Attributes:**  | Column: `Tooltip Info2.URL` | 
 
 [Up](#report-sections)
 
@@ -2574,5 +2574,5 @@
 
 ----
 <p align="center">
-Generated at 27.03.2024 12:50:20 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 13:01:37 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>
