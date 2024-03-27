@@ -631,24 +631,43 @@ def parse_filters(filters_in):
         data = filters_in
     
     filters = []
+    #pp(data)
     for filter_data in data:
         
         filter_name = filter_data["name"]
         filter_type = filter_data["type"]
         columns = []
-
         # Extract column information based on filter type
         if filter_type in ("Categorical", "Advanced"):
-            # Assuming column info is in the "Expression" object
-            column = filter_data["expression"]["Column"]
-            column_name = column["Property"]
-            expression = column["Expression"]
-            source_ref = expression["SourceRef"]
-            filter_key = json.dumps(filter_data["filter"], sort_keys=True)
-            #pp(source_ref)
+            if "Column" in filter_data["expression"]:
+                # Assuming column info is in the "Expression" object
+                column = filter_data["expression"]["Column"]
+                column_name = column["Property"]
+                expression = column["Expression"]
+                source_ref = expression["SourceRef"]
+            elif "HierarchyLevel" in filter_data["expression"]:
+                # Assuming hierarchy level info is in the "Expression" object
+                hierarchy_level = filter_data["expression"]["HierarchyLevel"]
+                column_name = hierarchy_level["Level"]
+                expression = hierarchy_level["Expression"]
+                source_ref = expression["Hierarchy"]
+            else:
+                raise ValueError(f"Unsupported filter type: {filter_type}")
+
+            if "filter" in filter_data:
+                filter_key = json.dumps(filter_data["filter"], sort_keys=True)
+            elif "expression" in filter_data:
+                filter_key = json.dumps(filter_data["expression"], sort_keys=True)
+            else:
+                filter_key = None  # Or any default value you want to assign
             if isinstance(source_ref, dict) and "Entity" in source_ref:
                 table_name = source_ref["Entity"]
                 columns.append(f"{table_name}.{column_name}")
+            elif isinstance(source_ref, dict) and "Hierarchy" in source_ref:
+                table_name = source_ref["Hierarchy"]
+                columns.append(f"{table_name}.{column_name}")
+            else:
+                raise ValueError(f"Unsupported source reference: {source_ref}")
 
         filter_data = {
             "name": filter_name,
