@@ -16,10 +16,10 @@ Documentation for file **AdventureWorks Sales.pbix**.
 | Param  | Value  |
 |---|---|
 | **Analyzed pbix file name** | `AdventureWorks Sales.pbix` | 
-| **Catalog name** | `2efa28ec-2d85-4771-9568-0a44c4de698c` | 
-| **Port** | `57813`|
+| **Catalog name** | `74de38c5-37e6-40ca-8aa6-7bb7de771dc2` | 
+| **Port** | `50082`|
 | **Description** | `-NaN-` | 
-| **Date modified** | `2024-01-04T23:03:45` | 
+| **Date modified** | `2024-03-27T09:17:19` | 
 | **Compatibility level** | `1567` | 
 
 
@@ -375,5 +375,5 @@ id3642(["Table"]) --->|Category:Category| id572(["Product"])
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:06 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 0416f84
+Generated at 27.03.2024 12:50:21 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 644f883
 </p>

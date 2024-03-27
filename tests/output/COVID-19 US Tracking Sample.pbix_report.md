@@ -16,7 +16,7 @@
 | **ID** | `1862121` |
 | **Name** | `ReportSection0e72bac688f60e7252ea` |
 | **Display Name** | `Main` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `0` |
 | **Visual containers number** | `33` |
 
@@ -491,7 +491,7 @@
 | **ID** | `1862122` |
 | **Name** | `ReportSectiond674ab9f427ee88965ee` |
 | **Display Name** | `County view` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"StateDim"}},"Property":"State"}},"filter":{"Version":2,"From":[{"Name":"s","Entity":"StateDim","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"State"}}],"Values":[[{"Literal":{"Value":"'New York'"}}]]}}}]},"type":"Categorical","howCreated":5}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `StateDim.State` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"StateDim\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"State\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'New York\'\"}}]]}}}]}"') |
 | **Ordinal** | `1` |
 | **Visual containers number** | `35` |
 
@@ -994,5 +994,5 @@
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:07 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 12:50:22 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

@@ -16,7 +16,7 @@
 | **ID** | `0` |
 | **Name** | `ReportSection` |
 | **Display Name** | `Introduction` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `0` |
 | **Visual containers number** | `2` |
 
@@ -57,5 +57,5 @@
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:06 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 12:50:22 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

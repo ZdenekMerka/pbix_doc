@@ -16,7 +16,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectionaeffc6c2512def112cfa` |
 | **Display Name** | `Risk Analytics` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `0` |
 | **Visual containers number** | `7` |
 
@@ -127,7 +127,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection0805d6522ced0b422d38` |
 | **Display Name** | `Exploratory Analysis` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `1` |
 | **Visual containers number** | `8` |
 
@@ -252,7 +252,7 @@
 | **ID** | `31589085` |
 | **Name** | `ReportSection` |
 | **Display Name** | `Ask Questions` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `2` |
 | **Visual containers number** | `4` |
 
@@ -321,7 +321,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiond48f10a3d83531ea24b4` |
 | **Display Name** | `Supply Chain Analytics` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `3` |
 | **Visual containers number** | `4` |
 
@@ -390,5 +390,5 @@
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:06 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 12:50:21 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

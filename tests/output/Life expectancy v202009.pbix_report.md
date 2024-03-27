@@ -16,7 +16,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectionee1399c251cf213d7417` |
 | **Display Name** | `Life Expectancy` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `0` |
 | **Visual containers number** | `14` |
 
@@ -225,7 +225,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection0818163179037b4c900f` |
 | **Display Name** | `Child Mortality` |
-| **Filters** | `[{"name":"Filter2","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Country"}},"Property":"Country Code"}},"filter":{"Version":2,"From":[{"Name":"c","Entity":"Country","Type":0}],"Where":[{"Condition":{"Not":{"Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"Country Code"}}],"Values":[[{"Literal":{"Value":"null"}}]]}}}}}]},"type":"Categorical","howCreated":1,"isHiddenInViewMode":true,"isLockedInViewMode":true,"ordinal":0},{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Sex"}},"Property":"Sex"}},"filter":{"Version":2,"From":[{"Name":"s","Entity":"Sex","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Sex"}}],"Values":[[{"Literal":{"Value":"'Both sexes'"}}]]}}}]},"type":"Categorical","howCreated":1,"isHiddenInViewMode":true,"isLockedInViewMode":true,"ordinal":1},{"name":"Filter1","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Years"}},"Property":"Years"}},"filter":{"Version":2,"From":[{"Name":"y","Entity":"Years","Type":0}],"Where":[{"Condition":{"And":{"Left":{"Comparison":{"ComparisonKind":1,"Left":{"Column":{"Expression":{"SourceRef":{"Source":"y"}},"Property":"Years"}},"Right":{"Literal":{"Value":"1990D"}}}},"Right":{"Comparison":{"ComparisonKind":3,"Left":{"Column":{"Expression":{"SourceRef":{"Source":"y"}},"Property":"Years"}},"Right":{"Literal":{"Value":"2017D"}}}}}}}]},"type":"Advanced","howCreated":1,"isHiddenInViewMode":true,"isLockedInViewMode":true,"ordinal":2}]` |
+| **Filters** | Name: `Filter2` Type: `Categorical` Column: `Country.Country Code` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Country\", \"Name\": \"c\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"Not\": {\"Expression\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Country Code\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"null\"}}]]}}}}}]}"')<br/>Name: `Filter` Type: `Categorical` Column: `Sex.Sex` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Sex\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Sex\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Both sexes\'\"}}]]}}}]}"')<br/>Name: `Filter1` Type: `Advanced` Column: `Years.Years` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Years\", \"Name\": \"y\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"And\": {\"Left\": {\"Comparison\": {\"ComparisonKind\": 1, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"y\"}}, \"Property\": \"Years\"}}, \"Right\": {\"Literal\": {\"Value\": \"1990D\"}}}}, \"Right\": {\"Comparison\": {\"ComparisonKind\": 3, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"y\"}}, \"Property\": \"Years\"}}, \"Right\": {\"Literal\": {\"Value\": \"2017D\"}}}}}}}]}"') |
 | **Ordinal** | `1` |
 | **Visual containers number** | `18` |
 
@@ -490,7 +490,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection2ca59a708fedf6ab4fa4` |
 | **Display Name** | `Key Drivers` |
-| **Filters** | `[{"name":"Filter1","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Indicators"}},"Property":"Safe drinking water services (% of population)"}},"type":"Categorical","howCreated":1},{"name":"Filter","expression":{"HierarchyLevel":{"Expression":{"Hierarchy":{"Expression":{"PropertyVariationSource":{"Expression":{"SourceRef":{"Entity":"Year"}},"Name":"Variation","Property":"Date"}},"Hierarchy":"Date Hierarchy"}},"Level":"Year"}},"type":"Advanced","howCreated":1}]` |
+| **Filters** | Name: `Filter1` Type: `Categorical` Column: `Indicators.Safe drinking water services (% of population)` [<sup>def</sup>](## '"{\"Column\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"Indicators\"}}, \"Property\": \"Safe drinking water services (% of population)\"}}"')<br/>Name: `Filter` Type: `Advanced` Column: `Date Hierarchy.Year` [<sup>def</sup>](## '"{\"HierarchyLevel\": {\"Expression\": {\"Hierarchy\": {\"Expression\": {\"PropertyVariationSource\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"Year\"}}, \"Name\": \"Variation\", \"Property\": \"Date\"}}, \"Hierarchy\": \"Date Hierarchy\"}}, \"Level\": \"Year\"}}"') |
 | **Ordinal** | `2` |
 | **Visual containers number** | `18` |
 
@@ -755,7 +755,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection7f65473376d6aed1a9d8` |
 | **Display Name** | `Root Causes` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `3` |
 | **Visual containers number** | `10` |
 
@@ -908,7 +908,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiona99246b922db09a477b7` |
 | **Display Name** | `GDP Analysis` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `4` |
 | **Visual containers number** | `12` |
 
@@ -1089,7 +1089,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection41c4e6d5920e25ef64d4` |
 | **Display Name** | `Dashboard` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `5` |
 | **Visual containers number** | `35` |
 
@@ -1592,7 +1592,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection7c2fc1fb381618b20e95` |
 | **Display Name** | `Tooltip` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `6` |
 | **Visual containers number** | `11` |
 
@@ -1759,7 +1759,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection429176b3a10e44511357` |
 | **Display Name** | `Resources` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `7` |
 | **Visual containers number** | `10` |
 
@@ -1912,5 +1912,5 @@
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:06 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 12:50:19 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

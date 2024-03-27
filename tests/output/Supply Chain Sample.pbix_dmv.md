@@ -16,10 +16,10 @@ Documentation for file **Supply Chain Sample.pbix**.
 | Param  | Value  |
 |---|---|
 | **Analyzed pbix file name** | `Supply Chain Sample.pbix` | 
-| **Catalog name** | `cfe6b23a-d100-4ea4-b71d-69226c119b08` | 
-| **Port** | `64646`|
+| **Catalog name** | `6bb75629-6b80-4ecf-8c17-907c6be13ae3` | 
+| **Port** | `53128`|
 | **Description** | `-NaN-` | 
-| **Date modified** | `2024-01-04T21:54:33` | 
+| **Date modified** | `2024-03-27T08:04:28` | 
 | **Compatibility level** | `1567` | 
 
 
@@ -175,5 +175,5 @@ id8304(["Month"]) --->|Month:Month| id13029(["Backorder Percentage"])
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:06 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 0416f84
+Generated at 27.03.2024 12:50:21 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 644f883
 </p>

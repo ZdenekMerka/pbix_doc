@@ -80,5 +80,5 @@
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:08 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 0416f84
+Generated at 27.03.2024 12:50:22 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 644f883
 </p>

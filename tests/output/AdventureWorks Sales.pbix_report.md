@@ -16,7 +16,7 @@
 | **ID** | `0` |
 | **Name** | `ReportSection` |
 | **Display Name** | `Page 1` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `0` |
 | **Visual containers number** | `6` |
 
@@ -113,7 +113,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection350b6b55132e00f8ba89` |
 | **Display Name** | `Page 2` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `1` |
 | **Visual containers number** | `1` |
 
@@ -140,7 +140,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiona113e22f3ad54b8397d8` |
 | **Display Name** | `Page 3` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `2` |
 | **Visual containers number** | `1` |
 
@@ -167,5 +167,5 @@
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:06 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 12:50:21 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

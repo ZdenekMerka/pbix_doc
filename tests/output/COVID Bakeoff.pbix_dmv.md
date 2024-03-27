@@ -16,10 +16,10 @@ Documentation for file **COVID Bakeoff.pbix**.
 | Param  | Value  |
 |---|---|
 | **Analyzed pbix file name** | `COVID Bakeoff.pbix` | 
-| **Catalog name** | `0db9b13a-5816-4cee-bea0-0783d427df77` | 
-| **Port** | `57771`|
+| **Catalog name** | `dec36f76-9872-4461-abca-6906a4e1831d` | 
+| **Port** | `58894`|
 | **Description** | `-NaN-` | 
-| **Date modified** | `2024-01-04T23:03:45` | 
+| **Date modified** | `2024-03-26T23:10:27` | 
 | **Compatibility level** | `1567` | 
 
 
@@ -829,5 +829,5 @@ id12586(["States"]) --->|State:State| id60108(["Lats"])
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:08 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 0416f84
+Generated at 27.03.2024 12:50:20 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 644f883
 </p>

@@ -16,7 +16,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection7bdccf651d98bc34a50d` |
 | **Display Name** | `Global Vaccinations` |
-| **Filters** | `[{"name":"Filter78d8b4de5d2e0a98aeb7","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Countries"}},"Property":"Country"}},"filter":{"Version":2,"From":[{"Name":"c","Entity":"Countries","Type":0}],"Where":[{"Condition":{"Not":{"Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"Country"}}],"Values":[[{"Literal":{"Value":"null"}}]]}}}}}]},"type":"Categorical","howCreated":1,"objects":{"general":[{"properties":{"isInvertedSelectionMode":{"expr":{"Literal":{"Value":"true"}}}}}]}},{"name":"Filterf730e423025a13632cbb","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Countries"}},"Property":"Population"}},"filter":{"Version":2,"From":[{"Name":"c","Entity":"Countries","Type":0}],"Where":[{"Condition":{"Comparison":{"ComparisonKind":1,"Left":{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"Population"}},"Right":{"Literal":{"Value":"1000000L"}}}}}]},"type":"Advanced","howCreated":1}]` |
+| **Filters** | Name: `Filter78d8b4de5d2e0a98aeb7` Type: `Categorical` Column: `Countries.Country` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Countries\", \"Name\": \"c\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"Not\": {\"Expression\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Country\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"null\"}}]]}}}}}]}"')<br/>Name: `Filterf730e423025a13632cbb` Type: `Advanced` Column: `Countries.Population` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Countries\", \"Name\": \"c\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"Comparison\": {\"ComparisonKind\": 1, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Population\"}}, \"Right\": {\"Literal\": {\"Value\": \"1000000L\"}}}}}]}"') |
 | **Ordinal** | `0` |
 | **Visual containers number** | `8` |
 
@@ -141,7 +141,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiond98e33c37b4b84be4c71` |
 | **Display Name** | `Cases/Vaccines animation` |
-| **Filters** | `[{"name":"Filter2e9285e275a8d5bee683","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Countries"}},"Property":"Country"}},"filter":{"Version":2,"From":[{"Name":"c","Entity":"Countries","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"Country"}}],"Values":[[{"Literal":{"Value":"'United States'"}}]]}}}]},"type":"Categorical","howCreated":5}]` |
+| **Filters** | Name: `Filter2e9285e275a8d5bee683` Type: `Categorical` Column: `Countries.Country` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Countries\", \"Name\": \"c\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Country\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'United States\'\"}}]]}}}]}"') |
 | **Ordinal** | `1` |
 | **Visual containers number** | `8` |
 
@@ -266,7 +266,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectionad3b556fac31b946e0c1` |
 | **Display Name** | `US Vaccinations` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `2` |
 | **Visual containers number** | `17` |
 
@@ -517,7 +517,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection2ebf34c58e6cb05ff932` |
 | **Display Name** | `<- Demo 1 | Demo 2 ->` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `3` |
 | **Visual containers number** | `0` |
 
@@ -530,7 +530,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection9348de90cdb7d56fa044` |
 | **Display Name** | `Vaccinations analysis (start)` |
-| **Filters** | `[{"name":"Filterb8365039dd10ecbe7c44","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Dates"}},"Property":"Date"}},"filter":{"Version":2,"From":[{"Name":"d","Entity":"Dates","Type":0}],"Where":[{"Condition":{"And":{"Left":{"Comparison":{"ComparisonKind":2,"Left":{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Date"}},"Right":{"DateSpan":{"Expression":{"Literal":{"Value":"datetime'2020-04-04T00:00:00'"}},"TimeUnit":5}}}},"Right":{"Comparison":{"ComparisonKind":4,"Left":{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Date"}},"Right":{"DateSpan":{"Expression":{"Literal":{"Value":"datetime'2021-04-07T00:00:00'"}},"TimeUnit":5}}}}}}}]},"type":"Advanced","howCreated":1}]` |
+| **Filters** | Name: `Filterb8365039dd10ecbe7c44` Type: `Advanced` Column: `Dates.Date` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Dates\", \"Name\": \"d\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"And\": {\"Left\": {\"Comparison\": {\"ComparisonKind\": 2, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Date\"}}, \"Right\": {\"DateSpan\": {\"Expression\": {\"Literal\": {\"Value\": \"datetime\'2020-04-04T00:00:00\'\"}}, \"TimeUnit\": 5}}}}, \"Right\": {\"Comparison\": {\"ComparisonKind\": 4, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Date\"}}, \"Right\": {\"DateSpan\": {\"Expression\": {\"Literal\": {\"Value\": \"datetime\'2021-04-07T00:00:00\'\"}}, \"TimeUnit\": 5}}}}}}}]}"') |
 | **Ordinal** | `4` |
 | **Visual containers number** | `13` |
 
@@ -725,7 +725,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiona9739bd9d6eec7056cdc` |
 | **Display Name** | `Vaccinations analysis (Finished)` |
-| **Filters** | `[{"name":"Filterb8365039dd10ecbe7c44","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Dates"}},"Property":"Date"}},"filter":{"Version":2,"From":[{"Name":"d","Entity":"Dates","Type":0}],"Where":[{"Condition":{"And":{"Left":{"Comparison":{"ComparisonKind":2,"Left":{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Date"}},"Right":{"DateSpan":{"Expression":{"Literal":{"Value":"datetime'2020-04-04T00:00:00'"}},"TimeUnit":5}}}},"Right":{"Comparison":{"ComparisonKind":4,"Left":{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Date"}},"Right":{"DateSpan":{"Expression":{"Literal":{"Value":"datetime'2021-04-07T00:00:00'"}},"TimeUnit":5}}}}}}}]},"type":"Advanced","howCreated":1}]` |
+| **Filters** | Name: `Filterb8365039dd10ecbe7c44` Type: `Advanced` Column: `Dates.Date` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Dates\", \"Name\": \"d\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"And\": {\"Left\": {\"Comparison\": {\"ComparisonKind\": 2, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Date\"}}, \"Right\": {\"DateSpan\": {\"Expression\": {\"Literal\": {\"Value\": \"datetime\'2020-04-04T00:00:00\'\"}}, \"TimeUnit\": 5}}}}, \"Right\": {\"Comparison\": {\"ComparisonKind\": 4, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Date\"}}, \"Right\": {\"DateSpan\": {\"Expression\": {\"Literal\": {\"Value\": \"datetime\'2021-04-07T00:00:00\'\"}}, \"TimeUnit\": 5}}}}}}}]}"') |
 | **Ordinal** | `5` |
 | **Visual containers number** | `15` |
 
@@ -948,7 +948,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection7018f710b5d2aba96c32` |
 | **Display Name** | `Case rate influencers` |
-| **Filters** | `[{"name":"Filterbe118e413e550076b95c","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Countries"}},"Property":"Continent"}},"filter":{"Version":2,"From":[{"Name":"c","Entity":"Countries","Type":0}],"Where":[{"Condition":{"Not":{"Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"Continent"}}],"Values":[[{"Literal":{"Value":"null"}}]]}}}}}]},"type":"Categorical","howCreated":1,"objects":{"general":[{"properties":{"isInvertedSelectionMode":{"expr":{"Literal":{"Value":"true"}}}}}]}}]` |
+| **Filters** | Name: `Filterbe118e413e550076b95c` Type: `Categorical` Column: `Countries.Continent` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Countries\", \"Name\": \"c\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"Not\": {\"Expression\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Continent\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"null\"}}]]}}}}}]}"') |
 | **Ordinal** | `6` |
 | **Visual containers number** | `7` |
 
@@ -1059,7 +1059,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiondf9ab418075e76cb40d6` |
 | **Display Name** | `Variance analysis` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `7` |
 | **Visual containers number** | `8` |
 
@@ -1184,7 +1184,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection989e3ae600f744fd8393` |
 | **Display Name** | `Page 1` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `8` |
 | **Visual containers number** | `1` |
 
@@ -1211,5 +1211,5 @@
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:08 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 12:50:20 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

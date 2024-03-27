@@ -16,8 +16,8 @@ Documentation for file **Adventure Works DW 2020.pbix**.
 | Param  | Value  |
 |---|---|
 | **Analyzed pbix file name** | `Adventure Works DW 2020.pbix` | 
-| **Catalog name** | `a9d0d832-4fd1-4086-af4c-8b01f9806bab` | 
-| **Port** | `57801`|
+| **Catalog name** | `4a524bca-2019-4d06-aced-84efafedbd51` | 
+| **Port** | `51315`|
 | **Description** | `-NaN-` | 
 | **Date modified** | `2023-07-06T22:33:29` | 
 | **Compatibility level** | `1567` | 
@@ -319,5 +319,5 @@ id12591(["Currency"]) --->|CurrencyKey:CurrencyKey| id4380(["Sales"])
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:06 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 0416f84
+Generated at 27.03.2024 12:50:22 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 644f883
 </p>

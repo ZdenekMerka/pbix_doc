@@ -16,7 +16,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiond8ab5d035cceb8586528` |
 | **Display Name** | `Legal` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `0` |
 | **Visual containers number** | `2` |
 
@@ -57,7 +57,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection1dea67c2520bce38f54f` |
 | **Display Name** | `Intro` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `1` |
 | **Visual containers number** | `16` |
 
@@ -294,7 +294,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection4b3fbaa7dd7908d906d9` |
 | **Display Name** | `Net Sales` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Sales"}},"Property":"Status"}},"filter":{"Version":2,"From":[{"Name":"s","Entity":"Sales","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Status"}}],"Values":[[{"Literal":{"Value":"'Sold'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Sales.Status` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Sales\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Status\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Sold\'\"}}]]}}}]}"') |
 | **Ordinal** | `2` |
 | **Visual containers number** | `36` |
 
@@ -811,7 +811,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection998e2850a99cabad87e8` |
 | **Display Name** | `Returns` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Sales"}},"Property":"Status"}},"type":"Categorical","howCreated":1},{"name":"Filter1","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Sales"}},"Property":"Status"}},"filter":{"Version":2,"From":[{"Name":"s","Entity":"Sales","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Status"}}],"Values":[[{"Literal":{"Value":"'Returned'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Sales.Status` [<sup>def</sup>](## '"{\"Column\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"Sales\"}}, \"Property\": \"Status\"}}"')<br/>Name: `Filter1` Type: `Categorical` Column: `Sales.Status` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Sales\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Status\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returned\'\"}}]]}}}]}"') |
 | **Ordinal** | `3` |
 | **Visual containers number** | `36` |
 
@@ -1328,7 +1328,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiona37d01e834c17d07bbeb` |
 | **Display Name** | `Return Rate` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Product"}},"Property":"Product"}},"filter":{"Version":2,"From":[{"Name":"p","Entity":"Product","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"p"}},"Property":"Product"}}],"Values":[[{"Literal":{"Value":"'OneNote'"}}]]}}}]},"type":"Categorical","howCreated":5}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Product.Product` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Product\", \"Name\": \"p\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Product\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'OneNote\'\"}}]]}}}]}"') |
 | **Ordinal** | `4` |
 | **Visual containers number** | `27` |
 
@@ -1719,7 +1719,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectione5a0c158d21b780789a8` |
 | **Display Name** | `Market Basket Analysis` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Product"}},"Property":"Product"}},"filter":{"Version":2,"From":[{"Name":"p","Entity":"Product","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"p"}},"Property":"Product"}}],"Values":[[{"Literal":{"Value":"'XBOX'"}}]]}}}]},"type":"Categorical","howCreated":5}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Product.Product` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Product\", \"Name\": \"p\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Product\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'XBOX\'\"}}]]}}}]}"') |
 | **Ordinal** | `5` |
 | **Visual containers number** | `19` |
 
@@ -1998,7 +1998,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectionc0cfc0e4243d2494dbe0` |
 | **Display Name** | `Net Sales Tooltip` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `6` |
 | **Visual containers number** | `10` |
 
@@ -2151,7 +2151,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection2453dea2053ed300eb7c` |
 | **Display Name** | `Returns Tooltip` |
-| **Filters** | `[]` |
+| **Filters** |  |
 | **Ordinal** | `7` |
 | **Visual containers number** | `10` |
 
@@ -2304,7 +2304,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiona63d9045ac68091ae138` |
 | **Display Name** | `CathegoryBreackdown` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Tooltip Info"}},"Property":"nombre"}},"filter":{"Version":2,"From":[{"Name":"g","Entity":"Tooltip Info","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"g"}},"Property":"nombre"}}],"Values":[[{"Literal":{"Value":"'Net sales - category breakdown'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"g\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"g\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Net sales - category breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `8` |
 | **Visual containers number** | `1` |
 
@@ -2331,7 +2331,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectionefae9520722c310c4ba0` |
 | **Display Name** | `KeyInfluencers` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Tooltip Info"}},"Property":"nombre"}},"filter":{"Version":2,"From":[{"Name":"t","Entity":"Tooltip Info","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"nombre"}}],"Values":[[{"Literal":{"Value":"'Net sales - key influencers'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Net sales - key influencers\'\"}}]]}}}]}"') |
 | **Ordinal** | `9` |
 | **Visual containers number** | `1` |
 
@@ -2358,7 +2358,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectionf037c36b9a1a39cc3b14` |
 | **Display Name** | `StoreBreackdown` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Tooltip Info"}},"Property":"nombre"}},"filter":{"Version":2,"From":[{"Name":"t","Entity":"Tooltip Info","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"nombre"}}],"Values":[[{"Literal":{"Value":"'Net sales - store breakdown'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Net sales - store breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `10` |
 | **Visual containers number** | `1` |
 
@@ -2385,7 +2385,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection76e99cbc27dbb0759922` |
 | **Display Name** | `NetSales` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Tooltip Info"}},"Property":"nombre"}},"filter":{"Version":2,"From":[{"Name":"t","Entity":"Tooltip Info","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"nombre"}}],"Values":[[{"Literal":{"Value":"'Return rate - net sales vs what if'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Return rate - net sales vs what if\'\"}}]]}}}]}"') |
 | **Ordinal** | `11` |
 | **Visual containers number** | `1` |
 
@@ -2412,7 +2412,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection44182d852270e8b765cb` |
 | **Display Name** | `WhatIf` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Tooltip Info"}},"Property":"nombre"}},"filter":{"Version":2,"From":[{"Name":"t","Entity":"Tooltip Info","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"nombre"}}],"Values":[[{"Literal":{"Value":"'Return rate - what if'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Return rate - what if\'\"}}]]}}}]}"') |
 | **Ordinal** | `12` |
 | **Visual containers number** | `1` |
 
@@ -2439,7 +2439,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection79828a20a2b300a5d99b` |
 | **Display Name** | `RetCategory` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Tooltip Info"}},"Property":"nombre"}},"filter":{"Version":2,"From":[{"Name":"t","Entity":"Tooltip Info","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"nombre"}}],"Values":[[{"Literal":{"Value":"'Returns - category breakdown'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - category breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `13` |
 | **Visual containers number** | `1` |
 
@@ -2466,7 +2466,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection23904f9ac2e638d5ed18` |
 | **Display Name** | `RetKeyInf` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Tooltip Info"}},"Property":"nombre"}},"filter":{"Version":2,"From":[{"Name":"t","Entity":"Tooltip Info","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"nombre"}}],"Values":[[{"Literal":{"Value":"'Returns - key influencers'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - key influencers\'\"}}]]}}}]}"') |
 | **Ordinal** | `14` |
 | **Visual containers number** | `1` |
 
@@ -2493,7 +2493,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection406bc05d6280a2c44873` |
 | **Display Name** | `RetStoreBre` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Tooltip Info"}},"Property":"nombre"}},"filter":{"Version":2,"From":[{"Name":"t","Entity":"Tooltip Info","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"nombre"}}],"Values":[[{"Literal":{"Value":"'Returns - store breakdown'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - store breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `15` |
 | **Visual containers number** | `1` |
 
@@ -2520,7 +2520,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectionac989ac185c4a0764a5e` |
 | **Display Name** | `Q&A1` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Tooltip Info"}},"Property":"nombre"}},"filter":{"Version":2,"From":[{"Name":"t","Entity":"Tooltip Info","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"nombre"}}],"Values":[[{"Literal":{"Value":"'Returns - store breakdown'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - store breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `16` |
 | **Visual containers number** | `1` |
 
@@ -2547,7 +2547,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection3cf1f64a09676ebe5725` |
 | **Display Name** | `Q&A2` |
-| **Filters** | `[{"name":"Filter","expression":{"Column":{"Expression":{"SourceRef":{"Entity":"Tooltip Info"}},"Property":"nombre"}},"filter":{"Version":2,"From":[{"Name":"t","Entity":"Tooltip Info","Type":0}],"Where":[{"Condition":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"t"}},"Property":"nombre"}}],"Values":[[{"Literal":{"Value":"'Returns - store breakdown'"}}]]}}}]},"type":"Categorical","howCreated":1}]` |
+| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - store breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `17` |
 | **Visual containers number** | `1` |
 
@@ -2574,5 +2574,5 @@
 
 ----
 <p align="center">
-Generated at 10.01.2024 23:38:07 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 12:50:20 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>
