@@ -233,7 +233,7 @@ def render_filters(filters):
     ret = []
     for filter in filters:
         dump = json.dumps(filter['filter']).replace("'", "\\'")
-        ret.append(fr"Name: `{filter['name']}` Type: `{filter['type']}` Column: `{', '.join(filter['columns'])}` [<sup>def</sup>](## '{dump}')")
+        ret.append(fr"`{filter['name']}` type `{filter['type']}` on `{', '.join(filter['columns'])}` [<sup>def</sup>](## '{dump}')")
     return "<br/>".join(ret) 
     # | **Filters** | `table.column`[<sup>?</sup>](## '{"From": [{"Entity": "Countries", "Name": "c", "Type": 0}], "Version": 2, "Where": [{"Condition": {"Not": {"Expression": {"In": {"Expressions": [{"Column": {"Expression": {"SourceRef": {"Source": "c"}}, "Property": "Country"}}], "Values": [[{"Literal": {"Value": "null"}}]]}}}}}]}') |
 

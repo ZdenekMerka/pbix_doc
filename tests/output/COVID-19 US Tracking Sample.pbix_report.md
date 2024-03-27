@@ -491,7 +491,7 @@
 | **ID** | `1862122` |
 | **Name** | `ReportSectiond674ab9f427ee88965ee` |
 | **Display Name** | `County view` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `StateDim.State` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"StateDim\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"State\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'New York\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `StateDim.State` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"StateDim\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"State\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'New York\'\"}}]]}}}]}"') |
 | **Ordinal** | `1` |
 | **Visual containers number** | `35` |
 
@@ -994,5 +994,5 @@
 
 ----
 <p align="center">
-Generated at 27.03.2024 13:01:39 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 13:08:38 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

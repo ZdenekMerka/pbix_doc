@@ -294,7 +294,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection4b3fbaa7dd7908d906d9` |
 | **Display Name** | `Net Sales` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Sales.Status` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Sales\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Status\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Sold\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Sales.Status` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Sales\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Status\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Sold\'\"}}]]}}}]}"') |
 | **Ordinal** | `2` |
 | **Visual containers number** | `36` |
 
@@ -811,7 +811,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection998e2850a99cabad87e8` |
 | **Display Name** | `Returns` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Sales.Status` [<sup>def</sup>](## '"{\"Column\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"Sales\"}}, \"Property\": \"Status\"}}"')<br/>Name: `Filter1` Type: `Categorical` Column: `Sales.Status` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Sales\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Status\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returned\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Sales.Status` [<sup>def</sup>](## '"{\"Column\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"Sales\"}}, \"Property\": \"Status\"}}"')<br/>`Filter1` type `Categorical` on `Sales.Status` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Sales\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Status\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returned\'\"}}]]}}}]}"') |
 | **Ordinal** | `3` |
 | **Visual containers number** | `36` |
 
@@ -1328,7 +1328,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiona37d01e834c17d07bbeb` |
 | **Display Name** | `Return Rate` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Product.Product` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Product\", \"Name\": \"p\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Product\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'OneNote\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Product.Product` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Product\", \"Name\": \"p\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Product\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'OneNote\'\"}}]]}}}]}"') |
 | **Ordinal** | `4` |
 | **Visual containers number** | `27` |
 
@@ -1719,7 +1719,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectione5a0c158d21b780789a8` |
 | **Display Name** | `Market Basket Analysis` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Product.Product` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Product\", \"Name\": \"p\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Product\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'XBOX\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Product.Product` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Product\", \"Name\": \"p\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Product\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'XBOX\'\"}}]]}}}]}"') |
 | **Ordinal** | `5` |
 | **Visual containers number** | `19` |
 
@@ -2304,7 +2304,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectiona63d9045ac68091ae138` |
 | **Display Name** | `CathegoryBreackdown` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"g\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"g\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Net sales - category breakdown\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"g\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"g\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Net sales - category breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `8` |
 | **Visual containers number** | `1` |
 
@@ -2331,7 +2331,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectionefae9520722c310c4ba0` |
 | **Display Name** | `KeyInfluencers` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Net sales - key influencers\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Net sales - key influencers\'\"}}]]}}}]}"') |
 | **Ordinal** | `9` |
 | **Visual containers number** | `1` |
 
@@ -2358,7 +2358,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectionf037c36b9a1a39cc3b14` |
 | **Display Name** | `StoreBreackdown` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Net sales - store breakdown\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Net sales - store breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `10` |
 | **Visual containers number** | `1` |
 
@@ -2385,7 +2385,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection76e99cbc27dbb0759922` |
 | **Display Name** | `NetSales` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Return rate - net sales vs what if\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Return rate - net sales vs what if\'\"}}]]}}}]}"') |
 | **Ordinal** | `11` |
 | **Visual containers number** | `1` |
 
@@ -2412,7 +2412,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection44182d852270e8b765cb` |
 | **Display Name** | `WhatIf` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Return rate - what if\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Return rate - what if\'\"}}]]}}}]}"') |
 | **Ordinal** | `12` |
 | **Visual containers number** | `1` |
 
@@ -2439,7 +2439,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection79828a20a2b300a5d99b` |
 | **Display Name** | `RetCategory` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - category breakdown\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - category breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `13` |
 | **Visual containers number** | `1` |
 
@@ -2466,7 +2466,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection23904f9ac2e638d5ed18` |
 | **Display Name** | `RetKeyInf` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - key influencers\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - key influencers\'\"}}]]}}}]}"') |
 | **Ordinal** | `14` |
 | **Visual containers number** | `1` |
 
@@ -2493,7 +2493,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection406bc05d6280a2c44873` |
 | **Display Name** | `RetStoreBre` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - store breakdown\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - store breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `15` |
 | **Visual containers number** | `1` |
 
@@ -2520,7 +2520,7 @@
 | **ID** | `` |
 | **Name** | `ReportSectionac989ac185c4a0764a5e` |
 | **Display Name** | `Q&A1` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - store breakdown\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - store breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `16` |
 | **Visual containers number** | `1` |
 
@@ -2547,7 +2547,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection3cf1f64a09676ebe5725` |
 | **Display Name** | `Q&A2` |
-| **Filters** | Name: `Filter` Type: `Categorical` Column: `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - store breakdown\'\"}}]]}}}]}"') |
+| **Filters** | `Filter` type `Categorical` on `Tooltip Info.nombre` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Tooltip Info\", \"Name\": \"t\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"nombre\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Returns - store breakdown\'\"}}]]}}}]}"') |
 | **Ordinal** | `17` |
 | **Visual containers number** | `1` |
 
@@ -2574,5 +2574,5 @@
 
 ----
 <p align="center">
-Generated at 27.03.2024 13:01:37 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 13:08:36 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>

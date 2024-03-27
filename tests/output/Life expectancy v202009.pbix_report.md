@@ -225,7 +225,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection0818163179037b4c900f` |
 | **Display Name** | `Child Mortality` |
-| **Filters** | Name: `Filter2` Type: `Categorical` Column: `Country.Country Code` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Country\", \"Name\": \"c\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"Not\": {\"Expression\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Country Code\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"null\"}}]]}}}}}]}"')<br/>Name: `Filter` Type: `Categorical` Column: `Sex.Sex` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Sex\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Sex\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Both sexes\'\"}}]]}}}]}"')<br/>Name: `Filter1` Type: `Advanced` Column: `Years.Years` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Years\", \"Name\": \"y\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"And\": {\"Left\": {\"Comparison\": {\"ComparisonKind\": 1, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"y\"}}, \"Property\": \"Years\"}}, \"Right\": {\"Literal\": {\"Value\": \"1990D\"}}}}, \"Right\": {\"Comparison\": {\"ComparisonKind\": 3, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"y\"}}, \"Property\": \"Years\"}}, \"Right\": {\"Literal\": {\"Value\": \"2017D\"}}}}}}}]}"') |
+| **Filters** | `Filter2` type `Categorical` on `Country.Country Code` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Country\", \"Name\": \"c\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"Not\": {\"Expression\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Country Code\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"null\"}}]]}}}}}]}"')<br/>`Filter` type `Categorical` on `Sex.Sex` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Sex\", \"Name\": \"s\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Sex\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"\'Both sexes\'\"}}]]}}}]}"')<br/>`Filter1` type `Advanced` on `Years.Years` [<sup>def</sup>](## '"{\"From\": [{\"Entity\": \"Years\", \"Name\": \"y\", \"Type\": 0}], \"Version\": 2, \"Where\": [{\"Condition\": {\"And\": {\"Left\": {\"Comparison\": {\"ComparisonKind\": 1, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"y\"}}, \"Property\": \"Years\"}}, \"Right\": {\"Literal\": {\"Value\": \"1990D\"}}}}, \"Right\": {\"Comparison\": {\"ComparisonKind\": 3, \"Left\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"y\"}}, \"Property\": \"Years\"}}, \"Right\": {\"Literal\": {\"Value\": \"2017D\"}}}}}}}]}"') |
 | **Ordinal** | `1` |
 | **Visual containers number** | `18` |
 
@@ -490,7 +490,7 @@
 | **ID** | `` |
 | **Name** | `ReportSection2ca59a708fedf6ab4fa4` |
 | **Display Name** | `Key Drivers` |
-| **Filters** | Name: `Filter1` Type: `Categorical` Column: `Indicators.Safe drinking water services (% of population)` [<sup>def</sup>](## '"{\"Column\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"Indicators\"}}, \"Property\": \"Safe drinking water services (% of population)\"}}"')<br/>Name: `Filter` Type: `Advanced` Column: `Date Hierarchy.Year` [<sup>def</sup>](## '"{\"HierarchyLevel\": {\"Expression\": {\"Hierarchy\": {\"Expression\": {\"PropertyVariationSource\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"Year\"}}, \"Name\": \"Variation\", \"Property\": \"Date\"}}, \"Hierarchy\": \"Date Hierarchy\"}}, \"Level\": \"Year\"}}"') |
+| **Filters** | `Filter1` type `Categorical` on `Indicators.Safe drinking water services (% of population)` [<sup>def</sup>](## '"{\"Column\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"Indicators\"}}, \"Property\": \"Safe drinking water services (% of population)\"}}"')<br/>`Filter` type `Advanced` on `Date Hierarchy.Year` [<sup>def</sup>](## '"{\"HierarchyLevel\": {\"Expression\": {\"Hierarchy\": {\"Expression\": {\"PropertyVariationSource\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"Year\"}}, \"Name\": \"Variation\", \"Property\": \"Date\"}}, \"Hierarchy\": \"Date Hierarchy\"}}, \"Level\": \"Year\"}}"') |
 | **Ordinal** | `2` |
 | **Visual containers number** | `18` |
 
@@ -1912,5 +1912,5 @@
 
 ----
 <p align="center">
-Generated at 27.03.2024 13:01:36 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
+Generated at 27.03.2024 13:08:34 by <a href='https://github.com/dop12/pbix_doc'>PBIX DOC PROJECT</a> Git version: 
 </p>
