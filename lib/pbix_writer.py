@@ -86,6 +86,8 @@ class pbix_writer(writer.writer):
         self.env.globals['get_visual_config_info'] = get_visual_config_info
         self.env.globals['join'] = ', '.join
         self.env.globals['joinnl'] = '<br/> '.join
+        self.env.globals['render_filters'] = render_filters
+        self.env.globals['parse_filters'] = tools.parse_filters
         
         import urllib.parse
         self.env.globals['urlquote'] = urllib.parse.quote
@@ -137,6 +139,12 @@ class pbix_writer(writer.writer):
         return list(ret)
     
     def render_pbix_doc_report(self):
+        """
+        Renders the Power BI report document using the template 'pbix_doc_report'.
+        
+        Returns:
+            str: The rendered Power BI report document.
+        """
 
         ret =self.tmpl['pbix_doc_report'].render(
             filename = os.path.basename(self.pbix_data['info']['pbix_full_path']),
@@ -204,4 +212,28 @@ class pbix_writer_global():
             git_version = self.git_version,
             )
         return ret
+
+def render_filters(filters):
+    """
+    Render a list of filters into a Markdown formatted string.
+
+    Args:
+        filters (list): A list of dictionaries representing filters. Each dictionary
+            should have the following keys:
+            - name (str): The name of the filter.
+            - type (str): The type of the filter.
+            - columns (list): A list of columns used by the filter.
+            - filter (dict): A dictionary representing the filter expression.
+
+    Returns:
+        str: A Markdown formatted string containing the filter information. Each filter
+            is represented as a line in the string with the following format:
+            "Name: `{filter['name']}` Type: `{filter['type']}` Column: `{', '.join(filter['columns'])}` [<sup>def</sup>](## '{json.dumps(filter['filter'])}')"
+    """
+    ret = []
+    for filter in filters:
+        dump = json.dumps(filter['filter']).replace("'", "\\'")
+        ret.append(fr"Name: `{filter['name']}` Type: `{filter['type']}` Column: `{', '.join(filter['columns'])}` [<sup>def</sup>](## '{dump}')")
+    return "<br/>".join(ret) 
+    # | **Filters** | `table.column`[<sup>?</sup>](## '{"From": [{"Entity": "Countries", "Name": "c", "Type": 0}], "Version": 2, "Where": [{"Condition": {"Not": {"Expression": {"In": {"Expressions": [{"Column": {"Expression": {"SourceRef": {"Source": "c"}}, "Property": "Country"}}], "Values": [[{"Literal": {"Value": "null"}}]]}}}}}]}') |
 

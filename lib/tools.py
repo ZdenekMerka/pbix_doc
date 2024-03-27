@@ -621,3 +621,43 @@ def remove_nan(text,replace = 'n/a'):
     else:
         ret = text
     return ret
+
+def parse_filters(filters_in):
+    # Iterate over each filter object in the JSON array
+    if isinstance(filters_in, str):
+    # Load JSON string if necessary
+        data = json.loads(filters_in)
+    else:
+        data = filters_in
+    
+    filters = []
+    for filter_data in data:
+        
+        filter_name = filter_data["name"]
+        filter_type = filter_data["type"]
+        columns = []
+
+        # Extract column information based on filter type
+        if filter_type in ("Categorical", "Advanced"):
+            # Assuming column info is in the "Expression" object
+            column = filter_data["expression"]["Column"]
+            column_name = column["Property"]
+            expression = column["Expression"]
+            source_ref = expression["SourceRef"]
+            filter_key = json.dumps(filter_data["filter"], sort_keys=True)
+            #pp(source_ref)
+            if isinstance(source_ref, dict) and "Entity" in source_ref:
+                table_name = source_ref["Entity"]
+                columns.append(f"{table_name}.{column_name}")
+
+        filter_data = {
+            "name": filter_name,
+            "type": filter_type,
+            "columns": columns, 
+            "filter": filter_key
+        }
+            
+            # Use helper function to parse individual filter objects
+        filters.append(filter_data)
+
+    return filters

@@ -18,7 +18,7 @@
 | **ID** | `{{i.id}}` |
 | **Name** | `{{i.name}}` |
 | **Display Name** | `{{i.displayName}}` |
-| **Filters** | `{{i.filters}}` |
+| **Filters** | {{render_filters(parse_filters(i.filters))}} |
 | **Ordinal** | `{{i.ordinal}}` |
 | **Visual containers number** | `{{len(i.visualContainers)}}` |
 
